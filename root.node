@@ -1,22 +1,25 @@
 {
   "fileVersion": "1.0",
   "metadata": {
-    "title": "Untitled Graph",
-    "description": "",
-    "created": "2026-03-28T04:44:32.610Z",
-    "modified": "2026-03-28T04:44:32.610Z",
+    "title": "Twilite",
+    "description": "Twilite section root.",
+    "created": "2026-05-08T23:55:00.000Z",
+    "modified": "2026-05-09T00:04:00.000Z",
     "author": "",
-    "tags": [],
+    "tags": [
+      "twilite",
+      "section"
+    ],
     "preferredViewer": "https://twilite.zone"
   },
   "nodes": [
     {
-      "id": "7e27254f-374b-47ba-99a9-827c926fb47f",
+      "id": "twilite-manifest",
       "type": "manifest",
       "label": "Manifest",
       "position": {
-        "x": -465.5,
-        "y": -179.2552971570342
+        "x": -464.6825299721638,
+        "y": -500
       },
       "width": 360,
       "height": 220,
@@ -24,27 +27,26 @@
       "showLabel": true,
       "data": {
         "identity": {
-          "graphId": "d8ba0171-dd00-4782-92e8-420d599f988b",
-          "name": "Untitled Graph",
+          "graphId": "twilite-root",
+          "name": "Twilite",
           "version": "0.1.0",
-          "description": "",
-          "createdAt": "2026-02-22T22:38:51.769Z",
-          "updatedAt": "2026-02-22T22:38:51.769Z"
+          "description": "Twilite section root for Twilite-specific workspaces and destinations.",
+          "createdAt": "2026-05-08T23:55:00.000Z",
+          "updatedAt": "2026-05-08T23:55:00.000Z"
         },
         "intent": {
           "kind": "graph",
-          "scope": "mixed"
+          "scope": "local"
         },
         "dependencies": {
           "nodeTypes": [
             "manifest",
             "legend",
-            "markdown",
             "bridge",
-            "port",
             "title",
             "type-definition",
-            "ui-view"
+            "ui-view",
+            "port"
           ],
           "portContracts": [
             "core"
@@ -85,6 +87,10 @@
           "snapToGrid": false,
           "gridSize": 20,
           "edgeRouting": "auto",
+          "autoSave": false,
+          "expansion": {
+            "allowGraphEntry": true
+          },
           "github": {
             "repo": "",
             "path": "",
@@ -93,586 +99,55 @@
             "repoVisibility": "private",
             "seedOnCommit": false,
             "enableGithubPages": false
-          },
-          "autoSave": false,
-          "expansion": {
-            "allowGraphEntry": true
           }
         },
+        "summaryNodeId": "",
         "isRoot": false,
         "root": false
       }
     },
     {
-      "id": "c1b98bf9-6821-4248-bb63-9908781f6ab7",
+      "id": "twilite-legend",
       "type": "legend",
       "label": "Legend",
       "position": {
-        "x": 14.5,
-        "y": -179.2552971570342
+        "x": 15.31747002783618,
+        "y": -500
       },
-      "width": 340,
+      "width": 300,
       "height": 220,
       "visible": true,
       "showLabel": true,
       "data": {
         "entries": [
           {
-            "key": "default",
-            "intent": "placeholder",
-            "implementation": "default renderer",
-            "dictionaryKey": "default"
+            "label": "Title",
+            "color": "#f3efe6"
+          },
+          {
+            "label": "Type",
+            "color": "#e7f2ff"
+          },
+          {
+            "label": "View",
+            "color": "#f4f7ff"
+          },
+          {
+            "label": "Port",
+            "color": "#f2f4f7"
           }
         ],
-        "markdown": "## Legend\\n- default: placeholder",
         "isRoot": false,
         "root": false
       }
     },
     {
-      "id": "81d62441-815a-4404-8972-8ad9a447434c",
-      "type": "youtube-embedded",
-      "label": "youtube-embedded",
-      "position": {
-        "x": -61.47122284090039,
-        "y": 705.3366214655491
-      },
-      "width": 291,
-      "height": 197,
-      "ports": [],
-      "inputs": [],
-      "outputs": [],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "memo": "",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "videoId": "BzyQ6SWVaxU",
-        "autoplay": "false",
-        "isRoot": false,
-        "root": false,
-        "_classBinding": {
-          "key": "youtube-embedded",
-          "sourceRef": "/library/classes/nodes/youtube-embedded.node-class.node",
-          "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
-          "identity": {
-            "graphId": "youtube-embedded-class",
-            "name": "YouTube Embedded Node Class",
-            "version": "0.1.0",
-            "description": "Node class that renders a YouTube iframe using data.videoId.",
-            "createdAt": "2026-02-22T00:00:00.000Z",
-            "updatedAt": "2026-03-24T01:20:00.000Z"
-          },
-          "intent": "definition",
-          "meaning": "Node class that renders a YouTube iframe using data.videoId.",
-          "description": "Node class that renders a YouTube iframe using data.videoId.",
-          "defaults": {},
-          "nodeDef": {
-            "key": "youtube-embedded",
-            "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0"
-          },
-          "views": [
-            {
-              "key": "youtube-embedded",
-              "intent": "editor",
-              "payload": "editor.web",
-              "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "youtube-embedded",
-              "intent": "node",
-              "payload": "node.web.detail",
-              "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "youtube-embedded",
-              "intent": "node",
-              "payload": "node.web.summary",
-              "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "youtube-embedded",
-              "intent": "node",
-              "payload": "node.web.icon",
-              "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "youtube-embedded",
-              "intent": "node",
-              "payload": "render.html",
-              "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            }
-          ],
-          "nodeView": {
-            "key": "youtube-embedded",
-            "intent": "node",
-            "payload": "node.web.detail",
-            "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0"
-          },
-          "editorView": {
-            "key": "youtube-embedded",
-            "intent": "editor",
-            "payload": "editor.web",
-            "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0"
-          }
-        },
-        "_bridge": {
-          "sourceNodeId": "",
-          "sourceBridgeNodeId": "",
-          "sourceBridgeLabel": "Migrated class binding",
-          "sourceRef": "/library/classes/nodes/youtube-embedded.node-class.node",
-          "entryPort": "root",
-          "kind": "node-class",
-          "targetKind": "node-class",
-          "classKey": "youtube-embedded",
-          "classRef": "/library/classes/nodes/youtube-embedded.node-class.node"
-        },
-        "definitionKey": "youtube-embedded"
-      }
-    },
-    {
-      "id": "contact-developer",
-      "type": "markdown",
-      "label": "Contact",
-      "position": {
-        "x": 395.58704779973823,
-        "y": -78.40326097937465
-      },
-      "width": 360,
-      "height": 160,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "markdown": "## Contact the developer\n\nadmin@twilite.zone",
-        "isRoot": false,
-        "root": false,
-        "_classBinding": {
-          "key": "markdown",
-          "sourceRef": "/library/classes/nodes/markdown.node-class.node",
-          "ref": "/library/classes/nodes/markdown.node-class.node",
-          "identity": {
-            "graphId": "markdown_class",
-            "name": "markdown Node Class",
-            "version": "0.1.0",
-            "description": "Canonical markdown content node.",
-            "createdAt": "2026-02-24T20:05:15Z",
-            "updatedAt": "2026-03-24T01:20:00.000Z"
-          },
-          "intent": "graph",
-          "meaning": "Canonical markdown content node.",
-          "description": "Canonical markdown content node.",
-          "defaults": {},
-          "nodeDef": {
-            "key": "markdown",
-            "ref": "/library/classes/nodes/markdown.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0"
-          },
-          "views": [
-            {
-              "key": "markdown",
-              "intent": "editor",
-              "payload": "editor.web",
-              "ref": "/library/classes/nodes/markdown.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "markdown",
-              "intent": "node",
-              "payload": "node.web",
-              "ref": "/library/classes/nodes/markdown.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            }
-          ],
-          "nodeView": {
-            "key": "markdown",
-            "intent": "node",
-            "payload": "node.web",
-            "ref": "/library/classes/nodes/markdown.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0"
-          },
-          "editorView": {
-            "key": "markdown",
-            "intent": "editor",
-            "payload": "editor.web",
-            "ref": "/library/classes/nodes/markdown.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0"
-          }
-        },
-        "_bridge": {
-          "sourceNodeId": "",
-          "sourceBridgeNodeId": "",
-          "sourceBridgeLabel": "Migrated class binding",
-          "sourceRef": "/library/classes/nodes/markdown.node-class.node",
-          "entryPort": "root",
-          "kind": "node-class",
-          "targetKind": "node-class",
-          "classKey": "markdown",
-          "classRef": "/library/classes/nodes/markdown.node-class.node"
-        },
-        "definitionKey": "markdown"
-      }
-    },
-    {
-      "id": "port-tasks-root",
-      "type": "port",
-      "label": "Task Graphs",
-      "position": {
-        "x": 827.5691770465061,
-        "y": 140.85944216022892
-      },
-      "width": 360,
-      "height": 240,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [],
-      "outputs": [],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "target": {
-          "endpoint": "/tasks/root.node:root",
-          "mode": "navigate",
-          "url": "",
-          "graphId": "",
-          "nodeId": "",
-          "portId": "root",
-          "label": "Open"
-        },
-        "memo": "",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "isRoot": false,
-        "root": false,
-        "sourceRef": "/tasks/root.node",
-        "sourceNodeId": "tasks-root-view",
-        "sourcePayload": "node.web.summary"
-      }
-    },
-    {
-      "id": "port-graph-theory-root",
-      "type": "port",
-      "label": "Graph Theory",
-      "position": {
-        "x": 1199.4805927954299,
-        "y": 531.5987920996665
-      },
-      "width": 320,
-      "height": 220,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [],
-      "outputs": [],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "target": {
-          "endpoint": "/graph-theory/root.node:root",
-          "mode": "navigate",
-          "url": "",
-          "graphId": "",
-          "nodeId": "",
-          "portId": "root",
-          "label": "Open"
-        },
-        "memo": "Open the Graph Theory section.",
-        "sourceRef": "/graph-theory/root.node",
-        "sourceNodeId": "graph-theory-view",
-        "sourcePayload": "node.web",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "isRoot": false,
-        "root": false
-      }
-    },
-    {
-      "id": "port-github-root",
-      "type": "port",
-      "label": "Github",
-      "position": {
-        "x": -62.891017076580404,
-        "y": 161.3407170680133
-      },
-      "width": 320,
-      "height": 220,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [],
-      "outputs": [],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "target": {
-          "endpoint": "/github/root.node:root",
-          "mode": "navigate",
-          "url": "",
-          "graphId": "",
-          "nodeId": "",
-          "portId": "root",
-          "label": "Open"
-        },
-        "memo": "Open the Github section.",
-        "sourceRef": "/github/root.node",
-        "sourceNodeId": "github-view",
-        "sourcePayload": "node.web",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "isRoot": false,
-        "root": false
-      }
-    },
-    {
-      "id": "port-twilite-root",
-      "type": "port",
-      "label": "Twilite",
-      "position": {
-        "x": 358.48178365160885,
-        "y": 924.5083762615039
-      },
-      "width": 320,
-      "height": 220,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [],
-      "outputs": [],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "target": {
-          "endpoint": "/twilite/root.node:root",
-          "mode": "navigate",
-          "url": "",
-          "graphId": "",
-          "nodeId": "",
-          "portId": "root",
-          "label": "Open"
-        },
-        "memo": "Open the Twilite section.",
-        "sourceRef": "/twilite/root.node",
-        "sourceNodeId": "twilite-view",
-        "sourcePayload": "node.web",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "isRoot": false,
-        "root": false
-      }
-    },
-    {
-      "id": "port-agent-root",
-      "type": "port",
-      "label": "Agent",
-      "position": {
-        "x": 391.57846659401343,
-        "y": 122.29479265770004
-      },
-      "width": 320,
-      "height": 220,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [],
-      "outputs": [],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "authority": "consume-view",
-        "target": {
-          "endpoint": "/agent/root.node:root",
-          "mode": "navigate",
-          "url": "",
-          "graphId": "",
-          "nodeId": "",
-          "portId": "root",
-          "label": "Open"
-        },
-        "memo": "Open the Agent section.",
-        "sourceRef": "/agent/root.node",
-        "sourceNodeId": "agent-view",
-        "sourcePayload": "node.web",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "isRoot": false,
-        "root": false
-      }
-    },
-    {
-      "id": "port-tutorial-root",
-      "type": "port",
-      "label": "Tutorial",
-      "position": {
-        "x": 829.567008243187,
-        "y": 543.1524025093677
-      },
-      "width": 320,
-      "height": 220,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [],
-      "outputs": [],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "authority": "consume-view",
-        "target": {
-          "endpoint": "/tutorial/root.node:root",
-          "mode": "navigate",
-          "url": "",
-          "graphId": "",
-          "nodeId": "",
-          "portId": "root",
-          "label": "Open"
-        },
-        "memo": "Open the Tutorial section.",
-        "sourceRef": "/tutorial/root.node",
-        "sourceNodeId": "tutorial-view",
-        "sourcePayload": "node.web",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "isRoot": false,
-        "root": false
-      }
-    },
-    {
-      "id": "port-gallery-root",
-      "type": "port",
-      "label": "Gallery",
-      "position": {
-        "x": 897.4128085990162,
-        "y": 899.1047398461583
-      },
-      "width": 320,
-      "height": 220,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [],
-      "outputs": [],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "target": {
-          "endpoint": "/gallery/root.node:root",
-          "mode": "navigate",
-          "url": "",
-          "graphId": "",
-          "nodeId": "",
-          "portId": "root",
-          "label": "Open"
-        },
-        "memo": "Open the Gallery section.",
-        "sourceRef": "/gallery/root.node",
-        "sourceNodeId": "gallery-view",
-        "sourcePayload": "node.web.summary",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "isRoot": false,
-        "root": false
-      }
-    },
-    {
-      "id": "public-root-title-port",
+      "id": "twilite-title-port",
       "type": "bridge",
       "label": "Title",
       "position": {
-        "x": 1734.5,
-        "y": 180.7447028429658
+        "x": 435.3174700278362,
+        "y": -500
       },
       "width": 260,
       "height": 120,
@@ -722,12 +197,12 @@
       }
     },
     {
-      "id": "public-root-type-port",
+      "id": "twilite-type-port",
       "type": "bridge",
       "label": "Type Definition",
       "position": {
-        "x": -1013.7288863465442,
-        "y": 464.03136977263375
+        "x": -464.6825299721638,
+        "y": -160
       },
       "width": 260,
       "height": 120,
@@ -777,12 +252,12 @@
       }
     },
     {
-      "id": "public-root-view-port",
+      "id": "twilite-view-port",
       "type": "bridge",
       "label": "View",
       "position": {
-        "x": -1019.3795512248034,
-        "y": 743.8171462529391
+        "x": -84.68252997216382,
+        "y": -160
       },
       "width": 260,
       "height": 120,
@@ -832,53 +307,48 @@
       }
     },
     {
-      "id": "public-root-title",
-      "type": "title",
-      "label": "Title",
+      "id": "twilite-back",
+      "type": "port",
+      "label": "Back to Zone",
       "position": {
-        "x": 294.5,
-        "y": 521.8907795132651
+        "x": 295.3174700278362,
+        "y": -160
       },
-      "width": 460,
-      "height": 220,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "output",
-          "dataType": "any",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        }
-      ],
+      "width": 360,
+      "height": 240,
       "visible": true,
       "showLabel": true,
       "data": {
-        "title": "Twilite Zone Root",
-        "subtitle": "Public graph root for local sections, entry points, and shared destination surfaces.",
-        "intent": "headline",
+        "memo": "Return to the Twilite Zone root.",
+        "intent": "external",
+        "target": {
+          "endpoint": "github://twilite-zone/public/root.node:root",
+          "mode": "navigate",
+          "label": "Open"
+        },
+        "sourceRef": "github://twilite-zone/public/root.node",
+        "sourceNodeId": "public-root-view",
+        "sourcePayload": "node.web.summary",
+        "isRoot": false,
+        "root": false
+      }
+    },
+    {
+      "id": "twilite-title",
+      "type": "title",
+      "label": "Title",
+      "position": {
+        "x": 15.31747002783618,
+        "y": 200
+      },
+      "width": 420,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "Twilite",
+        "subtitle": "Workspace for Twilite-specific surfaces, tools, and section destinations.",
+        "intent": "section",
         "status": "active",
         "_classBinding": {
           "key": "title",
@@ -983,12 +453,12 @@
           }
         },
         "_bridge": {
-          "sourceBridgeNodeId": "public-root-title-port",
+          "sourceBridgeNodeId": "twilite-title-port",
           "sourceBridgeLabel": "Title",
           "targetKind": "node-class",
           "classKey": "title",
           "classRef": "/library/classes/nodes/template-structure/title.node-class.node",
-          "sourceNodeId": "tutorial-title-port"
+          "sourceNodeId": "twilite-title-port"
         },
         "definitionKey": "title",
         "isRoot": true,
@@ -996,46 +466,24 @@
       }
     },
     {
-      "id": "public-root-type",
+      "id": "twilite-type",
       "type": "type-definition",
       "label": "Type",
       "position": {
-        "x": -605.6699799927869,
-        "y": 377.03902565823023
+        "x": 555.3174700278362,
+        "y": 200
       },
-      "width": 380,
-      "height": 250,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "output",
-          "dataType": "any",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
+      "width": 360,
+      "height": 240,
       "visible": true,
       "showLabel": true,
       "data": {
-        "name": "Root",
-        "key": "root",
-        "classRef": "/root.node",
-        "meaning": "Top-level public graph root for Twilite Zone sections and destinations.",
-        "description": "Use when a host should render the site root as a shared destination card.",
-        "category": "public",
+        "name": "Twilite",
+        "key": "twilite",
+        "classRef": "github://twilitellc/public/root.node",
+        "meaning": "Shared destination surface for Twilite-specific workspaces and section roots.",
+        "description": "Section root for Twilite-specific graphs inside Twilite Zone.",
+        "category": "section",
         "status": "active",
         "_classBinding": {
           "key": "type-definition",
@@ -1087,7 +535,7 @@
           }
         },
         "_bridge": {
-          "sourceBridgeNodeId": "public-root-type-port",
+          "sourceBridgeNodeId": "twilite-type-port",
           "sourceBridgeLabel": "Type Definition",
           "targetKind": "node-class",
           "classKey": "type-definition",
@@ -1099,47 +547,25 @@
       }
     },
     {
-      "id": "public-root-view",
+      "id": "twilite-view",
       "type": "ui-view",
       "label": "View",
       "position": {
-        "x": -617.4481879539998,
-        "y": 692.8691929027544
+        "x": -464.6825299721638,
+        "y": 560
       },
       "width": 420,
       "height": 280,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
       "visible": true,
       "showLabel": true,
       "data": {
-        "title": "Twilite Zone",
-        "purpose": "Shared host-facing view for the public graph root.",
-        "titleSourceNodeId": "public-root-title",
-        "typeSourceNodeId": "public-root-type",
-        "audience": "Public",
+        "title": "Twilite",
+        "purpose": "Shared host-facing view for the Twilite section.",
+        "audience": "Author",
         "status": "active",
-        "svg": "<svg viewBox=\"0 0 220 160\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\"><rect x=\"18\" y=\"18\" width=\"184\" height=\"124\" rx=\"22\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"5\"/><rect x=\"34\" y=\"38\" width=\"70\" height=\"14\" rx=\"7\" fill=\"#3b82f6\" opacity=\"0.9\"/><rect x=\"112\" y=\"38\" width=\"74\" height=\"14\" rx=\"7\" fill=\"#10b981\" opacity=\"0.85\"/><rect x=\"34\" y=\"72\" width=\"44\" height=\"32\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#3b82f6\" stroke-width=\"3\"/><rect x=\"88\" y=\"72\" width=\"44\" height=\"32\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#22c55e\" stroke-width=\"3\"/><rect x=\"142\" y=\"72\" width=\"44\" height=\"32\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"3\"/><rect x=\"34\" y=\"116\" width=\"90\" height=\"10\" rx=\"5\" fill=\"#cbd5e1\"/><rect x=\"132\" y=\"116\" width=\"54\" height=\"10\" rx=\"5\" fill=\"#e2e8f0\"/>",
+        "titleSourceNodeId": "twilite-title",
+        "typeSourceNodeId": "twilite-type",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" fill=\"none\"><rect x=\"18\" y=\"22\" width=\"204\" height=\"136\" rx=\"26\" fill=\"#f7f8fb\" stroke=\"#1f2937\" stroke-width=\"6\"/><rect x=\"40\" y=\"48\" width=\"114\" height=\"14\" rx=\"7\" fill=\"#f59e0b\" opacity=\"0.92\"/><rect x=\"40\" y=\"74\" width=\"86\" height=\"12\" rx=\"6\" fill=\"#94a3b8\"/><rect x=\"40\" y=\"98\" width=\"122\" height=\"12\" rx=\"6\" fill=\"#cbd5e1\"/><rect x=\"40\" y=\"122\" width=\"96\" height=\"12\" rx=\"6\" fill=\"#cbd5e1\"/><circle cx=\"186\" cy=\"74\" r=\"20\" fill=\"#111827\"/><path d=\"M176 74h20M186 64v20\" stroke=\"#f8fafc\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"120\" y=\"156\" text-anchor=\"middle\" font-family=\"ui-sans-serif, system-ui, sans-serif\" font-size=\"16\" font-weight=\"700\" letter-spacing=\"0.10em\" fill=\"#0f172a\">TWILITE</text></svg>",
         "_classBinding": {
           "key": "ui-view",
           "sourceRef": "/library/classes/nodes/ui-interaction/ui-view.node-class.node",
@@ -1243,15 +669,67 @@
           }
         },
         "_bridge": {
-          "sourceBridgeNodeId": "public-root-view-port",
+          "sourceBridgeNodeId": "twilite-view-port",
           "sourceBridgeLabel": "View",
           "targetKind": "node-class",
           "classKey": "ui-view",
           "classRef": "/library/classes/nodes/ui-interaction/ui-view.node-class.node"
         },
         "definitionKey": "ui-view",
-        "localTitle": "Twilite Zone Root",
-        "publishedTitle": "Twilite Root",
+        "isRoot": false,
+        "root": false
+      }
+    },
+    {
+      "id": "twilite-developer-area",
+      "type": "port",
+      "label": "Developer Area",
+      "position": {
+        "x": 15.31747002783618,
+        "y": 930
+      },
+      "width": 360,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "memo": "Open the Developer Area section.",
+        "intent": "external",
+        "target": {
+          "endpoint": "github://twilite-zone/public/twilite/developer-area/root.node:root",
+          "mode": "navigate",
+          "label": "Open"
+        },
+        "sourceRef": "github://twilite-zone/public/twilite/developer-area/root.node",
+        "sourceNodeId": "developer-area-view",
+        "sourcePayload": "node.web.summary",
+        "isRoot": false,
+        "root": false
+      }
+    },
+    {
+      "id": "twilite-storage-closet",
+      "type": "port",
+      "label": "Storage Closet",
+      "position": {
+        "x": 555.3174700278362,
+        "y": 930
+      },
+      "width": 360,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "memo": "Open the Storage Closet section.",
+        "intent": "external",
+        "target": {
+          "endpoint": "github://twilite-zone/public/twilite/storage-closet/root.node:root",
+          "mode": "navigate",
+          "label": "Open"
+        },
+        "sourceRef": "github://twilite-zone/public/twilite/storage-closet/root.node",
+        "sourceNodeId": "storage-closet-view",
+        "sourcePayload": "node.web.summary",
         "isRoot": false,
         "root": false
       }
@@ -1259,170 +737,72 @@
   ],
   "edges": [
     {
-      "id": "public-root-edge-3",
+      "id": "twilite-edge-title-type",
       "type": "reference",
-      "source": "public-root-title",
-      "target": "port-tasks-root",
-      "sourcePort": "top",
-      "targetPort": "root",
-      "label": "entry",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
-      "data": {}
-    },
-    {
-      "id": "public-root-edge-4",
-      "type": "reference",
-      "source": "public-root-title",
-      "target": "port-graph-theory-root",
-      "sourcePort": "top",
-      "targetPort": "root",
-      "label": "entry",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
-      "data": {}
-    },
-    {
-      "id": "public-root-edge-5",
-      "type": "reference",
-      "source": "public-root-title",
-      "target": "port-github-root",
-      "sourcePort": "top",
-      "targetPort": "root",
-      "label": "entry",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
-      "data": {}
-    },
-    {
-      "id": "public-root-edge-6",
-      "type": "reference",
-      "source": "public-root-title",
-      "target": "port-twilite-root",
-      "sourcePort": "bottom",
-      "targetPort": "root",
-      "label": "entry",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
-      "data": {}
-    },
-    {
-      "id": "public-root-edge-7",
-      "type": "reference",
-      "source": "public-root-title",
-      "target": "port-agent-root",
-      "sourcePort": "top",
-      "targetPort": "root",
-      "label": "entry",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
-      "data": {}
-    },
-    {
-      "id": "public-root-edge-8",
-      "type": "reference",
-      "source": "public-root-title",
-      "target": "port-tutorial-root",
-      "sourcePort": "top",
-      "targetPort": "root",
-      "label": "entry",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
-      "data": {}
-    },
-    {
-      "id": "public-root-edge-9",
-      "type": "reference",
-      "source": "public-root-title",
-      "target": "port-gallery-root",
-      "sourcePort": "bottom",
-      "targetPort": "root",
-      "label": "entry",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
-      "data": {}
-    },
-    {
-      "id": "public-root-edge-10",
-      "type": "reference",
-      "source": "public-root-title",
-      "target": "contact-developer",
+      "source": "twilite-title",
+      "target": "twilite-type",
       "sourcePort": "root",
       "targetPort": "root",
-      "label": "entry",
+      "label": "declares type",
       "style": {},
       "data": {}
     },
     {
-      "id": "public-root-edge-title-type",
+      "id": "twilite-edge-type-view",
       "type": "reference",
-      "source": "public-root-title",
-      "target": "public-root-type",
-      "sourcePort": "root",
-      "targetPort": "right",
-      "label": "declares type",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
-      "data": {}
-    },
-    {
-      "id": "public-root-edge-type-view",
-      "type": "reference",
-      "source": "public-root-type",
-      "target": "public-root-view",
+      "source": "twilite-type",
+      "target": "twilite-view",
       "sourcePort": "root",
       "targetPort": "root",
       "label": "informs",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
+      "style": {},
       "data": {}
     },
     {
-      "id": "public-root-edge-title-view",
+      "id": "twilite-edge-title-view",
       "type": "reference",
-      "source": "public-root-title",
-      "target": "public-root-view",
+      "source": "twilite-title",
+      "target": "twilite-view",
       "sourcePort": "root",
-      "targetPort": "right",
+      "targetPort": "root",
       "label": "host view",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "twilite-edge-title-back",
+      "type": "reference",
+      "source": "twilite-title",
+      "target": "twilite-back",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "zone root",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "twilite-edge-title-developer",
+      "type": "reference",
+      "source": "twilite-title",
+      "target": "twilite-developer-area",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "developer area",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "twilite-edge-title-storage",
+      "type": "reference",
+      "source": "twilite-title",
+      "target": "twilite-storage-closet",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "storage closet",
+      "style": {},
       "data": {}
     }
   ],
   "clusters": [],
-  "scripts": [
-    {
-      "id": "script_1761684730975",
-      "name": "New Script",
-      "source": "// Write your script here\n// Available API:\n//   api.getNodes()\n//   api.getNode(id)\n//   api.getEdges()\n//   api.createNode(data)\n//   api.updateNode(id, patch)\n//   api.deleteNode(id)\n//   api.createEdge(data)\n//   api.deleteEdge(id)\n//   api.log(level, message)\n\nconst nodes = await api.getNodes();\nreturn { count: nodes.length };",
-      "tags": ""
-    },
-    {
-      "id": "script_1761684295367",
-      "name": "Mike",
-      "source": "console.clear();\nconst nodes = await api.getNodes();\nconsole.log(\"Mike\");\nreturn { count: nodes.length };",
-      "tags": ""
-    }
-  ]
+  "scripts": []
 }
