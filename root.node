@@ -1,150 +1,20 @@
 {
   "fileVersion": "1.0",
   "metadata": {
-    "title": "Twilite LLC",
-    "description": "Twilite LLC section root.",
-    "created": "2026-05-08T23:55:00.000Z",
-    "modified": "2026-05-09T00:04:00.000Z",
+    "title": "Untitled Project",
+    "description": "",
+    "created": "2026-05-10T20:48:40.797Z",
+    "modified": "2026-05-10T20:49:41.980Z",
     "author": "",
-    "tags": [
-      "twilite",
-      "section"
-    ],
+    "tags": [],
     "preferredViewer": "https://twilite.zone"
   },
   "nodes": [
     {
-      "id": "twilite-manifest",
-      "type": "manifest",
-      "label": "Manifest",
-      "position": {
-        "x": -464.6825299721638,
-        "y": -500
-      },
-      "width": 360,
-      "height": 220,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "identity": {
-          "graphId": "twilite-root",
-          "name": "Twilite LLC",
-          "version": "0.1.0",
-          "description": "Twilite LLC section root for company-facing workspaces and destinations.",
-          "createdAt": "2026-05-08T23:55:00.000Z",
-          "updatedAt": "2026-05-08T23:55:00.000Z"
-        },
-        "intent": {
-          "kind": "graph",
-          "scope": "local"
-        },
-        "dependencies": {
-          "nodeTypes": [
-            "manifest",
-            "legend",
-            "bridge",
-            "title",
-            "type-definition",
-            "ui-view",
-            "port"
-          ],
-          "portContracts": [
-            "core"
-          ],
-          "skills": [],
-          "schemaVersions": {
-            "nodes": ">=1.0.0",
-            "ports": ">=1.0.0"
-          },
-          "optional": []
-        },
-        "authority": {
-          "mutation": {
-            "allowCreate": true,
-            "allowUpdate": true,
-            "allowDelete": true,
-            "appendOnly": false
-          },
-          "actors": {
-            "humans": true,
-            "agents": true,
-            "tools": true
-          },
-          "styleAuthority": "descriptive",
-          "history": {
-            "rewriteAllowed": false,
-            "squashAllowed": false
-          }
-        },
-        "document": {
-          "url": ""
-        },
-        "settings": {
-          "theme": null,
-          "backgroundImage": null,
-          "defaultNodeColor": "#1976d2",
-          "defaultEdgeColor": "#666666",
-          "snapToGrid": false,
-          "gridSize": 20,
-          "edgeRouting": "auto",
-          "autoSave": false,
-          "expansion": {
-            "allowGraphEntry": true
-          },
-          "github": {
-            "repo": "",
-            "path": "",
-            "branch": "main",
-            "autoCreateRepo": true,
-            "repoVisibility": "private",
-            "seedOnCommit": false,
-            "enableGithubPages": false
-          }
-        },
-        "summaryNodeId": "",
-        "isRoot": false,
-        "root": false
-      }
-    },
-    {
-      "id": "twilite-legend",
-      "type": "legend",
-      "label": "Legend",
-      "position": {
-        "x": 15.31747002783618,
-        "y": -500
-      },
-      "width": 300,
-      "height": 220,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "entries": [
-          {
-            "label": "Title",
-            "color": "#f3efe6"
-          },
-          {
-            "label": "Type",
-            "color": "#e7f2ff"
-          },
-          {
-            "label": "View",
-            "color": "#f4f7ff"
-          },
-          {
-            "label": "Port",
-            "color": "#f2f4f7"
-          }
-        ],
-        "isRoot": false,
-        "root": false
-      }
-    },
-    {
       "id": "twilite-title-port",
       "type": "bridge",
       "label": "Title",
+      "root": false,
       "position": {
         "x": 435.3174700278362,
         "y": -500
@@ -200,6 +70,7 @@
       "id": "twilite-type-port",
       "type": "bridge",
       "label": "Type Definition",
+      "root": false,
       "position": {
         "x": -464.6825299721638,
         "y": -160
@@ -255,6 +126,7 @@
       "id": "twilite-view-port",
       "type": "bridge",
       "label": "View",
+      "root": false,
       "position": {
         "x": -84.68252997216382,
         "y": -160
@@ -310,6 +182,7 @@
       "id": "twilite-back",
       "type": "port",
       "label": "Back to Zone",
+      "root": false,
       "position": {
         "x": 295.3174700278362,
         "y": -160
@@ -337,6 +210,7 @@
       "id": "twilite-title",
       "type": "title",
       "label": "Title",
+      "root": false,
       "position": {
         "x": 15.31747002783618,
         "y": 200
@@ -469,6 +343,7 @@
       "id": "twilite-type",
       "type": "type-definition",
       "label": "Type",
+      "root": false,
       "position": {
         "x": 555.3174700278362,
         "y": 200
@@ -550,6 +425,7 @@
       "id": "twilite-view",
       "type": "ui-view",
       "label": "View",
+      "root": false,
       "position": {
         "x": -464.6825299721638,
         "y": 560
@@ -684,6 +560,7 @@
       "id": "twilite-developer-area",
       "type": "port",
       "label": "Developer Area",
+      "root": false,
       "position": {
         "x": 15.31747002783618,
         "y": 930
@@ -711,6 +588,7 @@
       "id": "twilite-storage-closet",
       "type": "port",
       "label": "Storage Closet",
+      "root": false,
       "position": {
         "x": 555.3174700278362,
         "y": 930
@@ -732,6 +610,237 @@
         "sourcePayload": "node.web.summary",
         "isRoot": false,
         "root": false
+      }
+    },
+    {
+      "id": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
+      "type": "declaration",
+      "label": "Declaration",
+      "root": false,
+      "position": {
+        "x": -550.6825299721638,
+        "y": -560.5
+      },
+      "width": 360,
+      "height": 220,
+      "ports": [
+        {
+          "id": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "top",
+          "label": "top",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "bottom",
+          "label": "bottom",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "position": {
+            "side": "bottom",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "left",
+          "label": "left",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "position": {
+            "side": "left",
+            "offset": 0.2
+          }
+        },
+        {
+          "id": "right",
+          "label": "right",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "root",
+          "label": "root",
+          "type": "value"
+        },
+        {
+          "key": "top",
+          "label": "top",
+          "type": "value"
+        },
+        {
+          "key": "bottom",
+          "label": "bottom",
+          "type": "value"
+        },
+        {
+          "key": "left",
+          "label": "left",
+          "type": "value"
+        },
+        {
+          "key": "right",
+          "label": "right",
+          "type": "value"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "root",
+          "label": "root",
+          "type": "value"
+        },
+        {
+          "key": "top",
+          "label": "top",
+          "type": "value"
+        },
+        {
+          "key": "bottom",
+          "label": "bottom",
+          "type": "value"
+        },
+        {
+          "key": "left",
+          "label": "left",
+          "type": "value"
+        },
+        {
+          "key": "right",
+          "label": "right",
+          "type": "value"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "22014b3f-b483-42ae-aa90-037baf081332",
+          "name": "Untitled Graph",
+          "version": "0.1.0",
+          "description": "",
+          "createdAt": "2026-05-10T20:49:15.627Z",
+          "updatedAt": "2026-05-10T20:49:15.627Z"
+        },
+        "intent": {
+          "kind": "graph",
+          "scope": "mixed"
+        },
+        "dependencies": {
+          "nodeTypes": [
+            "declaration",
+            "default",
+            "markdown"
+          ],
+          "portContracts": [
+            "core"
+          ],
+          "skills": [],
+          "schemaVersions": {
+            "nodes": ">=1.0.0",
+            "ports": ">=1.0.0"
+          },
+          "optional": []
+        },
+        "authority": {
+          "mutation": {
+            "allowCreate": true,
+            "allowUpdate": true,
+            "allowDelete": true,
+            "appendOnly": false
+          },
+          "actors": {
+            "humans": true,
+            "agents": true,
+            "tools": true
+          },
+          "styleAuthority": "descriptive",
+          "history": {
+            "rewriteAllowed": false,
+            "squashAllowed": false
+          }
+        },
+        "document": {
+          "url": ""
+        },
+        "settings": {
+          "theme": null,
+          "backgroundImage": null,
+          "uiDensity": "comfortable",
+          "defaultNodeColor": "#1976d2",
+          "defaultEdgeColor": "#666666",
+          "snapToGrid": false,
+          "gridSize": 20,
+          "edgeRouting": "auto",
+          "layout": {
+            "mode": "autoOnMissingPositions",
+            "defaultLayout": "layered",
+            "direction": "DOWN",
+            "edgeLaneGapPx": 10,
+            "serpentine": {
+              "maxPerRow": 6
+            },
+            "cycleFallback": {
+              "enabled": true
+            },
+            "elk": {
+              "algorithm": "fixed",
+              "edgeRouting": "ORTHOGONAL",
+              "portConstraints": "FIXED_SIDE",
+              "nodeSpacing": 120,
+              "layeredEdgeSpacing": 80
+            }
+          },
+          "autoSave": false
+        },
+        "name": "Graph Declaration",
+        "declaresKind": "graph",
+        "purpose": "Declare the primary authority, settings, and summary surface for this graph.",
+        "declaration": {
+          "kind": "graph",
+          "graphViewRole": "authoring",
+          "targetMode": "artifact",
+          "artifactKind": "graph"
+        },
+        "_classBinding": {
+          "key": "declaration",
+          "sourceRef": "/library/classes/nodes/declaration.node-class.node",
+          "ref": "/library/classes/nodes/declaration.node-class.node"
+        },
+        "_bridge": {
+          "classKey": "declaration",
+          "classRef": "/library/classes/nodes/declaration.node-class.node"
+        },
+        "definitionKey": "declaration",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": "",
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "create",
+          "updatedAt": 1778446155698,
+          "reason": "node-create"
+        }
       }
     }
   ],
@@ -804,5 +913,44 @@
     }
   ],
   "clusters": [],
+  "settings": {
+    "theme": null,
+    "backgroundImage": null,
+    "defaultNodeColor": "#1976d2",
+    "defaultEdgeColor": "#666666",
+    "snapToGrid": false,
+    "gridSize": 20,
+    "edgeRouting": "auto",
+    "layout": {
+      "mode": "autoOnMissingPositions",
+      "defaultLayout": "layered",
+      "direction": "DOWN",
+      "edgeLaneGapPx": 10,
+      "serpentine": {
+        "maxPerRow": 6
+      },
+      "cycleFallback": {
+        "enabled": true
+      },
+      "elk": {
+        "algorithm": "fixed",
+        "edgeRouting": "ORTHOGONAL",
+        "portConstraints": "FIXED_SIDE",
+        "nodeSpacing": 120,
+        "layeredEdgeSpacing": 80
+      }
+    },
+    "github": {
+      "repo": "twilitellc/public",
+      "path": "root.node",
+      "branch": "main",
+      "autoCreateRepo": true,
+      "repoVisibility": "private",
+      "seedOnCommit": false,
+      "enableGithubPages": false,
+      "installationId": ""
+    },
+    "autoSave": false
+  },
   "scripts": []
 }
