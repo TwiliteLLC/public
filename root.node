@@ -613,6 +613,62 @@
       }
     },
     {
+      "id": "twilite-business-affairs",
+      "type": "port",
+      "label": "Business Affairs",
+      "root": false,
+      "position": {
+        "x": 1095.3174700278362,
+        "y": 930
+      },
+      "width": 360,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "memo": "Open the Business Affairs section.",
+        "intent": "external",
+        "target": {
+          "endpoint": "github://twilitellc/public/business-affairs/root.node:root",
+          "mode": "navigate",
+          "label": "Open"
+        },
+        "sourceRef": "github://twilitellc/public/business-affairs/root.node",
+        "sourceNodeId": "business-affairs-view",
+        "sourcePayload": "node.web.summary",
+        "isRoot": false,
+        "root": false
+      }
+    },
+    {
+      "id": "twilite-products",
+      "type": "port",
+      "label": "Products",
+      "root": false,
+      "position": {
+        "x": 1635.3174700278362,
+        "y": 930
+      },
+      "width": 360,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "memo": "Open the Products section.",
+        "intent": "external",
+        "target": {
+          "endpoint": "github://twilitellc/public/products/root.node:root",
+          "mode": "navigate",
+          "label": "Open"
+        },
+        "sourceRef": "github://twilitellc/public/products/root.node",
+        "sourceNodeId": "products-view",
+        "sourcePayload": "node.web.summary",
+        "isRoot": false,
+        "root": false
+      }
+    },
+    {
       "id": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
       "type": "declaration",
       "label": "Declaration",
@@ -1061,6 +1117,28 @@
       "sourcePort": "root",
       "targetPort": "root",
       "label": "storage closet",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "twilite-edge-title-business-affairs",
+      "type": "reference",
+      "source": "twilite-title",
+      "target": "twilite-business-affairs",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "business affairs",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "twilite-edge-title-products",
+      "type": "reference",
+      "source": "twilite-title",
+      "target": "twilite-products",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "products",
       "style": {},
       "data": {}
     }

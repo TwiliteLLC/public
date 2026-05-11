@@ -1,0 +1,595 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "title": "Products",
+    "description": "Public section root for product lines, offerings, and product-facing destinations.",
+    "created": "2026-05-10T00:00:00.000Z",
+    "modified": "2026-05-10T00:00:00.000Z",
+    "author": "",
+    "tags": [
+      "products",
+      "section",
+      "ttv"
+    ],
+    "preferredViewer": "https://twilite.zone"
+  },
+  "nodes": [
+    {
+      "id": "products-declaration",
+      "type": "declaration",
+      "label": "Declaration",
+      "position": {
+        "x": -560,
+        "y": -560
+      },
+      "width": 360,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "ports": [
+        {
+          "id": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "top",
+          "label": "top",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "bottom",
+          "label": "bottom",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "position": {
+            "side": "bottom",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "left",
+          "label": "left",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "position": {
+            "side": "left",
+            "offset": 0.2
+          }
+        },
+        {
+          "id": "right",
+          "label": "right",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "root",
+          "label": "root",
+          "type": "value"
+        },
+        {
+          "key": "top",
+          "label": "top",
+          "type": "value"
+        },
+        {
+          "key": "bottom",
+          "label": "bottom",
+          "type": "value"
+        },
+        {
+          "key": "left",
+          "label": "left",
+          "type": "value"
+        },
+        {
+          "key": "right",
+          "label": "right",
+          "type": "value"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "root",
+          "label": "root",
+          "type": "value"
+        },
+        {
+          "key": "top",
+          "label": "top",
+          "type": "value"
+        },
+        {
+          "key": "bottom",
+          "label": "bottom",
+          "type": "value"
+        },
+        {
+          "key": "left",
+          "label": "left",
+          "type": "value"
+        },
+        {
+          "key": "right",
+          "label": "right",
+          "type": "value"
+        }
+      ],
+      "data": {
+        "identity": {
+          "graphId": "products-root",
+          "name": "Products",
+          "version": "0.1.0",
+          "description": "Public section root for products.",
+          "createdAt": "2026-05-10T00:00:00.000Z",
+          "updatedAt": "2026-05-10T00:00:00.000Z"
+        },
+        "intent": {
+          "kind": "graph",
+          "scope": "local"
+        },
+        "dependencies": {
+          "nodeTypes": [
+            "declaration",
+            "title",
+            "type-definition",
+            "ui-view",
+            "port"
+          ],
+          "portContracts": [
+            "core"
+          ],
+          "skills": [],
+          "schemaVersions": {
+            "nodes": ">=1.0.0",
+            "ports": ">=1.0.0"
+          },
+          "optional": []
+        },
+        "authority": {
+          "mutation": {
+            "allowCreate": true,
+            "allowUpdate": true,
+            "allowDelete": true,
+            "appendOnly": false
+          },
+          "actors": {
+            "humans": true,
+            "agents": true,
+            "tools": true
+          },
+          "styleAuthority": "descriptive",
+          "history": {
+            "rewriteAllowed": false,
+            "squashAllowed": false
+          }
+        },
+        "document": {
+          "url": ""
+        },
+        "settings": {
+          "theme": null,
+          "backgroundImage": null,
+          "uiDensity": "comfortable",
+          "defaultNodeColor": "#1976d2",
+          "defaultEdgeColor": "#666666",
+          "snapToGrid": false,
+          "gridSize": 20,
+          "edgeRouting": "auto",
+          "layout": {
+            "mode": "autoOnMissingPositions",
+            "defaultLayout": "layered",
+            "direction": "DOWN",
+            "edgeLaneGapPx": 10,
+            "serpentine": {
+              "maxPerRow": 6
+            },
+            "cycleFallback": {
+              "enabled": true
+            },
+            "elk": {
+              "algorithm": "fixed",
+              "edgeRouting": "ORTHOGONAL",
+              "portConstraints": "FIXED_SIDE",
+              "nodeSpacing": 120,
+              "layeredEdgeSpacing": 80
+            }
+          },
+          "autoSave": false
+        },
+        "summaryNodeId": "products-view",
+        "name": "Products Declaration",
+        "declaresKind": "graph",
+        "purpose": "Declare the Products public section root.",
+        "primaryNodeViewId": "products-view",
+        "portViewNodeId": "products-view",
+        "declaration": {
+          "kind": "graph",
+          "primaryNodeViewId": "products-view",
+          "portViewNodeId": "products-view",
+          "defaultSurfaceId": "port",
+          "surfaces": [
+            {
+              "id": "port",
+              "kind": "port",
+              "label": "Port",
+              "memo": "Default host-facing destination surface.",
+              "viewNodeId": "products-view",
+              "exposes": {
+                "views": {
+                  "mode": "allow"
+                },
+                "declarations": {
+                  "mode": "allow"
+                }
+              }
+            }
+          ],
+          "graphViewRole": "authoring",
+          "targetMode": "artifact",
+          "artifactKind": "graph"
+        },
+        "_classBinding": {
+          "key": "declaration",
+          "sourceRef": "/library/classes/nodes/declaration.node-class.node",
+          "ref": "/library/classes/nodes/declaration.node-class.node"
+        },
+        "_bridge": {
+          "classKey": "declaration",
+          "classRef": "/library/classes/nodes/declaration.node-class.node"
+        },
+        "definitionKey": "declaration"
+      }
+    },
+    {
+      "id": "products-title-port",
+      "type": "bridge",
+      "label": "Title",
+      "position": {
+        "x": 440,
+        "y": -500
+      },
+      "width": 260,
+      "height": 120,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "target": {
+          "mode": "bridge",
+          "ref": "/library/classes/nodes/template-structure/title.node-class.node",
+          "kind": "node-class",
+          "resourceKind": "node-class",
+          "scope": "focused-graph",
+          "grants": [
+            "create"
+          ],
+          "label": "Title",
+          "key": "title"
+        },
+        "resourceKind": "node-class",
+        "scope": "focused-graph",
+        "grants": [
+          "create"
+        ],
+        "authority": "bridge",
+        "bridge": {
+          "ref": "/library/classes/nodes/template-structure/title.node-class.node",
+          "resourceKind": "node-class",
+          "scope": "focused-graph",
+          "grants": [
+            "create"
+          ]
+        },
+        "_classBinding": {
+          "key": "title",
+          "sourceRef": "/library/classes/nodes/template-structure/title.node-class.node"
+        },
+        "_bridge": {
+          "sourceRef": "/library/classes/nodes/template-structure/title.node-class.node",
+          "entryPort": "root",
+          "kind": "node-class",
+          "targetKind": "node-class",
+          "classKey": "title",
+          "classRef": "/library/classes/nodes/template-structure/title.node-class.node"
+        }
+      }
+    },
+    {
+      "id": "products-type-port",
+      "type": "bridge",
+      "label": "Type Definition",
+      "position": {
+        "x": -460,
+        "y": -160
+      },
+      "width": 260,
+      "height": 120,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "target": {
+          "mode": "bridge",
+          "ref": "/library/classes/nodes/type-definition/type-definition.node-class.node",
+          "kind": "node-class",
+          "resourceKind": "node-class",
+          "scope": "focused-graph",
+          "grants": [
+            "create"
+          ],
+          "label": "Type Definition",
+          "key": "type-definition"
+        },
+        "resourceKind": "node-class",
+        "scope": "focused-graph",
+        "grants": [
+          "create"
+        ],
+        "authority": "bridge",
+        "bridge": {
+          "ref": "/library/classes/nodes/type-definition/type-definition.node-class.node",
+          "resourceKind": "node-class",
+          "scope": "focused-graph",
+          "grants": [
+            "create"
+          ]
+        },
+        "_classBinding": {
+          "key": "type-definition",
+          "sourceRef": "/library/classes/nodes/type-definition/type-definition.node-class.node"
+        },
+        "_bridge": {
+          "sourceRef": "/library/classes/nodes/type-definition/type-definition.node-class.node",
+          "entryPort": "root",
+          "kind": "node-class",
+          "targetKind": "node-class",
+          "classKey": "type-definition",
+          "classRef": "/library/classes/nodes/type-definition/type-definition.node-class.node"
+        }
+      }
+    },
+    {
+      "id": "products-view-port",
+      "type": "bridge",
+      "label": "View",
+      "position": {
+        "x": -80,
+        "y": -160
+      },
+      "width": 260,
+      "height": 120,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "target": {
+          "mode": "bridge",
+          "ref": "/library/classes/nodes/ui-interaction/ui-view.node-class.node",
+          "kind": "node-class",
+          "resourceKind": "node-class",
+          "scope": "focused-graph",
+          "grants": [
+            "create"
+          ],
+          "label": "View",
+          "key": "ui-view"
+        },
+        "resourceKind": "node-class",
+        "scope": "focused-graph",
+        "grants": [
+          "create"
+        ],
+        "authority": "bridge",
+        "bridge": {
+          "ref": "/library/classes/nodes/ui-interaction/ui-view.node-class.node",
+          "resourceKind": "node-class",
+          "scope": "focused-graph",
+          "grants": [
+            "create"
+          ]
+        },
+        "_classBinding": {
+          "key": "ui-view",
+          "sourceRef": "/library/classes/nodes/ui-interaction/ui-view.node-class.node"
+        },
+        "_bridge": {
+          "sourceRef": "/library/classes/nodes/ui-interaction/ui-view.node-class.node",
+          "entryPort": "root",
+          "kind": "node-class",
+          "targetKind": "node-class",
+          "classKey": "ui-view",
+          "classRef": "/library/classes/nodes/ui-interaction/ui-view.node-class.node"
+        }
+      }
+    },
+    {
+      "id": "products-back",
+      "type": "port",
+      "label": "Back to Twilite LLC",
+      "position": {
+        "x": 300,
+        "y": -160
+      },
+      "width": 360,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "memo": "Return to the Twilite LLC public root.",
+        "intent": "external",
+        "target": {
+          "endpoint": "github://twilitellc/public/root.node:root",
+          "mode": "navigate",
+          "label": "Open"
+        },
+        "sourceRef": "github://twilitellc/public/root.node",
+        "sourceNodeId": "twilite-view",
+        "sourcePayload": "node.web.summary"
+      }
+    },
+    {
+      "id": "products-title",
+      "type": "title",
+      "label": "Title",
+      "position": {
+        "x": 20,
+        "y": 200
+      },
+      "width": 420,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "Products",
+        "subtitle": "Public section for product lines, offerings, launches, and product-facing destinations.",
+        "intent": "section",
+        "status": "active",
+        "_classBinding": {
+          "key": "title",
+          "sourceRef": "/library/classes/nodes/template-structure/title.node-class.node",
+          "ref": "/library/classes/nodes/template-structure/title.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "products-title-port",
+          "sourceBridgeLabel": "Title",
+          "targetKind": "node-class",
+          "classKey": "title",
+          "classRef": "/library/classes/nodes/template-structure/title.node-class.node"
+        },
+        "definitionKey": "title"
+      }
+    },
+    {
+      "id": "products-type",
+      "type": "type-definition",
+      "label": "Type",
+      "position": {
+        "x": 560,
+        "y": 200
+      },
+      "width": 360,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "name": "Products",
+        "key": "products",
+        "classRef": "github://twilitellc/public/products/root.node",
+        "meaning": "Shared destination surface for product lines and offerings.",
+        "description": "Section root for products graphs and product-facing destinations.",
+        "category": "section",
+        "status": "active",
+        "_classBinding": {
+          "key": "type-definition",
+          "sourceRef": "/library/classes/nodes/type-definition/type-definition.node-class.node",
+          "ref": "/library/classes/nodes/type-definition/type-definition.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "products-type-port",
+          "sourceBridgeLabel": "Type Definition",
+          "targetKind": "node-class",
+          "classKey": "type-definition",
+          "classRef": "/library/classes/nodes/type-definition/type-definition.node-class.node"
+        },
+        "definitionKey": "type-definition"
+      }
+    },
+    {
+      "id": "products-view",
+      "type": "ui-view",
+      "label": "View",
+      "position": {
+        "x": -460,
+        "y": 560
+      },
+      "width": 420,
+      "height": 280,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "Products",
+        "purpose": "Shared host-facing view for the Products section.",
+        "audience": "Public",
+        "status": "active",
+        "viewRole": "port",
+        "titleSourceNodeId": "products-title",
+        "typeSourceNodeId": "products-type",
+        "svg": "<svg viewBox=\"0 0 220 160\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\"><rect x=\"16\" y=\"18\" width=\"188\" height=\"124\" rx=\"22\" fill=\"#f8fbff\" stroke=\"#24364b\" stroke-width=\"5\"/><rect x=\"34\" y=\"36\" width=\"60\" height=\"12\" rx=\"6\" fill=\"#93c5fd\" opacity=\"0.9\"/><rect x=\"100\" y=\"36\" width=\"84\" height=\"12\" rx=\"6\" fill=\"#fde68a\" opacity=\"0.92\"/><rect x=\"34\" y=\"60\" width=\"152\" height=\"18\" rx=\"8\" fill=\"#e2e8f0\"/><rect x=\"34\" y=\"88\" width=\"46\" height=\"34\" rx=\"10\" fill=\"#dbeafe\" stroke=\"#3b82f6\" stroke-width=\"3\"/><rect x=\"88\" y=\"88\" width=\"46\" height=\"34\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#22c55e\" stroke-width=\"3\"/><rect x=\"142\" y=\"88\" width=\"44\" height=\"34\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"3\"/><rect x=\"34\" y=\"130\" width=\"96\" height=\"10\" rx=\"5\" fill=\"#64748b\" opacity=\"0.8\"/></svg>",
+        "_classBinding": {
+          "key": "ui-view",
+          "sourceRef": "/library/classes/nodes/ui-interaction/ui-view.node-class.node",
+          "ref": "/library/classes/nodes/ui-interaction/ui-view.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "products-view-port",
+          "sourceBridgeLabel": "View",
+          "targetKind": "node-class",
+          "classKey": "ui-view",
+          "classRef": "/library/classes/nodes/ui-interaction/ui-view.node-class.node"
+        },
+        "definitionKey": "ui-view"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "products-edge-title-type",
+      "type": "reference",
+      "source": "products-title",
+      "target": "products-type",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "declares type",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "products-edge-type-view",
+      "type": "reference",
+      "source": "products-type",
+      "target": "products-view",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "informs",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "products-edge-title-view",
+      "type": "reference",
+      "source": "products-title",
+      "target": "products-view",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "host view",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "products-edge-title-back",
+      "type": "reference",
+      "source": "products-title",
+      "target": "products-back",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "twilite llc root",
+      "style": {},
+      "data": {}
+    }
+  ]
+}
