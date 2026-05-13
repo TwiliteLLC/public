@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-05-13T18:33:14.064Z",
-    "modified": "2026-05-13T19:19:00.548Z",
+    "created": "2026-05-13T23:06:10.629Z",
+    "modified": "2026-05-13T23:08:27.632Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -786,8 +786,8 @@
       "label": "View",
       "root": false,
       "position": {
-        "x": -313.33333333333337,
-        "y": 1160
+        "x": -534.6666463216146,
+        "y": 1176.6666870117188
       },
       "width": 460,
       "height": 300,
@@ -919,10 +919,10 @@
         "definitionKey": "ui-view",
         "_placement": {
           "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778698422220,
-          "reason": "auto-layout"
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1778713673770,
+          "reason": "node-drag"
         }
       }
     },
@@ -2390,17 +2390,14 @@
       }
     },
     "github": {
-      "repo": "TwiliteLLC/public",
+      "repo": "twilitellc/public",
       "path": "products/twilite/root.node",
       "branch": "main",
       "autoCreateRepo": true,
       "repoVisibility": "private",
       "seedOnCommit": false,
       "enableGithubPages": false,
-      "installationId": "117640936",
-      "defaultSaveSlot": "work",
-      "visibilityHint": "private",
-      "saveMode": "github"
+      "installationId": ""
     },
     "autoSave": false
   },
