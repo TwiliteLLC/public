@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-05-10T20:48:40.797Z",
-    "modified": "2026-05-10T20:51:38.368Z",
+    "created": "2026-05-13T16:37:32.501Z",
+    "modified": "2026-05-13T17:12:14.351Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -16,8 +16,8 @@
       "label": "Title",
       "root": false,
       "position": {
-        "x": 435.3174700278362,
-        "y": -500
+        "x": 182.31747002783618,
+        "y": -605.75
       },
       "width": 260,
       "height": 120,
@@ -63,7 +63,14 @@
           "classRef": "/library/classes/nodes/template-structure/title.node-class.node"
         },
         "isRoot": false,
-        "root": false
+        "root": false,
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
+        }
       }
     },
     {
@@ -72,8 +79,8 @@
       "label": "Type Definition",
       "root": false,
       "position": {
-        "x": -464.6825299721638,
-        "y": -160
+        "x": 462.3174700278362,
+        "y": -605.75
       },
       "width": 260,
       "height": 120,
@@ -119,7 +126,14 @@
           "classRef": "/library/classes/nodes/type-definition/type-definition.node-class.node"
         },
         "isRoot": false,
-        "root": false
+        "root": false,
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
+        }
       }
     },
     {
@@ -128,8 +142,8 @@
       "label": "View",
       "root": false,
       "position": {
-        "x": -84.68252997216382,
-        "y": -160
+        "x": 742.3174700278362,
+        "y": -605.75
       },
       "width": 260,
       "height": 120,
@@ -175,7 +189,14 @@
           "classRef": "/library/classes/nodes/ui-interaction/ui-view.node-class.node"
         },
         "isRoot": false,
-        "root": false
+        "root": false,
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
+        }
       }
     },
     {
@@ -184,8 +205,8 @@
       "label": "Back to Zone",
       "root": false,
       "position": {
-        "x": 295.3174700278362,
-        "y": -160
+        "x": 562.3174700278362,
+        "y": -365.75
       },
       "width": 360,
       "height": 240,
@@ -203,7 +224,14 @@
         "sourceNodeId": "public-root-view",
         "sourcePayload": "node.web.summary",
         "isRoot": false,
-        "root": false
+        "root": false,
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
+        }
       }
     },
     {
@@ -212,8 +240,8 @@
       "label": "Title",
       "root": false,
       "position": {
-        "x": 15.31747002783618,
-        "y": 200
+        "x": -57.68252997216382,
+        "y": -277.17857142857144
       },
       "width": 420,
       "height": 220,
@@ -336,7 +364,14 @@
         },
         "definitionKey": "title",
         "isRoot": true,
-        "root": true
+        "root": true,
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
+        }
       }
     },
     {
@@ -345,8 +380,8 @@
       "label": "Type",
       "root": false,
       "position": {
-        "x": 555.3174700278362,
-        "y": 200
+        "x": 562.3174700278362,
+        "y": 975.25
       },
       "width": 360,
       "height": 240,
@@ -418,7 +453,14 @@
         },
         "definitionKey": "type-definition",
         "isRoot": false,
-        "root": false
+        "root": false,
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
+        }
       }
     },
     {
@@ -427,8 +469,8 @@
       "label": "View",
       "root": false,
       "position": {
-        "x": -464.6825299721638,
-        "y": 560
+        "x": 1082.3174700278362,
+        "y": 510.9166666666665
       },
       "width": 420,
       "height": 280,
@@ -553,7 +595,14 @@
         },
         "definitionKey": "ui-view",
         "isRoot": false,
-        "root": false
+        "root": false,
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
+        }
       }
     },
     {
@@ -562,8 +611,8 @@
       "label": "Developer Area",
       "root": false,
       "position": {
-        "x": 15.31747002783618,
-        "y": 930
+        "x": 562.3174700278362,
+        "y": 615.25
       },
       "width": 360,
       "height": 240,
@@ -581,7 +630,14 @@
         "sourceNodeId": "developer-area-view",
         "sourcePayload": "node.web.summary",
         "isRoot": false,
-        "root": false
+        "root": false,
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
+        }
       }
     },
     {
@@ -590,8 +646,8 @@
       "label": "Business Affairs",
       "root": false,
       "position": {
-        "x": 1095.3174700278362,
-        "y": 930
+        "x": 562.3174700278362,
+        "y": 354.25
       },
       "width": 360,
       "height": 240,
@@ -609,7 +665,14 @@
         "sourceNodeId": "business-affairs-view",
         "sourcePayload": "node.web.summary",
         "isRoot": false,
-        "root": false
+        "root": false,
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
+        }
       }
     },
     {
@@ -618,8 +681,8 @@
       "label": "Products",
       "root": false,
       "position": {
-        "x": 1635.3174700278362,
-        "y": 930
+        "x": 562.3174700278362,
+        "y": -5.75
       },
       "width": 360,
       "height": 240,
@@ -637,7 +700,14 @@
         "sourceNodeId": "products-view",
         "sourcePayload": "node.web.summary",
         "isRoot": false,
-        "root": false
+        "root": false,
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
+        }
       }
     },
     {
@@ -646,8 +716,8 @@
       "label": "Declaration",
       "root": false,
       "position": {
-        "x": -550.6825299721638,
-        "y": -560.5
+        "x": 1022.3174700278362,
+        "y": -605.75
       },
       "width": 360,
       "height": 220,
@@ -821,7 +891,7 @@
           "layout": {
             "mode": "autoOnMissingPositions",
             "defaultLayout": "layered",
-            "direction": "DOWN",
+            "direction": "RIGHT",
             "edgeLaneGapPx": 10,
             "serpentine": {
               "maxPerRow": 6
@@ -865,9 +935,9 @@
         "_placement": {
           "version": 1,
           "state": "auto-placed",
-          "source": "create",
-          "updatedAt": 1778446155698,
-          "reason": "node-create"
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
         }
       }
     },
@@ -877,8 +947,8 @@
       "label": "Port",
       "root": false,
       "position": {
-        "x": 696.3174700278362,
-        "y": 519.5
+        "x": -57.68252997216382,
+        "y": -605.75
       },
       "width": 220,
       "height": 140,
@@ -1014,9 +1084,9 @@
         "_placement": {
           "version": 1,
           "state": "auto-placed",
-          "source": "create",
-          "updatedAt": 1778446262703,
-          "reason": "node-create"
+          "source": "layout",
+          "updatedAt": 1778692305605,
+          "reason": "auto-layout"
         },
         "security": "prompt",
         "sourceRef": "/root.node",
@@ -1116,7 +1186,7 @@
     "layout": {
       "mode": "autoOnMissingPositions",
       "defaultLayout": "layered",
-      "direction": "DOWN",
+      "direction": "RIGHT",
       "edgeLaneGapPx": 10,
       "serpentine": {
         "maxPerRow": 6
@@ -1140,7 +1210,7 @@
       "repoVisibility": "private",
       "seedOnCommit": false,
       "enableGithubPages": false,
-      "installationId": "117640936"
+      "installationId": ""
     },
     "autoSave": false
   },
