@@ -544,6 +544,31 @@
         },
         "definitionKey": "ui-view"
       }
+    },
+    {
+      "id": "products-twilite-product",
+      "type": "port",
+      "label": "Twilite",
+      "position": {
+        "x": -40,
+        "y": 280
+      },
+      "width": 360,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "memo": "Open the Twilite product page graph.",
+        "intent": "external",
+        "target": {
+          "endpoint": "github://twilitellc/public/products/twilite/root.node:root",
+          "mode": "navigate",
+          "label": "Open"
+        },
+        "sourceRef": "github://twilitellc/public/products/twilite/root.node",
+        "sourceNodeId": "twilite-product-view",
+        "sourcePayload": "node.web.summary"
+      }
     }
   ],
   "edges": [
@@ -588,6 +613,17 @@
       "sourcePort": "root",
       "targetPort": "root",
       "label": "twilite llc root",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "products-edge-title-twilite",
+      "type": "reference",
+      "source": "products-title",
+      "target": "products-twilite-product",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "twilite",
       "style": {},
       "data": {}
     }
