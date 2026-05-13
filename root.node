@@ -585,34 +585,6 @@
       }
     },
     {
-      "id": "twilite-storage-closet",
-      "type": "port",
-      "label": "Storage Closet",
-      "root": false,
-      "position": {
-        "x": 555.3174700278362,
-        "y": 930
-      },
-      "width": 360,
-      "height": 240,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "memo": "Open the Storage Closet section.",
-        "intent": "external",
-        "target": {
-          "endpoint": "github://twilite-zone/public/twilite/storage-closet/root.node:root",
-          "mode": "navigate",
-          "label": "Open"
-        },
-        "sourceRef": "github://twilite-zone/public/twilite/storage-closet/root.node",
-        "sourceNodeId": "storage-closet-view",
-        "sourcePayload": "node.web.summary",
-        "isRoot": false,
-        "root": false
-      }
-    },
-    {
       "id": "twilite-business-affairs",
       "type": "port",
       "label": "Business Affairs",
@@ -1106,17 +1078,6 @@
       "sourcePort": "root",
       "targetPort": "root",
       "label": "developer area",
-      "style": {},
-      "data": {}
-    },
-    {
-      "id": "twilite-edge-title-storage",
-      "type": "reference",
-      "source": "twilite-title",
-      "target": "twilite-storage-closet",
-      "sourcePort": "root",
-      "targetPort": "root",
-      "label": "storage closet",
       "style": {},
       "data": {}
     },
