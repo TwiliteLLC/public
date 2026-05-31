@@ -201,7 +201,7 @@
     },
     {
       "id": "twilite-back",
-      "type": "port",
+      "type": "portal",
       "label": "Back to Zone",
       "root": false,
       "position": {
@@ -475,8 +475,8 @@
     },
     {
       "id": "twilite-view",
-      "type": "ui-view",
-      "label": "View",
+      "type": "port",
+      "label": "Port",
       "root": false,
       "position": {
         "x": 1082.3174700278362,
@@ -612,12 +612,13 @@
           "source": "layout",
           "updatedAt": 1778692305605,
           "reason": "auto-layout"
-        }
+        },
+        "viewRole": "summary"
       }
     },
     {
       "id": "twilite-developer-area",
-      "type": "port",
+      "type": "portal",
       "label": "Developer Area",
       "root": false,
       "position": {
@@ -652,7 +653,7 @@
     },
     {
       "id": "twilite-business-affairs",
-      "type": "port",
+      "type": "portal",
       "label": "Business Affairs",
       "root": false,
       "position": {
@@ -687,7 +688,7 @@
     },
     {
       "id": "twilite-products",
-      "type": "port",
+      "type": "portal",
       "label": "Products",
       "root": false,
       "position": {
@@ -926,7 +927,25 @@
           "kind": "graph",
           "graphViewRole": "authoring",
           "targetMode": "artifact",
-          "artifactKind": "graph"
+          "artifactKind": "graph",
+          "surfaces": [
+            {
+              "id": "port",
+              "kind": "port",
+              "label": "Port",
+              "viewNodeId": "twilite-view",
+              "memo": "Default host-facing surface for this graph.",
+              "exposes": {
+                "views": {
+                  "mode": "allow"
+                },
+                "declarations": {
+                  "mode": "allow"
+                }
+              }
+            }
+          ],
+          "defaultSurfaceId": "port"
         },
         "_classBinding": {
           "key": "declaration",
@@ -953,7 +972,7 @@
     },
     {
       "id": "e4ec3560-efef-4bab-b851-f0a7c6d515a8",
-      "type": "port",
+      "type": "portal",
       "label": "Port",
       "root": false,
       "position": {
