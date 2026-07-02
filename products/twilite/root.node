@@ -7,7 +7,7 @@
     "version": "0.1.0",
     "kind": "graph",
     "created": "2026-07-02T18:18:10.467Z",
-    "modified": "2026-07-02T18:58:56.950Z",
+    "modified": "2026-07-02T18:59:29.859Z",
     "author": "",
     "tags": [
       "graph"
@@ -1467,8 +1467,8 @@
         "x": -790.2550402574916,
         "y": 116.33722854838058
       },
-      "width": 640,
-      "height": 340,
+      "width": 713.9589117137554,
+      "height": 435.9466962773042,
       "handles": [
         {
           "id": "root",
@@ -1624,7 +1624,7 @@
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1783018061193,
+          "updatedAt": 1783018765374,
           "reason": "node-drag"
         }
       }
