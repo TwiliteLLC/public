@@ -4,7 +4,7 @@
     "title": "Twilite Product Story",
     "description": "Public-facing product story graph for Twilite.",
     "created": "2026-05-13T23:06:10.629Z",
-    "modified": "2026-07-02T19:24:00.000Z",
+    "modified": "2026-07-02T21:20:00.000Z",
     "author": "",
     "tags": [
       "product",
@@ -139,9 +139,9 @@
           "graphId": "twilite-product-root",
           "name": "Twilite Product Story",
           "version": "0.1.0",
-          "description": "Template-driven public-facing landing graph for explaining Twilite as a product and platform.",
+          "description": "Branded public-facing landing graph for explaining Twilite as a product and platform.",
           "createdAt": "2026-05-13T00:00:00.000Z",
-          "updatedAt": "2026-07-02T19:24:00.000Z"
+          "updatedAt": "2026-07-02T21:20:00.000Z"
         },
         "intent": {
           "kind": "graph",
@@ -154,8 +154,11 @@
             "title",
             "type-definition",
             "ui-view",
-            "markdown",
-            "port"
+            "port",
+            "twilite-product-hero",
+            "twilite-product-section",
+            "twilite-product-proof",
+            "twilite-product-cta"
           ],
           "portContracts": [
             "core"
@@ -221,7 +224,7 @@
         "summaryNodeId": "twilite-product-view",
         "name": "Twilite Product Declaration",
         "declaresKind": "graph",
-        "purpose": "Declare the template-driven public landing-story graph for Twilite.",
+        "purpose": "Declare the branded public landing-story graph for Twilite.",
         "primaryNodeViewId": "twilite-product-view",
         "portViewNodeId": "twilite-product-view",
         "declaration": {
@@ -453,13 +456,125 @@
       }
     },
     {
+      "id": "twilite-product-bridge-hero",
+      "type": "bridge",
+      "label": "Hero Card",
+      "root": false,
+      "position": {
+        "x": 310,
+        "y": -980
+      },
+      "width": 260,
+      "height": 120,
+      "visible": false,
+      "showLabel": true,
+      "data": {
+        "target": {
+          "mode": "bridge",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-hero.node-class.node",
+          "kind": "node-class",
+          "resourceKind": "node-class",
+          "scope": "focused-graph",
+          "grants": [
+            "create"
+          ],
+          "label": "Hero Card",
+          "key": "twilite-product-hero"
+        }
+      }
+    },
+    {
+      "id": "twilite-product-bridge-section",
+      "type": "bridge",
+      "label": "Section Card",
+      "root": false,
+      "position": {
+        "x": 590,
+        "y": -980
+      },
+      "width": 260,
+      "height": 120,
+      "visible": false,
+      "showLabel": true,
+      "data": {
+        "target": {
+          "mode": "bridge",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node",
+          "kind": "node-class",
+          "resourceKind": "node-class",
+          "scope": "focused-graph",
+          "grants": [
+            "create"
+          ],
+          "label": "Section Card",
+          "key": "twilite-product-section"
+        }
+      }
+    },
+    {
+      "id": "twilite-product-bridge-proof",
+      "type": "bridge",
+      "label": "Proof Card",
+      "root": false,
+      "position": {
+        "x": 870,
+        "y": -980
+      },
+      "width": 260,
+      "height": 120,
+      "visible": false,
+      "showLabel": true,
+      "data": {
+        "target": {
+          "mode": "bridge",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-proof.node-class.node",
+          "kind": "node-class",
+          "resourceKind": "node-class",
+          "scope": "focused-graph",
+          "grants": [
+            "create"
+          ],
+          "label": "Proof Card",
+          "key": "twilite-product-proof"
+        }
+      }
+    },
+    {
+      "id": "twilite-product-bridge-cta",
+      "type": "bridge",
+      "label": "CTA Card",
+      "root": false,
+      "position": {
+        "x": 1150,
+        "y": -980
+      },
+      "width": 260,
+      "height": 120,
+      "visible": false,
+      "showLabel": true,
+      "data": {
+        "target": {
+          "mode": "bridge",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-cta.node-class.node",
+          "kind": "node-class",
+          "resourceKind": "node-class",
+          "scope": "focused-graph",
+          "grants": [
+            "create"
+          ],
+          "label": "CTA Card",
+          "key": "twilite-product-cta"
+        }
+      }
+    },
+    {
       "id": "twilite-product-back",
       "type": "port",
       "label": "Browse Products",
       "root": false,
       "position": {
-        "x": 1080,
-        "y": 220
+        "x": 1220,
+        "y": 1680
       },
       "width": 340,
       "height": 220,
@@ -491,8 +606,8 @@
       "label": "Start With The Tutorial",
       "root": false,
       "position": {
-        "x": 1470,
-        "y": 220
+        "x": 1660,
+        "y": 1680
       },
       "width": 360,
       "height": 240,
@@ -714,9 +829,9 @@
       "data": {
         "name": "Product Story",
         "key": "product-story",
-        "classRef": "github://twilite-zone/public/library/template-gallery/product-story-template.node",
-        "meaning": "Template-driven public-facing graph for explaining a product as a navigable landing story.",
-        "description": "Use this type when a graph should behave like a persuasive product surface with a branded hero, proof, and clear next steps.",
+        "classRef": "github://twilitellc/public/products/twilite/twilite-product-template.node",
+        "meaning": "Branded public-facing graph for explaining Twilite as a navigable launch story.",
+        "description": "Use this type when a graph should behave like a premium Twilite product surface with a flagship hero, evidence, and guided next steps.",
         "category": "public-landing",
         "status": "active",
         "_classBinding": {
@@ -791,16 +906,16 @@
       "label": "View",
       "root": false,
       "position": {
-        "x": -500,
-        "y": 500
+        "x": -520,
+        "y": 180
       },
       "width": 420,
       "height": 280,
-      "visible": true,
+      "visible": false,
       "showLabel": true,
       "data": {
         "title": "Twilite",
-        "purpose": "Default public-facing landing surface for the Twilite product graph, driven by the product-story template.",
+        "purpose": "Default public-facing landing surface for the Twilite product graph, driven by the local Twilite product launch template and branded product cards.",
         "viewRole": "page",
         "view": {
           "intent": "node",
@@ -933,1177 +1048,380 @@
     },
     {
       "id": "twilite-product-hero",
-      "type": "markdown",
+      "type": "twilite-product-hero",
       "label": "Product Promise",
       "root": false,
       "position": {
-        "x": 1000,
-        "y": 820
+        "x": 860,
+        "y": 120
       },
-      "width": 540,
-      "height": 280,
+      "width": 640,
+      "height": 340,
       "visible": true,
       "showLabel": true,
       "data": {
-        "markdown": "## Product Promise\n\nTwilite turns graphs into durable web artifacts that humans and AI can both navigate, edit, and grow together.\n\nNot a canvas snapshot. Not a disposable chat. A structured system that stays alive as the work gets deeper.",
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778698422220,
-          "reason": "auto-layout"
-        }
+        "eyebrow": "Flagship Product",
+        "title": "Twilite",
+        "body": "Twilite turns graphs into durable web artifacts that humans and AI can both navigate, edit, and grow together. Not a canvas snapshot. Not a disposable chat. A structured system that stays alive as the work gets deeper.",
+        "proofBadge": "Live Product",
+        "proofNote": "Browser-native graphs, durable addresses, AI-assisted authoring, and GitHub-backed publishing already exist today.",
+        "_classBinding": {
+          "key": "twilite-product-hero",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-hero.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-hero",
+          "sourceBridgeLabel": "Hero Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-hero",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-hero.node-class.node"
+        },
+        "definitionKey": "twilite-product-hero"
       }
     },
     {
       "id": "twilite-product-difference",
-      "type": "markdown",
-      "label": "🧭 Why Twilite Exists",
+      "type": "twilite-product-section",
+      "label": "Why Twilite Exists",
       "root": false,
       "position": {
-        "x": 1340,
-        "y": -80
+        "x": 720,
+        "y": 560
       },
-      "width": 540,
-      "height": 250,
-      "visible": false,
+      "width": 520,
+      "height": 300,
+      "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#1f2937",
-        "color": "#f8fafc",
-        "borderColor": "#fb923c",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
       "data": {
-        "markdown": "## 🧭 Why Twilite Exists\n\nMost tools split thinking across chats, docs, tabs, whiteboards, and disconnected notes.\n\nTwilite keeps the structure itself in view.\n\nThe graph becomes the thing with value: addressable, inspectable, editable, and durable on the web.",
-        "_placement": {
-          "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1778699868381,
-          "reason": "node-drag"
-        }
+        "tag": "Why",
+        "title": "Why Twilite Exists",
+        "body": "Most tools split thinking across chats, docs, tabs, whiteboards, and disconnected notes. Twilite keeps the structure itself in view. The graph becomes the thing with value: addressable, inspectable, editable, and durable on the web.",
+        "_classBinding": {
+          "key": "twilite-product-section",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-section",
+          "sourceBridgeLabel": "Section Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-section",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "definitionKey": "twilite-product-section"
       }
     },
     {
       "id": "twilite-product-how",
-      "type": "markdown",
-      "label": "⚙️ How It Works",
+      "type": "twilite-product-section",
+      "label": "How It Works",
       "root": false,
       "position": {
-        "x": 680,
-        "y": 240
+        "x": 160,
+        "y": 920
       },
       "width": 520,
-      "height": 240,
-      "visible": false,
+      "height": 300,
+      "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#0f172a",
-        "color": "#e2e8f0",
-        "borderColor": "#64748b",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 22
-      },
       "data": {
-        "markdown": "## ⚙️ How It Works\n\n1. Author or evolve a graph.\n2. Give it a durable address.\n3. Let humans and AI work against the same structure over time.\n\nThat lets a graph move from thought, to collaboration, to publishing, to execution without changing mediums.",
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778698422220,
-          "reason": "auto-layout"
-        }
+        "tag": "How",
+        "title": "How It Works",
+        "body": "1. Author or evolve a graph.\n2. Give it a durable address.\n3. Let humans and AI work against the same structure over time.\n\nThat lets a graph move from thought, to collaboration, to publishing, to execution without changing mediums.",
+        "_classBinding": {
+          "key": "twilite-product-section",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-section",
+          "sourceBridgeLabel": "Section Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-section",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "definitionKey": "twilite-product-section"
       }
     },
     {
       "id": "twilite-product-proof",
-      "type": "markdown",
-      "label": "🧪 Proof",
+      "type": "twilite-product-proof",
+      "label": "Proof",
       "root": false,
       "position": {
-        "x": 1240,
-        "y": 240
+        "x": 1280,
+        "y": 1260
       },
-      "width": 620,
-      "height": 250,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "output",
-          "dataType": "any",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
-      "visible": false,
+      "width": 540,
+      "height": 320,
+      "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#0f1f17",
-        "color": "#ecfdf5",
-        "borderColor": "#34d399",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
       "data": {
-        "markdown": "## 🧪 What Already Works Today\n\nTwilite already runs in the browser.\n\nIt already persists graphs.\nIt already exposes them at addresses.\nIt already supports AI-assisted graph authoring.\nIt already supports GitHub-backed save and publish flows.\n\nThis page is itself part of that system.",
-        "_placement": {
-          "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1778699490734,
-          "reason": "node-drag"
-        }
+        "eyebrow": "Proof",
+        "title": "What Already Works Today",
+        "claims": "- Twilite already runs in the browser.\n- It already persists graphs.\n- It already exposes them at addresses.\n- It already supports AI-assisted graph authoring.\n- It already supports GitHub-backed save and publish flows.\n- This page is itself part of that system.",
+        "footnote": "Present-tense evidence matters more than roadmap promises on a launch page.",
+        "status": "Working Today",
+        "_classBinding": {
+          "key": "twilite-product-proof",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-proof.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-proof",
+          "sourceBridgeLabel": "Proof Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-proof",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-proof.node-class.node"
+        },
+        "definitionKey": "twilite-product-proof"
       }
     },
     {
       "id": "twilite-product-get-started",
-      "type": "markdown",
-      "label": "🚀 Start Here",
+      "type": "twilite-product-cta",
+      "label": "Start Here",
       "root": false,
       "position": {
-        "x": 1940,
-        "y": -80
+        "x": 720,
+        "y": 1680
       },
-      "width": 520,
-      "height": 260,
-      "visible": false,
+      "width": 420,
+      "height": 240,
+      "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#25143a",
-        "color": "#f5f3ff",
-        "borderColor": "#a78bfa",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
       "data": {
-        "markdown": "## 🚀 Start Here\n\nUse this graph as a doorway into the product, not just a description of it.\n\n- Browse the product shelf.\n- Open the tutorial.\n- Explore live graph surfaces.\n- Start building something that can persist beyond one session.\n\nTwilite clicks when the graph stops being a diagram and starts being the place the work actually lives.",
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778698422220,
-          "reason": "auto-layout"
-        }
+        "eyebrow": "Next Step",
+        "title": "Start Here",
+        "body": "Use this graph as a doorway into the product, not just a description of it. Open the tutorial, browse the product shelf, and start building something that can persist beyond one session.",
+        "ctaLabel": "Choose A Path",
+        "status": "Recommended",
+        "_classBinding": {
+          "key": "twilite-product-cta",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-cta.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-cta",
+          "sourceBridgeLabel": "CTA Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-cta",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-cta.node-class.node"
+        },
+        "definitionKey": "twilite-product-cta"
       }
     },
     {
       "id": "9d3fdc22-f2f0-45d2-bf6f-6d0f9f55a101",
-      "type": "markdown",
-      "label": "🪐 What Twilite Is",
+      "type": "twilite-product-section",
+      "label": "What Twilite Is",
       "root": false,
       "position": {
-        "x": 680,
+        "x": 160,
         "y": 560
       },
       "width": 520,
-      "height": 260,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "left",
-          "label": "left",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.2
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "outputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "visible": false,
+      "height": 300,
+      "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#0c1b2c",
-        "color": "#e0f2fe",
-        "borderColor": "#38bdf8",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 22
-      },
       "data": {
-        "markdown": "# 🪐 What Twilite Is\n\nTwilite lets humans and AI build persistent knowledge as navigable graph structures instead of disposable chats and scattered documents.\n\nInstead of losing ideas inside chat history, folders, tabs, whiteboards, or screenshots, Twilite keeps relationships visible and durable.",
-        "memo": "",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "visibilityRole": "browser",
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778698422220,
-          "reason": "auto-layout"
-        }
+        "tag": "What",
+        "title": "What Twilite Is",
+        "body": "Twilite lets humans and AI build persistent knowledge as navigable graph structures instead of disposable chats and scattered documents. Instead of losing ideas inside chat history, folders, tabs, whiteboards, or screenshots, Twilite keeps relationships visible and durable.",
+        "_classBinding": {
+          "key": "twilite-product-section",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-section",
+          "sourceBridgeLabel": "Section Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-section",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "definitionKey": "twilite-product-section"
       }
     },
     {
       "id": "8b1c5d1e-8d9c-45ec-97e0-6a4d9d9df102",
-      "type": "markdown",
-      "label": "👥 Who It's For",
+      "type": "twilite-product-section",
+      "label": "Who It's For",
       "root": false,
       "position": {
-        "x": 1240,
-        "y": 540
+        "x": 160,
+        "y": 1640
       },
-      "width": 620,
-      "height": 420,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "left",
-          "label": "left",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.2
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "outputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "visible": false,
+      "width": 520,
+      "height": 300,
+      "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#131d17",
-        "color": "#ecfdf5",
-        "borderColor": "#4ade80",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
       "data": {
-        "markdown": "# 👥 Who It's For\n\nTwilite is for people who need structure to stay alive as work gets more complex.\n\nStrong fits include:\n\n- software architecture\n- AI workspaces\n- research and investigation\n- product ecosystems\n- documentation systems\n- knowledge gardens\n- worldbuilding and design systems\n- planning graphs that need to stay navigable\n\nThe same runtime supports thinking, collaboration, publishing, execution, and navigation without switching mediums.",
-        "memo": "",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "visibilityRole": "browser",
-        "_placement": {
-          "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1778699635763,
-          "reason": "node-drag"
-        }
+        "tag": "Audience",
+        "title": "Who It's For",
+        "body": "Twilite is for people who need structure to stay alive as work gets more complex. Strong fits include software architecture, AI workspaces, research and investigation, product ecosystems, documentation systems, knowledge gardens, worldbuilding, design systems, and planning graphs that need to stay navigable.",
+        "_classBinding": {
+          "key": "twilite-product-section",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-section",
+          "sourceBridgeLabel": "Section Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-section",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "definitionKey": "twilite-product-section"
       }
     },
     {
       "id": "0f7b1d2a-6386-4f3c-bf3d-5bc04c57d103",
-      "type": "markdown",
-      "label": "⚡ What Makes It Different",
+      "type": "twilite-product-section",
+      "label": "What Makes It Different",
       "root": false,
       "position": {
-        "x": 1940,
-        "y": 220
+        "x": 1280,
+        "y": 560
       },
-      "width": 620,
-      "height": 420,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "left",
-          "label": "left",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.2
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "outputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "visible": false,
+      "width": 520,
+      "height": 300,
+      "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#2a1a0f",
-        "color": "#ffedd5",
-        "borderColor": "#fb923c",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
       "data": {
-        "markdown": "# ⚡ What Makes It Different\n\nTwilite overlaps with several categories without collapsing into any one of them.\n\nIt is not merely:\n\n- a whiteboard\n- a note app\n- a workflow graph\n- a documentation tool\n- a mind map\n- or a chat interface\n\nThe difference is that Twilite treats the graph itself as the durable semantic artifact: addressable, explorable, AI-readable, AI-editable, publishable, portable, and structurally meaningful.",
-        "memo": "",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "visibilityRole": "browser",
-        "_placement": {
-          "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1778699861403,
-          "reason": "node-drag"
-        }
+        "tag": "Difference",
+        "title": "What Makes It Different",
+        "body": "Twilite overlaps with several categories without collapsing into any one of them. It is not merely a whiteboard, note app, workflow graph, documentation tool, mind map, or chat interface. It treats the graph itself as the durable semantic artifact: addressable, explorable, AI-readable, AI-editable, publishable, portable, and structurally meaningful.",
+        "_classBinding": {
+          "key": "twilite-product-section",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-section",
+          "sourceBridgeLabel": "Section Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-section",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "definitionKey": "twilite-product-section"
       }
     },
     {
       "id": "72b60d74-6d4d-49d2-89f7-95d96231b104",
-      "type": "markdown",
-      "label": "🤝 Human + AI",
+      "type": "twilite-product-section",
+      "label": "Human + AI",
       "root": false,
       "position": {
-        "x": 1940,
-        "y": 580
+        "x": 720,
+        "y": 920
       },
-      "width": 640,
-      "height": 320,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "left",
-          "label": "left",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.2
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "outputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
+      "width": 520,
+      "height": 300,
       "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#1e1b3a",
-        "color": "#f5f3ff",
-        "borderColor": "#a78bfa",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
       "data": {
-        "markdown": "# 🤝 AI Is A First-Class Collaborator\n\nTwilite is designed for humans and AI to work against the same persistent structure.\n\nInstead of generating isolated text blobs, AI can navigate graph structure, inspect relationships, update nodes, create connections, preserve references, and operate through explicit mutation contracts.\n\nThat makes AI collaboration more durable, inspectable, reversible, and graph-native.",
-        "memo": "",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "visibilityRole": "browser",
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778698422220,
-          "reason": "auto-layout"
-        }
+        "tag": "Collaboration",
+        "title": "Human + AI",
+        "body": "Twilite is designed for humans and AI to work against the same persistent structure. Instead of generating isolated text blobs, AI can navigate graph structure, inspect relationships, update nodes, create connections, preserve references, and operate through explicit mutation contracts. That makes AI collaboration more durable, inspectable, reversible, and graph-native.",
+        "_classBinding": {
+          "key": "twilite-product-section",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-section",
+          "sourceBridgeLabel": "Section Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-section",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "definitionKey": "twilite-product-section"
       }
     },
     {
       "id": "de4d58e9-60f4-4d58-83dc-857d9091f105",
-      "type": "markdown",
-      "label": "🔎 One Graph, Many Depths",
+      "type": "twilite-product-section",
+      "label": "One Graph, Many Depths",
       "root": false,
       "position": {
-        "x": 680,
-        "y": 900
+        "x": 160,
+        "y": 1280
       },
       "width": 520,
-      "height": 360,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "left",
-          "label": "left",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.2
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "outputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
+      "height": 300,
       "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#172036",
-        "color": "#e0e7ff",
-        "borderColor": "#818cf8",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
       "data": {
-        "markdown": "# 🔎 One Graph, Many Depths\n\nTwilite supports layered understanding.\n\nAt a glance you can hold product identity, major concepts, and high-level structure.\nCloser in, the same graph can reveal implementation details, supporting evidence, semantic relationships, and runtime behavior.\n\nThat lets one graph support onboarding, exploration, authoring, and advanced architecture work.",
-        "memo": "",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "visibilityRole": "browser",
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778698422220,
-          "reason": "auto-layout"
-        }
+        "tag": "Depth",
+        "title": "One Graph, Many Depths",
+        "body": "Twilite supports layered understanding. At a glance you can hold product identity, major concepts, and high-level structure. Closer in, the same graph can reveal implementation details, supporting evidence, semantic relationships, and runtime behavior. That lets one graph support onboarding, exploration, authoring, and advanced architecture work.",
+        "_classBinding": {
+          "key": "twilite-product-section",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-section",
+          "sourceBridgeLabel": "Section Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-section",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "definitionKey": "twilite-product-section"
       }
     },
     {
       "id": "8f27d257-bb70-4c1b-b2e8-63e0e4dc9106",
-      "type": "markdown",
-      "label": "🧩 Why Graph Structure Matters",
+      "type": "twilite-product-section",
+      "label": "Why Graph Structure Matters",
       "root": false,
       "position": {
-        "x": 1240,
-        "y": 940
+        "x": 1280,
+        "y": 920
       },
-      "width": 540,
-      "height": 360,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "left",
-          "label": "left",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.2
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "outputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
+      "width": 520,
+      "height": 300,
       "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#12232d",
-        "color": "#ecfeff",
-        "borderColor": "#22d3ee",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
       "data": {
-        "markdown": "# 🧩 Why Graph Structure Matters\n\nMost systems hide relationships.\n\nTwilite exposes them directly.\n\nIdeas are not isolated. They exist in relation to causes, dependencies, references, abstractions, examples, systems, workflows, and people.\n\nA graph preserves those relationships instead of flattening them into linear documents.",
-        "memo": "",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "visibilityRole": "browser",
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778698422220,
-          "reason": "auto-layout"
-        }
+        "tag": "Structure",
+        "title": "Why Graph Structure Matters",
+        "body": "Most systems hide relationships. Twilite exposes them directly. Ideas are not isolated. They exist in relation to causes, dependencies, references, abstractions, examples, systems, workflows, and people. A graph preserves those relationships instead of flattening them into linear documents.",
+        "_classBinding": {
+          "key": "twilite-product-section",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-section",
+          "sourceBridgeLabel": "Section Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-section",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "definitionKey": "twilite-product-section"
       }
     },
     {
       "id": "4d91c0d5-7b7d-4d5d-a0d2-6f0f2f7cb201",
-      "type": "markdown",
+      "type": "twilite-product-section",
       "label": "Why Persistence Matters",
       "root": false,
       "position": {
-        "x": 1940,
-        "y": 940
+        "x": 720,
+        "y": 1280
       },
-      "width": 620,
-      "height": 420,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "left",
-          "label": "left",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.2
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "outputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
+      "width": 520,
+      "height": 300,
       "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#21131a",
-        "color": "#fff1f2",
-        "borderColor": "#fb7185",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
       "data": {
-        "markdown": "# 🕰️ Why Persistence Matters\n\nMost AI interaction today is disposable.\n\nChats disappear. Context collapses. Ideas fragment. Meaning drifts.\n\nTwilite treats knowledge as something that should accumulate structurally over time. Humans and AI can continue evolving the same graph, the same relationships, and the same semantic terrain.\n\nThe result is durable memory instead of temporary conversation.",
-        "memo": "",
-        "link": "",
-        "html": "",
-        "svg": "",
-        "visibilityRole": "browser",
-        "_placement": {
-          "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1778699709394,
-          "reason": "node-drag"
-        }
+        "tag": "Persistence",
+        "title": "Why Persistence Matters",
+        "body": "Most AI interaction today is disposable. Chats disappear. Context collapses. Ideas fragment. Meaning drifts. Twilite treats knowledge as something that should accumulate structurally over time. Humans and AI can continue evolving the same graph, the same relationships, and the same semantic terrain. The result is durable memory instead of temporary conversation.",
+        "_classBinding": {
+          "key": "twilite-product-section",
+          "ref": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "_bridge": {
+          "sourceBridgeNodeId": "twilite-product-bridge-section",
+          "sourceBridgeLabel": "Section Card",
+          "targetKind": "node-class",
+          "classKey": "twilite-product-section",
+          "classRef": "github://twilitellc/public/products/twilite/twilite-product-section.node-class.node"
+        },
+        "definitionKey": "twilite-product-section"
       }
     }
   ],
@@ -2452,6 +1770,28 @@
         "curved": true
       },
       "data": {}
+    },
+    {
+      "id": "twilite-product-edge-cta-back",
+      "type": "reference",
+      "source": "twilite-product-get-started",
+      "target": "twilite-product-back",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "browse",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "twilite-product-edge-cta-tutorial",
+      "type": "reference",
+      "source": "twilite-product-get-started",
+      "target": "twilite-product-tutorial",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "start",
+      "style": {},
+      "data": {}
     }
   ],
   "clusters": [],
@@ -2494,5 +1834,7 @@
     },
     "autoSave": false
   },
-  "scripts": []
+  "scripts": [],
+  "nodeCount": 25,
+  "edgeCount": 17
 }
