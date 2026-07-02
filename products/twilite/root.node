@@ -2,7 +2,7 @@
   "fileVersion": "1.0",
   "metadata": {
     "title": "Twilite Product Story",
-    "description": "Public-facing landing graph for Twilite.",
+    "description": "Public-facing product story graph for Twilite.",
     "created": "2026-05-13T23:06:10.629Z",
     "modified": "2026-07-02T19:24:00.000Z",
     "author": "",
@@ -189,28 +189,11 @@
           "url": ""
         },
         "settings": {
-          "theme": {
-            "mode": "dark",
-            "primary": {
-              "main": "#5b8cff"
-            },
-            "secondary": {
-              "main": "#fb923c"
-            },
-            "background": {
-              "default": "#0b1220",
-              "paper": "#111827"
-            },
-            "text": {
-              "primary": "#f8fafc",
-              "secondary": "rgba(226, 232, 240, 0.82)"
-            },
-            "divider": "rgba(91, 140, 255, 0.22)"
-          },
+          "theme": null,
           "backgroundImage": null,
           "uiDensity": "comfortable",
-          "defaultNodeColor": "#5b8cff",
-          "defaultEdgeColor": "#4b6cb7",
+          "defaultNodeColor": "#1976d2",
+          "defaultEdgeColor": "#666666",
           "snapToGrid": false,
           "gridSize": 20,
           "edgeRouting": "auto",
@@ -472,24 +455,16 @@
     {
       "id": "twilite-product-back",
       "type": "port",
-      "label": "🧭 Browse Products",
+      "label": "Browse Products",
       "root": false,
       "position": {
-        "x": 0,
-        "y": 280
+        "x": 1080,
+        "y": 220
       },
-      "width": 360,
-      "height": 240,
+      "width": 340,
+      "height": 220,
       "visible": true,
-      "showLabel": false,
-      "style": {
-        "background": "#0f172a",
-        "color": "#f8fafc",
-        "borderColor": "#fb923c",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 22
-      },
+      "showLabel": true,
       "data": {
         "memo": "Browse the full Twilite LLC product shelf and related public offerings.",
         "intent": "external",
@@ -513,25 +488,16 @@
     {
       "id": "twilite-product-tutorial",
       "type": "port",
-      "label": "📚 Open Tutorial",
+      "label": "Start With The Tutorial",
       "root": false,
       "position": {
-        "x": -420,
-        "y": 280
+        "x": 1470,
+        "y": 220
       },
       "width": 360,
       "height": 240,
       "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#1d4ed8",
-        "color": "#eff6ff",
-        "borderColor": "#93c5fd",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 22,
-        "boxShadow": "0 14px 34px rgba(37, 99, 235, 0.25)"
-      },
       "data": {
         "memo": "Open the Twilite onboarding and authoring tutorial.",
         "intent": "external",
@@ -568,11 +534,11 @@
       "label": "Title",
       "root": true,
       "position": {
-        "x": -420,
-        "y": -60
+        "x": 380,
+        "y": 140
       },
       "width": 520,
-      "height": 260,
+      "height": 240,
       "ports": [
         {
           "id": "root",
@@ -606,16 +572,7 @@
         }
       ],
       "visible": true,
-      "showLabel": false,
-      "style": {
-        "background": "#111827",
-        "color": "#f8fafc",
-        "borderColor": "#5b8cff",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24,
-        "boxShadow": "0 18px 44px rgba(15, 23, 42, 0.35)"
-      },
+      "showLabel": true,
       "data": {
         "title": "Twilite",
         "subtitle": "A graph-native workspace where knowledge becomes a durable, navigable web artifact that humans and AI can both understand, revise, and grow together.",
@@ -834,21 +791,13 @@
       "label": "View",
       "root": false,
       "position": {
-        "x": 180,
-        "y": -40
+        "x": -500,
+        "y": 500
       },
-      "width": 460,
-      "height": 300,
+      "width": 420,
+      "height": 280,
       "visible": true,
-      "showLabel": false,
-      "style": {
-        "background": "#0f172a",
-        "color": "#f8fafc",
-        "borderColor": "#334155",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
+      "showLabel": true,
       "data": {
         "title": "Twilite",
         "purpose": "Default public-facing landing surface for the Twilite product graph, driven by the product-story template.",
@@ -862,7 +811,7 @@
         "typeSourceNodeId": "twilite-product-type",
         "audience": "Public",
         "status": "active",
-        "svg": "<svg viewBox=\"0 0 260 180\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"260\" height=\"180\" rx=\"26\" fill=\"#0f172a\" stroke=\"#5b8cff\" stroke-width=\"4\"/><rect x=\"18\" y=\"18\" width=\"224\" height=\"144\" rx=\"20\" fill=\"#111827\"/><circle cx=\"72\" cy=\"72\" r=\"28\" fill=\"#fb923c\" opacity=\"0.92\"/><rect x=\"112\" y=\"52\" width=\"92\" height=\"18\" rx=\"9\" fill=\"#5b8cff\"/><rect x=\"112\" y=\"82\" width=\"82\" height=\"12\" rx=\"6\" fill=\"#94a3b8\"/><rect x=\"112\" y=\"104\" width=\"70\" height=\"12\" rx=\"6\" fill=\"#475569\"/><rect x=\"36\" y=\"120\" width=\"168\" height=\"16\" rx=\"8\" fill=\"#1e293b\"/><text x=\"130\" y=\"152\" text-anchor=\"middle\" font-family=\"ui-sans-serif, system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#f8fafc\">TWILITE</text></svg>",
+        "svg": "<svg viewBox=\"0 0 220 160\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\"><rect x=\"10\" y=\"10\" width=\"200\" height=\"140\" rx=\"22\" fill=\"#fffaf2\" stroke=\"#1f2937\" stroke-width=\"4\"/><rect x=\"28\" y=\"28\" width=\"58\" height=\"58\" rx=\"16\" fill=\"#111827\"/><rect x=\"100\" y=\"30\" width=\"92\" height=\"18\" rx=\"9\" fill=\"#2563eb\" opacity=\"0.9\"/><rect x=\"100\" y=\"58\" width=\"82\" height=\"12\" rx=\"6\" fill=\"#94a3b8\" opacity=\"0.9\"/><rect x=\"100\" y=\"78\" width=\"72\" height=\"12\" rx=\"6\" fill=\"#cbd5e1\" opacity=\"0.95\"/><rect x=\"28\" y=\"102\" width=\"164\" height=\"18\" rx=\"9\" fill=\"#f59e0b\" opacity=\"0.25\"/><text x=\"110\" y=\"145\" text-anchor=\"middle\" font-family=\"ui-sans-serif, system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1f2937\">TWILITE</text></svg>",
         "_classBinding": {
           "key": "ui-view",
           "sourceRef": "/library/classes/nodes/ui-interaction/ui-view.node-class.node",
@@ -985,26 +934,18 @@
     {
       "id": "twilite-product-hero",
       "type": "markdown",
-      "label": "✨ Promise",
+      "label": "Product Promise",
       "root": false,
       "position": {
-        "x": 680,
-        "y": -80
+        "x": 1000,
+        "y": 820
       },
-      "width": 620,
-      "height": 250,
+      "width": 540,
+      "height": 280,
       "visible": true,
       "showLabel": true,
-      "style": {
-        "background": "#111827",
-        "color": "#f8fafc",
-        "borderColor": "#5b8cff",
-        "borderWidth": 2,
-        "borderStyle": "solid",
-        "borderRadius": 24
-      },
       "data": {
-        "markdown": "# ✨ Build Knowledge As A Living Graph\n\nTwilite turns graphs into durable web artifacts that humans and AI can both navigate, edit, and grow together.\n\nNot a canvas snapshot. Not a disposable chat. A structured system that stays alive as the work gets deeper.",
+        "markdown": "## Product Promise\n\nTwilite turns graphs into durable web artifacts that humans and AI can both navigate, edit, and grow together.\n\nNot a canvas snapshot. Not a disposable chat. A structured system that stays alive as the work gets deeper.",
         "_placement": {
           "version": 1,
           "state": "auto-placed",
@@ -1025,7 +966,7 @@
       },
       "width": 540,
       "height": 250,
-      "visible": true,
+      "visible": false,
       "showLabel": true,
       "style": {
         "background": "#1f2937",
@@ -1057,7 +998,7 @@
       },
       "width": 520,
       "height": 240,
-      "visible": true,
+      "visible": false,
       "showLabel": true,
       "style": {
         "background": "#0f172a",
@@ -1111,7 +1052,7 @@
           }
         }
       ],
-      "visible": true,
+      "visible": false,
       "showLabel": true,
       "style": {
         "background": "#0f1f17",
@@ -1143,7 +1084,7 @@
       },
       "width": 520,
       "height": 260,
-      "visible": true,
+      "visible": false,
       "showLabel": true,
       "style": {
         "background": "#25143a",
@@ -1281,7 +1222,7 @@
           "type": "value"
         }
       ],
-      "visible": true,
+      "visible": false,
       "showLabel": true,
       "style": {
         "background": "#0c1b2c",
@@ -1424,7 +1365,7 @@
           "type": "value"
         }
       ],
-      "visible": true,
+      "visible": false,
       "showLabel": true,
       "style": {
         "background": "#131d17",
@@ -1567,7 +1508,7 @@
           "type": "value"
         }
       ],
-      "visible": true,
+      "visible": false,
       "showLabel": true,
       "style": {
         "background": "#2a1a0f",
@@ -2515,27 +2456,10 @@
   ],
   "clusters": [],
   "settings": {
-    "theme": {
-      "mode": "dark",
-      "primary": {
-        "main": "#5b8cff"
-      },
-      "secondary": {
-        "main": "#fb923c"
-      },
-      "background": {
-        "default": "#0b1220",
-        "paper": "#111827"
-      },
-      "text": {
-        "primary": "#f8fafc",
-        "secondary": "rgba(226, 232, 240, 0.82)"
-      },
-      "divider": "rgba(91, 140, 255, 0.22)"
-    },
+    "theme": null,
     "backgroundImage": null,
-    "defaultNodeColor": "#5b8cff",
-    "defaultEdgeColor": "#4b6cb7",
+    "defaultNodeColor": "#1976d2",
+    "defaultEdgeColor": "#666666",
     "snapToGrid": false,
     "gridSize": 20,
     "edgeRouting": "auto",
