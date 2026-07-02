@@ -7,7 +7,7 @@
     "version": "0.1.0",
     "kind": "graph",
     "created": "2026-07-02T18:18:10.467Z",
-    "modified": "2026-07-02T18:21:51.584Z",
+    "modified": "2026-07-02T18:48:00.208Z",
     "author": "",
     "tags": [
       "graph"
@@ -21,8 +21,8 @@
       "label": "Declaration",
       "root": false,
       "position": {
-        "x": 310,
-        "y": -980
+        "x": 232.83333333333326,
+        "y": -651.8449794083899
       },
       "width": 360,
       "height": 220,
@@ -267,7 +267,7 @@
           "version": 1,
           "state": "auto-placed",
           "source": "layout",
-          "updatedAt": 1778698422220,
+          "updatedAt": 1783016789838,
           "reason": "auto-layout"
         }
       }
@@ -278,8 +278,8 @@
       "label": "Title",
       "root": false,
       "position": {
-        "x": -530,
-        "y": -980
+        "x": -1727.1666666666667,
+        "y": -651.8449794083899
       },
       "width": 260,
       "height": 120,
@@ -328,7 +328,7 @@
           "version": 1,
           "state": "auto-placed",
           "source": "layout",
-          "updatedAt": 1778698422220,
+          "updatedAt": 1783016789838,
           "reason": "auto-layout"
         },
         "identity": {
@@ -342,8 +342,8 @@
       "label": "Type Definition",
       "root": false,
       "position": {
-        "x": -250,
-        "y": -980
+        "x": -1447.1666666666667,
+        "y": -651.8449794083899
       },
       "width": 260,
       "height": 120,
@@ -392,7 +392,7 @@
           "version": 1,
           "state": "auto-placed",
           "source": "layout",
-          "updatedAt": 1778698422220,
+          "updatedAt": 1783016789838,
           "reason": "auto-layout"
         },
         "identity": {
@@ -406,8 +406,8 @@
       "label": "View",
       "root": false,
       "position": {
-        "x": 30,
-        "y": -980
+        "x": -1167.1666666666667,
+        "y": -651.8449794083899
       },
       "width": 260,
       "height": 120,
@@ -456,7 +456,7 @@
           "version": 1,
           "state": "auto-placed",
           "source": "layout",
-          "updatedAt": 1778698422220,
+          "updatedAt": 1783016789838,
           "reason": "auto-layout"
         },
         "identity": {
@@ -470,8 +470,8 @@
       "label": "Hero Card",
       "root": false,
       "position": {
-        "x": 310,
-        "y": -980
+        "x": -887.1666666666667,
+        "y": -651.8449794083899
       },
       "width": 260,
       "height": 120,
@@ -492,6 +492,13 @@
         },
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1783016789838,
+          "reason": "auto-layout"
         }
       }
     },
@@ -501,8 +508,8 @@
       "label": "Section Card",
       "root": false,
       "position": {
-        "x": 590,
-        "y": -980
+        "x": -607.1666666666667,
+        "y": -651.8449794083899
       },
       "width": 260,
       "height": 120,
@@ -523,6 +530,13 @@
         },
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1783016789838,
+          "reason": "auto-layout"
         }
       }
     },
@@ -532,8 +546,8 @@
       "label": "Proof Card",
       "root": false,
       "position": {
-        "x": 870,
-        "y": -980
+        "x": -327.16666666666674,
+        "y": -651.8449794083899
       },
       "width": 260,
       "height": 120,
@@ -554,6 +568,13 @@
         },
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1783016789838,
+          "reason": "auto-layout"
         }
       }
     },
@@ -563,8 +584,8 @@
       "label": "CTA Card",
       "root": false,
       "position": {
-        "x": 1150,
-        "y": -980
+        "x": -47.16666666666674,
+        "y": -651.8449794083899
       },
       "width": 260,
       "height": 120,
@@ -585,6 +606,13 @@
         },
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1783016789838,
+          "reason": "auto-layout"
         }
       }
     },
@@ -594,8 +622,8 @@
       "label": "Browse Products",
       "root": false,
       "position": {
-        "x": 1220,
-        "y": 1680
+        "x": -2524.293150379251,
+        "y": 432.12283260096723
       },
       "width": 340,
       "height": 220,
@@ -747,7 +775,7 @@
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1778699315566,
+          "updatedAt": 1783017827128,
           "reason": "node-drag"
         },
         "identity": {
@@ -766,8 +794,8 @@
       "label": "Start With The Tutorial",
       "root": false,
       "position": {
-        "x": 1660,
-        "y": 1680
+        "x": -2507.4024878855444,
+        "y": 791.0858811122357
       },
       "width": 360,
       "height": 240,
@@ -924,10 +952,10 @@
         "surfaceId": "",
         "_placement": {
           "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778698422220,
-          "reason": "auto-layout"
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1783017965768,
+          "reason": "node-drag"
         },
         "identity": {
           "graphId": "twilite-product-declaration"
@@ -940,8 +968,8 @@
       "label": "Title",
       "root": true,
       "position": {
-        "x": 380,
-        "y": 140
+        "x": -1568.5436501611591,
+        "y": 451.71986553755585
       },
       "width": 520,
       "height": 240,
@@ -956,13 +984,15 @@
           "id": "right",
           "label": "right",
           "direction": "output",
-          "dataType": "any"
+          "dataType": "any",
+          "angle": 360
         },
         {
           "id": "bottom",
           "label": "bottom",
           "direction": "output",
-          "dataType": "any"
+          "dataType": "any",
+          "angle": 90
         },
         {
           "id": "top",
@@ -990,13 +1020,15 @@
           "id": "right",
           "label": "right",
           "direction": "output",
-          "dataType": "any"
+          "dataType": "any",
+          "angle": 360
         },
         {
           "id": "bottom",
           "label": "bottom",
           "direction": "output",
-          "dataType": "any"
+          "dataType": "any",
+          "angle": 90
         },
         {
           "id": "top",
@@ -1177,10 +1209,10 @@
         "definitionKey": "title",
         "_placement": {
           "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778698422220,
-          "reason": "auto-layout"
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1783018052469,
+          "reason": "node-drag"
         },
         "identity": {
           "graphId": "twilite-product-declaration"
@@ -1193,8 +1225,8 @@
       "label": "Type",
       "root": false,
       "position": {
-        "x": -149,
-        "y": 730
+        "x": 440.5000000000002,
+        "y": 868.1550205916101
       },
       "width": 300,
       "height": 180,
@@ -1269,7 +1301,7 @@
           "version": 1,
           "state": "auto-placed",
           "source": "layout",
-          "updatedAt": 1778698422220,
+          "updatedAt": 1783016789838,
           "reason": "auto-layout"
         },
         "identity": {
@@ -1283,8 +1315,8 @@
       "label": "View",
       "root": false,
       "position": {
-        "x": -520,
-        "y": 180
+        "x": 289.5000000000002,
+        "y": 1278.15502059161
       },
       "width": 420,
       "height": 280,
@@ -1416,10 +1448,10 @@
         "definitionKey": "ui-view",
         "_placement": {
           "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1778713673770,
-          "reason": "node-drag"
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1783016789838,
+          "reason": "auto-layout"
         },
         "identity": {
           "graphId": "twilite-product-declaration"
@@ -1432,8 +1464,8 @@
       "label": "Product Promise",
       "root": false,
       "position": {
-        "x": 860,
-        "y": 120
+        "x": -790.2550402574916,
+        "y": 116.33722854838058
       },
       "width": 640,
       "height": 340,
@@ -1587,6 +1619,13 @@
         "definitionKey": "twilite-product-hero",
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1783018061193,
+          "reason": "node-drag"
         }
       }
     },
@@ -1596,8 +1635,8 @@
       "label": "Why Twilite Exists",
       "root": false,
       "position": {
-        "x": 720,
-        "y": 560
+        "x": 1505.400071494978,
+        "y": -953.099070804601
       },
       "width": 520,
       "height": 300,
@@ -1749,6 +1788,13 @@
         "definitionKey": "twilite-product-section",
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1783017284847,
+          "reason": "node-drag"
         }
       }
     },
@@ -1758,8 +1804,8 @@
       "label": "How It Works",
       "root": false,
       "position": {
-        "x": 80.6621046561026,
-        "y": 968.5944608981373
+        "x": 1532.379579782605,
+        "y": -40.33729886136361
       },
       "width": 520,
       "height": 300,
@@ -1916,7 +1962,7 @@
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1783016457349,
+          "updatedAt": 1783017275704,
           "reason": "node-drag"
         }
       }
@@ -1927,8 +1973,8 @@
       "label": "Proof",
       "root": false,
       "position": {
-        "x": 1280,
-        "y": 1260
+        "x": -120.5,
+        "y": 798.1550205916101
       },
       "width": 540,
       "height": 320,
@@ -2082,6 +2128,13 @@
         "definitionKey": "twilite-product-proof",
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1783016789838,
+          "reason": "auto-layout"
         }
       }
     },
@@ -2091,8 +2144,8 @@
       "label": "Start Here",
       "root": false,
       "position": {
-        "x": 720,
-        "y": 1680
+        "x": -1574.4935007205179,
+        "y": 184.64171362726648
       },
       "width": 420,
       "height": 240,
@@ -2246,6 +2299,13 @@
         "definitionKey": "twilite-product-cta",
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1783018055843,
+          "reason": "node-drag"
         }
       }
     },
@@ -2255,8 +2315,8 @@
       "label": "What Twilite Is",
       "root": false,
       "position": {
-        "x": 160,
-        "y": 559
+        "x": 698.0230692610861,
+        "y": 811.5050604006599
       },
       "width": 520,
       "height": 300,
@@ -2413,7 +2473,7 @@
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1783016321283,
+          "updatedAt": 1783016851794,
           "reason": "node-drag"
         }
       }
@@ -2424,8 +2484,8 @@
       "label": "Who It's For",
       "root": false,
       "position": {
-        "x": 160,
-        "y": 1640
+        "x": -437.4878536313132,
+        "y": 1269.0432191419907
       },
       "width": 520,
       "height": 300,
@@ -2577,6 +2637,13 @@
         "definitionKey": "twilite-product-section",
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1783017025100,
+          "reason": "node-drag"
         }
       }
     },
@@ -2586,8 +2653,8 @@
       "label": "What Makes It Different",
       "root": false,
       "position": {
-        "x": 1280,
-        "y": 560
+        "x": 1524.8377135354447,
+        "y": -511.554579301614
       },
       "width": 520,
       "height": 300,
@@ -2739,6 +2806,13 @@
         "definitionKey": "twilite-product-section",
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1783017273085,
+          "reason": "node-drag"
         }
       }
     },
@@ -2748,8 +2822,8 @@
       "label": "Human + AI",
       "root": false,
       "position": {
-        "x": 720,
-        "y": 920
+        "x": 1545.514320692892,
+        "y": 395.02991362262617
       },
       "width": 520,
       "height": 300,
@@ -2901,6 +2975,13 @@
         "definitionKey": "twilite-product-section",
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1783017057053,
+          "reason": "node-drag"
         }
       }
     },
@@ -2910,8 +2991,8 @@
       "label": "One Graph, Many Depths",
       "root": false,
       "position": {
-        "x": 160,
-        "y": 1280
+        "x": 1500.5000000000002,
+        "y": 808.1550205916101
       },
       "width": 520,
       "height": 300,
@@ -3063,6 +3144,13 @@
         "definitionKey": "twilite-product-section",
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1783016789838,
+          "reason": "auto-layout"
         }
       }
     },
@@ -3072,8 +3160,8 @@
       "label": "Why Graph Structure Matters",
       "root": false,
       "position": {
-        "x": 1280,
-        "y": 920
+        "x": -760.5,
+        "y": 808.1550205916101
       },
       "width": 520,
       "height": 300,
@@ -3225,6 +3313,13 @@
         "definitionKey": "twilite-product-section",
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1783016789838,
+          "reason": "auto-layout"
         }
       }
     },
@@ -3234,8 +3329,8 @@
       "label": "Why Persistence Matters",
       "root": false,
       "position": {
-        "x": 720,
-        "y": 1280
+        "x": 1500.5000000000002,
+        "y": 1278.15502059161
       },
       "width": 520,
       "height": 300,
@@ -3387,6 +3482,13 @@
         "definitionKey": "twilite-product-section",
         "identity": {
           "graphId": "twilite-product-declaration"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1783016789838,
+          "reason": "auto-layout"
         }
       }
     }
@@ -3430,7 +3532,7 @@
       "type": "reference",
       "source": "twilite-product-title",
       "target": "twilite-product-back",
-      "sourcePort": "bottom",
+      "sourcePort": "left",
       "targetPort": "top",
       "label": "products",
       "style": {},
@@ -3441,8 +3543,8 @@
       "type": "reference",
       "source": "twilite-product-title",
       "target": "twilite-product-tutorial",
-      "sourcePort": "root",
-      "targetPort": "root",
+      "sourcePort": "left",
+      "targetPort": "top",
       "label": "tutorial",
       "style": {},
       "data": {}
@@ -3482,7 +3584,7 @@
       "source": "twilite-product-title",
       "target": "8f27d257-bb70-4c1b-b2e8-63e0e4dc9106",
       "sourcePort": "right",
-      "targetPort": "root",
+      "targetPort": "top",
       "portMeta": {
         "source": {
           "key": "root",
@@ -3510,8 +3612,8 @@
       "type": "reference",
       "source": "twilite-product-how",
       "target": "72b60d74-6d4d-49d2-89f7-95d96231b104",
-      "sourcePort": "root",
-      "targetPort": "root",
+      "sourcePort": "left",
+      "targetPort": "left",
       "portMeta": {
         "source": {
           "key": "root",
@@ -3539,8 +3641,8 @@
       "type": "reference",
       "source": "twilite-product-difference",
       "target": "0f7b1d2a-6386-4f3c-bf3d-5bc04c57d103",
-      "sourcePort": "root",
-      "targetPort": "root",
+      "sourcePort": "left",
+      "targetPort": "left",
       "portMeta": {
         "source": {
           "key": "root",
@@ -3568,8 +3670,8 @@
       "type": "reference",
       "source": "twilite-product-proof",
       "target": "8b1c5d1e-8d9c-45ec-97e0-6a4d9d9df102",
-      "sourcePort": "right",
-      "targetPort": "root",
+      "sourcePort": "bottom",
+      "targetPort": "right",
       "portMeta": {
         "source": {
           "key": "root",
@@ -3597,8 +3699,8 @@
       "type": "reference",
       "source": "72b60d74-6d4d-49d2-89f7-95d96231b104",
       "target": "de4d58e9-60f4-4d58-83dc-857d9091f105",
-      "sourcePort": "root",
-      "targetPort": "root",
+      "sourcePort": "left",
+      "targetPort": "left",
       "portMeta": {
         "source": {
           "key": "root",
@@ -3627,7 +3729,7 @@
       "source": "8f27d257-bb70-4c1b-b2e8-63e0e4dc9106",
       "target": "8b1c5d1e-8d9c-45ec-97e0-6a4d9d9df102",
       "sourcePort": "bottom",
-      "targetPort": "top",
+      "targetPort": "left",
       "portMeta": {
         "source": {
           "key": "root",
@@ -3684,8 +3786,8 @@
       "type": "reference",
       "source": "de4d58e9-60f4-4d58-83dc-857d9091f105",
       "target": "4d91c0d5-7b7d-4d5d-a0d2-6f0f2f7cb201",
-      "sourcePort": "root",
-      "targetPort": "root",
+      "sourcePort": "left",
+      "targetPort": "left",
       "portMeta": {
         "source": {
           "key": "root",
@@ -3714,7 +3816,7 @@
       "source": "9d3fdc22-f2f0-45d2-bf6f-6d0f9f55a101",
       "target": "4d91c0d5-7b7d-4d5d-a0d2-6f0f2f7cb201",
       "sourcePort": "right",
-      "targetPort": "root",
+      "targetPort": "left",
       "portMeta": {
         "source": {
           "key": "root",
@@ -3735,28 +3837,6 @@
         "dash": [],
         "curved": true
       },
-      "data": {}
-    },
-    {
-      "id": "twilite-product-edge-cta-back",
-      "type": "reference",
-      "source": "twilite-product-get-started",
-      "target": "twilite-product-back",
-      "sourcePort": "root",
-      "targetPort": "root",
-      "label": "browse",
-      "style": {},
-      "data": {}
-    },
-    {
-      "id": "twilite-product-edge-cta-tutorial",
-      "type": "reference",
-      "source": "twilite-product-get-started",
-      "target": "twilite-product-tutorial",
-      "sourcePort": "root",
-      "targetPort": "root",
-      "label": "start",
-      "style": {},
       "data": {}
     }
   ],
@@ -3789,14 +3869,17 @@
       }
     },
     "github": {
-      "repo": "twilitellc/public",
+      "repo": "TwiliteLLC/public",
       "path": "products/twilite/root.node",
       "branch": "main",
       "autoCreateRepo": true,
       "repoVisibility": "private",
       "seedOnCommit": false,
       "enableGithubPages": false,
-      "installationId": ""
+      "installationId": "117640936",
+      "defaultSaveSlot": "work",
+      "visibilityHint": "private",
+      "saveMode": "github"
     },
     "autoSave": false
   },
