@@ -7,7 +7,7 @@
     "version": "0.1.0",
     "kind": "tutorial",
     "created": "2026-07-02T22:32:40.250Z",
-    "modified": "2026-07-02T23:11:16.670Z",
+    "modified": "2026-07-03T00:00:25.867Z",
     "author": "",
     "tags": [
       "tutorial"
@@ -238,134 +238,6 @@
       },
       "width": 280,
       "height": 120,
-      "handles": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "angle": 210
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "angle": 270
-        },
-        {
-          "id": "left",
-          "label": "left",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "angle": 180
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "angle": 90
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "angle": 360
-        }
-      ],
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "angle": 210
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "angle": 270
-        },
-        {
-          "id": "left",
-          "label": "left",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "angle": 180
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "angle": 90
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "angle": 360
-        }
-      ],
-      "inputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "any"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "outputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "any"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
       "visible": true,
       "showLabel": true,
       "data": {
@@ -1564,8 +1436,8 @@
       "label": "One Graph, Many Depths",
       "root": false,
       "position": {
-        "x": -432.85059998291945,
-        "y": -358.3710857240462
+        "x": -360,
+        "y": -400
       },
       "width": 420,
       "height": 260,
@@ -1714,13 +1586,6 @@
         "definitionKey": "tutorial-concept",
         "identity": {
           "graphId": "tutorial-what-is-a-node-graph"
-        },
-        "_placement": {
-          "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1783033588013,
-          "reason": "node-drag"
         }
       }
     },
@@ -1730,8 +1595,8 @@
       "label": "Document vs Graph",
       "root": false,
       "position": {
-        "x": -1059.8328221927663,
-        "y": -14.156418120111283
+        "x": -680,
+        "y": -20
       },
       "width": 700,
       "height": 300,
@@ -1880,13 +1745,6 @@
         "definitionKey": "tutorial-example",
         "identity": {
           "graphId": "tutorial-what-is-a-node-graph"
-        },
-        "_placement": {
-          "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1783033550938,
-          "reason": "node-drag"
         }
       }
     },
@@ -1896,8 +1754,8 @@
       "label": "The Graph Becomes The Artifact",
       "root": false,
       "position": {
-        "x": 712.4235136044847,
-        "y": -103.71720599378187
+        "x": 180,
+        "y": -20
       },
       "width": 700,
       "height": 300,
@@ -2046,13 +1904,165 @@
         "definitionKey": "tutorial-example",
         "identity": {
           "graphId": "tutorial-what-is-a-node-graph"
+        }
+      }
+    },
+    {
+      "id": "node-graph-challenge",
+      "type": "tutorial-challenge",
+      "label": "When Is A Graph Better?",
+      "root": false,
+      "position": {
+        "x": 1040,
+        "y": -20
+      },
+      "width": 420,
+      "height": 280,
+      "handles": [
+        {
+          "id": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
         },
-        "_placement": {
-          "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1783033560675,
-          "reason": "node-drag"
+        {
+          "id": "top",
+          "label": "top",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "angle": 270
+        },
+        {
+          "id": "left",
+          "label": "left",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "angle": 180
+        },
+        {
+          "id": "bottom",
+          "label": "bottom",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "angle": 90
+        },
+        {
+          "id": "right",
+          "label": "right",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "angle": 360
+        }
+      ],
+      "ports": [
+        {
+          "id": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "top",
+          "label": "top",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "angle": 270
+        },
+        {
+          "id": "left",
+          "label": "left",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "angle": 180
+        },
+        {
+          "id": "bottom",
+          "label": "bottom",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "angle": 90
+        },
+        {
+          "id": "right",
+          "label": "right",
+          "direction": "bidirectional",
+          "dataType": "value",
+          "angle": 360
+        }
+      ],
+      "inputs": [
+        {
+          "key": "root",
+          "label": "root",
+          "type": "any"
+        },
+        {
+          "key": "top",
+          "label": "top",
+          "type": "value"
+        },
+        {
+          "key": "left",
+          "label": "left",
+          "type": "value"
+        },
+        {
+          "key": "bottom",
+          "label": "bottom",
+          "type": "value"
+        },
+        {
+          "key": "right",
+          "label": "right",
+          "type": "value"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "root",
+          "label": "root",
+          "type": "any"
+        },
+        {
+          "key": "top",
+          "label": "top",
+          "type": "value"
+        },
+        {
+          "key": "left",
+          "label": "left",
+          "type": "value"
+        },
+        {
+          "key": "bottom",
+          "label": "bottom",
+          "type": "value"
+        },
+        {
+          "key": "right",
+          "label": "right",
+          "type": "value"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "When Is A Graph Better?",
+        "body": "Try to answer this in one sentence:\n\nA node graph is more powerful than a paragraph when ____________________.\n\nIf your answer does not mention relationships, navigation, or structural growth, return to the concept cards above.",
+        "_classBinding": {
+          "key": "tutorial-challenge",
+          "sourceRef": "github://twilite-zone/public/tutorial/basic-primitives/tutorial-challenge.node-class.node",
+          "ref": "github://twilite-zone/public/tutorial/basic-primitives/tutorial-challenge.node-class.node"
+        },
+        "_bridge": {
+          "classKey": "tutorial-challenge",
+          "classRef": "github://twilite-zone/public/tutorial/basic-primitives/tutorial-challenge.node-class.node"
+        },
+        "definitionKey": "tutorial-challenge",
+        "identity": {
+          "graphId": "tutorial-what-is-a-node-graph"
         }
       }
     },
@@ -2062,8 +2072,8 @@
       "label": "Checkpoint",
       "root": false,
       "position": {
-        "x": -239.97244945289174,
-        "y": 368.26176795262313
+        "x": 120,
+        "y": 380
       },
       "width": 620,
       "height": 240,
@@ -2212,13 +2222,6 @@
         "definitionKey": "tutorial-checkpoint",
         "identity": {
           "graphId": "tutorial-what-is-a-node-graph"
-        },
-        "_placement": {
-          "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1783033165988,
-          "reason": "node-drag"
         }
       }
     },
@@ -2529,14 +2532,14 @@
       "visible": true,
       "showLabel": true,
       "data": {
-        "memo": "Move from the medium to the Twilite primitives.",
+        "memo": "Move from the medium into the bootstrap lesson for your first LLM-guided graph.",
         "intent": "external",
         "target": {
-          "endpoint": "github://twilite-zone/public/tutorial/basic-primitives/root.node:root",
+          "endpoint": "github://twilite-zone/public/tutorial/bootstrap-llm/root.node:root",
           "mode": "navigate",
           "label": "Open",
           "portId": "root",
-          "ref": "github://twilite-zone/public/tutorial/basic-primitives/root.node",
+          "ref": "github://twilite-zone/public/tutorial/bootstrap-llm/root.node",
           "handleId": "root"
         },
         "security": "prompt",
@@ -2544,12 +2547,12 @@
           "graphId": "tutorial-what-is-a-node-graph"
         },
         "authority": "navigate",
-        "ref": "github://twilite-zone/public/tutorial/basic-primitives/root.node",
-        "src": "github://twilite-zone/public/tutorial/basic-primitives/root.node",
-        "endpoint": "github://twilite-zone/public/tutorial/basic-primitives/root.node:root",
-        "sourceNodeId": "basic-primitives-reader",
+        "ref": "github://twilite-zone/public/tutorial/bootstrap-llm/root.node",
+        "src": "github://twilite-zone/public/tutorial/bootstrap-llm/root.node",
+        "endpoint": "github://twilite-zone/public/tutorial/bootstrap-llm/root.node:root",
+        "sourceNodeId": "bootstrap-llm-reader",
         "sourcePayload": "node.web.detail",
-        "sourceRef": "github://twilite-zone/public/tutorial/basic-primitives/root.node"
+        "sourceRef": "github://twilite-zone/public/tutorial/bootstrap-llm/root.node"
       }
     },
     {
@@ -2830,6 +2833,17 @@
       "data": {}
     },
     {
+      "id": "node-graph-edge-compare-challenge",
+      "type": "reference",
+      "source": "node-graph-example-compare",
+      "target": "node-graph-challenge",
+      "sourcePort": "right",
+      "targetPort": "left",
+      "label": "test",
+      "style": {},
+      "data": {}
+    },
+    {
       "id": "node-graph-edge-artifact-checkpoint",
       "type": "reference",
       "source": "node-graph-example-artifact",
@@ -2837,6 +2851,17 @@
       "sourcePort": "bottom",
       "targetPort": "top",
       "label": "lands",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "node-graph-edge-challenge-checkpoint",
+      "type": "reference",
+      "source": "node-graph-challenge",
+      "target": "node-graph-checkpoint",
+      "sourcePort": "bottom",
+      "targetPort": "top",
+      "label": "verify",
       "style": {},
       "data": {}
     },
