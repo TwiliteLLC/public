@@ -1,12 +1,17 @@
 {
   "fileVersion": "1.0",
   "metadata": {
-    "title": "Untitled Project",
+    "title": "Untitled Graph",
     "description": "",
-    "created": "2026-05-15T01:57:03.646Z",
-    "modified": "2026-05-15T01:57:58.030Z",
+    "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
+    "version": "0.1.0",
+    "kind": "graph",
+    "created": "2026-07-04T21:36:50.238Z",
+    "modified": "2026-07-04T21:37:39.355Z",
     "author": "",
-    "tags": [],
+    "tags": [
+      "graph"
+    ],
     "preferredViewer": "https://twilite.zone"
   },
   "nodes": [
@@ -70,6 +75,9 @@
           "source": "layout",
           "updatedAt": 1778692305605,
           "reason": "auto-layout"
+        },
+        "identity": {
+          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
         }
       }
     },
@@ -133,6 +141,9 @@
           "source": "layout",
           "updatedAt": 1778692305605,
           "reason": "auto-layout"
+        },
+        "identity": {
+          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
         }
       }
     },
@@ -196,6 +207,9 @@
           "source": "layout",
           "updatedAt": 1778692305605,
           "reason": "auto-layout"
+        },
+        "identity": {
+          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
         }
       }
     },
@@ -218,20 +232,29 @@
         "target": {
           "endpoint": "github://twilite-zone/public/root.node:root",
           "mode": "navigate",
-          "label": "Open"
+          "label": "Open",
+          "portId": "root",
+          "ref": "github://twilite-zone/public/root.node",
+          "handleId": "root"
         },
         "sourceRef": "github://twilite-zone/public/root.node",
         "sourceNodeId": "public-root-view",
         "sourcePayload": "node.web.summary",
-        "isRoot": false,
-        "root": false,
         "_placement": {
           "version": 1,
           "state": "auto-placed",
           "source": "layout",
           "updatedAt": 1778692305605,
           "reason": "auto-layout"
-        }
+        },
+        "identity": {
+          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
+        },
+        "authority": "navigate",
+        "security": "prompt",
+        "ref": "github://twilite-zone/public/root.node",
+        "src": "github://twilite-zone/public/root.node",
+        "endpoint": "github://twilite-zone/public/root.node:root"
       }
     },
     {
@@ -381,6 +404,9 @@
           "source": "manual",
           "updatedAt": 1778810256012,
           "reason": "node-drag"
+        },
+        "identity": {
+          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
         }
       }
     },
@@ -470,6 +496,9 @@
           "source": "layout",
           "updatedAt": 1778692305605,
           "reason": "auto-layout"
+        },
+        "identity": {
+          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
         }
       }
     },
@@ -613,76 +642,9 @@
           "updatedAt": 1778692305605,
           "reason": "auto-layout"
         },
-        "viewRole": "summary"
-      }
-    },
-    {
-      "id": "twilite-developer-area",
-      "type": "portal",
-      "label": "Developer Area",
-      "root": false,
-      "position": {
-        "x": 562.3174700278362,
-        "y": 615.25
-      },
-      "width": 360,
-      "height": 240,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "memo": "Open the Developer Area section.",
-        "intent": "external",
-        "target": {
-          "endpoint": "github://twilite-zone/public/twilite/developer-area/root.node:root",
-          "mode": "navigate",
-          "label": "Open"
-        },
-        "sourceRef": "github://twilite-zone/public/twilite/developer-area/root.node",
-        "sourceNodeId": "developer-area-view",
-        "sourcePayload": "node.web.summary",
-        "isRoot": false,
-        "root": false,
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
-        }
-      }
-    },
-    {
-      "id": "twilite-business-affairs",
-      "type": "portal",
-      "label": "Business Affairs",
-      "root": false,
-      "position": {
-        "x": 562.3174700278362,
-        "y": 354.25
-      },
-      "width": 360,
-      "height": 240,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "memo": "Open the Business Affairs section.",
-        "intent": "external",
-        "target": {
-          "endpoint": "github://twilitellc/public/business-affairs/root.node:root",
-          "mode": "navigate",
-          "label": "Open"
-        },
-        "sourceRef": "github://twilitellc/public/business-affairs/root.node",
-        "sourceNodeId": "business-affairs-view",
-        "sourcePayload": "node.web.summary",
-        "isRoot": false,
-        "root": false,
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
+        "viewRole": "summary",
+        "identity": {
+          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
         }
       }
     },
@@ -705,20 +667,29 @@
         "target": {
           "endpoint": "github://twilitellc/public/products/root.node:root",
           "mode": "navigate",
-          "label": "Open"
+          "label": "Open",
+          "portId": "root",
+          "ref": "github://twilitellc/public/products/root.node",
+          "handleId": "root"
         },
         "sourceRef": "github://twilitellc/public/products/root.node",
         "sourceNodeId": "products-view",
         "sourcePayload": "node.web.summary",
-        "isRoot": false,
-        "root": false,
         "_placement": {
           "version": 1,
           "state": "auto-placed",
           "source": "layout",
           "updatedAt": 1778692305605,
           "reason": "auto-layout"
-        }
+        },
+        "identity": {
+          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
+        },
+        "authority": "navigate",
+        "security": "prompt",
+        "ref": "github://twilitellc/public/products/root.node",
+        "src": "github://twilitellc/public/products/root.node",
+        "endpoint": "github://twilitellc/public/products/root.node:root"
       }
     },
     {
@@ -842,7 +813,7 @@
       "showLabel": true,
       "data": {
         "identity": {
-          "graphId": "22014b3f-b483-42ae-aa90-037baf081332",
+          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
           "name": "Untitled Graph",
           "version": "0.1.0",
           "description": "",
@@ -1092,7 +1063,7 @@
       "data": {
         "memo": "",
         "link": "",
-        "authority": "consume-view",
+        "authority": "navigate",
         "src": "github://twilite-zone/public/boulevard/root.node",
         "ref": "github://twilite-zone/public/boulevard/root.node",
         "endpoint": "github://twilite-zone/public/boulevard/root.node:root",
@@ -1118,9 +1089,12 @@
           "reason": "auto-layout"
         },
         "security": "prompt",
-        "sourceRef": "/root.node",
+        "sourceRef": "github://twilite-zone/public/boulevard/root.node",
         "sourceNodeId": "boulevard-view",
-        "sourcePayload": "node.web"
+        "sourcePayload": "node.web",
+        "identity": {
+          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
+        }
       }
     }
   ],
@@ -1166,28 +1140,6 @@
       "sourcePort": "root",
       "targetPort": "root",
       "label": "zone root",
-      "style": {},
-      "data": {}
-    },
-    {
-      "id": "twilite-edge-title-developer",
-      "type": "reference",
-      "source": "twilite-title",
-      "target": "twilite-developer-area",
-      "sourcePort": "root",
-      "targetPort": "root",
-      "label": "developer area",
-      "style": {},
-      "data": {}
-    },
-    {
-      "id": "twilite-edge-title-business-affairs",
-      "type": "reference",
-      "source": "twilite-title",
-      "target": "twilite-business-affairs",
-      "sourcePort": "root",
-      "targetPort": "root",
-      "label": "business affairs",
       "style": {},
       "data": {}
     },
@@ -1239,7 +1191,7 @@
       "repoVisibility": "private",
       "seedOnCommit": false,
       "enableGithubPages": false,
-      "installationId": ""
+      "installationId": "120403738"
     },
     "autoSave": false
   },
