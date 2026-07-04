@@ -768,9 +768,9 @@
           "ref": "github://twilitellc/public/products/root.node",
           "handleId": "root"
         },
-        "sourceRef": "github://twilitellc/public/products/root.node",
-        "sourceNodeId": "products-view",
-        "sourcePayload": "node.web.summary",
+        "sourceRef": "github://twilitellc/public/products/twilite/root.node",
+        "sourceNodeId": "twilite-product-icon-view",
+        "sourcePayload": "node.web.icon",
         "_placement": {
           "version": 1,
           "state": "manually-shaped",
@@ -941,8 +941,8 @@
           "handleId": "root",
           "surfaceId": ""
         },
-        "sourceRef": "github://twilite-zone/public/tutorial/root.node",
-        "sourceNodeId": "tutorial-icon-view",
+        "sourceRef": "github://twilitellc/public/products/twilite/root.node",
+        "sourceNodeId": "twilite-product-icon-view",
         "sourcePayload": "node.web.icon",
         "authority": "navigate",
         "security": "prompt",
