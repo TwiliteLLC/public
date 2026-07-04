@@ -5,12 +5,12 @@
     "description": "",
     "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
     "version": "0.1.0",
-    "kind": "graph",
-    "created": "2026-07-04T21:36:50.238Z",
-    "modified": "2026-07-04T21:37:39.355Z",
+    "kind": "company",
+    "created": "2026-07-04T22:35:59.827Z",
+    "modified": "2026-07-04T22:40:31.604Z",
     "author": "",
     "tags": [
-      "graph"
+      "company"
     ],
     "preferredViewer": "https://twilite.zone"
   },
@@ -821,7 +821,7 @@
           "updatedAt": "2026-05-10T20:49:15.627Z"
         },
         "intent": {
-          "kind": "graph",
+          "kind": "company",
           "scope": "mixed"
         },
         "dependencies": {
