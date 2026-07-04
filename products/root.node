@@ -139,7 +139,7 @@
           "updatedAt": "2026-05-10T00:00:00.000Z"
         },
         "intent": {
-          "kind": "graph",
+          "kind": "products-page",
           "scope": "local"
         },
         "dependencies": {
@@ -213,12 +213,12 @@
         },
         "summaryNodeId": "products-view",
         "name": "Products Declaration",
-        "declaresKind": "graph",
+        "declaresKind": "products-page",
         "purpose": "Declare the Products public section root.",
         "primaryNodeViewId": "products-view",
         "portViewNodeId": "products-view",
         "declaration": {
-          "kind": "graph",
+          "kind": "products-page",
           "primaryNodeViewId": "products-view",
           "portViewNodeId": "products-view",
           "defaultSurfaceId": "port",
@@ -526,12 +526,12 @@
       "visible": true,
       "showLabel": true,
       "data": {
-        "name": "Products Page",
-        "key": "products-page",
+        "name": "Products",
+        "key": "products",
         "classRef": "github://twilitellc/public/products/root.node",
-        "meaning": "Host landing page for product lines, offerings, and product-facing destinations.",
-        "description": "Products page root for public product discovery, launches, and outbound product cards.",
-        "category": "product-page",
+        "meaning": "Shared destination surface for product lines and offerings.",
+        "description": "Section root for products graphs and product-facing destinations.",
+        "category": "section",
         "status": "active",
         "_classBinding": {
           "key": "type-definition",
