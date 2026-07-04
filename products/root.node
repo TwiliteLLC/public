@@ -607,8 +607,8 @@
           "label": "Open"
         },
         "sourceRef": "github://twilitellc/public/products/twilite/root.node",
-        "sourceNodeId": "twilite-product-view",
-        "sourcePayload": "node.web.summary",
+        "sourceNodeId": "twilite-product-icon-view",
+        "sourcePayload": "node.web.icon",
         "_placement": {
           "version": 1,
           "state": "manually-shaped",
