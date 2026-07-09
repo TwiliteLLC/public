@@ -151,7 +151,6 @@
             "declaration",
             "title",
             "type-definition",
-            "ui-view",
             "port"
           ],
           "portContracts": [
@@ -512,7 +511,7 @@
     },
     {
       "id": "business-affairs-view",
-      "type": "ui-view",
+      "type": "port",
       "label": "View",
       "position": {
         "x": -460,

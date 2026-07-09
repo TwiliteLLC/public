@@ -147,7 +147,6 @@
             "declaration",
             "title",
             "type-definition",
-            "ui-view",
             "port"
           ],
           "portContracts": [
@@ -550,7 +549,7 @@
     },
     {
       "id": "products-view",
-      "type": "ui-view",
+      "type": "port",
       "label": "View",
       "root": false,
       "position": {

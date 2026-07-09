@@ -47,7 +47,6 @@
             "bridge",
             "title",
             "type-definition",
-            "ui-view",
             "port",
             "twilite-product-hero",
             "twilite-product-section",
@@ -378,7 +377,7 @@
     },
     {
       "id": "twilite-product-template-view",
-      "type": "ui-view",
+      "type": "port",
       "label": "View",
       "position": {
         "x": -280,
