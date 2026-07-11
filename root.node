@@ -235,11 +235,12 @@
           "label": "Open",
           "portId": "root",
           "ref": "github://twilite-zone/public/root.node",
-          "handleId": "root"
+          "handleId": "root",
+          "surfaceId": "public-root-view"
         },
         "sourceRef": "github://twilite-zone/public/root.node",
         "sourceNodeId": "public-root-view",
-        "sourcePayload": "node.web.summary",
+        "sourcePayload": "node.web",
         "_placement": {
           "version": 1,
           "state": "auto-placed",
@@ -254,7 +255,8 @@
         "security": "prompt",
         "ref": "github://twilite-zone/public/root.node",
         "src": "github://twilite-zone/public/root.node",
-        "endpoint": "github://twilite-zone/public/root.node:root"
+        "endpoint": "github://twilite-zone/public/root.node:root",
+        "surfaceId": "public-root-view"
       }
     },
     {
