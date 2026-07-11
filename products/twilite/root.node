@@ -943,7 +943,7 @@
           "surfaceId": ""
         },
         "sourceRef": "github://twilite-zone/public/tutorial/root.node",
-        "sourceNodeId": "twilite-product-icon-view",
+        "sourceNodeId": "tutorial-icon-view",
         "sourcePayload": "node.web.icon",
         "authority": "navigate",
         "security": "prompt",
