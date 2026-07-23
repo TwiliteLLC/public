@@ -6,14 +6,11 @@
     "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
     "version": "0.2.0",
     "kind": "company",
-    "created": "2026-07-04T22:35:59.827Z",
-    "modified": "2026-07-22T00:00:00.000Z",
+    "created": "2026-07-23T16:23:27.032Z",
+    "modified": "2026-07-23T16:24:20.246Z",
     "author": "",
     "tags": [
-      "company",
-      "twilite",
-      "products",
-      "home"
+      "company"
     ],
     "preferredViewer": "https://twilite.zone"
   },
@@ -1156,7 +1153,11 @@
       "sourcePort": "root",
       "targetPort": "root",
       "label": "boulevard",
-      "style": {},
+      "style": {
+        "route": "curved",
+        "curved": true,
+        "orthogonal": false
+      },
       "data": {}
     }
   ],
@@ -1196,13 +1197,9 @@
       "repoVisibility": "private",
       "seedOnCommit": false,
       "enableGithubPages": false,
-      "installationId": "120403738"
+      "installationId": ""
     },
     "autoSave": false
   },
-  "scripts": [],
-  "type": "company",
-  "nodeCount": 10,
-  "edgeCount": 6,
-  "timestamp": "2026-07-22T00:00:00.000Z"
+  "scripts": []
 }
