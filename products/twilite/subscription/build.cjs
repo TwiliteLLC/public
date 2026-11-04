@@ -51,7 +51,7 @@ const nodes = [
     relationshipHandle('landing-surface', 'landing surface', 0)
   ]),
   node('twilite-subscription-landing', 'content', 'What You Get With Twilite', -250, -760, 720, 420, {
-    content: { kind: 'markdown', value: '# What You Get With Twilite\n\n## Browse freely. Subscribe to produce.\n\nPublic graphs remain open to explore and share. The **$15/month** subscription pays for the integrated production environment: repository-backed authoring, dependable persistence, validation, publishing, reusable capabilities, automation, and agent-assisted graph work.\n\nThis graph tells you what that means in practical terms—and where the current limits are.' },
+    content: { kind: 'markdown', value: '# What You Get With Twilite\n\n## Browse freely. Subscribe to produce.\n\nPublic graphs remain open to explore and share. The **$20/month** subscription pays for the integrated production environment: repository-backed authoring, dependable persistence, validation, publishing, reusable capabilities, automation, and agent-assisted graph work.\n\nThis graph tells you what that means in practical terms—and where the current limits are.' },
     renderShape: { kind: 'markdown' }
   }),
   node('twilite-subscription-detail-view', 'view', 'Subscription Detail', -900, -250, 420, 300, {
@@ -75,7 +75,7 @@ const nodes = [
   node('twilite-subscription-hero', 'twilite-product-hero', 'Production That Keeps Its Shape', 600, -720, 620, 360, {
     eyebrow: 'TWILITE SUBSCRIPTION', title: 'Production That Keeps Its Shape',
     subtitle: 'The subscription is not payment for reading a file. It is payment for the integrated environment that helps people and agents safely build, preserve, publish, and continue graph-native work.',
-    badge: '$15 / MONTH', status: 'PUBLIC GRAPHS STAY OPEN', ...bind('twilite-product-hero', refs.hero, 'twilite-subscription-bridge-hero')
+    badge: '$20 / MONTH', status: 'PUBLIC GRAPHS STAY OPEN', ...bind('twilite-product-hero', refs.hero, 'twilite-subscription-bridge-hero')
   }),
   node('twilite-subscription-authoring', 'twilite-product-section', 'Repository-Backed Authoring', 600, -250, 430, 300, {
     tag: 'AUTHOR', title: 'Work Directly With Durable Repositories', body: 'Connect GitHub, open repository graphs, create and edit nodes, use authored ports and views, validate changes, and save work back to its durable source.',

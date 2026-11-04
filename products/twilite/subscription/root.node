@@ -170,7 +170,7 @@
       "data": {
         "content": {
           "kind": "markdown",
-          "value": "# What You Get With Twilite\n\n## Browse freely. Subscribe to produce.\n\nPublic graphs remain open to explore and share. The **$15/month** subscription pays for the integrated production environment: repository-backed authoring, dependable persistence, validation, publishing, reusable capabilities, automation, and agent-assisted graph work.\n\nThis graph tells you what that means in practical terms—and where the current limits are."
+          "value": "# What You Get With Twilite\n\n## Browse freely. Subscribe to produce.\n\nPublic graphs remain open to explore and share. The **$20/month** subscription pays for the integrated production environment: repository-backed authoring, dependable persistence, validation, publishing, reusable capabilities, automation, and agent-assisted graph work.\n\nThis graph tells you what that means in practical terms—and where the current limits are."
         },
         "renderShape": {
           "kind": "markdown"
@@ -580,7 +580,7 @@
         "eyebrow": "TWILITE SUBSCRIPTION",
         "title": "Production That Keeps Its Shape",
         "subtitle": "The subscription is not payment for reading a file. It is payment for the integrated environment that helps people and agents safely build, preserve, publish, and continue graph-native work.",
-        "badge": "$15 / MONTH",
+        "badge": "$20 / MONTH",
         "status": "PUBLIC GRAPHS STAY OPEN",
         "identity": {
           "graphId": "twilite-subscription"
