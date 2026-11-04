@@ -2,7 +2,7 @@
   "fileVersion": "1.0",
   "metadata": {
     "created": "2026-09-25T01:29:08.039Z",
-    "modified": "2026-11-04T18:30:19.513Z",
+    "modified": "2026-11-04T20:42:38.920Z",
     "tags": [
       "primitive-spec",
       "port"
@@ -15,7 +15,7 @@
       "type": "root",
       "position": {
         "x": 0,
-        "y": 1280
+        "y": 1472
       },
       "width": 420,
       "height": 300,
@@ -472,7 +472,7 @@
           "name": "Twilite",
           "version": "0.4.0",
           "description": "The Twilite page: see the whole project and zoom into any part, a file you own that any AI can read, then what is free and what the editor adds.",
-          "updatedAt": "2026-11-04T18:30:19.486Z"
+          "updatedAt": "2026-11-04T20:42:38.919Z"
         },
         "intent": {
           "kind": "graph",
@@ -540,7 +540,7 @@
       "type": "glyph",
       "position": {
         "x": 1520,
-        "y": 1280
+        "y": 1472
       },
       "width": 220,
       "height": 140,
@@ -605,7 +605,7 @@
       "label": "Detail view",
       "position": {
         "x": 480,
-        "y": 1280
+        "y": 1472
       },
       "width": 640,
       "height": 480,
@@ -656,7 +656,7 @@
       "label": "Summary view",
       "position": {
         "x": 1180,
-        "y": 1280
+        "y": 1472
       },
       "width": 300,
       "height": 200,
@@ -709,7 +709,7 @@
         "y": 0
       },
       "width": 980,
-      "height": 1220,
+      "height": 1412,
       "ports": [
         {
           "id": "root",
