@@ -97,7 +97,7 @@
           ],
           "nodeDef": {
             "key": "twilite-product-hero",
-            "ref": "github://TwiliteLLC/public/products/twilite/twilite-product-hero.node-class.node",
+            "ref": "tlz://twilite.zone/products/twilite/twilite-product-hero.node-class.node",
             "source": "local",
             "version": ">=0.1.0",
             "defaults": {

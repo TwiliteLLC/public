@@ -394,7 +394,7 @@
           "graphId": "twilite-subscription"
         },
         "bridge": {
-          "ref": "github://TwiliteLLC/public/products/twilite/twilite-product-hero.node-class.node",
+          "ref": "tlz://twilite.zone/products/twilite/twilite-product-hero.node-class.node",
           "resourceKind": "node-class",
           "key": "twilite-product-hero",
           "scope": "focused-graph",
@@ -441,7 +441,7 @@
           "graphId": "twilite-subscription"
         },
         "bridge": {
-          "ref": "github://TwiliteLLC/public/products/twilite/twilite-product-section.node-class.node",
+          "ref": "tlz://twilite.zone/products/twilite/twilite-product-section.node-class.node",
           "resourceKind": "node-class",
           "key": "twilite-product-section",
           "scope": "focused-graph",
@@ -488,7 +488,7 @@
           "graphId": "twilite-subscription"
         },
         "bridge": {
-          "ref": "github://TwiliteLLC/public/products/twilite/twilite-product-proof.node-class.node",
+          "ref": "tlz://twilite.zone/products/twilite/twilite-product-proof.node-class.node",
           "resourceKind": "node-class",
           "key": "twilite-product-proof",
           "scope": "focused-graph",
@@ -535,7 +535,7 @@
           "graphId": "twilite-subscription"
         },
         "bridge": {
-          "ref": "github://TwiliteLLC/public/products/twilite/twilite-product-cta.node-class.node",
+          "ref": "tlz://twilite.zone/products/twilite/twilite-product-cta.node-class.node",
           "resourceKind": "node-class",
           "key": "twilite-product-cta",
           "scope": "focused-graph",
@@ -585,7 +585,7 @@
         "identity": {
           "graphId": "twilite-subscription"
         },
-        "classRef": "github://TwiliteLLC/public/products/twilite/twilite-product-hero.node-class.node"
+        "classRef": "tlz://twilite.zone/products/twilite/twilite-product-hero.node-class.node"
       }
     },
     {
@@ -626,7 +626,7 @@
         "identity": {
           "graphId": "twilite-subscription"
         },
-        "classRef": "github://TwiliteLLC/public/products/twilite/twilite-product-section.node-class.node"
+        "classRef": "tlz://twilite.zone/products/twilite/twilite-product-section.node-class.node"
       }
     },
     {
@@ -667,7 +667,7 @@
         "identity": {
           "graphId": "twilite-subscription"
         },
-        "classRef": "github://TwiliteLLC/public/products/twilite/twilite-product-section.node-class.node"
+        "classRef": "tlz://twilite.zone/products/twilite/twilite-product-section.node-class.node"
       }
     },
     {
@@ -708,7 +708,7 @@
         "identity": {
           "graphId": "twilite-subscription"
         },
-        "classRef": "github://TwiliteLLC/public/products/twilite/twilite-product-section.node-class.node"
+        "classRef": "tlz://twilite.zone/products/twilite/twilite-product-section.node-class.node"
       }
     },
     {
@@ -749,7 +749,7 @@
         "identity": {
           "graphId": "twilite-subscription"
         },
-        "classRef": "github://TwiliteLLC/public/products/twilite/twilite-product-section.node-class.node"
+        "classRef": "tlz://twilite.zone/products/twilite/twilite-product-section.node-class.node"
       }
     },
     {
@@ -791,7 +791,7 @@
         "identity": {
           "graphId": "twilite-subscription"
         },
-        "classRef": "github://TwiliteLLC/public/products/twilite/twilite-product-proof.node-class.node"
+        "classRef": "tlz://twilite.zone/products/twilite/twilite-product-proof.node-class.node"
       }
     },
     {
@@ -833,7 +833,7 @@
         "identity": {
           "graphId": "twilite-subscription"
         },
-        "classRef": "github://TwiliteLLC/public/products/twilite/twilite-product-proof.node-class.node"
+        "classRef": "tlz://twilite.zone/products/twilite/twilite-product-proof.node-class.node"
       }
     },
     {
@@ -874,7 +874,7 @@
         "identity": {
           "graphId": "twilite-subscription"
         },
-        "classRef": "github://TwiliteLLC/public/products/twilite/twilite-product-section.node-class.node"
+        "classRef": "tlz://twilite.zone/products/twilite/twilite-product-section.node-class.node"
       }
     },
     {
@@ -917,7 +917,7 @@
         "identity": {
           "graphId": "twilite-subscription"
         },
-        "classRef": "github://TwiliteLLC/public/products/twilite/twilite-product-cta.node-class.node"
+        "classRef": "tlz://twilite.zone/products/twilite/twilite-product-cta.node-class.node"
       }
     },
     {
@@ -960,7 +960,7 @@
         "identity": {
           "graphId": "twilite-subscription"
         },
-        "classRef": "github://TwiliteLLC/public/products/twilite/twilite-product-cta.node-class.node"
+        "classRef": "tlz://twilite.zone/products/twilite/twilite-product-cta.node-class.node"
       }
     },
     {
@@ -998,13 +998,13 @@
         "authority": "navigate",
         "intent": "external",
         "security": "prompt",
-        "sourceRef": "github://TwiliteLLC/public/products/twilite/root.node",
+        "sourceRef": "tlz://twilite.zone/products/twilite/root.node",
         "sourceNodeId": "twilite-product-view",
         "sourcePayload": "node.web.summary",
         "surfaceId": "root",
         "target": {
-          "ref": "github://TwiliteLLC/public/products/twilite/root.node",
-          "endpoint": "github://TwiliteLLC/public/products/twilite/root.node:root",
+          "ref": "tlz://twilite.zone/products/twilite/root.node",
+          "endpoint": "tlz://twilite.zone/products/twilite/root.node:root",
           "mode": "navigate",
           "portId": "root",
           "surfaceId": "root",

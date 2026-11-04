@@ -2,6 +2,6 @@
 
 Public Twilite LLC content.
 
-Primary entry graph:
+Graphs served at twilite.zone, beside the Twilite Zone repository: the paths here are the paths on the web (company/, products/, business-affairs/).
 
-- `root.node`
+- `company/root.node`

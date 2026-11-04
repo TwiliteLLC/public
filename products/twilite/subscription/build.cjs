@@ -30,10 +30,10 @@ const bridge = (id, label, key, ref, x, y) => node(id, 'bridge', label, x, y, 26
 });
 
 const refs = {
-  hero: 'github://TwiliteLLC/public/products/twilite/twilite-product-hero.node-class.node',
-  section: 'github://TwiliteLLC/public/products/twilite/twilite-product-section.node-class.node',
-  proof: 'github://TwiliteLLC/public/products/twilite/twilite-product-proof.node-class.node',
-  cta: 'github://TwiliteLLC/public/products/twilite/twilite-product-cta.node-class.node'
+  hero: 'tlz://twilite.zone/products/twilite/twilite-product-hero.node-class.node',
+  section: 'tlz://twilite.zone/products/twilite/twilite-product-section.node-class.node',
+  proof: 'tlz://twilite.zone/products/twilite/twilite-product-proof.node-class.node',
+  cta: 'tlz://twilite.zone/products/twilite/twilite-product-cta.node-class.node'
 };
 
 const nodes = [
@@ -114,8 +114,8 @@ const nodes = [
     ...bind('twilite-product-cta', refs.cta, 'twilite-subscription-bridge-cta')
   }),
   node('twilite-subscription-product-portal', 'portal', 'Twilite Product Story', 1480, 1150, 360, 240, {
-    authority: 'navigate', intent: 'external', security: 'prompt', sourceRef: 'github://TwiliteLLC/public/products/twilite/root.node', sourceNodeId: 'twilite-product-view', sourcePayload: 'node.web.summary', surfaceId: 'root',
-    target: { ref: 'github://TwiliteLLC/public/products/twilite/root.node', endpoint: 'github://TwiliteLLC/public/products/twilite/root.node:root', mode: 'navigate', portId: 'root', surfaceId: 'root', handleId: 'root', label: 'Open Twilite Product Story' }
+    authority: 'navigate', intent: 'external', security: 'prompt', sourceRef: 'tlz://twilite.zone/products/twilite/root.node', sourceNodeId: 'twilite-product-view', sourcePayload: 'node.web.summary', surfaceId: 'root',
+    target: { ref: 'tlz://twilite.zone/products/twilite/root.node', endpoint: 'tlz://twilite.zone/products/twilite/root.node:root', mode: 'navigate', portId: 'root', surfaceId: 'root', handleId: 'root', label: 'Open Twilite Product Story' }
   }),
   node('twilite-subscription-trial-portal', 'portal', 'Trial Readiness', 1480, 800, 360, 240, {
     authority: 'navigate', intent: 'external', security: 'prompt', sourceRef: 'github://twilite-zone/public/tasks/beta-readiness/payments-readiness/root.node', sourceNodeId: 'payments-readiness-summary', sourcePayload: 'node.web', surfaceId: 'payments-readiness-summary-surface',

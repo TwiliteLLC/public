@@ -1776,8 +1776,8 @@
       }
     },
     "github": {
-      "repo": "twilitellc/public",
-      "path": "root.node",
+      "repo": "TwiliteLLC/public",
+      "path": "company/root.node",
       "branch": "main",
       "autoCreateRepo": true,
       "repoVisibility": "private",

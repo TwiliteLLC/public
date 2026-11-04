@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const subscriptionRef = 'github://TwiliteLLC/public/products/twilite/subscription/root.node';
+const subscriptionRef = 'tlz://twilite.zone/products/twilite/subscription/root.node';
 const productPath = path.resolve(__dirname, '..', 'root.node');
 const launchPath = path.resolve(__dirname, '..', '..', '..', 'tasks', 'beta-readiness', 'launch-content', 'root.node');
 
