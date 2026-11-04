@@ -1,18 +1,19 @@
 {
   "fileVersion": "1.0",
   "metadata": {
-    "created": "2026-09-25T01:29:08.039Z",
-    "modified": "2026-11-04T20:49:52.714Z",
+    "created": "2026-11-04T21:06:50.682Z",
+    "modified": "2026-11-04T21:07:36.816Z",
+    "author": "",
     "tags": [
-      "primitive-spec",
-      "port"
-    ]
+      "graph"
+    ],
+    "preferredViewer": "https://dev.twilite.zone"
   },
   "nodes": [
     {
       "id": "twilite-product-declaration",
-      "label": "Twilite",
       "type": "root",
+      "label": "Twilite",
       "position": {
         "x": 0,
         "y": 1560
@@ -205,6 +206,62 @@
                 "action": "create-node",
                 "nodeType": "face",
                 "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "event:graph.structure.changed",
+          "key": "event:graph.structure.changed",
+          "label": "Graph structure changed",
+          "direction": "output",
+          "dataType": "event",
+          "angle": 180,
+          "role": "emits-event",
+          "allowedEdgeTypes": [
+            "invokes"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "emits-event",
+            "required": false,
+            "repeatable": true,
+            "eventKey": "graph.structure.changed",
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "method",
+                "targetPort": "invokes"
+              }
+            ]
+          }
+        },
+        {
+          "id": "event:graph.changed",
+          "key": "event:graph.changed",
+          "label": "Graph changed",
+          "direction": "output",
+          "dataType": "event",
+          "angle": 160,
+          "role": "emits-event",
+          "allowedEdgeTypes": [
+            "invokes"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "emits-event",
+            "required": false,
+            "repeatable": true,
+            "eventKey": "graph.changed",
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "method",
+                "targetPort": "invokes"
               }
             ]
           }
@@ -406,65 +463,68 @@
             ]
           },
           "portId": "environment"
+        },
+        {
+          "id": "event:graph.structure.changed",
+          "key": "event:graph.structure.changed",
+          "label": "Graph structure changed",
+          "direction": "output",
+          "dataType": "event",
+          "angle": 180,
+          "role": "emits-event",
+          "allowedEdgeTypes": [
+            "invokes"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "emits-event",
+            "required": false,
+            "repeatable": true,
+            "eventKey": "graph.structure.changed",
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "method",
+                "targetPort": "invokes"
+              }
+            ]
+          },
+          "portId": "event:graph.structure.changed"
+        },
+        {
+          "id": "event:graph.changed",
+          "key": "event:graph.changed",
+          "label": "Graph changed",
+          "direction": "output",
+          "dataType": "event",
+          "angle": 160,
+          "role": "emits-event",
+          "allowedEdgeTypes": [
+            "invokes"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "emits-event",
+            "required": false,
+            "repeatable": true,
+            "eventKey": "graph.changed",
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "method",
+                "targetPort": "invokes"
+              }
+            ]
+          },
+          "portId": "event:graph.changed"
         }
       ],
-      "outputs": [
-        {
-          "key": "default-view",
-          "label": "default view",
-          "type": "any"
-        },
-        {
-          "key": "summary-view",
-          "label": "summary view",
-          "type": "any"
-        },
-        {
-          "key": "icon-view",
-          "label": "icon view",
-          "type": "any"
-        },
-        {
-          "key": "next-face",
-          "label": "first view",
-          "type": "any"
-        },
-        {
-          "key": "glyph",
-          "label": "glyph",
-          "type": "any"
-        },
-        {
-          "key": "surface",
-          "label": "surface",
-          "type": "any"
-        },
-        {
-          "key": "default-handle",
-          "label": "default handle",
-          "type": "any"
-        },
-        {
-          "key": "boundary-begin",
-          "label": "boundary begin",
-          "type": "any"
-        },
-        {
-          "key": "boundary-end",
-          "label": "boundary end",
-          "type": "any"
-        },
-        {
-          "key": "port",
-          "label": "port",
-          "type": "any"
-        },
-        {
-          "key": "ground",
-          "label": "ground",
-          "type": "any"
-        }
-      ],
+      "visible": true,
+      "showLabel": true,
       "data": {
         "identity": {
           "graphId": "root",
@@ -485,7 +545,7 @@
         "name": "Declaration",
         "purpose": "",
         "document": {
-          "url": "tlz://twilite.zone/products/twilite/root.node"
+          "url": "github://TwiliteLLC/public/products/twilite/root.node"
         },
         "events": [
           {
@@ -531,13 +591,14 @@
             }
           ]
         },
-        "memo": "The root of the graph. It holds the graph's name and description, says what kind of graph it is, and is where every other part connects. A graph has exactly one."
+        "memo": "The root of the graph. It holds the graph's name and description, says what kind of graph it is, and is where every other part connects. A graph has exactly one.",
+        "settings": {}
       }
     },
     {
       "id": "twilite-product-glyph",
-      "label": "Glyph",
       "type": "glyph",
+      "label": "Glyph",
       "position": {
         "x": 1520,
         "y": 1560
@@ -575,13 +636,8 @@
           "portId": "root"
         }
       ],
-      "inputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "any"
-        }
-      ],
+      "visible": true,
+      "showLabel": true,
       "data": {
         "glyph": {
           "kind": "symbol",
@@ -659,7 +715,7 @@
         "y": 1560
       },
       "width": 300,
-      "height": 200,
+      "height": 225,
       "ports": [
         {
           "id": "root",
@@ -708,8 +764,9 @@
         "x": 0,
         "y": 0
       },
-      "width": 980,
-      "height": 1500,
+      "positionLocked": true,
+      "width": 982.6809203225647,
+      "height": 1347.187541613815,
       "ports": [
         {
           "id": "root",
@@ -741,8 +798,7 @@
           "kind": "html",
           "value": "<div style='width:100%;height:100%;overflow:auto;box-sizing:border-box;container-type:inline-size;background:#ffffff;font-family:Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#0b0b12'><div style='max-width:980px;margin:0 auto;min-height:100%;display:flex;flex-direction:column'><div style='background:#0b0b12;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:14px;padding-bottom:14px;padding-left:clamp(20px,5cqw,48px);padding-right:clamp(20px,5cqw,48px)'><span style='font:600 13px/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.2em;color:#f5c542'>TWILITE</span><span style='display:flex;align-items:center;gap:18px;flex-wrap:wrap;font:400 13px/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif'><a href='tlz://twilite.zone/library/root.node' style='color:#ffffff;text-decoration:none'>Library</a><a href='tlz://twilite.zone/root.node' style='color:#ffffff;text-decoration:none'>The Twilite Zone</a><a href='tlz://twilite.zone/library/starters/start-with-your-ai/root.node' style='background:#f5c542;color:#0b0b12;padding:7px 14px;border-radius:6px;font-weight:600;text-decoration:none'>Start free</a></span></div><div style='background:#34106f;padding-top:clamp(32px,7cqw,56px);padding-bottom:clamp(28px,5cqw,44px);padding-left:clamp(20px,5cqw,48px);padding-right:clamp(20px,5cqw,48px)'><div style='max-width:560px'><div style='font:700 12px/16px Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.18em;color:#f5c542;margin-bottom:14px'>A WORKSPACE THAT KEEPS WHAT YOU KNOW</div><h1 style='margin:0;font:400 clamp(34px,7cqw,52px)/1.06 Newsreader,Iowan Old Style,Palatino Linotype,Book Antiqua,Georgia,serif;letter-spacing:-.01em;color:#ffffff'>See the whole project. Zoom into any part.</h1><p style='margin:16px 0 22px;font:400 17px/1.6 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#ede9fe'>Twilite keeps your goals, tasks and questions as one graph, in a file you own. You and any AI read the same thing.</p><div style='display:flex;gap:18px;align-items:center;flex-wrap:wrap'><a href='tlz://twilite.zone/library/starters/start-with-your-ai/root.node' style='display:inline-block;background:#f5c542;color:#0b0b12;padding:11px 22px;border-radius:8px;font:600 15px/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;text-decoration:none'>Start with your AI</a><a href='#kept' style='color:#ffffff;font:400 14px/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;border-bottom:1px solid #f5c542;padding-bottom:2px;text-decoration:none'>See how it is kept</a></div></div><div style='display:flex;gap:12px;align-items:flex-end;margin-top:34px'><div style='flex:0 0 auto;display:flex;flex-direction:column;gap:8px;align-items:flex-start'><div style='width:44px;height:44px;border-radius:10px;background:#f5c542;color:#34106f;display:flex;align-items:center;justify-content:center;font:600 18px/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif'>K</div><div style='font:700 10px/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.14em;color:#c4b5fd'>GLYPH</div></div><div style='flex:1.1 1 0;min-width:0;display:flex;flex-direction:column;gap:8px;justify-content:flex-end'><div style='background:#ffffff;border-radius:9px;border-left:4px solid #f5c542;padding:10px 12px;box-sizing:border-box;min-height:66px'><div style='font:700 10px/14px Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.1em;color:#34106f'>GOAL</div><div style='font:500 14px/1.4 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;margin-top:3px'>Finish the kitchen</div></div><div style='font:700 10px/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.14em;color:#c4b5fd'>SUMMARY</div></div><div style='flex:1.4 1 0;min-width:0;display:flex;flex-direction:column;gap:8px;justify-content:flex-end'><div style='background:#ffffff;border-radius:9px;border-left:4px solid #f5c542;padding:10px 12px;box-sizing:border-box;min-height:100px'><div style='font:700 10px/14px Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.1em;color:#34106f'>GOAL · IN PROGRESS</div><div style='font:500 14px/1.4 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;margin:3px 0 6px'>Finish the kitchen</div><div style='font:400 12px/1.6 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#444444'>3 tasks · 1 question<br>Quotes due Friday</div></div><div style='font:700 10px/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.14em;color:#c4b5fd'>DETAIL</div></div><div style='flex:2 1 0;min-width:0;display:flex;flex-direction:column;gap:8px;justify-content:flex-end'><div style='background:#ffffff;border-radius:9px;border-left:4px solid #f5c542;padding:10px 12px;box-sizing:border-box;min-height:136px'><div style='font:700 10px/14px Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.1em;color:#34106f'>GOAL · IN PROGRESS</div><div style='font:500 14px/1.4 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;margin:3px 0 8px'>Finish the kitchen</div><div style='display:flex;gap:6px;flex-wrap:wrap'><span style='font:400 12px/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;background:#ede9fe;color:#34106f;padding:4px 9px;border-radius:5px'>Collect three quotes</span><span style='font:400 12px/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;background:#ede9fe;color:#34106f;padding:4px 9px;border-radius:5px'>Pick the tile</span><span style='font:400 12px/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;background:#0b0b12;color:#ffffff;padding:4px 9px;border-radius:5px'>Open it up, or keep the layout?</span></div></div><div style='font:700 10px/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.14em;color:#c4b5fd'>INSIDE</div></div></div></div><div id='kept' style='background:#ffffff;padding-top:38px;padding-bottom:34px;padding-left:clamp(20px,5cqw,48px);padding-right:clamp(20px,5cqw,48px)'><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;align-items:center'><div style='min-width:0'><div style='font:700 12px/16px Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#34106f'>One file, two readers</div><div style='font:400 28px/1.2 Newsreader,Iowan Old Style,Palatino Linotype,Book Antiqua,Georgia,serif;margin:8px 0 10px'>The card you see is a file your AI can read.</div><div style='font:400 15px/1.65 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#444444'>A <span style='font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px'>.node</span> file is plain JSON. Open it in Twilite, or hand it to ChatGPT or Gemini. Nobody translates anything, and nothing is locked inside an app.</div></div><div style='min-width:0;background:#0b0b12;border-radius:10px;padding:16px 18px;font:400 13px/1.75 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#ede9fe;overflow:auto'><span style='color:#f5c542'>{</span><br>&nbsp;&nbsp;\"type\": \"task\",<br>&nbsp;&nbsp;\"label\": \"Collect three quotes\",<br>&nbsp;&nbsp;\"data\": { \"status\": \"todo\" }<br><span style='color:#f5c542'>}</span></div></div><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:34px;border-top:1px solid #e5e7eb;padding-top:26px'><div><div style='font:700 12px/16px Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#34106f'>Yours</div><div style='font:600 16px/1.3 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;margin:8px 0 4px'>Kept in your repository</div><div style='font:400 14px/1.6 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#444444'>Save it as a file, or to your own GitHub, with its history.</div></div><div><div style='font:700 12px/16px Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#34106f'>Any AI</div><div style='font:600 16px/1.3 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;margin:8px 0 4px'>Not tied to one chat</div><div style='font:400 14px/1.6 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#444444'>Tried with ChatGPT and Gemini. Switch whenever you like.</div></div><div><div style='font:700 12px/16px Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#34106f'>Connected</div><div style='font:600 16px/1.3 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;margin:8px 0 4px'>Graphs that link up</div><div style='font:400 14px/1.6 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#444444'>Open many side by side and join them with Bridges.</div></div></div></div><div id='editor' style='flex:1 0 auto;background:#f6f3ff;padding-top:34px;padding-bottom:34px;padding-left:clamp(20px,5cqw,48px);padding-right:clamp(20px,5cqw,48px)'><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px'><div style='background:#ffffff;border:1px solid #0b0b12;border-radius:10px;padding:22px'><div style='font:700 12px/16px Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#34106f'>Free</div><div style='font:400 28px/1.2 Newsreader,Iowan Old Style,Palatino Linotype,Book Antiqua,Georgia,serif;color:#0b0b12;margin:6px 0 12px'>Start and look around</div><div style='font:400 14px/1.9 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#222222'>Start with your AI<br>Zoom through your graph at three sizes<br>Change cards and statuses<br>Browse every public graph</div></div><div style='background:#0b0b12;border-radius:10px;padding:22px'><div style='font:700 12px/16px Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#f5c542'>The editor · $20 a month</div><div style='font:400 28px/1.2 Newsreader,Iowan Old Style,Palatino Linotype,Book Antiqua,Georgia,serif;color:#ffffff;margin:6px 0 12px'>Keep it, and build on it</div><div style='font:400 14px/1.9 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#ede9fe'>Save as a file or in your GitHub repository<br>A workspace for many graphs side by side<br>Your AI can keep your tasks up to date<br>Publish what you make</div><div style='margin-top:18px'><a href='https://twilite.zone/?get-editor=1' style='display:inline-block;background:#f5c542;color:#0b0b12;padding:10px 20px;border-radius:8px;font:600 14px/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;text-decoration:none'>Subscribe</a></div></div></div></div><div style='background:#1b3a6b;display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between;padding-top:16px;padding-bottom:16px;padding-left:clamp(20px,5cqw,48px);padding-right:clamp(20px,5cqw,48px);font:400 13px/1.4 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif'><a href='tlz://twilite.zone/library/root.node' style='color:#ffffff;text-decoration:none'>The Library</a><a href='tlz://twilite.zone/root.node' style='color:#ffffff;text-decoration:none'>The Twilite Zone</a><a href='tlz://twilite.zone/company/root.node' style='color:#ffffff;text-decoration:none'>Twilite LLC</a><a href='https://twilite.zone/?get-editor=1' style='color:#f5c542;text-decoration:none'>Sign in</a></div></div></div>"
         }
-      },
-      "positionLocked": true
+      }
     }
   ],
   "edges": [
@@ -751,56 +807,66 @@
       "type": "surface",
       "source": "twilite-product-declaration",
       "target": "twilite-product-detail",
+      "sourcePort": "surfaces",
+      "targetPort": "root",
       "label": "",
       "style": {},
       "data": {
         "surfaceId": "web"
-      },
-      "sourcePort": "surfaces",
-      "targetPort": "root"
+      }
     },
     {
       "id": "port-detail-summary",
       "type": "next-face",
       "source": "twilite-product-detail",
       "target": "twilite-product-summary",
+      "sourcePort": "sequence-out",
+      "targetPort": "sequence-in",
       "label": "",
       "style": {},
-      "data": {},
-      "sourcePort": "sequence-out",
-      "targetPort": "sequence-in"
+      "data": {}
     },
     {
       "id": "port-summary-icon",
       "type": "next-face",
       "source": "twilite-product-summary",
       "target": "twilite-product-glyph",
+      "sourcePort": "sequence-out",
+      "targetPort": "root",
       "label": "",
       "style": {},
-      "data": {},
-      "sourcePort": "sequence-out",
-      "targetPort": "root"
+      "data": {}
     },
     {
       "id": "twilite-product-landing-edge",
       "type": "ground",
       "source": "twilite-product-declaration",
       "target": "twilite-product-landing",
+      "sourcePort": "ground",
+      "targetPort": "root",
       "label": "",
       "style": {},
       "data": {
         "presentation": {
           "layer": "contract"
         }
-      },
-      "sourcePort": "ground",
-      "targetPort": "root"
+      }
     }
   ],
   "settings": {
+    "theme": null,
+    "backgroundImage": null,
+    "defaultNodeColor": "#1976d2",
+    "defaultEdgeColor": "",
+    "snapToGrid": false,
+    "gridSize": 20,
+    "edgeRouting": "auto",
+    "edgeAvoidNodes": true,
+    "layout": {},
     "github": {
       "path": "products/twilite/root.node",
       "repo": "TwiliteLLC/public"
     }
-  }
+  },
+  "scripts": []
 }
