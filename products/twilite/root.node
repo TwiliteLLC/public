@@ -1,8 +1,8 @@
 {
   "fileVersion": "1.0",
   "metadata": {
-    "created": "2026-11-04T21:06:50.682Z",
-    "modified": "2026-11-04T21:07:36.816Z",
+    "created": "2026-11-04T21:10:05.826Z",
+    "modified": "2026-11-04T21:13:11.120Z",
     "author": "",
     "tags": [
       "graph"
@@ -765,8 +765,8 @@
         "y": 0
       },
       "positionLocked": true,
-      "width": 982.6809203225647,
-      "height": 1347.187541613815,
+      "width": 1013.2144360544388,
+      "height": 1478.4816592608738,
       "ports": [
         {
           "id": "root",
