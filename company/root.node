@@ -1,135 +1,129 @@
 {
   "fileVersion": "1.0",
   "metadata": {
-    "title": "Twilite LLC",
-    "description": "Company and product front door for Twilite on the web.",
-    "graphId": "root",
-    "version": "1.0.0",
-    "kind": "company",
-    "created": "2026-07-23T16:23:27.032Z",
-    "modified": "2026-08-25T16:54:10.934Z",
+    "created": "2026-11-14T16:52:18.706Z",
+    "modified": "2026-11-14T19:10:52.732Z",
     "author": "",
     "tags": [
-      "company"
+      "graph"
     ],
-    "preferredViewer": "https://twilite.zone"
+    "preferredViewer": "https://dev.twilite.zone"
   },
   "nodes": [
     {
-      "id": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
-      "type": "declaration",
-      "label": "Declaration",
-      "root": false,
+      "id": "d74c9670-c181-456e-ac3e-c7ded30ed1e8",
+      "type": "root",
+      "label": "Twilite LLC",
       "position": {
-        "x": 1022.3174700278362,
-        "y": -605.75
+        "x": -620,
+        "y": -520
       },
-      "width": 360,
-      "height": 220,
+      "width": 420,
+      "height": 280,
       "ports": [
         {
-          "id": "default-view",
-          "key": "default-view",
-          "label": "default view",
-          "direction": "output",
-          "dataType": "any",
-          "angle": 165,
-          "role": "default-view",
-          "allowedEdgeTypes": [
-            "default-view"
-          ],
-          "metadata": {
-            "structural": true,
-            "relationship": true,
-            "role": "default-view",
-            "required": true,
-            "repeatable": false,
-            "behaviors": [
-              {
-                "trigger": "drag-create",
-                "action": "create-node",
-                "nodeType": "view",
-                "targetPort": "root"
-              }
-            ]
-          }
-        },
-        {
-          "id": "summary-view",
-          "key": "summary-view",
-          "label": "summary view",
-          "direction": "output",
-          "dataType": "any",
-          "angle": 180,
-          "role": "shared-summary",
-          "allowedEdgeTypes": [
-            "reference"
-          ],
-          "metadata": {
-            "structural": true,
-            "relationship": true,
-            "role": "shared-summary",
-            "required": true,
-            "repeatable": false,
-            "behaviors": [
-              {
-                "trigger": "drag-create",
-                "action": "create-node",
-                "nodeType": "view",
-                "targetPort": "root"
-              }
-            ]
-          }
-        },
-        {
-          "id": "icon-view",
-          "key": "icon-view",
-          "label": "icon view",
+          "id": "surfaces",
+          "key": "surfaces",
+          "label": "surfaces",
           "direction": "output",
           "dataType": "any",
           "angle": 195,
-          "role": "shared-icon",
+          "role": "surface",
           "allowedEdgeTypes": [
-            "reference"
+            "surface"
           ],
           "metadata": {
             "structural": true,
             "relationship": true,
-            "role": "shared-icon",
-            "required": true,
-            "repeatable": false,
+            "role": "surface",
+            "required": false,
+            "repeatable": true,
             "behaviors": [
               {
                 "trigger": "drag-create",
                 "action": "create-node",
-                "nodeType": "view",
+                "nodeType": "face",
                 "targetPort": "root"
               }
             ]
           }
         },
         {
-          "id": "glyph",
-          "key": "glyph",
-          "label": "glyph",
+          "id": "default-handle",
+          "key": "default-handle",
+          "label": "default handle",
           "direction": "output",
           "dataType": "any",
-          "angle": 270,
-          "role": "shared-glyph",
+          "angle": 275,
+          "role": "default-handle",
           "allowedEdgeTypes": [
-            "reference"
+            "edge"
           ],
           "metadata": {
             "structural": true,
             "relationship": true,
-            "role": "shared-glyph",
-            "required": true,
+            "role": "default-handle",
+            "required": false,
             "repeatable": false,
             "behaviors": [
               {
                 "trigger": "drag-create",
                 "action": "create-node",
-                "nodeType": "glyph",
+                "nodeType": "portal",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "boundary-begin",
+          "key": "boundary-begin",
+          "label": "boundary begin",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 110,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "boundary-end",
+          "key": "boundary-end",
+          "label": "boundary end",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 70,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
                 "targetPort": "root"
               }
             ]
@@ -141,10 +135,10 @@
           "label": "port",
           "direction": "output",
           "dataType": "any",
-          "angle": 90,
+          "angle": 250,
           "role": "exposes-port",
           "allowedEdgeTypes": [
-            "reference"
+            "exposes-port"
           ],
           "metadata": {
             "structural": true,
@@ -163,20 +157,20 @@
           }
         },
         {
-          "id": "landing-surface",
-          "key": "landing-surface",
-          "label": "landing surface",
+          "id": "ground",
+          "key": "ground",
+          "label": "ground",
           "direction": "output",
           "dataType": "any",
           "angle": 0,
-          "role": "landing-surface",
+          "role": "ground",
           "allowedEdgeTypes": [
-            "reference"
+            "ground"
           ],
           "metadata": {
             "structural": true,
             "relationship": true,
-            "role": "landing-surface",
+            "role": "ground",
             "required": true,
             "repeatable": false,
             "behaviors": [
@@ -188,1604 +182,806 @@
               }
             ]
           }
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 305,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          }
         }
       ],
-      "inputs": [
+      "handles": [
         {
-          "key": "root",
-          "label": "root",
-          "type": "value"
+          "id": "surfaces",
+          "key": "surfaces",
+          "label": "surfaces",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 195,
+          "role": "surface",
+          "allowedEdgeTypes": [
+            "surface"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "surface",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "surfaces"
         },
         {
-          "key": "top",
-          "label": "top",
-          "type": "value"
+          "id": "default-handle",
+          "key": "default-handle",
+          "label": "default handle",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 275,
+          "role": "default-handle",
+          "allowedEdgeTypes": [
+            "edge"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "default-handle",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "portal",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "default-handle"
         },
         {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
+          "id": "boundary-begin",
+          "key": "boundary-begin",
+          "label": "boundary begin",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 110,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "boundary-begin"
         },
         {
-          "key": "left",
-          "label": "left",
-          "type": "value"
+          "id": "boundary-end",
+          "key": "boundary-end",
+          "label": "boundary end",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 70,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "boundary-end"
         },
         {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "outputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
+          "id": "port",
+          "key": "port",
+          "label": "port",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 250,
+          "role": "exposes-port",
+          "allowedEdgeTypes": [
+            "exposes-port"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "exposes-port",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "port",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "port"
         },
         {
-          "key": "top",
-          "label": "top",
-          "type": "value"
+          "id": "ground",
+          "key": "ground",
+          "label": "ground",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "role": "ground",
+          "allowedEdgeTypes": [
+            "ground"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "ground",
+            "required": true,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "content",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "ground"
         },
         {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 305,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "environment"
         }
       ],
       "visible": true,
       "showLabel": true,
       "data": {
         "identity": {
-          "graphId": "root",
+          "graphId": "twilite-llc",
           "name": "Twilite LLC",
           "version": "1.0.0",
-          "description": "Company and product front door for Twilite on the web.",
-          "createdAt": "2026-05-10T20:49:15.627Z",
-          "updatedAt": "2026-08-25T16:54:10.933Z",
+          "description": "The independent software company behind Twilite, a graph-native workspace.",
           "nodeId": "twilite-llc"
         },
         "intent": {
-          "kind": "company",
-          "scope": "public"
+          "kind": "graph",
+          "scope": "mixed"
         },
-        "dependencies": {
-          "nodeTypes": [
-            "declaration",
-            "bridge",
-            "title",
-            "type-definition",
-            "port",
-            "portal",
-            "view",
-            "content",
-            "glyph"
-          ],
-          "portContracts": [
-            "core"
-          ],
-          "skills": [],
-          "schemaVersions": {
-            "nodes": ">=1.0.0",
-            "ports": ">=1.0.0"
-          },
-          "optional": []
-        },
-        "authority": {
-          "mutation": {
-            "allowCreate": true,
-            "allowUpdate": true,
-            "allowDelete": true,
-            "appendOnly": false
-          },
-          "actors": {
-            "humans": true,
-            "agents": true,
-            "tools": true
-          },
-          "styleAuthority": "descriptive",
-          "history": {
-            "rewriteAllowed": false,
-            "squashAllowed": false
-          }
-        },
-        "document": {
-          "url": ""
-        },
-        "settings": {
-          "theme": null,
-          "backgroundImage": null,
-          "uiDensity": "comfortable",
-          "defaultNodeColor": "#1976d2",
-          "defaultEdgeColor": "#666666",
-          "snapToGrid": false,
-          "gridSize": 20,
-          "edgeRouting": "auto",
-          "layout": {
-            "mode": "autoOnMissingPositions",
-            "defaultLayout": "layered",
-            "direction": "RIGHT",
-            "edgeLaneGapPx": 10,
-            "serpentine": {
-              "maxPerRow": 6
-            },
-            "cycleFallback": {
-              "enabled": true
-            },
-            "elk": {
-              "algorithm": "fixed",
-              "edgeRouting": "ORTHOGONAL",
-              "portConstraints": "FIXED_SIDE",
-              "nodeSpacing": 120,
-              "layeredEdgeSpacing": 80
-            }
-          },
-          "autoSave": false
-        },
-        "name": "Twilite LLC Declaration",
-        "declaresKind": "company",
-        "purpose": "Declare the Twilite LLC company home and its public destinations.",
-        "declaration": {
-          "kind": "company",
-          "graphViewRole": "authoring",
-          "targetMode": "graph",
-          "primaryNodeViewId": "twilite-view",
-          "surfaces": [],
-          "defaultSurfaceId": "",
+        "root": {
+          "kind": "graph",
           "interfaceContract": {
             "version": 1,
             "implicitRootPort": true
-          }
+          },
+          "defaultSurfaceId": "web"
         },
-        "memo": "",
-        "link": "",
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
-        }
-      }
-    },
-    {
-      "id": "twilite-title-port",
-      "type": "bridge",
-      "label": "Title",
-      "root": false,
-      "position": {
-        "x": 182.31747002783618,
-        "y": -605.75
-      },
-      "width": 260,
-      "height": 120,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "target": {
-          "mode": "bridge",
-          "ref": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-          "kind": "node-class",
-          "resourceKind": "node-class",
-          "scope": "focused-graph",
-          "grants": [
-            "create"
-          ],
-          "label": "Title",
-          "key": "title"
+        "document": {
+          "url": "tlz://twilite.zone/company/root.node"
         },
-        "resourceKind": "node-class",
-        "scope": "focused-graph",
-        "grants": [
-          "create"
-        ],
-        "authority": "bridge",
-        "bridge": {
-          "ref": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-          "resourceKind": "node-class",
-          "scope": "focused-graph",
-          "grants": [
-            "create"
-          ]
+        "membrane": {
+          "bounds": {
+            "x": -684,
+            "y": -652.9220860223088,
+            "width": 3484.352940688501,
+            "height": 3186.1662124745894
+          },
+          "clip": true
         },
-        "_classBinding": {
-          "key": "title",
-          "sourceRef": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node"
-        },
-        "_bridge": {
-          "sourceRef": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-          "entryPort": "root",
-          "kind": "node-class",
-          "targetKind": "node-class",
-          "classKey": "title",
-          "classRef": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node"
-        },
-        "isRoot": false,
-        "root": false,
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
-        },
-        "identity": {
-          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
-        }
-      }
-    },
-    {
-      "id": "twilite-type-port",
-      "type": "bridge",
-      "label": "Type Definition",
-      "root": false,
-      "position": {
-        "x": 462.3174700278362,
-        "y": -605.75
-      },
-      "width": 260,
-      "height": 120,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "target": {
-          "mode": "bridge",
-          "ref": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node",
-          "kind": "node-class",
-          "resourceKind": "node-class",
-          "scope": "focused-graph",
-          "grants": [
-            "create"
-          ],
-          "label": "Type Definition",
-          "key": "type-definition"
-        },
-        "resourceKind": "node-class",
-        "scope": "focused-graph",
-        "grants": [
-          "create"
-        ],
-        "authority": "bridge",
-        "bridge": {
-          "ref": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node",
-          "resourceKind": "node-class",
-          "scope": "focused-graph",
-          "grants": [
-            "create"
-          ]
-        },
-        "_classBinding": {
-          "key": "type-definition",
-          "sourceRef": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node"
-        },
-        "_bridge": {
-          "sourceRef": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node",
-          "entryPort": "root",
-          "kind": "node-class",
-          "targetKind": "node-class",
-          "classKey": "type-definition",
-          "classRef": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node"
-        },
-        "isRoot": false,
-        "root": false,
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
-        },
-        "identity": {
-          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
-        }
-      }
-    },
-    {
-      "id": "twilite-view-port",
-      "type": "bridge",
-      "label": "View",
-      "root": false,
-      "position": {
-        "x": 742.3174700278362,
-        "y": -605.75
-      },
-      "width": 260,
-      "height": 120,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "target": {
-          "mode": "bridge",
-          "ref": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-          "kind": "node-class",
-          "resourceKind": "node-class",
-          "scope": "focused-graph",
-          "grants": [
-            "create"
-          ],
-          "label": "View",
-          "key": "ui-view"
-        },
-        "resourceKind": "node-class",
-        "scope": "focused-graph",
-        "grants": [
-          "create"
-        ],
-        "authority": "bridge",
-        "bridge": {
-          "ref": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-          "resourceKind": "node-class",
-          "scope": "focused-graph",
-          "grants": [
-            "create"
-          ]
-        },
-        "_classBinding": {
-          "key": "ui-view",
-          "sourceRef": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node"
-        },
-        "_bridge": {
-          "sourceRef": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-          "entryPort": "root",
-          "kind": "node-class",
-          "targetKind": "node-class",
-          "classKey": "ui-view",
-          "classRef": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node"
-        },
-        "isRoot": false,
-        "root": false,
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
-        },
-        "identity": {
-          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
-        }
-      }
-    },
-    {
-      "id": "twilite-back",
-      "type": "portal",
-      "label": "Explore Twilite Zone",
-      "root": false,
-      "position": {
-        "x": 562.3174700278362,
-        "y": -365.75
-      },
-      "width": 360,
-      "height": 240,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "memo": "Open the public Twilite Zone graph corpus.",
-        "intent": "external",
-        "target": {
-          "endpoint": "github://twilite-zone/public/root.node:root",
-          "mode": "navigate",
-          "label": "Explore Twilite Zone",
-          "portId": "root",
-          "ref": "github://twilite-zone/public/root.node",
-          "handleId": "root",
-          "surfaceId": "public-root-view"
-        },
-        "sourceRef": "github://twilite-zone/public/root.node",
-        "sourceNodeId": "public-root-view",
-        "sourcePayload": "node.web",
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
-        },
-        "identity": {
-          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
-        },
-        "authority": "navigate",
-        "security": "prompt",
-        "ref": "github://twilite-zone/public/root.node",
-        "src": "github://twilite-zone/public/root.node",
-        "endpoint": "github://twilite-zone/public/root.node:root",
-        "surfaceId": "public-root-view"
-      }
-    },
-    {
-      "id": "twilite-title",
-      "type": "title",
-      "label": "Title",
-      "root": true,
-      "position": {
-        "x": -174.34918646630445,
-        "y": -283.84522792271207
-      },
-      "width": 420,
-      "height": 220,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "position": {
-            "side": "right",
-            "offset": 0.5
+        "settings": {
+          "layout": {
+            "mode": "manual",
+            "elk": {
+              "portConstraints": "FREE",
+              "nodeSpacing": 100,
+              "layeredEdgeSpacing": 60
+            }
           }
         }
-      ],
+      }
+    },
+    {
+      "id": "59fc6610-939f-4f98-a8c0-9cfb261ca41e",
+      "type": "face",
+      "label": "Company page",
+      "position": {
+        "x": -47.24204999550807,
+        "y": -524.9220860223088
+      },
+      "width": 450,
+      "height": 330,
       "visible": true,
       "showLabel": true,
       "data": {
-        "title": "Twilite LLC",
-        "subtitle": "The company behind Twilite—enter the product, explore the public Twilite Zone, or browse what we are building.",
-        "intent": "home",
-        "status": "active",
-        "_classBinding": {
-          "key": "title",
-          "sourceRef": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-          "ref": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-          "identity": {
-            "graphId": "title-node-class",
-            "name": "Title Node Class",
-            "version": "0.1.0",
-            "description": "Template heading or major framing node for reusable graph structures.",
-            "createdAt": "2026-03-26T02:30:00.000Z",
-            "updatedAt": "2026-03-26T02:30:00.000Z"
-          },
-          "intent": "node-class",
-          "meaning": "Template heading or major framing node for reusable graph structures.",
-          "description": "Template heading or major framing node for reusable graph structures.",
-          "defaults": {
-            "label": "Title",
-            "size": {
-              "width": 420,
-              "height": 240
-            },
-            "color": "linear-gradient(135deg, #fde68a, #f59e0b)",
-            "showLabel": false,
-            "data": {
-              "title": "",
-              "subtitle": "",
-              "intent": "headline",
-              "status": "draft"
-            }
-          },
-          "nodeDef": {
-            "key": "title",
-            "ref": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0",
-            "defaults": {
-              "label": "Title",
-              "size": {
-                "width": 420,
-                "height": 240
-              },
-              "color": "linear-gradient(135deg, #fde68a, #f59e0b)",
-              "showLabel": false,
-              "data": {
-                "title": "",
-                "subtitle": "",
-                "intent": "headline",
-                "status": "draft"
-              }
-            }
-          },
-          "views": [
-            {
-              "key": "title",
-              "intent": "editor",
-              "payload": "editor.web",
-              "ref": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "title",
-              "intent": "node",
-              "payload": "node.web.detail",
-              "ref": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "title",
-              "intent": "node",
-              "payload": "node.web.summary",
-              "ref": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "title",
-              "intent": "node",
-              "payload": "node.web.icon",
-              "ref": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            }
-          ],
-          "nodeView": {
-            "key": "title",
-            "intent": "node",
-            "payload": "node.web.detail",
-            "ref": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0"
-          },
-          "editorView": {
-            "key": "title",
-            "intent": "editor",
-            "payload": "editor.web",
-            "ref": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0"
-          }
+        "view": {
+          "intent": "node",
+          "payload": "node.web.detail",
+          "scroll": "page"
         },
-        "_bridge": {
-          "sourceBridgeNodeId": "twilite-title-port",
-          "sourceBridgeLabel": "Title",
-          "targetKind": "node-class",
-          "classKey": "title",
-          "classRef": "github://twilite-zone/public/library/classes/nodes/template-structure/title.node-class.node",
-          "sourceNodeId": "twilite-title-port"
+        "semanticLevel": "detail",
+        "content": {
+          "kind": "html",
+          "value": "<div style='container-type:inline-size;background:#10162d;color:#f3f1ff;width:100%;height:100%;overflow:auto;font-family:system-ui'><main style='max-width:900px;margin:auto;padding:clamp(24px,6cqw,70px)'><header style='border-top:3px solid #d9bd77;padding-top:18px'><div style='color:#d9bd77;font:700 12px system-ui;letter-spacing:.2em'>TWILITE LLC · EST. 2026 · LOUISIANA</div><h1 style='font:700 clamp(42px,9cqw,86px)/1.04 Georgia,serif;letter-spacing:-.04em;margin:45px 0 18px'>A place for ideas<br><span style='color:#bb9bf3'>to become things.</span></h1><p style='font:400 clamp(18px,2.7cqw,26px)/1.5 system-ui;color:#d0d2e5'>We build Twilite, a graph-native workspace where people and the AI agents they choose can create, connect and keep their work.</p></header><section style='display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:30px;margin-top:56px;padding-top:30px;border-top:1px solid #59617e'><article><strong style='color:#d9bd77;font-size:12px'>THE PRODUCT</strong><h2 style='font:600 28px Georgia,serif'>Twilite</h2><p style='line-height:1.6;color:#ccd2e6'>Graphs as documents, interfaces and durable workspaces, not merely diagrams.</p></article><article><strong style='color:#d9bd77;font-size:12px'>THE APPROACH</strong><h2 style='font:600 28px Georgia,serif'>Your agent. Your work.</h2><p style='line-height:1.6;color:#ccd2e6'>An open-ended workspace that is not tied to one AI provider.</p></article><article><strong style='color:#d9bd77;font-size:12px'>THE PLACE</strong><h2 style='font:600 28px Georgia,serif'>The Twilite Zone</h2><p style='line-height:1.6;color:#ccd2e6'>A place to explore graphs, understand the medium and create something of your own.</p></article></section><section style='background:#22203d;border:1px solid #6e6188;border-radius:16px;padding:25px;margin-top:38px'><strong style='font-size:12px;letter-spacing:.16em;color:#d9bd77'>NOW BUILDING</strong><p style='line-height:1.6'>Preparing the product for public launch. Product details and availability are evolving.</p></section><nav style='display:flex;flex-wrap:wrap;gap:16px;margin:38px 0'><a style='padding:14px 20px;background:#d9bd77;color:#10162d;text-decoration:none;border-radius:8px;font-weight:700' href='https://twilite.zone'>Explore Twilite</a><a style='padding:14px 20px;border:1px solid #9b91b6;color:#f3f1ff;text-decoration:none;border-radius:8px' href='tlz://twilite.zone/boulevard/root.node'>The Boulevard</a></nav><footer style='border-top:1px solid #59617e;padding-top:20px;color:#aeb7d1'>Twilite LLC · Louisiana, United States</footer></main></div>"
         },
-        "definitionKey": "title",
         "_placement": {
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1778810256012,
+          "updatedAt": 1794682057701,
           "reason": "node-drag"
-        },
-        "identity": {
-          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
         }
       }
     },
     {
-      "id": "twilite-type",
-      "type": "type-definition",
-      "label": "Type",
-      "root": false,
+      "id": "1a44f905-22e8-498c-b1bd-d4a0c54aff07",
+      "type": "face",
+      "label": "Company card",
       "position": {
-        "x": 562.3174700278362,
-        "y": 975.25
+        "x": 480,
+        "y": -520
       },
       "width": 360,
-      "height": 240,
+      "height": 264,
       "visible": true,
       "showLabel": true,
-      "data": {
-        "name": "Twilite LLC",
-        "key": "twilite-llc",
-        "classRef": "github://twilitellc/public/root.node",
-        "meaning": "The company and product home presented when the Twilite web application opens.",
-        "description": "Public company root for Twilite LLC, distinct from the Twilite Zone graph corpus.",
-        "category": "section",
-        "status": "active",
-        "_classBinding": {
-          "key": "type-definition",
-          "ref": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node",
-          "identity": {
-            "key": "type-definition",
-            "label": "Type Definition"
-          },
-          "meaning": "Declares a legend-facing type with its name, node class authority, and semantic meaning.",
-          "description": "Declares a legend-facing type with its name, node class authority, and semantic meaning.",
-          "defaults": {
-            "label": "Type Definition",
-            "size": {
-              "width": 420,
-              "height": 320
-            }
-          },
-          "views": [
-            {
-              "intent": "editor",
-              "payload": "editor.web",
-              "ref": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node"
-            },
-            {
-              "intent": "node",
-              "payload": "node.web.detail",
-              "ref": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node"
-            },
-            {
-              "intent": "node",
-              "payload": "node.web.summary",
-              "ref": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node"
-            },
-            {
-              "intent": "node",
-              "payload": "node.web.icon",
-              "ref": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node"
-            }
-          ],
-          "nodeView": {
-            "intent": "node",
-            "payload": "node.web.detail",
-            "ref": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node"
-          },
-          "editorView": {
-            "intent": "editor",
-            "payload": "editor.web",
-            "ref": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node"
-          }
-        },
-        "_bridge": {
-          "sourceBridgeNodeId": "twilite-type-port",
-          "sourceBridgeLabel": "Type Definition",
-          "targetKind": "node-class",
-          "classKey": "type-definition",
-          "classRef": "github://twilite-zone/public/library/classes/nodes/type-definition/type-definition.node-class.node"
-        },
-        "definitionKey": "type-definition",
-        "isRoot": false,
-        "root": false,
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
-        },
-        "identity": {
-          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
-        }
-      }
-    },
-    {
-      "id": "twilite-view",
-      "type": "port",
-      "label": "Twilite LLC Home",
-      "root": false,
-      "position": {
-        "x": 1082.3174700278362,
-        "y": 510.9166666666665
-      },
-      "width": 420,
-      "height": 280,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "title": "Twilite LLC",
-        "purpose": "Orient visitors to the Twilite product and its public graph destinations without conflating the web host with the Twilite Zone corpus.",
-        "audience": "Visitors, builders, and graph authors",
-        "status": "active",
-        "titleSourceNodeId": "twilite-title",
-        "typeSourceNodeId": "twilite-type",
-        "svg": "<svg viewBox=\"0 0 260 180\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"260\" height=\"180\" rx=\"24\" fill=\"#111827\"/><rect x=\"14\" y=\"14\" width=\"232\" height=\"152\" rx=\"20\" fill=\"#0f172a\" stroke=\"rgba(255,255,255,0.08)\"/><svg x=\"28\" y=\"22\" width=\"204\" height=\"122\" viewBox=\"0 0 1024 1024\" preserveAspectRatio=\"xMidYMid meet\">\n<metadata>\nCreated by potrace 1.12, written by Peter Selinger 2001-2015\n</metadata>\n<g transform=\"translate(0.000000,1024.000000) scale(0.100000,-0.100000)\"\nfill=\"#f8fafc\" stroke=\"none\">\n<path d=\"M0 5120 l0 -5120 5120 0 5120 0 0 5120 0 5120 -5120 0 -5120 0 0\n-5120z m5256 3290 c1066 -68 2059 -535 2737 -1285 326 -361 547 -742 638\n-1103 86 -339 94 -764 19 -1078 -45 -192 -121 -400 -215 -584 l-53 -105 -12\n-145 c-20 -255 -55 -412 -132 -588 -129 -296 -412 -581 -721 -727 -162 -77\n-400 -142 -588 -161 l-66 -6 -7 -152 c-16 -390 -82 -534 -275 -607 -48 -18\n-72 -20 -171 -17 -203 7 -241 33 -544 378 -482 549 -850 967 -898 1019 l-50\n54 -66 -6 c-37 -3 -123 -11 -192 -18 -144 -13 -356 -7 -480 15 -403 72 -723\n297 -866 609 l-28 62 -216 1 c-256 2 -406 16 -555 54 -368 93 -664 331 -835\n670 -149 297 -195 712 -125 1125 90 528 339 1052 711 1495 428 510 1093 874\n1883 1030 344 68 749 94 1107 70z\"/>\n<path d=\"M4720 8073 c-665 -35 -1351 -269 -1827 -624 -130 -97 -370 -338 -468\n-472 -383 -517 -581 -1087 -562 -1612 14 -391 137 -668 374 -843 230 -169 520\n-232 1008 -217 199 6 212 5 242 -14 41 -26 58 -53 89 -138 48 -134 85 -194\n174 -284 73 -74 100 -93 190 -138 58 -28 150 -63 205 -78 94 -25 114 -27 330\n-27 134 -1 285 5 362 13 180 19 203 13 303 -88 42 -42 184 -200 316 -351 715\n-817 857 -977 886 -997 40 -29 117 -32 141 -5 22 24 35 148 43 397 3 105 10\n205 16 223 26 86 111 142 215 142 147 1 359 40 515 96 293 105 528 319 659\n598 76 163 109 331 109 556 l0 111 66 127 c190 366 251 586 261 932 7 271 -15\n432 -93 665 -205 616 -823 1263 -1553 1630 -536 268 -1144 409 -1751 403 -107\n-1 -220 -3 -250 -5z m324 -532 c121 -43 219 -119 288 -225 53 -81 78 -169 78\n-270 l0 -81 58 -28 c56 -27 1043 -471 1134 -509 l47 -20 51 45 c66 60 180 107\n274 114 133 10 270 -42 373 -143 129 -127 170 -308 109 -482 -34 -96 -136\n-216 -221 -259 -27 -14 -51 -26 -53 -28 -2 -2 77 -702 113 -996 23 -184 19\n-176 95 -202 138 -47 244 -136 302 -254 32 -66 33 -72 33 -193 0 -123 -1 -126\n-36 -200 -65 -135 -174 -230 -312 -271 -55 -17 -87 -20 -170 -17 -89 3 -110 8\n-170 35 -158 75 -277 264 -277 442 l0 36 -712 237 c-392 130 -722 239 -734\n242 -17 5 -26 -2 -49 -38 -29 -47 -94 -100 -160 -134 -196 -98 -425 -56 -577\n106 -106 115 -152 253 -130 391 7 38 14 75 17 83 3 8 -8 21 -27 33 -18 10\n-266 164 -551 342 -285 178 -522 323 -527 323 -5 0 -10 -4 -12 -9 -7 -21 -141\n-100 -205 -122 -174 -58 -378 1 -515 148 -141 152 -168 380 -65 555 34 59 132\n150 195 182 167 84 393 69 540 -37 l51 -36 208 121 c114 67 348 203 518 302\nl310 181 -4 96 c-6 168 43 294 160 410 70 70 151 117 249 144 75 21 225 14\n304 -14z\"/>\n<path d=\"M5309 6694 c-24 -46 -111 -116 -193 -155 -44 -22 -86 -39 -93 -39\n-11 0 -13 -118 -13 -624 l0 -625 23 -6 c12 -4 59 -29 104 -56 l83 -49 67 34\nc78 39 1201 715 1251 753 28 21 33 30 27 52 -4 14 -10 68 -13 119 l-7 93 -250\n110 c-579 255 -955 419 -963 419 -5 0 -15 -12 -23 -26z\"/>\n<path d=\"M4380 6648 c-177 -102 -918 -533 -935 -544 -18 -12 -20 -24 -19 -138\nl0 -126 542 -339 c298 -186 553 -341 566 -345 19 -5 41 4 87 34 34 22 80 45\n101 52 l38 11 2 619 3 618 -55 16 c-84 24 -149 61 -210 120 -31 30 -59 54 -61\n54 -2 0 -29 -15 -59 -32z\"/>\n<path d=\"M6474 5602 c-126 -76 -420 -254 -654 -395 -234 -141 -434 -265 -446\n-274 -18 -16 -20 -26 -16 -100 4 -78 5 -82 31 -88 14 -3 346 -112 737 -240\nl710 -235 66 64 c36 35 88 76 117 90 28 15 51 33 51 42 0 22 -129 1115 -135\n1145 -5 21 -16 28 -66 44 -34 10 -84 33 -111 51 -28 19 -51 34 -53 34 -1 0\n-106 -62 -231 -138z\"/>\n</g>\n</svg><text x=\"130\" y=\"158\" text-anchor=\"middle\" font-family=\"ui-sans-serif, system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" letter-spacing=\"0.12em\" fill=\"#f8fafc\">TWILITE LLC</text></svg>",
-        "_classBinding": {
-          "key": "ui-view",
-          "sourceRef": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-          "ref": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-          "identity": {
-            "graphId": "ui-view-node-class",
-            "name": "View Node Class",
-            "version": "0.1.0",
-            "description": "A user-facing interface surface or screen-level view.",
-            "createdAt": "2026-03-24T00:00:00.000Z",
-            "updatedAt": "2026-03-26T19:45:00.000Z"
-          },
-          "intent": "node-class",
-          "meaning": "A user-facing interface surface or screen-level view.",
-          "description": "A user-facing interface surface or screen-level view.",
-          "defaults": {
-            "label": "View",
-            "size": {
-              "width": 420,
-              "height": 320
-            },
-            "color": "linear-gradient(135deg, #dbeafe, #60a5fa)",
-            "showLabel": false,
-            "data": {
-              "title": "",
-              "purpose": "",
-              "audience": "",
-              "status": "draft"
-            }
-          },
-          "nodeDef": {
-            "key": "ui-view",
-            "ref": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0",
-            "defaults": {
-              "label": "View",
-              "size": {
-                "width": 420,
-                "height": 320
-              },
-              "color": "linear-gradient(135deg, #dbeafe, #60a5fa)",
-              "showLabel": false,
-              "data": {
-                "title": "",
-                "purpose": "",
-                "audience": "",
-                "status": "draft"
-              }
-            }
-          },
-          "views": [
-            {
-              "key": "ui-view",
-              "intent": "editor",
-              "payload": "editor.web",
-              "ref": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "ui-view",
-              "intent": "node",
-              "payload": "node.web.detail",
-              "ref": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "ui-view",
-              "intent": "node",
-              "payload": "node.web.summary",
-              "ref": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            },
-            {
-              "key": "ui-view",
-              "intent": "node",
-              "payload": "node.web.icon",
-              "ref": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-              "source": "local",
-              "version": ">=0.1.0"
-            }
-          ],
-          "nodeView": {
-            "key": "ui-view",
-            "intent": "node",
-            "payload": "node.web.detail",
-            "ref": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0"
-          },
-          "editorView": {
-            "key": "ui-view",
-            "intent": "editor",
-            "payload": "editor.web",
-            "ref": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node",
-            "source": "local",
-            "version": ">=0.1.0"
-          }
-        },
-        "_bridge": {
-          "sourceBridgeNodeId": "twilite-view-port",
-          "sourceBridgeLabel": "View",
-          "targetKind": "node-class",
-          "classKey": "ui-view",
-          "classRef": "github://twilite-zone/public/library/classes/nodes/ui-interaction/ui-view.node-class.node"
-        },
-        "definitionKey": "ui-view",
-        "isRoot": false,
-        "root": false,
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
-        },
-        "viewRole": "home",
-        "identity": {
-          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
-        }
-      }
-    },
-    {
-      "id": "twilite-products",
-      "type": "portal",
-      "label": "Products",
-      "root": false,
-      "position": {
-        "x": 562.3174700278362,
-        "y": -5.75
-      },
-      "width": 360,
-      "height": 240,
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "memo": "Open the Products section.",
-        "intent": "external",
-        "target": {
-          "endpoint": "github://twilitellc/public/products/root.node:root",
-          "mode": "navigate",
-          "label": "Open",
-          "portId": "root",
-          "ref": "github://twilitellc/public/products/root.node",
-          "handleId": "root"
-        },
-        "sourceRef": "github://twilitellc/public/products/root.node",
-        "sourceNodeId": "products-view",
-        "sourcePayload": "node.web.summary",
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
-        },
-        "identity": {
-          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
-        },
-        "authority": "navigate",
-        "security": "prompt",
-        "ref": "github://twilitellc/public/products/root.node",
-        "src": "github://twilitellc/public/products/root.node",
-        "endpoint": "github://twilitellc/public/products/root.node:root"
-      }
-    },
-    {
-      "id": "e4ec3560-efef-4bab-b851-f0a7c6d515a8",
-      "type": "portal",
-      "label": "Boulevard",
-      "root": false,
-      "position": {
-        "x": -57.68252997216382,
-        "y": -605.75
-      },
-      "width": 220,
-      "height": 140,
-      "ports": [
-        {
-          "id": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "top",
-          "label": "top",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "bottom",
-          "label": "bottom",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "bottom",
-            "offset": 0.5
-          }
-        },
-        {
-          "id": "left",
-          "label": "left",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "left",
-            "offset": 0.2
-          }
-        },
-        {
-          "id": "right",
-          "label": "right",
-          "direction": "bidirectional",
-          "dataType": "value",
-          "position": {
-            "side": "right",
-            "offset": 0.5
-          }
-        }
-      ],
-      "inputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "outputs": [
-        {
-          "key": "root",
-          "label": "root",
-          "type": "value"
-        },
-        {
-          "key": "top",
-          "label": "top",
-          "type": "value"
-        },
-        {
-          "key": "bottom",
-          "label": "bottom",
-          "type": "value"
-        },
-        {
-          "key": "left",
-          "label": "left",
-          "type": "value"
-        },
-        {
-          "key": "right",
-          "label": "right",
-          "type": "value"
-        }
-      ],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "memo": "Open the Boulevard public graph experience.",
-        "link": "",
-        "authority": "navigate",
-        "src": "github://twilite-zone/public/boulevard/root.node",
-        "ref": "github://twilite-zone/public/boulevard/root.node",
-        "endpoint": "github://twilite-zone/public/boulevard/root.node:root",
-        "intent": "external",
-        "target": {
-          "endpoint": "github://twilite-zone/public/boulevard/root.node:root",
-          "ref": "github://twilite-zone/public/boulevard/root.node",
-          "mode": "navigate",
-          "url": "",
-          "graphId": "",
-          "nodeId": "",
-          "portId": "root",
-          "label": "Open Boulevard",
-          "handleId": "root"
-        },
-        "_placement": {
-          "version": 1,
-          "state": "auto-placed",
-          "source": "layout",
-          "updatedAt": 1778692305605,
-          "reason": "auto-layout"
-        },
-        "security": "prompt",
-        "sourceRef": "github://twilite-zone/public/boulevard/root.node",
-        "sourceNodeId": "boulevard-view",
-        "sourcePayload": "node.web",
-        "identity": {
-          "graphId": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220"
-        }
-      }
-    },
-    {
-      "id": "release-twilite-llc-detail-view",
-      "type": "view",
-      "label": "Twilite LLC Detail",
-      "position": {
-        "x": 1522.3174700278362,
-        "y": -835.75
-      },
-      "width": 420,
-      "height": 300,
-      "ports": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270,
-          "metadata": {
-            "interface": true,
-            "structural": true
-          }
-        },
-        {
-          "id": "surface-delegate",
-          "key": "surface-delegate",
-          "label": "surface delegate",
-          "direction": "output",
-          "dataType": "any",
-          "angle": 90,
-          "role": "view.content",
-          "allowedEdgeTypes": [
-            "reference"
-          ],
-          "metadata": {
-            "structural": true,
-            "relationship": true,
-            "role": "view.content",
-            "required": false,
-            "behaviors": [
-              {
-                "trigger": "drag-create",
-                "action": "create-node",
-                "nodeType": "content",
-                "targetPort": "root"
-              }
-            ]
-          }
-        }
-      ],
-      "data": {
-        "view": {
-          "intent": "node",
-          "payload": "node.web.detail"
-        },
-        "content": {
-          "kind": "markdown",
-          "value": ""
-        },
-        "interfaceContract": {
-          "version": 1,
-          "ownsContent": true,
-          "surfaceDelegation": true
-        },
-        "identity": {
-          "graphId": "root",
-          "nodeId": "twilite-llc"
-        }
-      }
-    },
-    {
-      "id": "release-twilite-llc-summary-view",
-      "type": "view",
-      "label": "Twilite LLC Summary",
-      "position": {
-        "x": 1522.3174700278362,
-        "y": -475.75
-      },
-      "width": 380,
-      "height": 240,
-      "ports": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270,
-          "metadata": {
-            "interface": true,
-            "structural": true
-          }
-        },
-        {
-          "id": "surface-delegate",
-          "key": "surface-delegate",
-          "label": "surface delegate",
-          "direction": "output",
-          "dataType": "any",
-          "angle": 90,
-          "role": "view.content",
-          "allowedEdgeTypes": [
-            "reference"
-          ],
-          "metadata": {
-            "structural": true,
-            "relationship": true,
-            "role": "view.content",
-            "required": false,
-            "behaviors": [
-              {
-                "trigger": "drag-create",
-                "action": "create-node",
-                "nodeType": "content",
-                "targetPort": "root"
-              }
-            ]
-          }
-        }
-      ],
       "data": {
         "view": {
           "intent": "node",
           "payload": "node.web.summary"
         },
+        "semanticLevel": "summary",
         "content": {
-          "kind": "markdown",
-          "value": ""
-        },
-        "interfaceContract": {
-          "version": 1,
-          "ownsContent": true,
-          "surfaceDelegation": true
-        },
-        "identity": {
-          "graphId": "root",
-          "nodeId": "twilite-llc"
+          "kind": "html",
+          "value": "<div style='container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:hidden;border:1px solid #786799;border-radius:12px;background:radial-gradient(ellipse at 100% 0%,#32264b 0%,#151b35 55%,#10162d 100%);color:#f3f1ff;padding:3.5cqw;display:flex;flex-direction:column;justify-content:space-between;font-family:system-ui'><div style='font:800 4.8cqw/1.15 system-ui;letter-spacing:.12em;color:#e2c884'>LOUISIANA · EST. 2026</div><div style='flex:1;display:flex;flex-direction:column;justify-content:center'><div style='font:700 20.5cqw/.95 Georgia,serif;letter-spacing:-.055em'>Twilite<br>LLC</div><div style='height:1.3cqw;width:26cqw;background:#e2c884;margin-top:2.2cqw'></div></div><div style='font:500 7.6cqw/1.17 system-ui;letter-spacing:-.025em;color:#e0e4f6'>We build places<br>for ideas to grow.</div></div>"
         }
       }
     },
     {
-      "id": "release-twilite-llc-icon-view",
-      "type": "view",
-      "label": "Twilite LLC Icon",
-      "position": {
-        "x": 1522.3174700278362,
-        "y": -175.75
-      },
-      "width": 320,
-      "height": 220,
-      "ports": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270,
-          "metadata": {
-            "interface": true,
-            "structural": true
-          }
-        },
-        {
-          "id": "surface-delegate",
-          "key": "surface-delegate",
-          "label": "surface delegate",
-          "direction": "output",
-          "dataType": "any",
-          "angle": 90,
-          "role": "view.content",
-          "allowedEdgeTypes": [
-            "reference"
-          ],
-          "metadata": {
-            "structural": true,
-            "relationship": true,
-            "role": "view.content",
-            "required": false,
-            "behaviors": [
-              {
-                "trigger": "drag-create",
-                "action": "create-node",
-                "nodeType": "content",
-                "targetPort": "root"
-              }
-            ]
-          }
-        }
-      ],
-      "data": {
-        "view": {
-          "intent": "node",
-          "payload": "node.web.icon"
-        },
-        "content": {
-          "kind": "markdown",
-          "value": ""
-        },
-        "interfaceContract": {
-          "version": 1,
-          "ownsContent": true,
-          "surfaceDelegation": true
-        },
-        "identity": {
-          "graphId": "root",
-          "nodeId": "twilite-llc"
-        }
-      }
-    },
-    {
-      "id": "release-twilite-llc-glyph",
+      "id": "f46211ab-7d2c-4158-993c-19f74127e5dc",
       "type": "glyph",
-      "label": "Twilite LLC Glyph",
+      "label": "Company glyph",
       "position": {
-        "x": 1022.3174700278362,
-        "y": -985.75
+        "x": 930,
+        "y": -520
       },
-      "width": 220,
-      "height": 140,
-      "ports": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270,
-          "metadata": {
-            "interface": true,
-            "structural": true,
-            "role": "shared-glyph"
-          }
-        }
-      ],
+      "width": 180,
+      "height": 170,
+      "visible": true,
+      "showLabel": true,
       "data": {
         "glyph": {
-          "kind": "icon",
-          "name": "Building2"
-        },
-        "interfaceContract": {
-          "version": 1,
-          "receivesGlyphDefinition": true
-        },
-        "identity": {
-          "graphId": "root",
-          "nodeId": "twilite-llc"
+          "kind": "symbol",
+          "value": "T",
+          "color": "#d9bd77"
         }
       }
     },
     {
-      "id": "release-twilite-llc-landing",
+      "id": "89082084-1c3a-4db4-aec1-354195b1d115",
       "type": "content",
-      "label": "Twilite LLC Landing Surface",
+      "label": "The company",
       "position": {
-        "x": 2072.317470027836,
-        "y": -775.75
+        "x": 227.7197225905754,
+        "y": 425.20430708585843
+      },
+      "width": 440,
+      "height": 351.11114501953125,
+      "style": {
+        "background": "#1b2340",
+        "color": "#eef1ff",
+        "borderColor": "#8b7aac",
+        "borderWidth": 1,
+        "borderRadius": 16
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-llc",
+          "nodeId": "about"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style='container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:auto;background:linear-gradient(145deg,#252c4a,#171e37 75%);color:#eef1ff;padding:6cqw;border:1px solid #8b7aac;border-radius:2cqw;font-family:system-ui,Arial,sans-serif'><div style='font:800 2.9cqw/1.3 system-ui;letter-spacing:.15em;color:#e0c77e;text-transform:uppercase;margin-bottom:4cqw'>01 / COMPANY</div><h2 style='font:700 7.1cqw/1.1 Georgia,serif;letter-spacing:-.025em;margin:0 0 5cqw'>Twilite LLC</h2><div style='font:400 4.35cqw/1.55 system-ui;color:#d4d9ed;display:grid;gap:3.3cqw'><p style='margin:0'>Founded in Louisiana in May 2026, Twilite LLC develops software for people who want to create, organize and keep connected work.</p><p style='margin:0'>The company builds the environment. The user owns the direction.</p></div></div>"
+        },
+        "sourceMarkdown": "# Twilite LLC\n\nFounded in Louisiana in May 2026, Twilite LLC develops software for people who want to create, organize and keep connected work.\n\nThe company builds the environment. The user owns the direction.",
+        "memo": "Company editorial content card. Edit sourceMarkdown and regenerate the HTML using the shared editorial card style.",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794683448432,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "4c805cdc-e21b-4ff2-be62-b1b7d94c8c9e",
+      "type": "content",
+      "label": "The product",
+      "position": {
+        "x": 798.2712089876845,
+        "y": 437.2552224442171
+      },
+      "width": 470.44789687905785,
+      "height": 367.0156507400638,
+      "style": {
+        "background": "#1b2340",
+        "color": "#eef1ff",
+        "borderColor": "#8b7aac",
+        "borderWidth": 1,
+        "borderRadius": 16
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-llc",
+          "nodeId": "product"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style='container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:auto;background:linear-gradient(145deg,#252c4a,#171e37 75%);color:#eef1ff;padding:6cqw;border:1px solid #8b7aac;border-radius:2cqw;font-family:system-ui,Arial,sans-serif'><div style='font:800 2.9cqw/1.3 system-ui;letter-spacing:.15em;color:#e0c77e;text-transform:uppercase;margin-bottom:4cqw'>02 / PRODUCT</div><h2 style='font:700 7.1cqw/1.1 Georgia,serif;letter-spacing:-.025em;margin:0 0 5cqw'>Twilite</h2><div style='font:400 4.35cqw/1.55 system-ui;color:#d4d9ed;display:grid;gap:3.3cqw'><p style='margin:0'>A graph-native workspace. Graphs can act as documents, visual interfaces, connected information and durable artifacts.</p><p style='margin:0'>They are made to be read and edited by people and AI agents.</p></div></div>"
+        },
+        "sourceMarkdown": "# Twilite\n\nA graph-native workspace. Graphs can act as documents, visual interfaces, connected information and durable artifacts.\n\nThey are made to be read and edited by people and AI agents.",
+        "memo": "Company editorial content card. Edit sourceMarkdown and regenerate the HTML using the shared editorial card style.",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794683448435,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "fce249fe-1f4c-428b-b564-61907d1e23a0",
+      "type": "content",
+      "label": "Bring your own agent",
+      "position": {
+        "x": 1403.956611049793,
+        "y": 429.44759239432005
+      },
+      "width": 473.5822544643448,
+      "height": 352.3885147603703,
+      "style": {
+        "background": "#1b2340",
+        "color": "#eef1ff",
+        "borderColor": "#8b7aac",
+        "borderWidth": 1,
+        "borderRadius": 16
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-llc",
+          "nodeId": "agent"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style='container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:auto;background:linear-gradient(145deg,#252c4a,#171e37 75%);color:#eef1ff;padding:6cqw;border:1px solid #8b7aac;border-radius:2cqw;font-family:system-ui,Arial,sans-serif'><div style='font:800 2.9cqw/1.3 system-ui;letter-spacing:.15em;color:#e0c77e;text-transform:uppercase;margin-bottom:4cqw'>03 / WORKFLOW</div><h2 style='font:700 7.1cqw/1.1 Georgia,serif;letter-spacing:-.025em;margin:0 0 5cqw'>Bring your own agent</h2><div style='font:400 4.35cqw/1.55 system-ui;color:#d4d9ed;display:grid;gap:3.3cqw'><p style='margin:0'>Twilite is not tied to one AI model. Users can work directly with their graphs or bring an agent to help them build and modify them.</p><p style='margin:0'>The graph remains when the conversation ends.</p></div></div>"
+        },
+        "sourceMarkdown": "# Bring your own agent\n\nTwilite is not tied to one AI model. Users can work directly with their graphs or bring an agent to help them build and modify them.\n\nThe graph remains when the conversation ends.",
+        "memo": "Company editorial content card. Edit sourceMarkdown and regenerate the HTML using the shared editorial card style.",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794683448435,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "6d726b72-c720-4093-8bad-68a7d0b44006",
+      "type": "content",
+      "label": "Current chapter",
+      "position": {
+        "x": 786.0599066073532,
+        "y": 856.723853011145
+      },
+      "width": 452.6864607062292,
+      "height": 358.65728732309606,
+      "style": {
+        "background": "#1b2340",
+        "color": "#eef1ff",
+        "borderColor": "#8b7aac",
+        "borderWidth": 1,
+        "borderRadius": 16
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-llc",
+          "nodeId": "status"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style='container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:auto;background:linear-gradient(145deg,#252c4a,#171e37 75%);color:#eef1ff;padding:6cqw;border:1px solid #8b7aac;border-radius:2cqw;font-family:system-ui,Arial,sans-serif'><div style='font:800 2.9cqw/1.3 system-ui;letter-spacing:.15em;color:#e0c77e;text-transform:uppercase;margin-bottom:4cqw'>05 / NOW</div><h2 style='font:700 7.1cqw/1.1 Georgia,serif;letter-spacing:-.025em;margin:0 0 5cqw'>Preparing for launch</h2><div style='font:400 4.35cqw/1.55 system-ui;color:#d4d9ed;display:grid;gap:3.3cqw'><p style='margin:0'>Public launch is the near-term goal, with Thanksgiving 2026 as the working target. Availability, features and pricing may change.</p><p style='margin:0'>This page describes the direction, not a guarantee of release timing.</p></div></div>"
+        },
+        "sourceMarkdown": "# Preparing for launch\n\nPublic launch is the near-term goal, with Thanksgiving 2026 as the working target. Availability, features and pricing may change.\n\nThis page describes the direction, not a guarantee of release timing.",
+        "memo": "Company editorial content card. Edit sourceMarkdown and regenerate the HTML using the shared editorial card style.",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794683448436,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "0df43cc6-b92d-4ad4-acac-080bc9a4ee0b",
+      "type": "content",
+      "label": "Company facts",
+      "position": {
+        "x": 225.9809585093483,
+        "y": 931.8708287335388
+      },
+      "width": 425.521836993236,
+      "height": 362.8365264237317,
+      "style": {
+        "background": "#1b2340",
+        "color": "#eef1ff",
+        "borderColor": "#8b7aac",
+        "borderWidth": 1,
+        "borderRadius": 16
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-llc",
+          "nodeId": "facts"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style='container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:auto;background:linear-gradient(145deg,#252c4a,#171e37 75%);color:#eef1ff;padding:6cqw;border:1px solid #8b7aac;border-radius:2cqw;font-family:system-ui,Arial,sans-serif'><div style='font:800 2.9cqw/1.3 system-ui;letter-spacing:.15em;color:#e0c77e;text-transform:uppercase;margin-bottom:4cqw'>04 / FACTS</div><h2 style='font:700 7.1cqw/1.1 Georgia,serif;letter-spacing:-.025em;margin:0 0 5cqw'>At a glance</h2><div style='font:400 4.35cqw/1.55 system-ui;color:#d4d9ed;display:grid;gap:3.3cqw'><ul style='margin:0;padding-left:1.35em;display:grid;gap:.65em'><li><strong style='color:#f6e5a5'>Legal name:</strong> Twilite LLC</li><li><strong style='color:#f6e5a5'>Jurisdiction:</strong> Louisiana, USA</li><li><strong style='color:#f6e5a5'>Established:</strong> May 2026</li><li><strong style='color:#f6e5a5'>Product:</strong> Twilite</li><li><strong style='color:#f6e5a5'>Website:</strong> https://twilite.zone</li></ul></div></div>"
+        },
+        "sourceMarkdown": "# At a glance\n\n- **Legal name:** Twilite LLC\n- **Jurisdiction:** Louisiana, USA\n- **Established:** May 2026\n- **Product:** Twilite\n- **Website:** https://twilite.zone",
+        "memo": "Company editorial content card. Edit sourceMarkdown and regenerate the HTML using the shared editorial card style.",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794683448437,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "2edc4cd3-76e5-4cec-a01c-dc47fbc2abbd",
+      "type": "content",
+      "label": "The shared graph",
+      "position": {
+        "x": 1368.3134433417977,
+        "y": 945.1041958874702
       },
       "width": 520,
-      "height": 320,
-      "ports": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270,
-          "metadata": {
-            "interface": true,
-            "structural": true,
-            "role": "view.content"
-          }
-        }
-      ],
+      "height": 260,
+      "visible": true,
+      "showLabel": true,
       "data": {
-        "content": {
-          "kind": "markdown",
-          "value": "# Twilite LLC\n\nCompany and product front door for Twilite on the web."
-        },
-        "interfaceContract": {
-          "version": 1,
-          "receivesViewContent": true
-        },
-        "identity": {
-          "graphId": "root",
-          "nodeId": "twilite-llc"
-        }
-      }
-    },
-    {
-      "id": "release-twilite-llc-summary-content",
-      "type": "content",
-      "label": "Twilite LLC Summary Content",
-      "position": {
-        "x": 2002.3174700278362,
-        "y": -415.75
-      },
-      "width": 420,
-      "height": 240,
-      "ports": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270,
-          "metadata": {
-            "interface": true,
-            "structural": true,
-            "role": "view.content"
-          }
-        }
-      ],
-      "data": {
-        "content": {
-          "kind": "markdown",
-          "value": "## Twilite LLC\n\nCompany and product front door for Twilite on the web."
-        },
-        "interfaceContract": {
-          "version": 1,
-          "receivesViewContent": true
-        },
-        "identity": {
-          "graphId": "root",
-          "nodeId": "twilite-llc"
-        }
-      }
-    },
-    {
-      "id": "release-twilite-llc-icon-content",
-      "type": "content",
-      "label": "Twilite LLC Icon Content",
-      "position": {
-        "x": 1962.3174700278362,
-        "y": -115.75
-      },
-      "width": 320,
-      "height": 220,
-      "ports": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270,
-          "metadata": {
-            "interface": true,
-            "structural": true,
-            "role": "view.content"
-          }
-        }
-      ],
-      "data": {
+        "altText": "A person and an AI agent both work with a shared persistent graph.",
         "content": {
           "kind": "svg",
-          "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 220\" role=\"img\" aria-label=\"Twilite LLC\"><rect width=\"320\" height=\"220\" rx=\"28\" fill=\"#17102f\"/><circle cx=\"160\" cy=\"92\" r=\"58\" fill=\"#7c3aed\"/><circle cx=\"160\" cy=\"92\" r=\"38\" fill=\"none\" stroke=\"#fff\" stroke-width=\"8\"/><path d=\"M122 92h76M160 54v76\" stroke=\"#fff\" stroke-width=\"8\" stroke-linecap=\"round\"/><text x=\"160\" y=\"184\" text-anchor=\"middle\" fill=\"#fff\" font-family=\"system-ui,sans-serif\" font-size=\"18\" font-weight=\"800\">TWILITE LLC</text></svg>"
+          "value": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 250' width='100%' height='100%' preserveAspectRatio='xMidYMid meet' role='img' aria-label='You and your AI work with the same persistent graph'><rect width='720' height='250' rx='18' fill='#10162d'/><g fill='#f3f1ff' font-family='sans-serif' text-anchor='middle'><rect x='24' y='74' width='166' height='100' rx='14' fill='#34405e'/><text x='107' y='129' font-size='23'>You</text><rect x='530' y='74' width='166' height='100' rx='14' fill='#34405e'/><text x='613' y='129' font-size='23'>Your AI</text><rect x='262' y='59' width='196' height='130' rx='16' fill='#493969' stroke='#d9bd77' stroke-width='4'/><text x='360' y='113' font-size='25'>Graph</text><text x='360' y='143' font-size='14' fill='#e5d29c'>persistent · portable</text></g><g stroke='#d9bd77' stroke-width='4' fill='none'><path d='M198 124h56m-14 -11l14 11-14 11M522 124h-56m14 -11l-14 11 14 11'/></g></svg>"
         },
-        "interfaceContract": {
+        "_placement": {
           "version": 1,
-          "receivesViewContent": true
-        },
-        "identity": {
-          "graphId": "root",
-          "nodeId": "twilite-llc"
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794683448437,
+          "reason": "node-drag"
         }
+      }
+    },
+    {
+      "id": "d2bd45cd-6482-49f9-a72c-525eaf9a6c5d",
+      "type": "content",
+      "label": "Explore",
+      "position": {
+        "x": 772.81168360782,
+        "y": 1231.568742950446
+      },
+      "width": 444.32815468141325,
+      "height": 395.22504118410205,
+      "style": {
+        "background": "#1b2340",
+        "color": "#eef1ff",
+        "borderColor": "#8b7aac",
+        "borderWidth": 1,
+        "borderRadius": 16
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-llc",
+          "nodeId": "explore"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style='container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:auto;background:linear-gradient(145deg,#252c4a,#171e37 75%);color:#eef1ff;padding:6cqw;border:1px solid #8b7aac;border-radius:2cqw;font-family:system-ui,Arial,sans-serif'><div style='font:800 2.9cqw/1.3 system-ui;letter-spacing:.15em;color:#e0c77e;text-transform:uppercase;margin-bottom:4cqw'>06 / VISIT</div><h2 style='font:700 7.1cqw/1.1 Georgia,serif;letter-spacing:-.025em;margin:0 0 5cqw'>Explore the Twilite Zone</h2><div style='font:400 4.35cqw/1.55 system-ui;color:#d4d9ed;display:grid;gap:3.3cqw'><ul style='margin:0;padding-left:1.35em;display:grid;gap:.65em'><li><a href='https://twilite.zone' style='color:#e3c985'>Enter Twilite</a></li><li><a href='tlz://twilite.zone/boulevard/root.node' style='color:#e3c985;text-decoration:underline;text-underline-offset:.2em'>The Boulevard</a></li><li><a href='tlz://twilite.zone/library/root.node' style='color:#e3c985;text-decoration:underline;text-underline-offset:.2em'>The Library</a></li></ul><p style='margin:0'>Twilite makes more sense when you can actually visit.</p></div></div>"
+        },
+        "sourceMarkdown": "# Explore the Twilite Zone\n\n- [Enter Twilite](https://twilite.zone)\n- [The Boulevard](tlz://twilite.zone/boulevard/root.node)\n- [The Library](tlz://twilite.zone/library/root.node)\n\nTwilite makes more sense when you can actually visit.",
+        "memo": "Company editorial content card. Edit sourceMarkdown and regenerate the HTML using the shared editorial card style.",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794683448438,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "twilite-llc-environment-2026",
+      "type": "face",
+      "label": "Company headquarters environment",
+      "position": {
+        "x": 1140,
+        "y": -520
+      },
+      "width": 600,
+      "height": 340,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-llc",
+          "nodeId": "twilite-llc-environment-2026"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.environment",
+          "fit": "window",
+          "stage": {
+            "left": 25,
+            "right": 25,
+            "top": 26,
+            "bottom": 18
+          }
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style='container-type:inline-size;width:100%;height:100%;overflow:hidden;background:#090e22;color:#f2eefe;font-family:system-ui,sans-serif'><div style='position:relative;width:100%;height:100%;overflow:hidden;background:radial-gradient(ellipse at 56% 22%,#51487c 0%,#283653 36%,#111c34 75%,#0a1021 100%)'><div style='position:absolute;inset:0;opacity:.38;background-image:linear-gradient(90deg,transparent 49.8%,#a29ac2 50%,transparent 50.2%),linear-gradient(transparent 49.8%,#a29ac2 50%,transparent 50.2%);background-size:8cqw 8cqw;mask-image:linear-gradient(transparent,#000)'></div><div style='position:absolute;inset:0 0 0 0;background:radial-gradient(ellipse at 50% 78%,transparent 35%,#0a1021 95%)'></div><div style='position:absolute;left:5cqw;top:5cqw;font:800 1.9cqw/1.2 system-ui;letter-spacing:.24em;color:#e2c884'>THE BOULEVARD / TWILITE LLC</div><div style='position:absolute;right:5cqw;top:5cqw;font:600 1.55cqw/1.3 system-ui;letter-spacing:.16em;color:#c8c4dc'>EST. 2026 · LOUISIANA</div><div style='position:absolute;left:50%;top:12%;transform:translateX(-50%);width:53%;height:66%;border:0.55cqw solid #ac9cc4;border-bottom:0;background:linear-gradient(110deg,#242b50,#111a38 48%,#24234a);box-shadow:0 1.2cqw 6cqw #080d22,0 0 6cqw #917dbb44'><div style='position:absolute;top:-3.5cqw;left:-2cqw;right:-2cqw;height:3.3cqw;background:#c7b1db;border-bottom:1cqw solid #483a65;clip-path:polygon(0 100%,4% 0,96% 0,100% 100%)'></div><div style='position:absolute;left:10%;right:10%;top:10%;height:15%;background:#1a2345;border:0.3cqw solid #766b99;display:flex;align-items:center;justify-content:center;box-shadow:0 0 3cqw #bea0fe55'><span style='font:800 4.5cqw/.9 Georgia,serif;letter-spacing:-.04em;color:#f7ecff;text-shadow:0 0 2cqw #c6aaff'>TWILITE LLC</span></div><div style='position:absolute;top:30%;left:9%;right:9%;height:27%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:3.5%;'><div style='background:linear-gradient(135deg,#8ea8cd,#384873 35%,#111b3b);border:.35cqw solid #877ea4;box-shadow:inset 0 0 3cqw #a796de66'></div><div style='background:linear-gradient(135deg,#8ea8cd,#384873 35%,#111b3b);border:.35cqw solid #877ea4;box-shadow:inset 0 0 3cqw #a796de66'></div><div style='background:linear-gradient(135deg,#8ea8cd,#384873 35%,#111b3b);border:.35cqw solid #877ea4;box-shadow:inset 0 0 3cqw #a796de66'></div></div><div style='position:absolute;bottom:0;left:34%;width:32%;height:37%;background:linear-gradient(90deg,#241c45,#555076 48%,#241c45);border:.45cqw solid #d6bc7b;border-bottom:0;box-sizing:border-box'><div style='height:100%;border-left:1px solid #bca86f;border-right:1px solid #bca86f;margin:0 50%'></div></div><div style='position:absolute;bottom:39%;left:40%;right:40%;height:.55cqw;background:#e4c878;box-shadow:0 0 2cqw #fff0b1'></div></div><div style='position:absolute;left:0;right:0;bottom:0;height:17%;background:linear-gradient(#182239,#11172b 40%,#080d1d);border-top:1.1cqw solid #9b8b9b'><div style='position:absolute;left:39%;right:39%;bottom:0;height:100%;background:linear-gradient(90deg,transparent 0%,#b6a2a844 50%,transparent 100%);clip-path:polygon(45% 0,55% 0,100% 100%,0 100%)'></div></div><div style='position:absolute;bottom:5%;left:5%;font:800 2.2cqw/1.2 system-ui;letter-spacing:.12em;color:#e2c884'>THE COMPANY</div><div style='position:absolute;bottom:5%;right:5%;font:600 1.8cqw/1.2 system-ui;color:#e8e5f6'>Build here. Go anywhere.</div><a href='tlz://twilite.zone/boulevard/root.node' style='position:absolute;top:11%;left:5%;font:700 1.8cqw/1.4 system-ui;color:#e2c884;text-decoration:none'>← Boulevard</a><a href='https://twilite.zone' style='position:absolute;top:11%;right:5%;font:700 1.8cqw/1.4 system-ui;color:#e2c884;text-decoration:none'>Enter Twilite ↗</a></div></div>"
+        },
+        "memo": "Spatial headquarters scene for the company graph; separate from the readable company page."
       }
     }
   ],
   "edges": [
     {
-      "id": "twilite-edge-title-type",
-      "type": "reference",
-      "source": "twilite-title",
-      "target": "twilite-type",
-      "sourcePort": "root",
+      "id": "7bcd7348-ec14-4c6c-92e3-ea7cbc739d8e",
+      "type": "surface",
+      "source": "d74c9670-c181-456e-ac3e-c7ded30ed1e8",
+      "target": "59fc6610-939f-4f98-a8c0-9cfb261ca41e",
+      "sourcePort": "surfaces",
       "targetPort": "root",
-      "label": "declares type",
+      "label": "",
+      "style": {},
+      "data": {
+        "surfaceId": "web"
+      }
+    },
+    {
+      "id": "c88a36d3-8f91-44cf-84f5-a81691ac65fb",
+      "type": "next-face",
+      "source": "59fc6610-939f-4f98-a8c0-9cfb261ca41e",
+      "target": "1a44f905-22e8-498c-b1bd-d4a0c54aff07",
+      "sourcePort": "sequence-out",
+      "targetPort": "sequence-in",
+      "label": "",
       "style": {},
       "data": {}
     },
     {
-      "id": "twilite-edge-type-view",
-      "type": "reference",
-      "source": "twilite-type",
-      "target": "twilite-view",
-      "sourcePort": "root",
+      "id": "d541d35c-4a92-4cd2-8b34-08f67e518e3e",
+      "type": "next-face",
+      "source": "1a44f905-22e8-498c-b1bd-d4a0c54aff07",
+      "target": "f46211ab-7d2c-4158-993c-19f74127e5dc",
+      "sourcePort": "sequence-out",
       "targetPort": "root",
-      "label": "informs",
+      "label": "",
       "style": {},
       "data": {}
     },
     {
-      "id": "twilite-edge-title-view",
-      "type": "reference",
-      "source": "twilite-title",
-      "target": "twilite-view",
-      "sourcePort": "root",
-      "targetPort": "root",
-      "label": "host view",
-      "style": {},
-      "data": {}
-    },
-    {
-      "id": "twilite-edge-title-back",
-      "type": "reference",
-      "source": "twilite-title",
-      "target": "twilite-back",
-      "sourcePort": "root",
-      "targetPort": "root",
-      "label": "zone root",
-      "style": {},
-      "data": {}
-    },
-    {
-      "id": "twilite-edge-title-products",
-      "type": "reference",
-      "source": "twilite-title",
-      "target": "twilite-products",
-      "sourcePort": "root",
-      "targetPort": "root",
-      "label": "products",
-      "style": {},
-      "data": {}
-    },
-    {
-      "id": "twilite-edge-title-boulevard",
-      "type": "reference",
-      "source": "twilite-title",
-      "target": "e4ec3560-efef-4bab-b851-f0a7c6d515a8",
-      "sourcePort": "root",
-      "targetPort": "root",
-      "label": "boulevard",
+      "id": "db475412-fdef-45da-bcd9-128bb99fcf6d",
+      "type": "leads-to",
+      "source": "89082084-1c3a-4db4-aec1-354195b1d115",
+      "target": "4c805cdc-e21b-4ff2-be62-b1b7d94c8c9e",
+      "sourcePort": "next",
+      "targetPort": "prev",
+      "label": "builds",
       "style": {
-        "route": "curved",
-        "curved": true,
-        "orthogonal": false
+        "route": "orthogonal"
       },
       "data": {}
     },
     {
-      "id": "release-twilite-llc-default",
-      "type": "default-view",
-      "source": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
-      "target": "release-twilite-llc-detail-view",
-      "sourcePort": "default-view",
+      "id": "711984b8-ad63-45b7-83e7-834dc5c07452",
+      "type": "leads-to",
+      "source": "89082084-1c3a-4db4-aec1-354195b1d115",
+      "target": "0df43cc6-b92d-4ad4-acac-080bc9a4ee0b",
+      "sourcePort": "out-bottom",
       "targetPort": "root",
-      "label": "default view",
-      "style": {},
-      "data": {
-        "role": "default-view",
-        "semanticRole": "default-view"
-      }
+      "label": "is",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
     },
     {
-      "id": "release-twilite-llc-summary",
-      "type": "reference",
-      "source": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
-      "target": "release-twilite-llc-summary-view",
-      "sourcePort": "summary-view",
-      "targetPort": "root",
-      "label": "summary view",
-      "style": {},
-      "data": {
-        "role": "shared-summary",
-        "semanticRole": "shared-summary"
-      }
+      "id": "0bd16d63-7545-46ed-8e6c-25b1bf1f802e",
+      "type": "leads-to",
+      "source": "4c805cdc-e21b-4ff2-be62-b1b7d94c8c9e",
+      "target": "fce249fe-1f4c-428b-b564-61907d1e23a0",
+      "sourcePort": "next",
+      "targetPort": "prev",
+      "label": "enables",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
     },
     {
-      "id": "release-twilite-llc-icon",
-      "type": "reference",
-      "source": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
-      "target": "release-twilite-llc-icon-view",
-      "sourcePort": "icon-view",
+      "id": "f308793a-cd9a-4b87-8ad7-2055464e7933",
+      "type": "leads-to",
+      "source": "4c805cdc-e21b-4ff2-be62-b1b7d94c8c9e",
+      "target": "6d726b72-c720-4093-8bad-68a7d0b44006",
+      "sourcePort": "out-bottom",
       "targetPort": "root",
-      "label": "icon view",
-      "style": {},
-      "data": {
-        "role": "shared-icon",
-        "semanticRole": "shared-icon"
-      }
+      "label": "is preparing",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
     },
     {
-      "id": "release-twilite-llc-glyph-edge",
-      "type": "reference",
-      "source": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
-      "target": "release-twilite-llc-glyph",
-      "sourcePort": "glyph",
+      "id": "d4cfd1ca-23b9-4a91-a5f2-5482e49b5427",
+      "type": "leads-to",
+      "source": "fce249fe-1f4c-428b-b564-61907d1e23a0",
+      "target": "2edc4cd3-76e5-4cec-a01c-dc47fbc2abbd",
+      "sourcePort": "out-bottom",
       "targetPort": "root",
-      "label": "glyph",
-      "style": {},
-      "data": {
-        "role": "shared-glyph",
-        "semanticRole": "shared-glyph"
-      }
+      "label": "collaborate in",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
     },
     {
-      "id": "release-twilite-llc-landing-edge",
-      "type": "reference",
-      "source": "d2bbacbe-5c36-4571-8c8a-2fd395d8f220",
-      "target": "release-twilite-llc-landing",
-      "sourcePort": "landing-surface",
+      "id": "9905c4c8-c317-49de-9548-a3f9faa882ab",
+      "type": "leads-to",
+      "source": "6d726b72-c720-4093-8bad-68a7d0b44006",
+      "target": "d2bd45cd-6482-49f9-a72c-525eaf9a6c5d",
+      "sourcePort": "out-bottom",
       "targetPort": "root",
-      "label": "landing surface",
-      "style": {},
-      "data": {
-        "role": "landing-surface",
-        "semanticRole": "landing-surface"
-      }
+      "label": "opens into",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
     },
     {
-      "id": "release-twilite-llc-detail-content",
-      "type": "reference",
-      "source": "release-twilite-llc-detail-view",
-      "target": "release-twilite-llc-landing",
-      "sourcePort": "surface-delegate",
+      "id": "twilite-llc-environment-link-2026",
+      "type": "environment",
+      "source": "d74c9670-c181-456e-ac3e-c7ded30ed1e8",
+      "target": "twilite-llc-environment-2026",
+      "sourcePort": "environment",
       "targetPort": "root",
-      "label": "content",
-      "style": {},
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
       "data": {
-        "role": "view.content",
-        "semanticRole": "view.content"
-      }
-    },
-    {
-      "id": "release-twilite-llc-summary-content-edge",
-      "type": "reference",
-      "source": "release-twilite-llc-summary-view",
-      "target": "release-twilite-llc-summary-content",
-      "sourcePort": "surface-delegate",
-      "targetPort": "root",
-      "label": "content",
-      "style": {},
-      "data": {
-        "role": "view.content",
-        "semanticRole": "view.content"
-      }
-    },
-    {
-      "id": "release-twilite-llc-icon-content-edge",
-      "type": "reference",
-      "source": "release-twilite-llc-icon-view",
-      "target": "release-twilite-llc-icon-content",
-      "sourcePort": "surface-delegate",
-      "targetPort": "root",
-      "label": "content",
-      "style": {},
-      "data": {
-        "role": "view.content",
-        "semanticRole": "view.content"
+        "classRef": "tlz://twilite.zone/library/edges/environment/root.node"
       }
     }
   ],
-  "clusters": [],
   "settings": {
     "theme": null,
     "backgroundImage": null,
     "defaultNodeColor": "#1976d2",
-    "defaultEdgeColor": "#666666",
+    "defaultEdgeColor": "",
     "snapToGrid": false,
     "gridSize": 20,
     "edgeRouting": "auto",
+    "edgeAvoidNodes": true,
     "layout": {
-      "mode": "autoOnMissingPositions",
-      "defaultLayout": "layered",
-      "direction": "RIGHT",
-      "edgeLaneGapPx": 10,
-      "serpentine": {
-        "maxPerRow": 6
-      },
-      "cycleFallback": {
-        "enabled": true
-      },
+      "mode": "manual",
       "elk": {
         "algorithm": "fixed",
         "edgeRouting": "ORTHOGONAL",
-        "portConstraints": "FIXED_SIDE",
-        "nodeSpacing": 120,
-        "layeredEdgeSpacing": 80
+        "portConstraints": "FREE",
+        "nodeSpacing": 100,
+        "layeredEdgeSpacing": 60
       }
     },
     "github": {
       "repo": "TwiliteLLC/public",
       "path": "company/root.node",
       "branch": "main",
-      "autoCreateRepo": true,
-      "repoVisibility": "private",
-      "seedOnCommit": false,
-      "enableGithubPages": false,
       "installationId": ""
-    },
-    "autoSave": false
-  },
-  "scripts": []
+    }
+  }
 }
