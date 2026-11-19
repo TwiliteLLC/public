@@ -284,7 +284,13 @@
           },
           "primaryNodeViewId": "product-exhibit-class-billboard",
           "primaryEditorViewId": "product-exhibit-class-editor"
-        }
+        },
+        "title": "A promise worth keeping",
+        "eyebrow": "TWILITE / PRODUCT EXHIBIT",
+        "body": "Describe the value of this exhibit.",
+        "audience": "For people building things",
+        "ctaLabel": "See an example",
+        "ctaRef": "tlz://twilite.zone/gallery/root.node"
       }
     },
     {

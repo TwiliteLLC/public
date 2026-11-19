@@ -415,7 +415,7 @@
         "identity": {
           "graphId": "twilite-showroom-root",
           "nodeId": "twilite-showroom-root",
-          "name": "Twilite · Product Showroom Demo",
+          "name": "Twilite · Product Showroom",
           "version": "0.2.0",
           "description": "Product-page review demo using a reusable class and a showroom environment."
         },
