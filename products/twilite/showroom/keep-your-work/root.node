@@ -1,0 +1,1543 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "created": "2026-11-18T02:42:24.310Z",
+    "modified": "2026-11-18T04:13:40.439Z",
+    "author": "",
+    "tags": [
+      "graph"
+    ],
+    "preferredViewer": "https://dev.twilite.zone"
+  },
+  "nodes": [
+    {
+      "id": "showroom-keep-your-work-root",
+      "type": "root",
+      "label": "The Plan That Survived the Chat",
+      "position": {
+        "x": -640,
+        "y": -610
+      },
+      "width": 460,
+      "height": 290,
+      "ports": [
+        {
+          "id": "surfaces",
+          "key": "surfaces",
+          "label": "surfaces",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 195,
+          "role": "surface",
+          "allowedEdgeTypes": [
+            "surface"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "surface",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "default-handle",
+          "key": "default-handle",
+          "label": "default handle",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 275,
+          "role": "default-handle",
+          "allowedEdgeTypes": [
+            "edge"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "default-handle",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "portal",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "boundary-begin",
+          "key": "boundary-begin",
+          "label": "boundary begin",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 110,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "boundary-end",
+          "key": "boundary-end",
+          "label": "boundary end",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 70,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "port",
+          "key": "port",
+          "label": "port",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 250,
+          "role": "exposes-port",
+          "allowedEdgeTypes": [
+            "exposes-port"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "exposes-port",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "port",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ground",
+          "key": "ground",
+          "label": "ground",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "role": "ground",
+          "allowedEdgeTypes": [
+            "ground"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "ground",
+            "required": true,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "content",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 305,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "surfaces",
+          "key": "surfaces",
+          "label": "surfaces",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 195,
+          "role": "surface",
+          "allowedEdgeTypes": [
+            "surface"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "surface",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "surfaces"
+        },
+        {
+          "id": "default-handle",
+          "key": "default-handle",
+          "label": "default handle",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 275,
+          "role": "default-handle",
+          "allowedEdgeTypes": [
+            "edge"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "default-handle",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "portal",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "default-handle"
+        },
+        {
+          "id": "boundary-begin",
+          "key": "boundary-begin",
+          "label": "boundary begin",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 110,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "boundary-begin"
+        },
+        {
+          "id": "boundary-end",
+          "key": "boundary-end",
+          "label": "boundary end",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 70,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "boundary-end"
+        },
+        {
+          "id": "port",
+          "key": "port",
+          "label": "port",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 250,
+          "role": "exposes-port",
+          "allowedEdgeTypes": [
+            "exposes-port"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "exposes-port",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "port",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "port"
+        },
+        {
+          "id": "ground",
+          "key": "ground",
+          "label": "ground",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "role": "ground",
+          "allowedEdgeTypes": [
+            "ground"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "ground",
+            "required": true,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "content",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "ground"
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 305,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "environment"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-root",
+          "name": "The Plan That Survived the Chat",
+          "version": "0.1.0",
+          "description": "An illustrative Twilite project that survives the conversation and stays ready for another AI."
+        },
+        "intent": {
+          "kind": "graph",
+          "scope": "public"
+        },
+        "root": {
+          "kind": "graph",
+          "targetMode": "artifact",
+          "artifactKind": "graph",
+          "interfaceContract": {
+            "version": 1,
+            "implicitRootPort": true
+          },
+          "defaultSurfaceId": "web",
+          "surfaces": [
+            {
+              "id": "detail",
+              "kind": "view",
+              "payload": "node.web.detail",
+              "viewNodeId": "showroom-keep-your-work-detail"
+            },
+            {
+              "id": "summary",
+              "kind": "view",
+              "payload": "node.web.summary",
+              "viewNodeId": "showroom-keep-your-work-summary"
+            },
+            {
+              "id": "glyph",
+              "kind": "glyph",
+              "payload": "node.web.glyph",
+              "viewNodeId": "showroom-keep-your-work-glyph"
+            }
+          ]
+        },
+        "document": {
+          "url": "tlz://twilite.zone/products/twilite/showroom/keep-your-work/root.node"
+        },
+        "membrane": {
+          "bounds": {
+            "x": -800,
+            "y": -780,
+            "width": 3892.514462508807,
+            "height": 4200.8983322044905
+          },
+          "clip": true
+        },
+        "settings": {
+          "layout": {
+            "mode": "manual"
+          }
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-detail",
+      "type": "face",
+      "label": "Keep · Reading Page",
+      "position": {
+        "x": -100,
+        "y": -610
+      },
+      "width": 730,
+      "height": 480,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-detail"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.detail",
+          "scroll": "page"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:100%;overflow:auto;background:#fffdf9;color:#16263d;font-family:Georgia,serif\"><div style=\"padding:clamp(24px,6cqw,65px);max-width:960px;margin:auto\"><p style=\"font:900 12px system-ui;letter-spacing:.2em;color:#8053b0\">TWILITE / KEEP THE WORK / DEMO</p><h1 style=\"font:500 clamp(45px,8cqw,78px)/1.04 Georgia,serif;letter-spacing:-.04em;margin:22px 0\">The plan is still here.</h1><p style=\"font:400 clamp(20px,3cqw,27px)/1.45 Georgia,serif;color:#42546c;max-width:38ch\">An AI helped make this plan. The conversation ended. The work didn't.</p><div style=\"padding:22px 26px;background:#efeafb;border-left:5px solid #7150a4;font:600 15px/1.55 system-ui;margin:30px 0\">A fictional example, built from real editable Twilite nodes and relationships. This isn't a simulated AI session or a claim that anyone actually resumed it.</div><h2 style=\"font:500 34px Georgia,serif\">Yesterday: the conversation</h2><p style=\"font:400 18px/1.65 Georgia,serif\">“Help me organize a neighborhood movie night. We need a venue, a projector, and a way to invite people.”</p><p style=\"font:400 18px/1.65 Georgia,serif\">The agent creates a goal, tasks, and an open question. Instead of leaving the result in a chat transcript, those pieces are written into the graph document.</p><h2 style=\"font:500 34px Georgia,serif;margin-top:35px\">Today: the saved work</h2><p style=\"font:400 18px/1.65 Georgia,serif\">Inside this graph you'll find classed, editable nodes for the project and its work. The relationships are stored as edges. You can inspect the plan without reopening yesterday's conversation.</p><div style=\"border:1px solid #d2c9e6;border-radius:14px;padding:22px;background:#faf8ff\"><div style=\"font:900 12px system-ui;color:#6f4ca3;letter-spacing:.13em\">SAVED PROJECT</div><h3 style=\"font:500 28px Georgia,serif;margin:10px 0\">Neighborhood movie night</h3><p style=\"font:600 14px system-ui;margin:8px 0;color:#334155\">TASK: Confirm a location · TASK: Borrow a projector</p><p style=\"font:600 14px system-ui;margin:8px 0;color:#a66b17\">OPEN QUESTION: What if it rains?</p></div><h2 style=\"font:500 34px Georgia,serif;margin-top:35px\">Tomorrow: continue from here</h2><p style=\"font:400 18px/1.65 Georgia,serif\">Give another compatible AI access to this graph and ask: <i>“Review this project, tell me what's unresolved, and propose the next action. Ask before editing.”</i> The graph is the handoff. A real agent must read it; this example does not execute one automatically.</p><h2 style=\"font:500 34px Georgia,serif;margin-top:35px\">Your turn</h2><p style=\"font:400 18px/1.65 Georgia,serif\">Pick something you are actually planning. Ask your AI to structure it, save the graph, then reopen it in a later session. Is the work still there, still connected, and ready to continue?</p><p style=\"font:700 15px system-ui;color:#5b358f;margin:25px 0\">Create with your AI. Keep your work. Continue building.</p></div></div>"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-summary",
+      "type": "face",
+      "label": "Keep · Summary",
+      "position": {
+        "x": 720,
+        "y": -610
+      },
+      "width": 380,
+      "height": 250,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-summary"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.summary"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;container-type:inline-size;width:100%;height:100%;background:linear-gradient(145deg,#203d65,#132238);color:white;border:1px solid #ad9bde;border-radius:4cqw;padding:6cqw;display:flex;flex-direction:column;justify-content:space-between\"><div style=\"font:900 3.1cqw system-ui;letter-spacing:.15em;color:#f5c542\">TWILITE / KEEP</div><div style=\"font:500 12cqw/1.06 Georgia,serif\">The plan is still here.</div><div style=\"font:500 4cqw/1.4 system-ui;color:#d9e4f8\">An AI helped make it. The conversation ended. The work didn't.</div></div>"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-glyph",
+      "type": "glyph",
+      "label": "Keep glyph",
+      "position": {
+        "x": 1180,
+        "y": -610
+      },
+      "width": 100,
+      "height": 100,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-glyph"
+        },
+        "glyph": {
+          "kind": "symbol",
+          "value": "K",
+          "color": "#f5c542"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-environment",
+      "type": "face",
+      "label": "KEEP · Blueprint Environment",
+      "position": {
+        "x": 1420,
+        "y": -610
+      },
+      "width": 580,
+      "height": 410,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-environment"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.environment"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;container-type:inline-size;position:relative;width:100%;height:100%;overflow:hidden;background:linear-gradient(145deg,#193d66,#112840);color:white;font-family:system-ui\"><div style=\"position:absolute;inset:0;opacity:.2;background-image:linear-gradient(#acc6eb 1px,transparent 1px),linear-gradient(90deg,#acc6eb 1px,transparent 1px);background-size:8cqw 8cqw\"></div><div style=\"position:absolute;left:4cqw;right:4cqw;top:4cqw;border-top:.4cqw solid #f5c542;padding-top:2cqw;display:flex;justify-content:space-between\"><b style=\"font:900 2.2cqw system-ui;letter-spacing:.18em;color:#f5c542\">KEEP / A WORKING EXAMPLE</b><span style=\"font:800 1.6cqw system-ui;color:#c1d1e9\">ILLUSTRATIVE · EDITABLE</span></div><div style=\"position:absolute;left:4cqw;top:13cqw;font:500 9cqw/1.04 Georgia,serif;letter-spacing:-.04em\">The plan is still here.</div><div style=\"position:absolute;left:4cqw;top:26cqw;font:400 2.8cqw system-ui;color:#e0e9fb\">An AI helped make it. The conversation ended. The work didn't.</div><div style=\"position:absolute;left:4cqw;right:4cqw;top:40cqw;display:grid;grid-template-columns:repeat(3,1fr);gap:2cqw\"><div style=\"height:27cqw;border:1px solid #9e8bc4;background:#66518c35;border-radius:2cqw;padding:2cqw;font:900 2.4cqw system-ui;color:#f5c542\">YESTERDAY<div style=\"font:400 1.8cqw/1.5 system-ui;color:#e7e7f8;margin-top:1cqw\">A conversation begins it</div></div><div style=\"height:27cqw;border:1px solid #9ebcdb;background:#29557a45;border-radius:2cqw;padding:2cqw;font:900 2.4cqw system-ui;color:#f5c542\">TODAY<div style=\"font:400 1.8cqw/1.5 system-ui;color:#e7e7f8;margin-top:1cqw\">The graph keeps it</div></div><div style=\"height:27cqw;border:1px solid #91bfb7;background:#1d665b45;border-radius:2cqw;padding:2cqw;font:900 2.4cqw system-ui;color:#f5c542\">TOMORROW<div style=\"font:400 1.8cqw/1.5 system-ui;color:#e7e7f8;margin-top:1cqw\">A new session can continue</div></div></div><div style=\"position:absolute;left:4cqw;right:4cqw;top:89cqw;padding-top:2cqw;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2cqw;align-items:start;font:900 1.9cqw/1.3 system-ui;letter-spacing:.12em;color:#dce8fa;text-align:center\"><span>THE WORK IS EDITABLE</span><span>THE RELATIONSHIPS<br>ARE REAL</span><span>THE FILE IS PORTABLE</span></div></div>"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-yesterday",
+      "type": "content",
+      "label": "YESTERDAY · The AI conversation",
+      "position": {
+        "x": -499.1829641275513,
+        "y": 1206.271387618428
+      },
+      "width": 736.9817422956039,
+      "height": 508.1392057439425,
+      "style": {
+        "background": "#172c49",
+        "borderColor": "#7795c0",
+        "borderRadius": 16,
+        "borderWidth": 1,
+        "color": "#f7f9ff"
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-yesterday"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;width:100%;height:100%;overflow:auto;background:#172c49;color:#f7f9ff;border:2px solid #7795c0;border-radius:16px;padding:clamp(20px,4cqw,38px);font-family:system-ui,-apple-system,Segoe UI,sans-serif\"><div style=\"font:900 12px/1.3 system-ui;letter-spacing:.16em;color:#f5c542\">01 / YESTERDAY</div><h2 style=\"font:600 clamp(26px,4.5cqw,37px)/1.15 Georgia,serif;letter-spacing:-.02em;color:#ffffff;margin:15px 0 20px\">A conversation begins it</h2><div style=\"border-left:4px solid #a98ce3;padding:9px 0 9px 17px;margin-bottom:15px;background:#263a5d\"><div style=\"font:900 12px system-ui;color:#e2d3ff;letter-spacing:.08em\">PERSON</div><p style=\"font:400 clamp(15px,2.4cqw,19px)/1.6 system-ui;color:#e7efff;margin:10px 0\">Help me plan a neighborhood movie night. We need somewhere to show the film, a projector, and a way to invite people.</p></div><div style=\"border-left:4px solid #f5c542;padding:9px 0 9px 17px;background:#263a5d\"><div style=\"font:900 12px system-ui;color:#f5c542;letter-spacing:.08em\">AI</div><p style=\"font:400 clamp(15px,2.4cqw,19px)/1.6 system-ui;color:#e7efff;margin:10px 0\">I'll organize that as a goal, two tasks, and an open question about the weather.</p></div><p style=\"font:500 13px/1.5 system-ui;color:#bcd3f0;margin-top:22px\">Illustrative conversation. The actual saved nodes are in this graph.</p></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794943523571,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-handoff",
+      "type": "content",
+      "label": "TOMORROW · Handoff to another AI",
+      "position": {
+        "x": 1995.538820922868,
+        "y": 1196.0245520693798
+      },
+      "width": 734.0243804500524,
+      "height": 528.9016345216477,
+      "style": {
+        "background": "#172c49",
+        "borderColor": "#7795c0",
+        "borderRadius": 16,
+        "borderWidth": 1,
+        "color": "#f7f9ff"
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-handoff"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;width:100%;height:100%;overflow:auto;background:#172c49;color:#f7f9ff;border:2px solid #7795c0;border-radius:16px;padding:clamp(20px,4cqw,38px);font-family:system-ui,-apple-system,Segoe UI,sans-serif\"><div style=\"font:900 12px/1.3 system-ui;letter-spacing:.16em;color:#f5c542\">03 / TOMORROW</div><h2 style=\"font:600 clamp(26px,4.5cqw,37px)/1.15 Georgia,serif;letter-spacing:-.02em;color:#ffffff;margin:15px 0 20px\">Continue with another AI</h2><p style=\"font:400 clamp(15px,2.4cqw,19px)/1.6 system-ui;color:#e7efff;margin:10px 0\">The conversation is over. <strong style=\"color:#ffffff\">The graph isn't.</strong></p><p style=\"font:400 clamp(15px,2.4cqw,19px)/1.6 system-ui;color:#e7efff;margin:10px 0\">Give a compatible AI access to this saved graph and ask:</p><div style=\"background:#293e61;border:1px solid #8fb5df;border-radius:12px;padding:16px 18px;font:500 clamp(15px,2.2cqw,18px)/1.56 system-ui;color:#ffffff\">“Read this graph as the saved plan for a neighborhood movie night. Identify unresolved questions and propose the next useful action. Do not modify the graph without asking my permission.”</div><p style=\"font:400 clamp(15px,2.4cqw,19px)/1.6 system-ui;color:#e7efff;margin:10px 0\"><strong style=\"color:#f5c542\">Check:</strong> Is the goal intact? Are the tasks related? Is the weather question still open?</p><p style=\"font:500 13px/1.5 system-ui;color:#bcd3f0\">This prompt does not automatically invoke an AI. It is a real handoff you can test.</p></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794975092744,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-goal",
+      "type": "notion",
+      "label": "Neighborhood movie night",
+      "position": {
+        "x": 734.7009537847209,
+        "y": 1180.9107418497479
+      },
+      "width": 837.2956078793284,
+      "height": 507.6404926051032,
+      "ports": [
+        {
+          "id": "leads-to",
+          "key": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "asks",
+          "key": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true,
+            "targetKinds": [
+              "query"
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "leads-to",
+          "key": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          },
+          "portId": "leads-to"
+        },
+        {
+          "id": "asks",
+          "key": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true,
+            "targetKinds": [
+              "query"
+            ]
+          },
+          "portId": "asks"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-goal"
+        },
+        "classRef": "tlz://twilite.zone/library/classes/nodes/idea/notion.node-class.node",
+        "title": "Neighborhood movie night",
+        "body": "Organize a welcoming outdoor screening. We need a location, projector and invitations. Status: planning.",
+        "check": false,
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794971506198,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-task-venue",
+      "type": "point",
+      "label": "Confirm the location",
+      "position": {
+        "x": -494.3774233123965,
+        "y": 2079.8235513848567
+      },
+      "width": 837.296,
+      "height": 507.64,
+      "ports": [
+        {
+          "id": "from",
+          "key": "from",
+          "label": "from",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "leads-to",
+          "key": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "asks",
+          "key": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true,
+            "targetKinds": [
+              "query"
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "from",
+          "key": "from",
+          "label": "from",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          },
+          "portId": "from"
+        },
+        {
+          "id": "leads-to",
+          "key": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          },
+          "portId": "leads-to"
+        },
+        {
+          "id": "asks",
+          "key": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true,
+            "targetKinds": [
+              "query"
+            ]
+          },
+          "portId": "asks"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-task-venue"
+        },
+        "classRef": "tlz://twilite.zone/library/classes/nodes/idea/point.node-class.node",
+        "title": "Confirm the location",
+        "body": "Check the community courtyard, permission, power and accessible seating. Status: open.",
+        "role": "part",
+        "check": false,
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794974964663,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-task-projector",
+      "type": "point",
+      "label": "Borrow a projector",
+      "position": {
+        "x": 696.8868658611474,
+        "y": 2074.5436147822743
+      },
+      "width": 837.296,
+      "height": 507.64,
+      "ports": [
+        {
+          "id": "from",
+          "key": "from",
+          "label": "from",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "leads-to",
+          "key": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "asks",
+          "key": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true,
+            "targetKinds": [
+              "query"
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "from",
+          "key": "from",
+          "label": "from",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          },
+          "portId": "from"
+        },
+        {
+          "id": "leads-to",
+          "key": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          },
+          "portId": "leads-to"
+        },
+        {
+          "id": "asks",
+          "key": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true,
+            "targetKinds": [
+              "query"
+            ]
+          },
+          "portId": "asks"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-task-projector"
+        },
+        "classRef": "tlz://twilite.zone/library/classes/nodes/idea/point.node-class.node",
+        "title": "Borrow a projector",
+        "body": "Ask the library or a neighbor. Test HDMI, sound and the screen before the event. Status: open.",
+        "role": "part",
+        "check": false,
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794974966232,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-question-rain",
+      "type": "query",
+      "label": "What if it rains?",
+      "position": {
+        "x": 1938.398437804378,
+        "y": 2081.512422323244
+      },
+      "width": 837.296,
+      "height": 507.64,
+      "ports": [
+        {
+          "id": "asked-by",
+          "key": "asked-by",
+          "label": "asked-by",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "asked-by",
+          "key": "asked-by",
+          "label": "asked-by",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true
+          },
+          "portId": "asked-by"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-question-rain"
+        },
+        "classRef": "tlz://twilite.zone/library/classes/nodes/idea/query.node-class.node",
+        "title": "What if it rains?",
+        "body": "The backup location or postponement plan is undecided. Resolve this before invitations promise an outdoor screening.",
+        "status": "open",
+        "check": false,
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794974970760,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-start-with-ai",
+      "type": "portal",
+      "label": "YOUR TURN · Start with your AI",
+      "position": {
+        "x": 127.18999609535831,
+        "y": 2994.9131537610656
+      },
+      "width": 628.489276837732,
+      "height": 343.19738185167097,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "tlz://twilite.zone/library/starters/start-with-your-ai/root.node",
+        "target": {
+          "ref": "tlz://twilite.zone/library/starters/start-with-your-ai/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open YOUR TURN · Start with your AI"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-start-with-ai"
+        },
+        "security": "prompt",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794975064593,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-return-showroom",
+      "type": "portal",
+      "label": "BACK · Product showroom",
+      "position": {
+        "x": 1559.0289086878065,
+        "y": 2965.3859337177887
+      },
+      "width": 470.0275454054438,
+      "height": 398.7614149653191,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "tlz://twilite.zone/products/twilite/showroom/root.node",
+        "target": {
+          "ref": "tlz://twilite.zone/products/twilite/showroom/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open BACK · Product showroom"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-return-showroom"
+        },
+        "security": "prompt",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794975067849,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-import-notion",
+      "type": "import",
+      "label": "notion class",
+      "position": {
+        "x": -600,
+        "y": -735
+      },
+      "width": 270,
+      "height": 120,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-import-notion"
+        },
+        "showInBrowse": false,
+        "bridge": {
+          "ref": "tlz://twilite.zone/library/classes/nodes/idea/notion.node-class.node",
+          "resourceKind": "node-class",
+          "key": "notion",
+          "scope": "focused-graph",
+          "grants": [
+            "read",
+            "create",
+            "update"
+          ]
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-import-point",
+      "type": "import",
+      "label": "point class",
+      "position": {
+        "x": -280,
+        "y": -735
+      },
+      "width": 270,
+      "height": 120,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-import-point"
+        },
+        "showInBrowse": false,
+        "bridge": {
+          "ref": "tlz://twilite.zone/library/classes/nodes/idea/point.node-class.node",
+          "resourceKind": "node-class",
+          "key": "point",
+          "scope": "focused-graph",
+          "grants": [
+            "read",
+            "create",
+            "update"
+          ]
+        }
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-import-query",
+      "type": "import",
+      "label": "query class",
+      "position": {
+        "x": 40,
+        "y": -735
+      },
+      "width": 270,
+      "height": 120,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-keep-your-work",
+          "nodeId": "showroom-keep-your-work-import-query"
+        },
+        "showInBrowse": false,
+        "bridge": {
+          "ref": "tlz://twilite.zone/library/classes/nodes/idea/query.node-class.node",
+          "resourceKind": "node-class",
+          "key": "query",
+          "scope": "focused-graph",
+          "grants": [
+            "read",
+            "create",
+            "update"
+          ]
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "showroom-keep-your-work-surface",
+      "type": "surface",
+      "source": "showroom-keep-your-work-root",
+      "target": "showroom-keep-your-work-detail",
+      "sourcePort": "surfaces",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {
+        "surfaceId": "web"
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-next-summary",
+      "type": "next-face",
+      "source": "showroom-keep-your-work-detail",
+      "target": "showroom-keep-your-work-summary",
+      "sourcePort": "sequence-out",
+      "targetPort": "sequence-in",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "showroom-keep-your-work-next-glyph",
+      "type": "next-face",
+      "source": "showroom-keep-your-work-summary",
+      "target": "showroom-keep-your-work-glyph",
+      "sourcePort": "sequence-out",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "showroom-keep-your-work-environment-edge",
+      "type": "environment",
+      "source": "showroom-keep-your-work-root",
+      "target": "showroom-keep-your-work-environment",
+      "sourcePort": "environment",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/edges/environment/root.node"
+      }
+    },
+    {
+      "id": "showroom-keep-your-work-goal-venue",
+      "type": "leads-to",
+      "source": "showroom-keep-your-work-goal",
+      "target": "showroom-keep-your-work-task-venue",
+      "sourcePort": "leads-to",
+      "targetPort": "from",
+      "label": "needs",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "showroom-keep-your-work-goal-projector",
+      "type": "leads-to",
+      "source": "showroom-keep-your-work-goal",
+      "target": "showroom-keep-your-work-task-projector",
+      "sourcePort": "leads-to",
+      "targetPort": "from",
+      "label": "needs",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "showroom-keep-your-work-goal-weather",
+      "type": "asks",
+      "source": "showroom-keep-your-work-goal",
+      "target": "showroom-keep-your-work-question-rain",
+      "sourcePort": "asks",
+      "targetPort": "asked-by",
+      "label": "asks",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    }
+  ],
+  "settings": {
+    "theme": null,
+    "backgroundImage": null,
+    "defaultNodeColor": "#1976d2",
+    "defaultEdgeColor": "",
+    "snapToGrid": false,
+    "gridSize": 20,
+    "edgeRouting": "auto",
+    "edgeAvoidNodes": true,
+    "layout": {
+      "mode": "manual"
+    },
+    "github": {
+      "path": "products/twilite/showroom/keep-your-work/root.node",
+      "repo": "TwiliteLLC/public"
+    }
+  }
+}

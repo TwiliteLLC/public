@@ -1,0 +1,593 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "created": "2026-11-16T20:00:00.000Z",
+    "modified": "2026-11-16T21:37:00.000Z",
+    "tags": [
+      "product-exhibit",
+      "node-class",
+      "draft"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "product-exhibit-class-root",
+      "type": "root",
+      "label": "Product Exhibit Class",
+      "position": {
+        "x": -760,
+        "y": -420
+      },
+      "width": 520,
+      "height": 390,
+      "ports": [
+        {
+          "id": "default-view",
+          "key": "default-view",
+          "label": "default-view",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 180,
+          "role": "default-view"
+        },
+        {
+          "id": "glyph",
+          "key": "glyph",
+          "label": "glyph",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 180,
+          "role": "shared-glyph"
+        },
+        {
+          "id": "editor-view",
+          "key": "editor-view",
+          "label": "editor-view",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 180,
+          "role": "editor"
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 45,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "default-view",
+          "key": "default-view",
+          "label": "default-view",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 180,
+          "role": "default-view",
+          "portId": "default-view"
+        },
+        {
+          "id": "glyph",
+          "key": "glyph",
+          "label": "glyph",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 180,
+          "role": "shared-glyph",
+          "portId": "glyph"
+        },
+        {
+          "id": "editor-view",
+          "key": "editor-view",
+          "label": "editor-view",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 180,
+          "role": "editor",
+          "portId": "editor-view"
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 45,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "environment"
+        }
+      ],
+      "data": {
+        "identity": {
+          "graphId": "product-exhibit-class",
+          "nodeId": "product-exhibit-class-root",
+          "name": "Product Exhibit",
+          "version": "0.1.0",
+          "description": "A reusable product exhibit with billboard, exhibit, detail and summary presentations."
+        },
+        "intent": {
+          "kind": "node-class",
+          "scope": "public"
+        },
+        "dependencies": {
+          "nodeTypes": [
+            "declaration",
+            "view",
+            "content",
+            "glyph"
+          ],
+          "portContracts": [
+            "core"
+          ],
+          "schemaVersions": {
+            "nodes": ">=1.0.0",
+            "ports": ">=1.0.0"
+          },
+          "optional": []
+        },
+        "authority": {
+          "mutation": {
+            "allowCreate": true,
+            "allowUpdate": true,
+            "allowDelete": true,
+            "appendOnly": false
+          },
+          "actors": {
+            "humans": true,
+            "agents": true,
+            "tools": true
+          },
+          "styleAuthority": "descriptive",
+          "history": {
+            "rewriteAllowed": false,
+            "squashAllowed": false
+          }
+        },
+        "nodeClass": {
+          "contractVersion": "1.0.0",
+          "key": "product-exhibit",
+          "label": "Product Exhibit",
+          "meaning": "An independently authored product claim, rendered in multiple contexts.",
+          "requiredDataKeys": [
+            "title",
+            "body"
+          ],
+          "nodeDef": {
+            "key": "product-exhibit",
+            "ref": "tlz://twilite.zone/products/twilite/showroom/product-exhibit-class/root.node",
+            "source": "local",
+            "version": ">=0.1.0",
+            "defaults": {
+              "label": "Product Exhibit",
+              "size": {
+                "width": 540,
+                "height": 360
+              },
+              "showLabel": false,
+              "data": {
+                "title": "A promise worth keeping",
+                "eyebrow": "TWILITE / PRODUCT EXHIBIT",
+                "body": "Describe the value of this exhibit.",
+                "audience": "For people building things",
+                "ctaLabel": "See an example",
+                "ctaRef": "tlz://twilite.zone/gallery/root.node",
+                "presentation": {
+                  "glyph": {
+                    "kind": "icon",
+                    "name": "PanelsTopLeft"
+                  }
+                }
+              },
+              "ports": [
+                {
+                  "id": "root",
+                  "key": "root",
+                  "label": "root",
+                  "direction": "bidirectional",
+                  "dataType": "any",
+                  "angle": 250
+                }
+              ]
+            }
+          },
+          "ports": [
+            {
+              "id": "root",
+              "key": "root",
+              "label": "root",
+              "direction": "bidirectional",
+              "dataType": "any",
+              "angle": 250
+            },
+            {
+              "id": "prev",
+              "key": "prev",
+              "label": "prev",
+              "direction": "input",
+              "dataType": "any",
+              "angle": 270,
+              "allowedEdgeTypes": [
+                "leads-to"
+              ]
+            },
+            {
+              "id": "next",
+              "key": "next",
+              "label": "next",
+              "direction": "output",
+              "dataType": "any",
+              "angle": 90,
+              "allowedEdgeTypes": [
+                "leads-to"
+              ]
+            }
+          ],
+          "primaryNodeViewId": "product-exhibit-class-billboard",
+          "primaryEditorViewId": "product-exhibit-class-editor"
+        },
+        "root": {
+          "kind": "node-class",
+          "targetMode": "artifact",
+          "artifactKind": "class-artifact",
+          "defaultSurfaceId": "web",
+          "surfaces": [
+            {
+              "id": "web",
+              "kind": "view",
+              "payload": "node.web.detail",
+              "viewNodeId": "product-exhibit-class-billboard"
+            }
+          ],
+          "sharedPresentation": {
+            "detailViewNodeId": "product-exhibit-class-billboard",
+            "summaryViewNodeId": "product-exhibit-class-billboard",
+            "glyphNodeId": "product-exhibit-class-glyph"
+          },
+          "primaryNodeViewId": "product-exhibit-class-billboard",
+          "primaryEditorViewId": "product-exhibit-class-editor"
+        }
+      }
+    },
+    {
+      "id": "product-exhibit-class-billboard",
+      "type": "face",
+      "label": "Billboard",
+      "position": {
+        "x": 0,
+        "y": -560
+      },
+      "width": 560,
+      "height": 370,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "product-exhibit-class",
+          "nodeId": "product-exhibit-class-billboard"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.billboard"
+        },
+        "html": "<div style=\"container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:hidden\"><div style=\"display:{{eq(data.displayRole,'hero','flex','none')}};width:100%;height:100%;box-sizing:border-box\"><div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:100%;overflow:hidden;border-radius:2.3cqw;border:.22cqw solid #b79be8;background:linear-gradient(115deg,#32116cee,#281044f3 65%,#1c2342f5);box-shadow:0 1.8cqw 5cqw #06061466;padding:4.4cqw 5.4cqw;color:#fff;display:flex;align-items:stretch;justify-content:space-between;gap:3cqw\"><div style=\"display:flex;flex-direction:column;justify-content:center;flex:1;min-width:0\"><div style=\"font:900 2.3cqw/1.1 system-ui;letter-spacing:.17em;color:#f5c542\">{{data.eyebrow}}</div><h2 style=\"font:500 9cqw/1.04 Georgia,serif;letter-spacing:-.038em;margin:2.4cqw 0 2.8cqw\">{{data.title || label}}</h2><p style=\"font:400 3.25cqw/1.4 system-ui;color:#e9deff;margin:0;max-width:62cqw\">{{data.body}}</p></div><div style=\"flex:0 0 23%;min-width:0;display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;border-left:.2cqw solid #a991d360;padding-left:3cqw\"><div style=\"font:900 2.2cqw system-ui;letter-spacing:.13em;color:#c8b7e8;text-align:right\">THE WORK<br/>STAYS YOURS</div><div style=\"box-sizing:border-box;width:13.6cqw;height:13.6cqw;padding:1.5cqw;display:flex;align-items:center;justify-content:center;border:.8cqw solid #f5c542;border-radius:3cqw;transform:rotate(-12deg);box-shadow:inset 0 0 0 2.2cqw #3f1b75,0 0 3.7cqw #f5c5424c\"><svg viewBox='0 0 715.292490 659.841170' style='display:block;width:100%;height:100%' aria-label='Twilite'><g transform='translate(-154.485274,842.841170) scale(0.100000,-0.100000)' fill='#f7efff' stroke='none'><path d='M4745 8420 c-358 -17 -813 -102 -1145 -215 -276 -93 -638 -295 -890 -495 -125 -99 -356 -328 -465 -460 -230 -281 -390 -568 -529 -952 -42 -116 -108 -348 -120 -423 -3 -16 -12 -68 -20 -115 -30 -172 -38 -320 -26 -492 27 -409 135 -685 355 -903 197 -198 436 -313 765 -372 54 -9 180 -17 343 -20 l257 -5 31 -58 c46 -86 181 -261 251 -325 255 -232 599 -329 1083 -305 99 5 205 11 235 14 l55 6 360 -401 c198 -220 474 -527 612 -682 139 -155 272 -297 295 -314 54 -41 153 -73 225 -73 64 0 160 23 217 52 55 28 137 114 164 170 36 78 42 123 42 361 l0 227 36 0 c20 0 82 7 138 16 542 85 966 377 1188 819 107 211 145 364 147 589 2 140 2 140 35 195 200 332 294 649 311 1046 11 236 -13 459 -74 698 -72 281 -319 721 -570 1017 -136 161 -370 383 -551 524 -180 140 -492 337 -698 440 -442 221 -777 325 -1287 400 -55 8 -125 17 -155 20 -79 9 -390 26 -425 24 -16 0 -102 -4 -190 -8z m645 -349 c41 -5 98 -13 125 -16 539 -71 1124 -304 1610 -641 217 -150 315 -233 516 -433 403 -404 642 -834 719 -1301 18 -105 24 -394 11 -490 -18 -134 -21 -149 -48 -255 -45 -180 -108 -331 -230 -547 l-54 -96 -9 -179 c-4 -98 -11 -185 -14 -193 -3 -8 -7 -31 -10 -50 -25 -171 -137 -372 -296 -532 -223 -223 -500 -347 -842 -379 -181 -16 -230 -31 -284 -84 -24 -25 -47 -59 -53 -81 -6 -23 -11 -143 -11 -289 0 -137 -5 -266 -10 -286 -7 -25 -20 -41 -45 -54 -31 -17 -37 -18 -64 -5 -17 8 -54 42 -83 76 -51 58 -318 356 -498 553 -47 52 -127 142 -179 200 -52 58 -100 111 -106 116 -6 6 -45 48 -86 95 -41 47 -79 89 -85 95 -6 5 -68 74 -138 153 -71 78 -141 149 -156 157 -58 30 -111 30 -300 -1 -14 -2 -97 -7 -185 -10 -353 -15 -606 56 -797 221 -112 96 -183 201 -238 348 -22 58 -59 99 -105 117 -21 8 -98 10 -270 5 -516 -15 -794 63 -1022 287 -120 117 -221 305 -249 463 -25 142 -34 232 -34 347 0 509 188 1063 517 1520 30 42 63 85 72 95 9 10 49 58 90 106 262 311 651 586 1056 747 263 104 619 189 900 215 39 4 102 11 140 15 89 11 646 4 745 -9z'/><path d='M4750 7560 c-25 -5 -81 -28 -126 -50 -192 -94 -317 -313 -300 -525 l5 -70 -152 -91 c-142 -86 -437 -264 -746 -452 l-134 -82 -42 39 c-145 133 -409 153 -567 42 -103 -71 -170 -165 -199 -278 -32 -129 -21 -241 37 -355 119 -235 404 -325 644 -203 27 14 65 39 85 56 l35 31 37 -22 c21 -12 275 -164 564 -337 l525 -316 -13 -51 c-29 -108 -2 -271 62 -376 82 -133 214 -213 380 -227 167 -14 322 60 441 209 l29 37 200 -68 c110 -38 326 -112 480 -166 154 -53 386 -133 516 -177 l236 -79 6 -82 c14 -192 109 -336 271 -413 293 -138 623 32 677 349 28 171 -22 328 -144 447 -47 46 -162 107 -217 116 l-37 6 -7 67 c-8 76 -11 102 -31 266 -8 66 -26 224 -40 350 -14 127 -32 279 -40 338 -20 146 -20 174 4 182 51 16 144 88 185 145 182 246 107 581 -159 711 -67 32 -75 34 -181 34 -107 0 -112 -1 -185 -37 -50 -25 -93 -56 -126 -91 -49 -51 -51 -53 -79 -40 -133 60 -978 438 -1085 485 l-136 61 3 68 c11 224 -161 464 -383 535 -58 18 -231 27 -293 14z m855 -948 c121 -55 252 -114 290 -132 39 -18 149 -67 245 -111 96 -43 234 -105 305 -137 l130 -58 1 -60 c1 -32 3 -81 5 -109 l4 -50 -321 -200 c-343 -214 -689 -429 -897 -558 l-127 -79 -46 42 c-41 37 -153 100 -180 100 -13 0 -23 373 -28 1084 l-1 128 55 17 c107 34 195 95 273 191 30 38 44 47 56 41 9 -5 115 -54 236 -109z m-994 -81 c44 -22 95 -43 114 -47 l35 -6 0 -67 c0 -36 2 -142 4 -236 3 -93 8 -335 12 -536 l7 -366 -39 -13 c-53 -16 -143 -67 -176 -97 l-26 -25 -319 192 c-175 106 -356 216 -403 245 -47 29 -160 98 -252 154 -162 99 -168 104 -161 129 7 26 8 177 1 215 -2 15 102 81 501 322 l505 304 59 -64 c43 -48 78 -74 138 -104z m2138 -800 c48 -38 75 -51 141 -71 l55 -16 17 -140 c9 -76 19 -173 22 -214 4 -41 9 -86 11 -100 6 -34 13 -86 25 -200 6 -52 14 -129 20 -170 13 -105 40 -339 40 -355 0 -7 -12 -16 -27 -20 -45 -11 -119 -63 -175 -123 l-53 -57 -65 22 c-36 12 -216 73 -400 136 -184 63 -481 165 -659 226 -178 61 -327 113 -330 116 -5 6 -5 7 -15 97 l-6 58 57 35 c32 20 177 110 323 200 146 90 324 200 395 245 228 142 580 359 584 360 2 0 20 -13 40 -29z'/></g></svg></div><div style=\"font:800 2.2cqw/1.3 system-ui;color:#f5c542;text-align:right\">{{data.ctaLabel}} ↗</div></div></div></div><div style=\"display:{{eq(data.displayRole,'primary-exhibit','flex','none')}};width:100%;height:100%;box-sizing:border-box\"><div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:100%;overflow:hidden;border-radius:3cqw;background:#fffdfd;border:.5cqw solid #6039a3;color:#261a42;display:flex;flex-direction:column\"><div style=\"flex:none;height:2.4cqw;background:linear-gradient(90deg,#6039a3,#f5c542)\"></div><div style=\"flex:1 1 0;min-height:0;box-sizing:border-box;padding:3.6cqw 5.5cqw 4cqw;display:flex;flex-direction:column;gap:2cqw\"><div style=\"font:900 3cqw/1.1 system-ui;letter-spacing:.16em;color:#6039a3\">{{data.eyebrow}}</div><h2 style=\"font:700 7.8cqw/1.08 Georgia,serif;letter-spacing:-.03em;margin:0\">{{data.title || label}}</h2><p style=\"font:400 3.4cqw/1.42 system-ui;color:#3d3d5c;margin:0;flex:none;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden\">{{data.body}}</p><div style=\"margin-top:auto;display:flex;flex-direction:column;gap:2cqw\"><div style=\"display:flex;align-items:center;justify-content:space-between;gap:3cqw\"><div style=\"font:700 3cqw/1.3 system-ui;color:#64537a\">{{data.audience}}</div></div></div></div></div></div><div style=\"display:{{eq(data.displayRole,'primary-exhibit','none',eq(data.displayRole,'hero','none','flex'))}};width:100%;height:100%;box-sizing:border-box\"><div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:100%;overflow:hidden;padding:5.5cqw 6cqw;border-radius:3cqw;background:#fbf9ff;border:.2cqw solid #d6cce8;color:#261a42;display:flex;flex-direction:column;gap:2.7cqw\"><div style=\"font:900 2.9cqw/1.1 system-ui;letter-spacing:.16em;color:#7552a6\">{{data.eyebrow}}</div><h2 style=\"font:600 8.4cqw/1.13 Georgia,serif;letter-spacing:-.027em;margin:0\">{{data.title || label}}</h2><p style=\"font:400 3.6cqw/1.48 system-ui;color:#4b4b67;margin:0;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden\">{{data.body}}</p><div style=\"margin-top:auto;padding-top:2.5cqw;border-top:.25cqw solid #dbd1eb\"><div style=\"font:700 3cqw/1.3 system-ui;color:#64537a\">{{data.audience}}</div><div style=\"margin-top:1.2cqw;font:900 3cqw system-ui;color:#6039a3\">{{data.ctaLabel}} ↗</div></div></div></div></div>",
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:hidden\"><div style=\"display:{{eq(data.displayRole,'hero','flex','none')}};width:100%;height:100%;box-sizing:border-box\"><div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:100%;overflow:hidden;border-radius:2.3cqw;border:.22cqw solid #b79be8;background:linear-gradient(115deg,#32116cee,#281044f3 65%,#1c2342f5);box-shadow:0 1.8cqw 5cqw #06061466;padding:4.4cqw 5.4cqw;color:#fff;display:flex;align-items:stretch;justify-content:space-between;gap:3cqw\"><div style=\"display:flex;flex-direction:column;justify-content:center;flex:1;min-width:0\"><div style=\"font:900 2.3cqw/1.1 system-ui;letter-spacing:.17em;color:#f5c542\">{{data.eyebrow}}</div><h2 style=\"font:500 9cqw/1.04 Georgia,serif;letter-spacing:-.038em;margin:2.4cqw 0 2.8cqw\">{{data.title || label}}</h2><p style=\"font:400 3.25cqw/1.4 system-ui;color:#e9deff;margin:0;max-width:62cqw\">{{data.body}}</p></div><div style=\"flex:0 0 23%;min-width:0;display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;border-left:.2cqw solid #a991d360;padding-left:3cqw\"><div style=\"font:900 2.2cqw system-ui;letter-spacing:.13em;color:#c8b7e8;text-align:right\">THE WORK<br/>STAYS YOURS</div><div style=\"box-sizing:border-box;width:13.6cqw;height:13.6cqw;padding:1.5cqw;display:flex;align-items:center;justify-content:center;border:.8cqw solid #f5c542;border-radius:3cqw;transform:rotate(-12deg);box-shadow:inset 0 0 0 2.2cqw #3f1b75,0 0 3.7cqw #f5c5424c\"><svg viewBox='0 0 715.292490 659.841170' style='display:block;width:100%;height:100%' aria-label='Twilite'><g transform='translate(-154.485274,842.841170) scale(0.100000,-0.100000)' fill='#f7efff' stroke='none'><path d='M4745 8420 c-358 -17 -813 -102 -1145 -215 -276 -93 -638 -295 -890 -495 -125 -99 -356 -328 -465 -460 -230 -281 -390 -568 -529 -952 -42 -116 -108 -348 -120 -423 -3 -16 -12 -68 -20 -115 -30 -172 -38 -320 -26 -492 27 -409 135 -685 355 -903 197 -198 436 -313 765 -372 54 -9 180 -17 343 -20 l257 -5 31 -58 c46 -86 181 -261 251 -325 255 -232 599 -329 1083 -305 99 5 205 11 235 14 l55 6 360 -401 c198 -220 474 -527 612 -682 139 -155 272 -297 295 -314 54 -41 153 -73 225 -73 64 0 160 23 217 52 55 28 137 114 164 170 36 78 42 123 42 361 l0 227 36 0 c20 0 82 7 138 16 542 85 966 377 1188 819 107 211 145 364 147 589 2 140 2 140 35 195 200 332 294 649 311 1046 11 236 -13 459 -74 698 -72 281 -319 721 -570 1017 -136 161 -370 383 -551 524 -180 140 -492 337 -698 440 -442 221 -777 325 -1287 400 -55 8 -125 17 -155 20 -79 9 -390 26 -425 24 -16 0 -102 -4 -190 -8z m645 -349 c41 -5 98 -13 125 -16 539 -71 1124 -304 1610 -641 217 -150 315 -233 516 -433 403 -404 642 -834 719 -1301 18 -105 24 -394 11 -490 -18 -134 -21 -149 -48 -255 -45 -180 -108 -331 -230 -547 l-54 -96 -9 -179 c-4 -98 -11 -185 -14 -193 -3 -8 -7 -31 -10 -50 -25 -171 -137 -372 -296 -532 -223 -223 -500 -347 -842 -379 -181 -16 -230 -31 -284 -84 -24 -25 -47 -59 -53 -81 -6 -23 -11 -143 -11 -289 0 -137 -5 -266 -10 -286 -7 -25 -20 -41 -45 -54 -31 -17 -37 -18 -64 -5 -17 8 -54 42 -83 76 -51 58 -318 356 -498 553 -47 52 -127 142 -179 200 -52 58 -100 111 -106 116 -6 6 -45 48 -86 95 -41 47 -79 89 -85 95 -6 5 -68 74 -138 153 -71 78 -141 149 -156 157 -58 30 -111 30 -300 -1 -14 -2 -97 -7 -185 -10 -353 -15 -606 56 -797 221 -112 96 -183 201 -238 348 -22 58 -59 99 -105 117 -21 8 -98 10 -270 5 -516 -15 -794 63 -1022 287 -120 117 -221 305 -249 463 -25 142 -34 232 -34 347 0 509 188 1063 517 1520 30 42 63 85 72 95 9 10 49 58 90 106 262 311 651 586 1056 747 263 104 619 189 900 215 39 4 102 11 140 15 89 11 646 4 745 -9z'/><path d='M4750 7560 c-25 -5 -81 -28 -126 -50 -192 -94 -317 -313 -300 -525 l5 -70 -152 -91 c-142 -86 -437 -264 -746 -452 l-134 -82 -42 39 c-145 133 -409 153 -567 42 -103 -71 -170 -165 -199 -278 -32 -129 -21 -241 37 -355 119 -235 404 -325 644 -203 27 14 65 39 85 56 l35 31 37 -22 c21 -12 275 -164 564 -337 l525 -316 -13 -51 c-29 -108 -2 -271 62 -376 82 -133 214 -213 380 -227 167 -14 322 60 441 209 l29 37 200 -68 c110 -38 326 -112 480 -166 154 -53 386 -133 516 -177 l236 -79 6 -82 c14 -192 109 -336 271 -413 293 -138 623 32 677 349 28 171 -22 328 -144 447 -47 46 -162 107 -217 116 l-37 6 -7 67 c-8 76 -11 102 -31 266 -8 66 -26 224 -40 350 -14 127 -32 279 -40 338 -20 146 -20 174 4 182 51 16 144 88 185 145 182 246 107 581 -159 711 -67 32 -75 34 -181 34 -107 0 -112 -1 -185 -37 -50 -25 -93 -56 -126 -91 -49 -51 -51 -53 -79 -40 -133 60 -978 438 -1085 485 l-136 61 3 68 c11 224 -161 464 -383 535 -58 18 -231 27 -293 14z m855 -948 c121 -55 252 -114 290 -132 39 -18 149 -67 245 -111 96 -43 234 -105 305 -137 l130 -58 1 -60 c1 -32 3 -81 5 -109 l4 -50 -321 -200 c-343 -214 -689 -429 -897 -558 l-127 -79 -46 42 c-41 37 -153 100 -180 100 -13 0 -23 373 -28 1084 l-1 128 55 17 c107 34 195 95 273 191 30 38 44 47 56 41 9 -5 115 -54 236 -109z m-994 -81 c44 -22 95 -43 114 -47 l35 -6 0 -67 c0 -36 2 -142 4 -236 3 -93 8 -335 12 -536 l7 -366 -39 -13 c-53 -16 -143 -67 -176 -97 l-26 -25 -319 192 c-175 106 -356 216 -403 245 -47 29 -160 98 -252 154 -162 99 -168 104 -161 129 7 26 8 177 1 215 -2 15 102 81 501 322 l505 304 59 -64 c43 -48 78 -74 138 -104z m2138 -800 c48 -38 75 -51 141 -71 l55 -16 17 -140 c9 -76 19 -173 22 -214 4 -41 9 -86 11 -100 6 -34 13 -86 25 -200 6 -52 14 -129 20 -170 13 -105 40 -339 40 -355 0 -7 -12 -16 -27 -20 -45 -11 -119 -63 -175 -123 l-53 -57 -65 22 c-36 12 -216 73 -400 136 -184 63 -481 165 -659 226 -178 61 -327 113 -330 116 -5 6 -5 7 -15 97 l-6 58 57 35 c32 20 177 110 323 200 146 90 324 200 395 245 228 142 580 359 584 360 2 0 20 -13 40 -29z'/></g></svg></div><div style=\"font:800 2.2cqw/1.3 system-ui;color:#f5c542;text-align:right\">{{data.ctaLabel}} ↗</div></div></div></div><div style=\"display:{{eq(data.displayRole,'primary-exhibit','flex','none')}};width:100%;height:100%;box-sizing:border-box\"><div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:100%;overflow:hidden;border-radius:3cqw;background:#fffdfd;border:.5cqw solid #6039a3;color:#261a42;display:flex;flex-direction:column\"><div style=\"flex:none;height:2.4cqw;background:linear-gradient(90deg,#6039a3,#f5c542)\"></div><div style=\"flex:1 1 0;min-height:0;box-sizing:border-box;padding:3.6cqw 5.5cqw 4cqw;display:flex;flex-direction:column;gap:2cqw\"><div style=\"font:900 3cqw/1.1 system-ui;letter-spacing:.16em;color:#6039a3\">{{data.eyebrow}}</div><h2 style=\"font:700 7.8cqw/1.08 Georgia,serif;letter-spacing:-.03em;margin:0\">{{data.title || label}}</h2><p style=\"font:400 3.4cqw/1.42 system-ui;color:#3d3d5c;margin:0;flex:none;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden\">{{data.body}}</p><div style=\"margin-top:auto;display:flex;flex-direction:column;gap:2cqw\"><div style=\"display:flex;align-items:center;justify-content:space-between;gap:3cqw\"><div style=\"font:700 3cqw/1.3 system-ui;color:#64537a\">{{data.audience}}</div></div></div></div></div></div><div style=\"display:{{eq(data.displayRole,'primary-exhibit','none',eq(data.displayRole,'hero','none','flex'))}};width:100%;height:100%;box-sizing:border-box\"><div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:100%;overflow:hidden;padding:5.5cqw 6cqw;border-radius:3cqw;background:#fbf9ff;border:.2cqw solid #d6cce8;color:#261a42;display:flex;flex-direction:column;gap:2.7cqw\"><div style=\"font:900 2.9cqw/1.1 system-ui;letter-spacing:.16em;color:#7552a6\">{{data.eyebrow}}</div><h2 style=\"font:600 8.4cqw/1.13 Georgia,serif;letter-spacing:-.027em;margin:0\">{{data.title || label}}</h2><p style=\"font:400 3.6cqw/1.48 system-ui;color:#4b4b67;margin:0;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden\">{{data.body}}</p><div style=\"margin-top:auto;padding-top:2.5cqw;border-top:.25cqw solid #dbd1eb\"><div style=\"font:700 3cqw/1.3 system-ui;color:#64537a\">{{data.audience}}</div><div style=\"margin-top:1.2cqw;font:900 3cqw system-ui;color:#6039a3\">{{data.ctaLabel}} ↗</div></div></div></div></div>"
+        }
+      }
+    },
+    {
+      "id": "product-exhibit-class-glyph",
+      "type": "glyph",
+      "label": "Exhibit glyph",
+      "position": {
+        "x": 1360,
+        "y": -150
+      },
+      "width": 90,
+      "height": 90,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          },
+          "portId": "root"
+        }
+      ],
+      "data": {
+        "identity": {
+          "graphId": "product-exhibit-class",
+          "nodeId": "product-exhibit-class-glyph"
+        },
+        "glyph": {
+          "kind": "symbol",
+          "value": "✦",
+          "color": "#f5c542"
+        }
+      }
+    },
+    {
+      "id": "product-exhibit-class-editor",
+      "type": "face",
+      "label": "Edit Exhibit",
+      "position": {
+        "x": 1360,
+        "y": -560
+      },
+      "width": 460,
+      "height": 280,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "product-exhibit-class",
+          "nodeId": "product-exhibit-class-editor"
+        },
+        "view": {
+          "intent": "editor",
+          "payload": "editor.web"
+        },
+        "editor": {
+          "web": {
+            "fields": [
+              {
+                "key": "title",
+                "label": "Headline",
+                "type": "text",
+                "path": "data.title"
+              },
+              {
+                "key": "displayRole",
+                "label": "Role",
+                "type": "select",
+                "path": "data.displayRole",
+                "options": [
+                  {
+                    "value": "hero",
+                    "label": "Hero"
+                  },
+                  {
+                    "value": "primary-exhibit",
+                    "label": "Primary exhibit"
+                  },
+                  {
+                    "value": "secondary-exhibit",
+                    "label": "Secondary exhibit"
+                  }
+                ]
+              },
+              {
+                "key": "eyebrow",
+                "label": "Eyebrow",
+                "type": "text",
+                "path": "data.eyebrow"
+              },
+              {
+                "key": "body",
+                "label": "Supporting copy",
+                "type": "textarea",
+                "path": "data.body",
+                "rows": 6
+              },
+              {
+                "key": "audience",
+                "label": "Audience",
+                "type": "text",
+                "path": "data.audience"
+              },
+              {
+                "key": "ctaLabel",
+                "label": "CTA label",
+                "type": "text",
+                "path": "data.ctaLabel"
+              },
+              {
+                "key": "ctaRef",
+                "label": "CTA ref",
+                "type": "text",
+                "path": "data.ctaRef"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "product-exhibit-class-landing",
+      "type": "content",
+      "label": "Product Exhibit guide",
+      "position": {
+        "x": -720,
+        "y": 130
+      },
+      "width": 460,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "product-exhibit-class",
+          "nodeId": "product-exhibit-class-landing"
+        },
+        "content": {
+          "kind": "markdown",
+          "value": "# Product Exhibit\n\nReusable class for product promises in the Twilite showroom. Author each exhibit's headline, body, audience and CTA once. The class has one view that draws three roles, chosen by each exhibit's Display role: hero, primary exhibit and secondary exhibit."
+        }
+      }
+    },
+    {
+      "id": "product-exhibit-class-environment",
+      "type": "face",
+      "label": "Node class environment",
+      "position": {
+        "x": 1360,
+        "y": 250
+      },
+      "width": 400,
+      "height": 240,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "portId": "root"
+        }
+      ],
+      "visible": false,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "product-exhibit-class",
+          "nodeId": "product-exhibit-class-environment"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.environment"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style='width:100%;height:100%;background:linear-gradient(145deg,#351660,#141b34)'></div>"
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "product-exhibit-class-surface",
+      "type": "surface",
+      "source": "product-exhibit-class-root",
+      "target": "product-exhibit-class-billboard",
+      "sourcePort": "surfaces",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {
+        "surfaceId": "web"
+      }
+    },
+    {
+      "id": "product-exhibit-class-ground",
+      "type": "ground",
+      "source": "product-exhibit-class-root",
+      "target": "product-exhibit-class-landing",
+      "sourcePort": "ground",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "product-exhibit-class-environment-edge",
+      "type": "environment",
+      "source": "product-exhibit-class-root",
+      "target": "product-exhibit-class-environment",
+      "sourcePort": "environment",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "product-exhibit-class-last-glyph",
+      "type": "next-face",
+      "source": "product-exhibit-class-billboard",
+      "target": "product-exhibit-class-glyph",
+      "sourcePort": "sequence-out",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    }
+  ],
+  "settings": {
+    "layout": {
+      "mode": "manual"
+    },
+    "edgeRouting": "auto",
+    "github": {
+      "path": "products/twilite/showroom/product-exhibit-class/root.node",
+      "repo": "TwiliteLLC/public"
+    }
+  }
+}

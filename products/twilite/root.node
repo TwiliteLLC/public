@@ -743,6 +743,95 @@
         }
       },
       "positionLocked": true
+    },
+    {
+      "id": "twilite-product-showroom-portal",
+      "type": "portal",
+      "label": "Twilite showroom",
+      "position": {
+        "x": 0,
+        "y": 1920
+      },
+      "width": 420,
+      "height": 260,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "tlz://twilite.zone/products/twilite/showroom/root.node",
+        "target": {
+          "ref": "tlz://twilite.zone/products/twilite/showroom/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open the Twilite showroom"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "root",
+          "nodeId": "twilite-product-showroom-portal"
+        },
+        "security": "prompt",
+        "memo": "The showroom: three things people make with Twilite, each with a real graph to open."
+      }
     }
   ],
   "edges": [

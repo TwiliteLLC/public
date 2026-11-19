@@ -1,0 +1,1230 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "created": "2026-11-18T15:13:21.816Z",
+    "modified": "2026-11-18T16:57:30.428Z",
+    "author": "",
+    "tags": [
+      "graph"
+    ],
+    "preferredViewer": "https://dev.twilite.zone"
+  },
+  "nodes": [
+    {
+      "id": "showroom-connect-the-project-root",
+      "type": "root",
+      "label": "One Project. Everything Connected.",
+      "position": {
+        "x": -640,
+        "y": -670
+      },
+      "width": 460,
+      "height": 290,
+      "ports": [
+        {
+          "id": "surfaces",
+          "key": "surfaces",
+          "label": "surfaces",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 195,
+          "role": "surface",
+          "allowedEdgeTypes": [
+            "surface"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "surface",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "default-handle",
+          "key": "default-handle",
+          "label": "default handle",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 275,
+          "role": "default-handle",
+          "allowedEdgeTypes": [
+            "edge"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "default-handle",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "portal",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "boundary-begin",
+          "key": "boundary-begin",
+          "label": "boundary begin",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 110,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "boundary-end",
+          "key": "boundary-end",
+          "label": "boundary end",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 70,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "port",
+          "key": "port",
+          "label": "port",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 250,
+          "role": "exposes-port",
+          "allowedEdgeTypes": [
+            "exposes-port"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "exposes-port",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "port",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ground",
+          "key": "ground",
+          "label": "ground",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "role": "ground",
+          "allowedEdgeTypes": [
+            "ground"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "ground",
+            "required": true,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "content",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 305,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "surfaces",
+          "key": "surfaces",
+          "label": "surfaces",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 195,
+          "role": "surface",
+          "allowedEdgeTypes": [
+            "surface"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "surface",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "surfaces"
+        },
+        {
+          "id": "default-handle",
+          "key": "default-handle",
+          "label": "default handle",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 275,
+          "role": "default-handle",
+          "allowedEdgeTypes": [
+            "edge"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "default-handle",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "portal",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "default-handle"
+        },
+        {
+          "id": "boundary-begin",
+          "key": "boundary-begin",
+          "label": "boundary begin",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 110,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "boundary-begin"
+        },
+        {
+          "id": "boundary-end",
+          "key": "boundary-end",
+          "label": "boundary end",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 70,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "boundary-end"
+        },
+        {
+          "id": "port",
+          "key": "port",
+          "label": "port",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 250,
+          "role": "exposes-port",
+          "allowedEdgeTypes": [
+            "exposes-port"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "exposes-port",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "port",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "port"
+        },
+        {
+          "id": "ground",
+          "key": "ground",
+          "label": "ground",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "role": "ground",
+          "allowedEdgeTypes": [
+            "ground"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "ground",
+            "required": true,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "content",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "ground"
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 305,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "environment"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-root",
+          "name": "One Project. Everything Connected.",
+          "version": "0.1.0",
+          "description": "A curated tour of how Twilite project goals, decisions, questions and actual public graphs connect."
+        },
+        "intent": {
+          "kind": "graph",
+          "scope": "public"
+        },
+        "root": {
+          "kind": "graph",
+          "targetMode": "artifact",
+          "artifactKind": "graph",
+          "interfaceContract": {
+            "version": 1,
+            "implicitRootPort": true
+          },
+          "defaultSurfaceId": "web",
+          "surfaces": [
+            {
+              "id": "detail",
+              "kind": "view",
+              "payload": "node.web.detail",
+              "viewNodeId": "showroom-connect-the-project-detail"
+            },
+            {
+              "id": "summary",
+              "kind": "view",
+              "payload": "node.web.summary",
+              "viewNodeId": "showroom-connect-the-project-summary"
+            },
+            {
+              "id": "glyph",
+              "kind": "glyph",
+              "payload": "node.web.glyph",
+              "viewNodeId": "showroom-connect-the-project-glyph"
+            }
+          ]
+        },
+        "document": {
+          "url": "tlz://twilite.zone/products/twilite/showroom/connect-the-project/root.node"
+        },
+        "membrane": {
+          "bounds": {
+            "x": -800,
+            "y": -850,
+            "width": 3720.3547519944245,
+            "height": 5169.221625995498
+          },
+          "clip": true
+        },
+        "settings": {
+          "layout": {
+            "mode": "manual"
+          }
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-detail",
+      "type": "face",
+      "label": "CONNECT · Reading Page",
+      "position": {
+        "x": -90,
+        "y": -670
+      },
+      "width": 720,
+      "height": 450,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-detail"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.detail",
+          "scroll": "page"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;width:100%;height:100%;overflow:auto;background:#f8fafc;color:#182943;font-family:Georgia,serif;padding:clamp(24px,5cqw,60px)\"><p style=\"font:900 12px system-ui;letter-spacing:.16em;color:#624aa0\">TWILITE / CONNECT / A REAL PROJECT</p><h1 style=\"font:500 clamp(36px,7cqw,65px)/1.04 Georgia,serif\">One project. Everything connected.</h1><p style=\"font:400 21px/1.5 Georgia,serif;color:#3a506b\">Look inside Twilite as a project, not simply a list of its documents. This guided example relates a goal, a plan, a design decision and an open question.</p><div style=\"background:#e8eef9;border-left:5px solid #6650a4;padding:18px 22px;font:500 15px/1.55 system-ui\">The project nodes below are a curated illustration. The linked Twilite project, product brainstorm, and release notes are actual separate graph documents. Connections shown here are authored relationships in this demonstration, not a claim that every linked graph is live-synchronized.</div><h2>Start with the goal</h2><p>Open Twilite to people who want to build with an AI, then keep and reuse the work. That goal introduces a plan, a product decision, and a question about the first experience.</p><h2>Follow the edges</h2><p>Goals are not isolated. A plan serves a goal; a decision shapes the plan; an open question can hold up the next step. The graph records those connections.</p><h2>Open another graph</h2><p>The portals below open the real Twilite project, its product brainstorm, and release notes. They aren't pasted copies. They are separate documents with their own identity and address.</p><div style=\"margin-top:26px;font:700 14px system-ui;color:#61419d\">Follow an idea → inspect the decision → open a real graph.</div></div>"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-summary",
+      "type": "face",
+      "label": "CONNECT · Summary",
+      "position": {
+        "x": 700,
+        "y": -670
+      },
+      "width": 360,
+      "height": 225,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-summary"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.summary"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;background:linear-gradient(145deg,#283967,#152b46);color:#fff;width:100%;height:100%;padding:6cqw;container-type:inline-size;font-family:system-ui\"><div style=\"font:900 4cqw system-ui;letter-spacing:.12em;color:#f5c542\">CONNECT</div><div style=\"font:650 11cqw/1.07 Georgia,serif;margin:6cqw 0\">One project.<br/>Every part.</div><div style=\"font:500 4cqw/1.4 system-ui;color:#d8e8fc\">See the whole. Follow the work.</div></div>"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-glyph",
+      "type": "glyph",
+      "label": "CONNECT · Glyph",
+      "position": {
+        "x": 1140,
+        "y": -670
+      },
+      "width": 100,
+      "height": 100,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-glyph"
+        },
+        "glyph": {
+          "kind": "symbol",
+          "value": "C",
+          "color": "#f5c542"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-environment",
+      "type": "face",
+      "label": "CONNECT · Environment",
+      "position": {
+        "x": 1350,
+        "y": -670
+      },
+      "width": 600,
+      "height": 420,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-environment"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.environment"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"position:relative;box-sizing:border-box;width:100%;height:100%;container-type:inline-size;overflow:hidden;background:radial-gradient(ellipse at 35% 9%,#345b87,#172948 55%,#101b31);color:#fff;font-family:system-ui\"><div style=\"position:absolute;inset:0;opacity:.14;background-image:linear-gradient(90deg,#bbd2ff 1px,transparent 1px),linear-gradient(#bbd2ff 1px,transparent 1px);background-size:8cqw 8cqw\"></div><div style=\"position:absolute;left:4cqw;right:4cqw;top:4cqw;border-top:.4cqw solid #f5c542;padding-top:2cqw;display:flex;justify-content:space-between;font:900 1.8cqw system-ui;letter-spacing:.14em;color:#f5c542\"><span>TWILITE / CONNECT</span><span>GUIDED PROJECT TOUR</span></div><div style=\"position:absolute;left:4cqw;top:12cqw;font:500 8.2cqw/1.1 Georgia,serif\">See the whole project.<br/>Follow any thread.</div><div style=\"position:absolute;left:4cqw;top:34cqw;font:500 2.4cqw system-ui;color:#d6e7ff\">One goal. Many connected decisions. Real destinations.</div><div style=\"position:absolute;left:4cqw;right:4cqw;top:45cqw;border-top:.2cqw solid #91acce\"></div><div style=\"position:absolute;left:4cqw;top:49cqw;font:900 1.8cqw system-ui;color:#f5c542;letter-spacing:.14em\">THE GOAL</div><div style=\"position:absolute;left:4cqw;right:4cqw;top:71cqw;display:grid;grid-template-columns:repeat(3,1fr);gap:2cqw\"><div style=\"height:42cqw;border:1px solid #93acd1;border-radius:2cqw;background:#2b487350;padding:2cqw;font:900 2cqw system-ui;color:#f5c542\">PLAN</div><div style=\"height:42cqw;border:1px solid #93acd1;border-radius:2cqw;background:#45346b50;padding:2cqw;font:900 2cqw system-ui;color:#f5c542\">DECISION</div><div style=\"height:42cqw;border:1px solid #93acd1;border-radius:2cqw;background:#2c555950;padding:2cqw;font:900 2cqw system-ui;color:#f5c542\">QUESTION</div></div><div style=\"position:absolute;left:4cqw;top:121cqw;font:900 1.75cqw system-ui;letter-spacing:.12em;color:#f5c542\">OPEN THE ACTUAL GRAPHS</div><div style=\"position:absolute;left:4cqw;right:4cqw;bottom:4cqw;border-top:.2cqw solid #9baed0;padding-top:2cqw;font:700 1.65cqw system-ui;color:#dfe9fb\">PROGRESS IS MORE THAN A LIST OF LINKS</div></div>"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-goal",
+      "type": "content",
+      "label": "GOAL · Open Twilite",
+      "position": {
+        "x": 405.74916290411875,
+        "y": 937.7778481506676
+      },
+      "width": 1268.8077693168066,
+      "height": 579.285572253304,
+      "style": {
+        "background": "#35264f",
+        "color": "#f9fbff",
+        "borderColor": "#c9a3ec",
+        "borderRadius": 22,
+        "borderWidth": 2,
+        "borderStyle": "solid"
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-goal"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;width:100%;height:100%;container-type:inline-size;overflow:hidden;background:#35264f;color:#f9fbff;border:3px solid #c9a3ec;border-radius:22px;padding:3.2cqw;font-family:system-ui;display:flex;flex-direction:column;justify-content:space-between\"><div><div style=\"display:flex;align-items:center;justify-content:space-between;gap:16px;font:900 3.2cqw/1.1 system-ui;letter-spacing:.14em;color:#f5c542\"><span>THE GOAL</span><span style=\"font:750 2.0cqw/1.2 system-ui;letter-spacing:.08em;color:#c9a3ec\">A SHARED DIRECTION</span></div><h2 style=\"font:650 8.1cqw/1.04 Georgia,serif;letter-spacing:-.025em;margin:2.5cqw 0 2.0cqw;color:#fff\">Open Twilite to builders</h2><p style=\"font:480 4.6cqw/1.32 system-ui;color:#e5f0ff;margin:0\">Let people and their AI create durable, reusable, connected work. A product launch is the outcome, not the entirety of the project.</p></div><div style=\"height:3px;min-height:3px;flex-shrink:0;background:linear-gradient(90deg,#c9a3ec,transparent);opacity:.7;margin-top:1.7cqw\"></div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795020565753,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-plan",
+      "type": "content",
+      "label": "PLAN · Make the first visit work",
+      "position": {
+        "x": -591.787561921268,
+        "y": 2006.424876157464
+      },
+      "width": 982.8562326078713,
+      "height": 548.0953041010638,
+      "style": {
+        "background": "#172e50",
+        "color": "#f9fbff",
+        "borderColor": "#9db7df",
+        "borderRadius": 22,
+        "borderWidth": 2,
+        "borderStyle": "solid"
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-plan"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;width:100%;height:100%;container-type:inline-size;overflow:hidden;background:#172e50;color:#f9fbff;border:3px solid #9db7df;border-radius:22px;padding:3.2cqw;font-family:system-ui;display:flex;flex-direction:column;justify-content:space-between\"><div><div style=\"display:flex;align-items:center;justify-content:space-between;gap:16px;font:900 3.2cqw/1.1 system-ui;letter-spacing:.14em;color:#f5c542\"><span>THE PLAN</span><span style=\"font:750 2.0cqw/1.2 system-ui;letter-spacing:.08em;color:#9db7df\">A WAY FORWARD</span></div><h2 style=\"font:650 8.1cqw/1.04 Georgia,serif;letter-spacing:-.025em;margin:2.5cqw 0 2.0cqw;color:#fff\">Make the first visit useful</h2><p style=\"font:480 4.6cqw/1.32 system-ui;color:#e5f0ff;margin:0\">Give a newcomer a working starting point: a graph, a template, and an agent-friendly path from conversation to something worth keeping.</p></div><div style=\"height:3px;min-height:3px;flex-shrink:0;background:linear-gradient(90deg,#9db7df,transparent);opacity:.7;margin-top:1.7cqw\"></div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795020559871,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-decision",
+      "type": "content",
+      "label": "DECISION · What the product is",
+      "position": {
+        "x": 549.0134532299476,
+        "y": 1992.84944160026
+      },
+      "width": 967.3802221773834,
+      "height": 545,
+      "style": {
+        "background": "#17413f",
+        "color": "#f9fbff",
+        "borderColor": "#a0d6cc",
+        "borderRadius": 22,
+        "borderWidth": 2,
+        "borderStyle": "solid"
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-decision"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;width:100%;height:100%;container-type:inline-size;overflow:hidden;background:#17413f;color:#f9fbff;border:3px solid #a0d6cc;border-radius:22px;padding:3.2cqw;font-family:system-ui;display:flex;flex-direction:column;justify-content:space-between\"><div><div style=\"display:flex;align-items:center;justify-content:space-between;gap:16px;font:900 3.2cqw/1.1 system-ui;letter-spacing:.14em;color:#f5c542\"><span>THE DECISION</span><span style=\"font:750 2.0cqw/1.2 system-ui;letter-spacing:.08em;color:#a0d6cc\">A CHOSEN DIRECTION</span></div><h2 style=\"font:650 8.1cqw/1.04 Georgia,serif;letter-spacing:-.025em;margin:2.5cqw 0 2.0cqw;color:#fff\">Build a workspace, not a chatbot</h2><p style=\"font:480 4.6cqw/1.32 system-ui;color:#e5f0ff;margin:0\">Keep the graph document as the durable artifact. An AI is a collaborator that can create and revise it; the workspace isn't tied to one conversation.</p></div><div style=\"height:3px;min-height:3px;flex-shrink:0;background:linear-gradient(90deg,#a0d6cc,transparent);opacity:.7;margin-top:1.7cqw\"></div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795020557575,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-question",
+      "type": "content",
+      "label": "QUESTION · The first ten minutes",
+      "position": {
+        "x": 1792,
+        "y": 2020
+      },
+      "width": 890,
+      "height": 545,
+      "style": {
+        "background": "#513c22",
+        "color": "#f9fbff",
+        "borderColor": "#ffe0a2",
+        "borderRadius": 22,
+        "borderWidth": 2,
+        "borderStyle": "solid"
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-question"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;width:100%;height:100%;container-type:inline-size;overflow:hidden;background:#513c22;color:#f9fbff;border:3px solid #ffe0a2;border-radius:22px;padding:3.2cqw;font-family:system-ui;display:flex;flex-direction:column;justify-content:space-between\"><div><div style=\"display:flex;align-items:center;justify-content:space-between;gap:16px;font:900 3.2cqw/1.1 system-ui;letter-spacing:.14em;color:#f5c542\"><span>THE QUESTION</span><span style=\"font:750 2.0cqw/1.2 system-ui;letter-spacing:.08em;color:#ffe0a2\">AN OPEN THREAD</span></div><h2 style=\"font:650 8.1cqw/1.04 Georgia,serif;letter-spacing:-.025em;margin:2.5cqw 0 2.0cqw;color:#fff\">What makes someone come back?</h2><p style=\"font:480 4.6cqw/1.32 system-ui;color:#e5f0ff;margin:0\">Which experience will make the value obvious before a visitor has to learn nodes, edges, imports and classes? This is an open editorial question, not a confirmed project blocker.</p></div><div style=\"height:3px;min-height:3px;flex-shrink:0;background:linear-gradient(90deg,#ffe0a2,transparent);opacity:.7;margin-top:1.7cqw\"></div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794976410017,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-real-project",
+      "type": "portal",
+      "label": "EXPLORE · Real Twilite project",
+      "position": {
+        "x": -580.7318098267464,
+        "y": 2681.4353285885327
+      },
+      "width": 907.5938514235631,
+      "height": 457.70079681614527,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "github://mikemartinez1974/public/projects/twilite/root.node",
+        "target": {
+          "ref": "github://mikemartinez1974/public/projects/twilite/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open EXPLORE · Real Twilite project"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-real-project"
+        },
+        "security": "prompt",
+        "memo": "Actual public project collection, not a copy of its content",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794976481486,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-brainstorm",
+      "type": "portal",
+      "label": "EXPLORE · Product brainstorm",
+      "position": {
+        "x": 606.5584035593137,
+        "y": 2689.8760747180313
+      },
+      "width": 907.594,
+      "height": 457.701,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "github://mikemartinez1974/public/why/brainstorm/root.node",
+        "target": {
+          "ref": "github://mikemartinez1974/public/why/brainstorm/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open EXPLORE · Product brainstorm"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-brainstorm"
+        },
+        "security": "prompt",
+        "memo": "Real authored brainstorm with ideas and questions",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794976486962,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-releases",
+      "type": "portal",
+      "label": "EXPLORE · Release notes",
+      "position": {
+        "x": 1785.540355023162,
+        "y": 2697.429249248404
+      },
+      "width": 907.594,
+      "height": 457.701,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "github://mikemartinez1974/public/releases/root.node",
+        "target": {
+          "ref": "github://mikemartinez1974/public/releases/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open EXPLORE · Release notes"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-releases"
+        },
+        "security": "prompt",
+        "memo": "Actual release history, maintained separately",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1794976485690,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-back",
+      "type": "portal",
+      "label": "BACK · Product showroom",
+      "position": {
+        "x": 2277.694618938769,
+        "y": 3839.675108378788
+      },
+      "width": 461.22867610533757,
+      "height": 318.2550239641064,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "tlz://twilite.zone/products/twilite/showroom/root.node",
+        "target": {
+          "ref": "tlz://twilite.zone/products/twilite/showroom/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open BACK · Product showroom"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "showroom-connect-the-project",
+          "nodeId": "showroom-connect-the-project-back"
+        },
+        "security": "prompt",
+        "memo": "Return to the product showroom",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795020667047,
+          "reason": "node-drag"
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "showroom-connect-the-project-surface",
+      "type": "surface",
+      "source": "showroom-connect-the-project-root",
+      "target": "showroom-connect-the-project-detail",
+      "sourcePort": "surfaces",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {
+        "surfaceId": "web"
+      }
+    },
+    {
+      "id": "showroom-connect-the-project-next-summary",
+      "type": "next-face",
+      "source": "showroom-connect-the-project-detail",
+      "target": "showroom-connect-the-project-summary",
+      "sourcePort": "sequence-out",
+      "targetPort": "sequence-in",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "showroom-connect-the-project-next-glyph",
+      "type": "next-face",
+      "source": "showroom-connect-the-project-summary",
+      "target": "showroom-connect-the-project-glyph",
+      "sourcePort": "sequence-out",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "showroom-connect-the-project-environment",
+      "type": "environment",
+      "source": "showroom-connect-the-project-root",
+      "target": "showroom-connect-the-project-environment",
+      "sourcePort": "environment",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "showroom-connect-the-project-goal-plan",
+      "type": "leads-to",
+      "source": "showroom-connect-the-project-goal",
+      "target": "showroom-connect-the-project-plan",
+      "sourcePort": "out-bottom",
+      "targetPort": "root",
+      "label": "requires",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "showroom-connect-the-project-goal-decision",
+      "type": "leads-to",
+      "source": "showroom-connect-the-project-goal",
+      "target": "showroom-connect-the-project-decision",
+      "sourcePort": "out-bottom",
+      "targetPort": "root",
+      "label": "shaped by",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "showroom-connect-the-project-goal-question",
+      "type": "leads-to",
+      "source": "showroom-connect-the-project-goal",
+      "target": "showroom-connect-the-project-question",
+      "sourcePort": "out-bottom",
+      "targetPort": "root",
+      "label": "raises",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    }
+  ],
+  "settings": {
+    "theme": null,
+    "backgroundImage": null,
+    "defaultNodeColor": "#1976d2",
+    "defaultEdgeColor": "",
+    "snapToGrid": false,
+    "gridSize": 20,
+    "edgeRouting": "auto",
+    "edgeAvoidNodes": true,
+    "layout": {
+      "mode": "manual"
+    },
+    "github": {
+      "path": "products/twilite/showroom/connect-the-project/root.node",
+      "repo": "TwiliteLLC/public"
+    }
+  }
+}
