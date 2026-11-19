@@ -467,7 +467,7 @@
       ],
       "data": {
         "identity": {
-          "graphId": "root",
+          "graphId": "twilite-product",
           "nodeId": "twilite",
           "name": "Twilite",
           "version": "0.4.0",
@@ -593,7 +593,7 @@
           "receivesGlyphDefinition": true
         },
         "identity": {
-          "graphId": "root",
+          "graphId": "twilite-product",
           "nodeId": "twilite-product-glyph"
         },
         "memo": "The glyph: the mark that ends the chain of views, for when the graph is seen smallest."
@@ -634,7 +634,7 @@
       "showLabel": true,
       "data": {
         "identity": {
-          "graphId": "root"
+          "graphId": "twilite-product"
         },
         "view": {
           "intent": "node",
@@ -685,7 +685,7 @@
       "showLabel": true,
       "data": {
         "identity": {
-          "graphId": "root"
+          "graphId": "twilite-product"
         },
         "view": {
           "intent": "node",
@@ -735,7 +735,7 @@
       "showLabel": false,
       "data": {
         "identity": {
-          "graphId": "root"
+          "graphId": "twilite-product"
         },
         "content": {
           "kind": "html",
@@ -826,7 +826,7 @@
         "intent": "external",
         "visibilityRole": "browser",
         "identity": {
-          "graphId": "root",
+          "graphId": "twilite-product",
           "nodeId": "twilite-product-showroom-portal"
         },
         "security": "prompt",
