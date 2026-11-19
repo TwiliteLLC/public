@@ -1,13 +1,13 @@
 {
   "fileVersion": "1.0",
   "metadata": {
-    "created": "2026-11-19T21:11:57.088Z",
-    "modified": "2026-11-19T22:20:16.715Z",
+    "created": "2026-11-19T22:35:12.329Z",
+    "modified": "2026-11-19T22:39:21.524Z",
+    "author": "",
     "tags": [
-      "product",
-      "page"
+      "graph"
     ],
-    "preferredViewer": "https://dev.twilite.zone"
+    "preferredViewer": "https://twilite.zone"
   },
   "nodes": [
     {
@@ -15,8 +15,8 @@
       "type": "root",
       "label": "Twilite product · root",
       "position": {
-        "x": -1320,
-        "y": -740
+        "x": -632.893081761006,
+        "y": -761.6981132075472
       },
       "width": 460,
       "height": 290,
@@ -462,7 +462,7 @@
           "landingSurfaceId": "landing"
         },
         "document": {
-          "url": "tlz://twilite.zone/products/twilite/root.node"
+          "url": "github://TwiliteLLC/public/products/twilite/root.node"
         },
         "membrane": {
           "bounds": {
@@ -477,6 +477,13 @@
           "layout": {
             "mode": "manual"
           }
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795127946740,
+          "reason": "node-drag"
         }
       }
     },
@@ -485,8 +492,8 @@
       "type": "face",
       "label": "Twilite product · detail",
       "position": {
-        "x": -800,
-        "y": -740
+        "x": 1442.1383647798743,
+        "y": -718.3018867924528
       },
       "width": 760,
       "height": 470,
@@ -505,6 +512,13 @@
         "content": {
           "kind": "html",
           "value": "<div style=\"box-sizing:border-box;container-type:inline-size;width:100%;height:100%;overflow:auto;background:#f9f7fc;color:#241b34;padding:6cqw;font-family:system-ui\"><strong style=\"font-size:2cqw;color:#7041a6\">TWILITE</strong><h1 style=\"font:550 7cqw/1.07 Georgia,serif\">Build with your AI.<br>Keep what you create.</h1><p style=\"font:450 2.8cqw/1.45 system-ui\">Turn ideas, plans, and projects into connected graphs you can revisit, change, and share.</p></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795127943010,
+          "reason": "node-drag"
         }
       }
     },
@@ -1095,6 +1109,8 @@
       "target": "twilite-product-detail",
       "sourcePort": "surfaces",
       "targetPort": "root",
+      "label": "",
+      "style": {},
       "data": {
         "surfaceId": "web"
       }
@@ -1105,7 +1121,10 @@
       "source": "twilite-product-detail",
       "target": "twilite-product-summary",
       "sourcePort": "sequence-out",
-      "targetPort": "sequence-in"
+      "targetPort": "sequence-in",
+      "label": "",
+      "style": {},
+      "data": {}
     },
     {
       "id": "twilite-product-next-glyph",
@@ -1113,7 +1132,10 @@
       "source": "twilite-product-summary",
       "target": "twilite-product-glyph",
       "sourcePort": "sequence-out",
-      "targetPort": "root"
+      "targetPort": "root",
+      "label": "",
+      "style": {},
+      "data": {}
     },
     {
       "id": "twilite-product-env",
@@ -1121,7 +1143,10 @@
       "source": "twilite-product-root",
       "target": "twilite-product-environment",
       "sourcePort": "environment",
-      "targetPort": "root"
+      "targetPort": "root",
+      "label": "",
+      "style": {},
+      "data": {}
     },
     {
       "id": "twilite-product-ground",
@@ -1129,7 +1154,10 @@
       "source": "twilite-product-root",
       "target": "twilite-product-page",
       "sourcePort": "ground",
-      "targetPort": "root"
+      "targetPort": "root",
+      "label": "",
+      "style": {},
+      "data": {}
     }
   ],
   "settings": {
