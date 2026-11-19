@@ -1,0 +1,3342 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "created": "2026-11-19T16:56:11.863Z",
+    "modified": "2026-11-19T18:18:10.780Z",
+    "author": "",
+    "tags": [
+      "graph",
+      "explainer"
+    ],
+    "preferredViewer": "https://dev.twilite.zone"
+  },
+  "nodes": [
+    {
+      "id": "pages-and-nodes-root",
+      "type": "root",
+      "label": "Pages and Nodes",
+      "position": {
+        "x": -1300,
+        "y": -700
+      },
+      "width": 460,
+      "height": 290,
+      "ports": [
+        {
+          "id": "surfaces",
+          "key": "surfaces",
+          "label": "surfaces",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 195,
+          "role": "surface",
+          "allowedEdgeTypes": [
+            "surface"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "surface",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "default-handle",
+          "key": "default-handle",
+          "label": "default handle",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 275,
+          "role": "default-handle",
+          "allowedEdgeTypes": [
+            "edge"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "default-handle",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "portal",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "boundary-begin",
+          "key": "boundary-begin",
+          "label": "boundary begin",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 110,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "boundary-end",
+          "key": "boundary-end",
+          "label": "boundary end",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 70,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "port",
+          "key": "port",
+          "label": "port",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 250,
+          "role": "exposes-port",
+          "allowedEdgeTypes": [
+            "exposes-port"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "exposes-port",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "port",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ground",
+          "key": "ground",
+          "label": "ground",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "role": "ground",
+          "allowedEdgeTypes": [
+            "ground"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "ground",
+            "required": true,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "content",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 305,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "surfaces",
+          "key": "surfaces",
+          "label": "surfaces",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 195,
+          "role": "surface",
+          "allowedEdgeTypes": [
+            "surface"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "surface",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "surfaces"
+        },
+        {
+          "id": "default-handle",
+          "key": "default-handle",
+          "label": "default handle",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 275,
+          "role": "default-handle",
+          "allowedEdgeTypes": [
+            "edge"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "default-handle",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "portal",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "default-handle"
+        },
+        {
+          "id": "boundary-begin",
+          "key": "boundary-begin",
+          "label": "boundary begin",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 110,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "boundary-begin"
+        },
+        {
+          "id": "boundary-end",
+          "key": "boundary-end",
+          "label": "boundary end",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 70,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "boundary-end"
+        },
+        {
+          "id": "port",
+          "key": "port",
+          "label": "port",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 250,
+          "role": "exposes-port",
+          "allowedEdgeTypes": [
+            "exposes-port"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "exposes-port",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "port",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "port"
+        },
+        {
+          "id": "ground",
+          "key": "ground",
+          "label": "ground",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "role": "ground",
+          "allowedEdgeTypes": [
+            "ground"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "ground",
+            "required": true,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "content",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "ground"
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 305,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "environment"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-root",
+          "name": "Pages and Nodes",
+          "version": "0.1.0",
+          "description": "What a page is, what a node is, what a graph is, and what changes when the material is kept as nodes."
+        },
+        "intent": {
+          "kind": "graph",
+          "scope": "public"
+        },
+        "root": {
+          "kind": "graph",
+          "targetMode": "artifact",
+          "artifactKind": "graph",
+          "interfaceContract": {
+            "version": 1,
+            "implicitRootPort": true
+          },
+          "defaultSurfaceId": "web",
+          "surfaces": [
+            {
+              "id": "detail",
+              "kind": "view",
+              "payload": "node.web.detail",
+              "viewNodeId": "pages-and-nodes-detail"
+            },
+            {
+              "id": "summary",
+              "kind": "view",
+              "payload": "node.web.summary",
+              "viewNodeId": "pages-and-nodes-summary"
+            },
+            {
+              "id": "glyph",
+              "kind": "glyph",
+              "payload": "node.web.glyph",
+              "viewNodeId": "pages-and-nodes-glyph"
+            }
+          ]
+        },
+        "document": {
+          "url": "tlz://twilite.zone/products/twilite/pages-and-nodes/root.node"
+        },
+        "membrane": {
+          "bounds": {
+            "x": -1420,
+            "y": -1200,
+            "width": 2324.637303642886,
+            "height": 6783.341559971477
+          },
+          "clip": true
+        },
+        "settings": {
+          "layout": {
+            "mode": "manual"
+          }
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-detail",
+      "type": "face",
+      "label": "Pages and Nodes · Reading view",
+      "position": {
+        "x": -780,
+        "y": -700
+      },
+      "width": 760,
+      "height": 470,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-detail"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.detail",
+          "scroll": "page"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:100%;overflow:auto;background:#fbfaf7;color:#203149;padding:6cqw;font-family:system-ui\"><div style=\"font:800 2cqw;letter-spacing:.14em;color:#7356a0\">THE TWILITE ZONE / PAGES AND NODES</div><h1 style=\"font:600 6.6cqw/1.08 Georgia,serif;margin:3cqw 0\">A web page is something you visit.<br/>A node is something you can use.</h1><p style=\"font:430 2.9cqw/1.45 system-ui;max-width:62ch\">A web page is one composed arrangement, read in the order its author chose. A node is a piece with its own identity: a price, a section, a task. A graph is the nodes and the connections between them, saved as one file you own. A page is one face a graph can show: a layout you read top to bottom.</p><p style=\"font:450 2.65cqw/1.43 system-ui;color:#50627a;max-width:62ch\">This explanation is a graph. Open it as a graph to follow the connections, zoom into a piece, and see the real nodes behind the cards.</p></div>"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-summary",
+      "type": "face",
+      "label": "Pages and Nodes · Summary",
+      "position": {
+        "x": 20,
+        "y": -700
+      },
+      "width": 380,
+      "height": 235,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-summary"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.summary"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:100%;padding:6cqw;background:linear-gradient(145deg,#392f60,#173a58);color:#fff;font-family:system-ui\"><div style=\"font:800 3.6cqw;letter-spacing:.14em;color:#f5c542\">THE TWILITE ZONE / THE WEB, REIMAGINED</div><div style=\"font:600 9cqw/1.09 Georgia,serif;margin-top:5cqw\">Keep the page. Gain the graph.</div><div style=\"font:500 3.8cqw/1.4 system-ui;margin-top:4cqw;color:#dceaff\">Explore spatially. Consume remotely. Reuse by reference.</div></div>"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-glyph",
+      "type": "glyph",
+      "label": "Pages and Nodes · Glyph",
+      "position": {
+        "x": 440,
+        "y": -700
+      },
+      "width": 100,
+      "height": 100,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-glyph"
+        },
+        "glyph": {
+          "kind": "symbol",
+          "value": "↗",
+          "color": "#f5c542"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-environment",
+      "type": "face",
+      "label": "Pages and Nodes · Environment",
+      "position": {
+        "x": 65.08040948624819,
+        "y": -264.2988080268251
+      },
+      "width": 620,
+      "height": 425,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-environment"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.environment"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:size;box-sizing:border-box;width:100%;height:100%;min-height:0;padding:1.6cqw 4cqw 2cqw;background:radial-gradient(ellipse at 23% 0%,#345677,#1c3153 48%,#111b34);color:#fff;font-family:system-ui;display:flex;flex-direction:column;overflow:hidden\"><header style=\"flex:none;border-top:.4cqw solid #f5c542;padding-top:1.4cqw;display:flex;flex-direction:column;gap:1cqw\"><div style=\"font:850 2cqw system-ui;letter-spacing:.16em;color:#f5c542\">THE TWILITE ZONE / THE WEB, REIMAGINED</div><div style=\"font:650 4.6cqw/1.08 Georgia,serif\">A web page is something you visit.<br/>A node is something you can use.</div></header><main style=\"flex:1;min-height:0\"></main><footer style=\"flex:none;display:flex;gap:2.5cqw;border-top:.2cqw solid #8ba5c4;padding-top:2cqw;font:800 2cqw system-ui;flex-wrap:wrap\"><a href=\"tlz://twilite.zone/tutorial/root.node\" style=\"color:#fff;text-decoration:none;\">READ</a><a href=\"tlz://twilite.zone/products/twilite/showroom/connect-the-project/root.node\" style=\"color:#fff;text-decoration:none;\">CONNECT</a><a href=\"tlz://twilite.zone/library/root.node\" style=\"color:#fff;text-decoration:none;\">REUSE</a><a href=\"tlz://twilite.zone/gallery/root.node\" style=\"color:#fff;text-decoration:none;\">EXPLORE</a><a href=\"tlz://twilite.zone/root.node\" style=\"color:#fff;text-decoration:none;margin-left:auto;color:#cdddf5\">THE TWILITE ZONE</a></footer></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795110002857,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-open",
+      "type": "content",
+      "label": "You are already in it",
+      "position": {
+        "x": -1283.743232706038,
+        "y": -693.1258987375461
+      },
+      "width": 1220.483373012587,
+      "height": 361.14655830309556,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-left"
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-top"
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-right"
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-bottom"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-open"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:300px;min-height:300px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(120deg,#1a3454,#293355);color:white;border:3px solid #f5c542;border-left:12px solid #f5c542;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#f5c542\">YOU'RE ALREADY IN IT</div><div style=\"font:650 5.4cqw/1.1 Georgia,serif\">This explanation is a graph.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">Zoom in, follow a connection, open a piece. A page is one way to show a graph; this is another.</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112251422,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-def-node",
+      "type": "point",
+      "label": "A node is a piece with an identity.",
+      "position": {
+        "x": -1300,
+        "y": -172.96859304619898
+      },
+      "width": 600,
+      "height": 420,
+      "ports": [
+        {
+          "id": "from",
+          "key": "from",
+          "label": "from",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "leads-to",
+          "key": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "asks",
+          "key": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true,
+            "targetKinds": [
+              "query"
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "from",
+          "portId": "from",
+          "label": "from",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ]
+          }
+        },
+        {
+          "id": "leads-to",
+          "portId": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 360,
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ]
+          }
+        },
+        {
+          "id": "asks",
+          "portId": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "targetKinds": [
+              "query"
+            ]
+          }
+        },
+        {
+          "id": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "metadata": {
+            "glyph": {
+              "kind": "icon",
+              "name": "Login"
+            }
+          }
+        },
+        {
+          "id": "event:node.changed",
+          "portId": "event:node.changed",
+          "label": "Open question changed",
+          "direction": "output",
+          "dataType": "event",
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "emits-event",
+            "required": false,
+            "eventKey": "node.changed",
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "method",
+                "targetPort": "invokes"
+              }
+            ]
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-def-node"
+        },
+        "classRef": "tlz://twilite.zone/library/classes/nodes/idea/point.node-class.node",
+        "title": "A node is a piece with an identity.",
+        "body": "A price, a section, a task. It can be edited, linked and used in more than one place.",
+        "role": "part",
+        "check": false,
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267124,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-def-graph",
+      "type": "point",
+      "label": "A graph is nodes and their connections.",
+      "position": {
+        "x": -558.3120193774397,
+        "y": -149.32207233966835
+      },
+      "width": 600,
+      "height": 420,
+      "ports": [
+        {
+          "id": "from",
+          "key": "from",
+          "label": "from",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "leads-to",
+          "key": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "asks",
+          "key": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true,
+            "targetKinds": [
+              "query"
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "from",
+          "portId": "from",
+          "label": "from",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ]
+          }
+        },
+        {
+          "id": "leads-to",
+          "portId": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 360,
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ]
+          }
+        },
+        {
+          "id": "asks",
+          "portId": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "targetKinds": [
+              "query"
+            ]
+          }
+        },
+        {
+          "id": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "metadata": {
+            "glyph": {
+              "kind": "icon",
+              "name": "Login"
+            }
+          }
+        },
+        {
+          "id": "event:node.changed",
+          "portId": "event:node.changed",
+          "label": "Open question changed",
+          "direction": "output",
+          "dataType": "event",
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "emits-event",
+            "required": false,
+            "eventKey": "node.changed",
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "method",
+                "targetPort": "invokes"
+              }
+            ]
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-def-graph"
+        },
+        "classRef": "tlz://twilite.zone/library/classes/nodes/idea/point.node-class.node",
+        "title": "A graph is nodes and their connections.",
+        "body": "The pieces and the relationships between them, saved as one file you own.",
+        "role": "part",
+        "check": false,
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267166,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-def-page",
+      "type": "point",
+      "label": "A page is one face a graph can show: a layout you read top to bottom.",
+      "position": {
+        "x": 269.3633092688684,
+        "y": -127.82523533373137
+      },
+      "width": 600,
+      "height": 420,
+      "ports": [
+        {
+          "id": "from",
+          "key": "from",
+          "label": "from",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "leads-to",
+          "key": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90,
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ],
+            "repeatable": true
+          }
+        },
+        {
+          "id": "asks",
+          "key": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "allowedEdgeTypes": [
+            "asks"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "repeatable": true,
+            "targetKinds": [
+              "query"
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "from",
+          "portId": "from",
+          "label": "from",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ]
+          }
+        },
+        {
+          "id": "leads-to",
+          "portId": "leads-to",
+          "label": "leads-to",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90,
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "leads-to"
+            ]
+          }
+        },
+        {
+          "id": "asks",
+          "portId": "asks",
+          "label": "asks",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "asks"
+            ],
+            "targetKinds": [
+              "query"
+            ]
+          }
+        },
+        {
+          "id": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "metadata": {
+            "glyph": {
+              "kind": "icon",
+              "name": "Login"
+            }
+          }
+        },
+        {
+          "id": "event:node.changed",
+          "portId": "event:node.changed",
+          "label": "Open question changed",
+          "direction": "output",
+          "dataType": "event",
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "emits-event",
+            "required": false,
+            "eventKey": "node.changed",
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "method",
+                "targetPort": "invokes"
+              }
+            ]
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-def-page"
+        },
+        "classRef": "tlz://twilite.zone/library/classes/nodes/idea/point.node-class.node",
+        "title": "A page is one face a graph can show: a layout you read top to bottom.",
+        "body": "A face laid out to be read from top to bottom, like a web page. A graph can have one, usually its Detail.",
+        "role": "part",
+        "check": false,
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267167,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-web-1",
+      "type": "content",
+      "label": "1 · On the web",
+      "position": {
+        "x": -1319.5092092705179,
+        "y": 483.18681784539035
+      },
+      "width": 930,
+      "height": 560,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "portId": "in-left",
+          "label": "in-left",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180
+        },
+        {
+          "id": "in-top",
+          "portId": "in-top",
+          "label": "in-top",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270
+        },
+        {
+          "id": "out-right",
+          "portId": "out-right",
+          "label": "out-right",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 360
+        },
+        {
+          "id": "out-bottom",
+          "portId": "out-bottom",
+          "label": "out-bottom",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90
+        },
+        {
+          "id": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-web-1"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:560px;min-height:560px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(137deg,#3e4052,#273349);color:white;border:3px solid #edc86e;border-left:12px solid #edc86e;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#edc86e\">01 / ON THE WEB</div><div style=\"font:650 5.6cqw/1.1 Georgia,serif\">Read in order.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">A page runs top to bottom, section by section. Links can take you elsewhere, but the page itself is one composed thing.</div><div style=\"font:760 2cqw/1.3 system-ui;color:#edc86e;margin-top:1cqw\">SCROLL / FOLLOW LINKS</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267168,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-twi-1",
+      "type": "content",
+      "label": "1 · In Twilite",
+      "position": {
+        "x": -211.46090404737564,
+        "y": 503.33786238426023
+      },
+      "width": 930,
+      "height": 560,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-left"
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-top"
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-right"
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-bottom"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-twi-1"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:560px;min-height:560px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(132deg,#17506a,#24385b);color:white;border:3px solid #83dbed;border-left:12px solid #83dbed;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#83dbed\">01 / IN TWILITE</div><div style=\"font:650 5.6cqw/1.1 Georgia,serif\">Go in any direction.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">The same material can be a page, a map of related ideas, or a network of connections. Zoom out for the whole; zoom in for one piece.</div><div style=\"font:760 2cqw/1.3 system-ui;color:#83dbed;margin-top:1cqw\">PAN / ZOOM / FOLLOW EDGES</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267170,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-web-2",
+      "type": "content",
+      "label": "2 · On the web",
+      "position": {
+        "x": -1300,
+        "y": 1267.031406953801
+      },
+      "width": 930,
+      "height": 560,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "portId": "in-left",
+          "label": "in-left",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180
+        },
+        {
+          "id": "in-top",
+          "portId": "in-top",
+          "label": "in-top",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270
+        },
+        {
+          "id": "out-right",
+          "portId": "out-right",
+          "label": "out-right",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 360
+        },
+        {
+          "id": "out-bottom",
+          "portId": "out-bottom",
+          "label": "out-bottom",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90
+        },
+        {
+          "id": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-web-2"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:560px;min-height:560px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(137deg,#3e4052,#273349);color:white;border:3px solid #edc86e;border-left:12px solid #edc86e;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#edc86e\">02 / ON THE WEB</div><div style=\"font:650 5.6cqw/1.1 Georgia,serif\">You go to the page.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">To read what someone published, you visit them. Embeds and feeds can bring a piece to you, but only with extra machinery.</div><div style=\"font:760 2cqw/1.3 system-ui;color:#edc86e;margin-top:1cqw\">VISIT / EMBED / INTEGRATE</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267172,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-twi-2",
+      "type": "content",
+      "label": "2 · In Twilite",
+      "position": {
+        "x": -310,
+        "y": 1267.031406953801
+      },
+      "width": 933.8570459221293,
+      "height": 252.71296093576626,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-left"
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-top"
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-right"
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-bottom"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-twi-2"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:200px;min-height:200px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(132deg,#17506a,#24385b);color:white;border:3px solid #83dbed;border-left:12px solid #83dbed;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#83dbed\">02 / IN TWILITE</div><div style=\"font:650 5.6cqw/1.1 Georgia,serif\">Bring it here.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">A workspace can show another graph in context without copying it. The tile below is the real Twilite product page.</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267174,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-web-3",
+      "type": "content",
+      "label": "3 · On the web",
+      "position": {
+        "x": -1300,
+        "y": 2107.031406953801
+      },
+      "width": 930,
+      "height": 560,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "portId": "in-left",
+          "label": "in-left",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180
+        },
+        {
+          "id": "in-top",
+          "portId": "in-top",
+          "label": "in-top",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270
+        },
+        {
+          "id": "out-right",
+          "portId": "out-right",
+          "label": "out-right",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 360
+        },
+        {
+          "id": "out-bottom",
+          "portId": "out-bottom",
+          "label": "out-bottom",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90
+        },
+        {
+          "id": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-web-3"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:560px;min-height:560px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(137deg,#3e4052,#273349);color:white;border:3px solid #edc86e;border-left:12px solid #edc86e;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#edc86e\">03 / ON THE WEB</div><div style=\"font:650 5.6cqw/1.1 Georgia,serif\">The page picks the layout.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">A page presents one designed arrangement. Responsive layouts change with the screen, but you normally see the publisher's composition.</div><div style=\"font:760 2cqw/1.3 system-ui;color:#edc86e;margin-top:1cqw\">ONE MAIN PRESENTATION</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267176,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-twi-3",
+      "type": "content",
+      "label": "3 · In Twilite",
+      "position": {
+        "x": -310,
+        "y": 2107.031406953801
+      },
+      "width": 930,
+      "height": 560,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-left"
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-top"
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-right"
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-bottom"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-twi-3"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:560px;min-height:560px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(132deg,#17506a,#24385b);color:white;border:3px solid #83dbed;border-left:12px solid #83dbed;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#83dbed\">03 / IN TWILITE</div><div style=\"font:650 5.6cqw/1.1 Georgia,serif\">One piece. Several views.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">A graph can show one piece as a detail, a summary or an icon. Zoom out of this graph and it becomes its own summary card.</div><div style=\"font:760 2cqw/1.3 system-ui;color:#83dbed;margin-top:1cqw\">DETAIL / SUMMARY / ICON</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267178,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-web-4",
+      "type": "content",
+      "label": "4 · On the web",
+      "position": {
+        "x": -1300,
+        "y": 2787.031406953801
+      },
+      "width": 910.7548720370423,
+      "height": 634.5748708564612,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "portId": "in-left",
+          "label": "in-left",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180
+        },
+        {
+          "id": "in-top",
+          "portId": "in-top",
+          "label": "in-top",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270
+        },
+        {
+          "id": "out-right",
+          "portId": "out-right",
+          "label": "out-right",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 360
+        },
+        {
+          "id": "out-bottom",
+          "portId": "out-bottom",
+          "label": "out-bottom",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90
+        },
+        {
+          "id": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-web-4"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:560px;min-height:560px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(137deg,#3e4052,#273349);color:white;border:3px solid #edc86e;border-left:12px solid #edc86e;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#edc86e\">04 / ON THE WEB</div><div style=\"font:650 5.6cqw/1.1 Georgia,serif\">Reuse takes hidden machinery.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">Sites reuse components, databases and CMS records, but the pieces and their relationships stay hidden from the visitor.</div><div style=\"font:760 2cqw/1.3 system-ui;color:#edc86e;margin-top:1cqw\">HIDDEN CMS / CODE / DATA</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267180,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-twi-4",
+      "type": "content",
+      "label": "4 · In Twilite",
+      "position": {
+        "x": -307.5943590046303,
+        "y": 2799.059611930649
+      },
+      "width": 932.160780669145,
+      "height": 238.89405204460968,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-left"
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-top"
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-right"
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-bottom"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-twi-4"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:200px;min-height:200px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(132deg,#17506a,#24385b);color:white;border:3px solid #83dbed;border-left:12px solid #83dbed;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#83dbed\">04 / IN TWILITE</div><div style=\"font:650 5.6cqw/1.1 Georgia,serif\">Reuse is part of the model.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">The cards in the definitions row are instances of a class, and the class is a graph too. This is the one behind them.</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267181,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-live-product",
+      "type": "portal",
+      "label": "LIVE · The Twilite product page",
+      "position": {
+        "x": -308.7143180259569,
+        "y": 1546.1727777597828
+      },
+      "width": 930,
+      "height": 340,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "tlz://twilite.zone/products/twilite/root.node",
+        "target": {
+          "ref": "tlz://twilite.zone/products/twilite/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open LIVE · The Twilite product page"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-live-product"
+        },
+        "security": "prompt",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267183,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-live-class",
+      "type": "portal",
+      "label": "LIVE · The class behind the cards",
+      "position": {
+        "x": -305.0284598081378,
+        "y": 3050.486814803613
+      },
+      "width": 933.2411710037175,
+      "height": 365.92936802973975,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "tlz://twilite.zone/library/classes/nodes/idea/point.node-class.node",
+        "target": {
+          "ref": "tlz://twilite.zone/library/classes/nodes/idea/point.node-class.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open LIVE · The class behind the cards"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-live-class"
+        },
+        "security": "prompt",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267184,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-gain",
+      "type": "content",
+      "label": "A page is still fine",
+      "position": {
+        "x": -1300,
+        "y": 4267.031406953801
+      },
+      "width": 1932.0282049768487,
+      "height": 434.5748708564612,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-left"
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-top"
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-right"
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-bottom"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-gain"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:360px;min-height:360px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(115deg,#1b3c5c,#222b4d);color:white;border:3px solid #85cbe6;border-left:12px solid #85cbe6;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#85cbe6\">A PAGE IS STILL FINE</div><div style=\"font:650 5.4cqw/1.1 Georgia,serif\">Keep the page. Gain the graph.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">A Twilite graph can publish a page whenever you want one. What you gain is everything behind it: pieces with identity, connections you can follow, and material an AI can work with instead of a flattened page.</div><div style=\"font:760 2cqw/1.3 system-ui;color:#85cbe6;margin-top:1cqw\">THE POINT IS WHAT YOU CAN DO BEHIND THE PAGE</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267186,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-go-how",
+      "type": "portal",
+      "label": "See how it works",
+      "position": {
+        "x": -1300,
+        "y": 4867.031406953801
+      },
+      "width": 600,
+      "height": 340,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "github://mikemartinez1974/public/why/how-it-works/root.node",
+        "target": {
+          "ref": "github://mikemartinez1974/public/why/how-it-works/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open See how it works"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-go-how"
+        },
+        "security": "prompt",
+        "memo": "Learn the building blocks: nodes, ports, edges, surfaces and more.",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267187,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-go-example",
+      "type": "portal",
+      "label": "Visit Blusheree",
+      "position": {
+        "x": -640,
+        "y": 4867.031406953801
+      },
+      "width": 600,
+      "height": 340,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "github://mikemartinez1974/public/blusheree/root.node",
+        "target": {
+          "ref": "github://mikemartinez1974/public/blusheree/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open Visit Blusheree"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-go-example"
+        },
+        "security": "prompt",
+        "memo": "A separately authored boutique built as a navigable Twilite graph.",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267189,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-go-start",
+      "type": "portal",
+      "label": "Start with your AI",
+      "position": {
+        "x": 20,
+        "y": 4867.031406953801
+      },
+      "width": 600,
+      "height": 340,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "tlz://twilite.zone/library/starters/start-with-your-ai/root.node",
+        "target": {
+          "ref": "tlz://twilite.zone/library/starters/start-with-your-ai/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open Start with your AI"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-go-start"
+        },
+        "security": "prompt",
+        "memo": "Your turn: your AI puts what you made here.",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267190,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-import-point",
+      "type": "import",
+      "label": "point class",
+      "position": {
+        "x": -1300,
+        "y": -300
+      },
+      "width": 270,
+      "height": 120,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-import-point"
+        },
+        "showInBrowse": false,
+        "bridge": {
+          "ref": "tlz://twilite.zone/library/classes/nodes/idea/point.node-class.node",
+          "resourceKind": "node-class",
+          "key": "point",
+          "scope": "focused-graph",
+          "grants": [
+            "read",
+            "create",
+            "update"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-web-5",
+      "type": "content",
+      "label": "5 · On the web",
+      "position": {
+        "x": -1300,
+        "y": 3510.385205332729
+      },
+      "width": 915.0602771758947,
+      "height": 621.4188604990997,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "portId": "in-left",
+          "label": "in-left",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180
+        },
+        {
+          "id": "in-top",
+          "portId": "in-top",
+          "label": "in-top",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270
+        },
+        {
+          "id": "out-right",
+          "portId": "out-right",
+          "label": "out-right",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 360
+        },
+        {
+          "id": "out-bottom",
+          "portId": "out-bottom",
+          "label": "out-bottom",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 90
+        },
+        {
+          "id": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-web-5"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:560px;min-height:560px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(137deg,#3e4052,#273349);color:white;border:3px solid #edc86e;border-left:12px solid #edc86e;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#edc86e\">05 / ON THE WEB</div><div style=\"font:650 5.6cqw/1.1 Georgia,serif\">An AI can write you a page.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">You get one finished arrangement: text, layout and markup. To change a single fact, you ask again or edit the markup by hand.</div><div style=\"font:760 2cqw/1.3 system-ui;color:#edc86e;margin-top:1cqw\">ONE FINISHED ARTIFACT</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267191,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "pages-and-nodes-twi-5",
+      "type": "content",
+      "label": "5 · In Twilite",
+      "position": {
+        "x": -294.8938673322547,
+        "y": 3519.530135719051
+      },
+      "width": 908.4204003651812,
+      "height": 634.6986141205266,
+      "ports": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ]
+        }
+      ],
+      "handles": [
+        {
+          "id": "in-left",
+          "key": "in-left",
+          "label": "in-left",
+          "angle": 180,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-left"
+        },
+        {
+          "id": "in-top",
+          "key": "in-top",
+          "label": "in-top",
+          "angle": 270,
+          "direction": "input",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "in-top"
+        },
+        {
+          "id": "out-right",
+          "key": "out-right",
+          "label": "out-right",
+          "angle": 90,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-right"
+        },
+        {
+          "id": "out-bottom",
+          "key": "out-bottom",
+          "label": "out-bottom",
+          "angle": 0,
+          "direction": "output",
+          "dataType": "any",
+          "allowedEdgeTypes": [
+            "leads-to"
+          ],
+          "portId": "out-bottom"
+        }
+      ],
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "identity": {
+          "graphId": "twilite-pages-and-nodes",
+          "nodeId": "pages-and-nodes-twi-5"
+        },
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;box-sizing:border-box;width:100%;height:560px;min-height:560px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:1.5cqw;padding:3.6cqw;background:linear-gradient(132deg,#17506a,#24385b);color:white;border:3px solid #83dbed;border-left:12px solid #83dbed;border-radius:3cqw;font-family:system-ui\"><div style=\"font:850 2.2cqw/1.15 system-ui;letter-spacing:.13em;color:#83dbed\">05 / IN TWILITE</div><div style=\"font:650 5.6cqw/1.1 Georgia,serif\">An AI can make you a node.</div><div style=\"font:470 2.8cqw/1.4 system-ui;color:#edf2fc\">You get a piece with its own identity, fields you can edit, and connections to everything around it. It can be reused and built on, not just regenerated.</div><div style=\"font:760 2cqw/1.3 system-ui;color:#83dbed;margin-top:1cqw\">A PIECE YOU CAN KEEP BUILDING ON</div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795112267193,
+          "reason": "node-drag"
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "pages-and-nodes-surface",
+      "type": "surface",
+      "source": "pages-and-nodes-root",
+      "target": "pages-and-nodes-detail",
+      "sourcePort": "surfaces",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-face-next",
+      "type": "next-face",
+      "source": "pages-and-nodes-detail",
+      "target": "pages-and-nodes-summary",
+      "sourcePort": "sequence-out",
+      "targetPort": "sequence-in",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-summary-glyph",
+      "type": "next-face",
+      "source": "pages-and-nodes-summary",
+      "target": "pages-and-nodes-glyph",
+      "sourcePort": "sequence-out",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-environment-edge",
+      "type": "environment",
+      "source": "pages-and-nodes-root",
+      "target": "pages-and-nodes-environment",
+      "sourcePort": "environment",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/edges/environment/root.node"
+      }
+    },
+    {
+      "id": "pages-and-nodes-open-node",
+      "type": "leads-to",
+      "source": "pages-and-nodes-open",
+      "target": "pages-and-nodes-def-node",
+      "sourcePort": "out-bottom",
+      "targetPort": "from",
+      "label": "starts with",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-node-graph",
+      "type": "leads-to",
+      "source": "pages-and-nodes-def-node",
+      "target": "pages-and-nodes-def-graph",
+      "sourcePort": "leads-to",
+      "targetPort": "from",
+      "label": "make up",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-graph-page",
+      "type": "leads-to",
+      "source": "pages-and-nodes-def-graph",
+      "target": "pages-and-nodes-def-page",
+      "sourcePort": "leads-to",
+      "targetPort": "from",
+      "label": "can be shown as",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-r1-r2",
+      "type": "leads-to",
+      "source": "pages-and-nodes-web-1",
+      "target": "pages-and-nodes-web-2",
+      "sourcePort": "out-bottom",
+      "targetPort": "in-top",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-r2-r3",
+      "type": "leads-to",
+      "source": "pages-and-nodes-web-2",
+      "target": "pages-and-nodes-web-3",
+      "sourcePort": "out-bottom",
+      "targetPort": "in-top",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-r3-r4",
+      "type": "leads-to",
+      "source": "pages-and-nodes-web-3",
+      "target": "pages-and-nodes-web-4",
+      "sourcePort": "out-bottom",
+      "targetPort": "in-top",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-pair-1",
+      "type": "leads-to",
+      "source": "pages-and-nodes-web-1",
+      "target": "pages-and-nodes-twi-1",
+      "sourcePort": "out-right",
+      "targetPort": "in-left",
+      "label": "compare",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-pair-2",
+      "type": "leads-to",
+      "source": "pages-and-nodes-web-2",
+      "target": "pages-and-nodes-twi-2",
+      "sourcePort": "out-right",
+      "targetPort": "in-left",
+      "label": "compare",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-pair-3",
+      "type": "leads-to",
+      "source": "pages-and-nodes-web-3",
+      "target": "pages-and-nodes-twi-3",
+      "sourcePort": "out-right",
+      "targetPort": "in-left",
+      "label": "compare",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-pair-4",
+      "type": "leads-to",
+      "source": "pages-and-nodes-web-4",
+      "target": "pages-and-nodes-twi-4",
+      "sourcePort": "out-right",
+      "targetPort": "in-left",
+      "label": "compare",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-page-r1",
+      "type": "leads-to",
+      "source": "pages-and-nodes-def-page",
+      "target": "pages-and-nodes-web-1",
+      "sourcePort": "leads-to",
+      "targetPort": "in-top",
+      "label": "so what changes?",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-r4-r5",
+      "type": "leads-to",
+      "source": "pages-and-nodes-web-4",
+      "target": "pages-and-nodes-web-5",
+      "sourcePort": "out-bottom",
+      "targetPort": "in-top",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-pair-5",
+      "type": "leads-to",
+      "source": "pages-and-nodes-web-5",
+      "target": "pages-and-nodes-twi-5",
+      "sourcePort": "out-right",
+      "targetPort": "in-left",
+      "label": "compare",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    },
+    {
+      "id": "pages-and-nodes-r5-gain",
+      "type": "leads-to",
+      "source": "pages-and-nodes-web-5",
+      "target": "pages-and-nodes-gain",
+      "sourcePort": "out-bottom",
+      "targetPort": "in-top",
+      "label": "what you gain",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {}
+    }
+  ],
+  "settings": {
+    "theme": null,
+    "backgroundImage": null,
+    "defaultNodeColor": "#1976d2",
+    "defaultEdgeColor": "",
+    "snapToGrid": false,
+    "gridSize": 20,
+    "edgeRouting": "auto",
+    "edgeAvoidNodes": true,
+    "layout": {
+      "mode": "manual"
+    },
+    "github": {
+      "repo": "TwiliteLLC/public",
+      "path": "products/twilite/pages-and-nodes/root.node"
+    }
+  }
+}
