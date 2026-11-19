@@ -284,6 +284,16 @@
           },
           "primaryNodeViewId": "product-exhibit-class-billboard",
           "primaryEditorViewId": "product-exhibit-class-editor"
+        },
+        "presentation": {
+          "summary": {
+            "mode": "own",
+            "viewNodeId": "product-exhibit-class-summary"
+          },
+          "detail": {
+            "mode": "own",
+            "viewNodeId": "product-exhibit-class-summary"
+          }
         }
       }
     },
