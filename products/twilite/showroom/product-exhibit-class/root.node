@@ -284,13 +284,7 @@
           },
           "primaryNodeViewId": "product-exhibit-class-billboard",
           "primaryEditorViewId": "product-exhibit-class-editor"
-        },
-        "title": "A promise worth keeping",
-        "eyebrow": "TWILITE / PRODUCT EXHIBIT",
-        "body": "Describe the value of this exhibit.",
-        "audience": "For people building things",
-        "ctaLabel": "See an example",
-        "ctaRef": "tlz://twilite.zone/gallery/root.node"
+        }
       }
     },
     {
@@ -528,6 +522,34 @@
           "value": "<div style='width:100%;height:100%;background:linear-gradient(145deg,#351660,#141b34)'></div>"
         }
       }
+    },
+    {
+      "id": "product-exhibit-class-summary",
+      "type": "face",
+      "label": "Class card",
+      "position": {
+        "x": 680,
+        "y": -560
+      },
+      "width": 560,
+      "height": 370,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "product-exhibit-class",
+          "nodeId": "product-exhibit-class-summary"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.summary"
+        },
+        "html": "<div style=\"container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:hidden\"><div style=\"box-sizing:border-box;width:100%;height:100%;border-radius:3cqw;border:.5cqw solid #6039a3;background:linear-gradient(115deg,#32116c,#281044 70%,#1c2342);color:#fff;padding:6cqw 7cqw;display:flex;flex-direction:column;justify-content:center;gap:3cqw\"><div style=\"font:900 3cqw/1.1 system-ui;letter-spacing:.17em;color:#f5c542\">NODE CLASS</div><div style=\"font:500 10cqw/1.05 Georgia,serif;letter-spacing:-.03em\">Product Exhibit</div><div style=\"font:400 3.8cqw/1.45 system-ui;color:#e9deff\">One product claim: an eyebrow, a headline, a few lines, who it is for and a link. Shown as a hero, a main exhibit or a smaller one.</div></div></div>",
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"container-type:inline-size;width:100%;height:100%;box-sizing:border-box;overflow:hidden\"><div style=\"box-sizing:border-box;width:100%;height:100%;border-radius:3cqw;border:.5cqw solid #6039a3;background:linear-gradient(115deg,#32116c,#281044 70%,#1c2342);color:#fff;padding:6cqw 7cqw;display:flex;flex-direction:column;justify-content:center;gap:3cqw\"><div style=\"font:900 3cqw/1.1 system-ui;letter-spacing:.17em;color:#f5c542\">NODE CLASS</div><div style=\"font:500 10cqw/1.05 Georgia,serif;letter-spacing:-.03em\">Product Exhibit</div><div style=\"font:400 3.8cqw/1.45 system-ui;color:#e9deff\">One product claim: an eyebrow, a headline, a few lines, who it is for and a link. Shown as a hero, a main exhibit or a smaller one.</div></div></div>"
+        }
+      }
     }
   ],
   "edges": [
@@ -573,9 +595,22 @@
       "data": {}
     },
     {
-      "id": "product-exhibit-class-last-glyph",
+      "id": "product-exhibit-class-billboard-summary",
       "type": "next-face",
       "source": "product-exhibit-class-billboard",
+      "target": "product-exhibit-class-summary",
+      "sourcePort": "sequence-out",
+      "targetPort": "sequence-in",
+      "label": "",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "product-exhibit-class-last-glyph",
+      "type": "next-face",
+      "source": "product-exhibit-class-summary",
       "target": "product-exhibit-class-glyph",
       "sourcePort": "sequence-out",
       "targetPort": "root",
