@@ -993,9 +993,9 @@
       "visible": true,
       "showLabel": true,
       "data": {
-        "sourceRef": "github://mikemartinez1974/public/releases/root.node",
+        "sourceRef": "tlz://twilite.zone/products/twilite/release-notes/root.node",
         "target": {
-          "ref": "github://mikemartinez1974/public/releases/root.node",
+          "ref": "tlz://twilite.zone/products/twilite/release-notes/root.node",
           "mode": "navigate",
           "portId": "root",
           "label": "Open EXPLORE · Release notes"
