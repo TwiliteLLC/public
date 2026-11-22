@@ -645,8 +645,8 @@
         "x": -350,
         "y": 3390
       },
-      "width": 560,
-      "height": 355,
+      "width": 440,
+      "height": 279,
       "ports": [
         {
           "id": "root",
@@ -731,11 +731,11 @@
       "type": "portal",
       "label": "Pages and Nodes",
       "position": {
-        "x": 250,
+        "x": 130,
         "y": 3390
       },
-      "width": 560,
-      "height": 355,
+      "width": 440,
+      "height": 279,
       "ports": [
         {
           "id": "root",
@@ -820,11 +820,11 @@
       "type": "portal",
       "label": "Blusheree",
       "position": {
-        "x": 850,
+        "x": 610,
         "y": 3390
       },
-      "width": 560,
-      "height": 355,
+      "width": 440,
+      "height": 279,
       "ports": [
         {
           "id": "root",
@@ -1016,11 +1016,11 @@
       "type": "portal",
       "label": "Showroom",
       "position": {
-        "x": 1450,
+        "x": 1090,
         "y": 3390
       },
-      "width": 560,
-      "height": 355,
+      "width": 440,
+      "height": 279,
       "ports": [
         {
           "id": "root",
@@ -1098,6 +1098,95 @@
         },
         "security": "prompt",
         "memo": "Three things people make with Twilite, each with a real graph to open."
+      }
+    },
+    {
+      "id": "twilite-product-release-notes",
+      "type": "portal",
+      "label": "Release notes",
+      "position": {
+        "x": 1570,
+        "y": 3390
+      },
+      "width": 440,
+      "height": 279,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "tlz://twilite.zone/products/twilite/release-notes/root.node",
+        "target": {
+          "ref": "tlz://twilite.zone/products/twilite/release-notes/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open Release notes"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "twilite-product",
+          "nodeId": "twilite-product-release-notes"
+        },
+        "security": "prompt",
+        "memo": "What is new, what changed and what was fixed in each release, newest first."
       }
     }
   ],
