@@ -690,7 +690,7 @@
         "membrane": {
           "bounds": {
             "x": -720,
-            "y": -322,
+            "y": -562,
             "width": 2720,
             "height": 1813
           },
@@ -1259,8 +1259,8 @@
       "type": "portal",
       "label": "Release notes 2026",
       "position": {
-        "x": 480,
-        "y": 260
+        "x": 40,
+        "y": -480
       },
       "width": 420,
       "height": 240,
@@ -1515,7 +1515,7 @@
   },
   "metadata": {
     "created": "2026-11-22T01:25:47.780Z",
-    "modified": "2026-11-22T01:25:47.786Z",
+    "modified": "2026-11-22T01:45:00.311Z",
     "author": "",
     "tags": [
       "library",
