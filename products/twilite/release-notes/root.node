@@ -557,7 +557,7 @@
           "nodeId": "releases-hub",
           "name": "Release notes",
           "version": "1.0.0",
-          "description": "Every published Twilite release, newest first.",
+          "description": "Every published Twilite release, newest first: what is new, what changed and what was fixed.",
           "updatedAt": "2026-11-13T21:33:29.713Z"
         },
         "intent": {
@@ -665,7 +665,7 @@
               "id": "detail",
               "kind": "view",
               "payload": "node.web.detail",
-              "viewNodeId": "releases-hub-latest"
+              "viewNodeId": "releases-hub-detail"
             },
             {
               "id": "summary",
@@ -684,12 +684,6 @@
               "kind": "content",
               "payload": "node.web.landing",
               "viewNodeId": "releases-hub-landing"
-            },
-            {
-              "id": "archive",
-              "kind": "view",
-              "payload": "node.web.archive",
-              "viewNodeId": "releases-hub-archive"
             }
           ]
         },
@@ -705,12 +699,12 @@
       }
     },
     {
-      "id": "releases-hub-archive",
+      "id": "releases-hub-detail",
       "type": "face",
-      "label": "All releases · archive",
+      "label": "Latest release · 22 November 2026",
       "position": {
         "x": -640,
-        "y": 620
+        "y": 240
       },
       "width": 600,
       "height": 400,
@@ -743,15 +737,15 @@
         },
         "view": {
           "intent": "node",
-          "payload": "node.web.archive",
+          "payload": "node.web.detail",
           "scroll": "page"
         },
-        "semanticLevel": "archive",
+        "semanticLevel": "detail",
         "content": {
           "kind": "html",
-          "value": "<div style='container-type:inline-size;width:100%;height:100%;overflow:auto;background:#faf7ff;padding:4cqw;box-sizing:border-box;font-family:system-ui'><div style='font:700 1.4cqw ui-monospace,monospace;letter-spacing:.2em;color:#6d28d9'>TWILITE / RELEASE NOTES</div><h1 style='font:700 5cqw Georgia,serif;color:#1f2937;margin:2cqw 0'>Release notes</h1><p style='font:400 2cqw/1.5 Georgia,serif;color:#64748b'>Every published Twilite release, newest first.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(25cqw,1fr));gap:2cqw;margin-top:3cqw'><a href='tlz://twilite.zone/products/twilite/release-notes/2026/2026-11-21/root.node' style='display:block;padding:2.4cqw;border:1px solid #ddd6fe;border-radius:2cqw;background:#faf7ff;text-decoration:none;color:#1f2937'><div style='font:700 3cqw Georgia,serif'>21 November 2026</div><div style='font:500 1.6cqw system-ui;color:#6d28d9;margin-top:1cqw'>Open release →</div></a><a href='tlz://twilite.zone/products/twilite/release-notes/2026/2026-11-13/root.node' style='display:block;padding:2.4cqw;border:1px solid #ddd6fe;border-radius:2cqw;background:#faf7ff;text-decoration:none;color:#1f2937'><div style='font:700 3cqw Georgia,serif'>13 November 2026</div><div style='font:500 1.6cqw system-ui;color:#6d28d9;margin-top:1cqw'>Open release →</div></a></div></div>"
+          "value": "<div style='container-type:inline-size;width:100%;height:100%;overflow:auto;background:#faf7ff;font-family:Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'><div style='box-sizing:border-box;min-height:100%;padding:4.4cqw 7cqw 5cqw'><div style='padding:1.4cqw 0;border-top:.4cqw solid #1f2937;border-bottom:.1cqw solid #1f2937;display:flex;justify-content:space-between;font:700 1.3cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.3em;text-transform:uppercase;color:#6d28d9'><span>Release notes</span><span style='color:#b45309'>22 November 2026</span></div><div style='font:700 5.4cqw/1.1 Georgia,Iowan Old Style,Palatino Linotype,serif;margin:3cqw 0 .8cqw;color:#1f2937'>Release notes: 22 November 2026</div><div style='font:400 2.2cqw/1.5 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:2cqw;max-width:62cqw'>Choose how workspace connections are drawn, and public pages that open without a GitHub sign-in.</div><div style='display:flex;justify-content:space-between;align-items:baseline;margin:4cqw 0 1.6cqw;padding-top:2cqw;border-top:.15cqw solid rgba(109,40,217,.35)'><span style='font:700 1.5cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.24em;text-transform:uppercase;color:#1d4ed8'>Changed</span><span style='font:600 1.4cqw/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#64748b'>1 change</span></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #1d4ed8'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Choose how workspace connections are drawn</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Workspace connections now offer Orthogonal, Curved and Straight drawing modes. Orthogonal routes use rounded corners, Curved draws a simple S-curve, and the view updates when you switch modes.</div></div><div style='display:flex;justify-content:space-between;align-items:baseline;margin:4cqw 0 1.6cqw;padding-top:2cqw;border-top:.15cqw solid rgba(109,40,217,.35)'><span style='font:700 1.5cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.24em;text-transform:uppercase;color:#b45309'>Fixed</span><span style='font:600 1.4cqw/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#64748b'>1 change</span></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Public pages open without a GitHub sign-in</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>The Why Twilite pages, Blusheree, the Twilite project page and the release notes are now served from twilite.zone, so anyone can open them without signing in to GitHub.</div></div></div></div>"
         },
-        "memo": "",
+        "memo": "The Detail: the newest release as a page of notes. It is copied from that release each time the hub is made, so edit the release and not this.",
         "link": ""
       }
     },
@@ -799,7 +793,7 @@
         "semanticLevel": "summary",
         "content": {
           "kind": "html",
-          "value": "<div style='container-type:inline-size;width:100%;height:100%;box-sizing:border-box;padding:6cqw;border:1cqw solid #6d28d9;border-top:2cqw solid #f5c542;border-radius:5cqw;background:#faf7ff;font-family:Georgia,serif;color:#1f2937'><div style='font:700 3cqw ui-monospace,monospace;letter-spacing:.16em;color:#6d28d9'>RELEASE NOTES</div><div style='font:700 8cqw/1.1 Georgia,serif;margin-top:4cqw'>Twilite</div><div style='font:500 3cqw system-ui;margin-top:3cqw'>2 published releases</div></div>"
+          "value": "<div style='container-type:inline-size;width:100%;height:100%'><div style='box-sizing:border-box;width:100%;height:100%;padding:6cqw 7cqw 5cqw;border-radius:6cqw;background:#faf7ff;border:.9cqw solid #6d28d9;border-top:2.4cqw solid #f5c542;color:#1f2937;overflow:hidden;display:flex;flex-direction:column;gap:3cqw'><div style='display:flex;justify-content:space-between;gap:2cqw;font:700 3cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.18em;text-transform:uppercase;color:#6d28d9;white-space:nowrap'><span>Release notes</span><span style='color:#b45309'>22 Nov 2026</span></div><div style='display:flex;gap:3cqw;flex:1;min-height:0'><div style='flex:1;min-width:0;text-align:center;border-top:1cqw solid #cbd5e1;padding-top:1.6cqw'><div style='font:700 17cqw/1 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#cbd5e1'>0</div><div style='font:700 3.4cqw/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#64748b;margin-top:1cqw'>New</div></div><div style='flex:1;min-width:0;text-align:center;border-top:1cqw solid #1d4ed8;padding-top:1.6cqw'><div style='font:700 17cqw/1 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1d4ed8'>1</div><div style='font:700 3.4cqw/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#1d4ed8;margin-top:1cqw'>Changed</div></div><div style='flex:1;min-width:0;text-align:center;border-top:1cqw solid #b45309;padding-top:1.6cqw'><div style='font:700 17cqw/1 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#b45309'>1</div><div style='font:700 3.4cqw/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#b45309;margin-top:1cqw'>Fixed</div></div></div></div></div>"
         },
         "memo": "",
         "link": ""
@@ -891,7 +885,7 @@
         },
         "content": {
           "kind": "markdown",
-          "value": "# Twilite release notes\n\nEvery published Twilite release, newest first. Open a release to see its changes.\n\nThis is the single authoritative collection of Twilite releases. Each member is a release graph, not a year collection.\n\nThe default Detail view shows the latest published release. The Archive view lists every published release. When publishing another release, refresh the Latest view from its Detail view and regenerate the Archive."
+          "value": "# Release notes\n\nEvery published Twilite release, newest first: what is new, what changed and what was fixed. Each tile is a release, and shows the release's own card.\n\nThis graph is a collection. Each tile is a portal it contains, and what a tile shows is read from the release behind it, so nothing here is a copy."
         },
         "_placement": {
           "version": 1,
@@ -919,7 +913,7 @@
         "body": "Every published Twilite release, newest first. Open a release to see its changes.",
         "sort": "newest",
         "includeFolder": false,
-        "sourcesSummary": "2 portals · 2 members",
+        "sourcesSummary": "3 portals · 3 members",
         "identity": {
           "graphId": "releases-hub",
           "nodeId": "releases-hub-collection"
@@ -1073,7 +1067,7 @@
         },
         "content": {
           "kind": "html",
-          "value": "<div style='container-type:inline-size;width:100%;height:100%;box-sizing:border-box;padding:5cqw;background:linear-gradient(140deg,#faf7ff,#ece3fb);font-family:Georgia,serif'><div style='font:700 1.4cqw ui-monospace,monospace;letter-spacing:.22em;color:#6d28d9'>TWILITE / RELEASE NOTES</div><div style='font:700 6cqw Georgia,serif;color:#1f2937;margin-top:2cqw'>Every release. One collection.</div><div style='font:italic 2cqw Georgia,serif;color:#64748b;margin-top:1cqw'>Newest first · 2 published releases</div></div>"
+          "value": "<div style='container-type:inline-size;width:100%;height:100%'><div style='position:relative;box-sizing:border-box;width:100%;height:100%;overflow:hidden;background-color:#0b2012;background-image:radial-gradient(90cqw 55cqw at 12% -8%,color-mix(in srgb,#15803d 42%,transparent),transparent),repeating-linear-gradient(0deg,transparent 0,transparent 5.6cqw,color-mix(in srgb,#fde047 7%,transparent) 5.6cqw,color-mix(in srgb,#fde047 7%,transparent) 5.72cqw);font-family:Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#f0fdf4'><div style='position:absolute;left:4cqw;top:3cqw;font:800 1.4cqw/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#fde047'>Twilite · Each version</div><div style='position:absolute;left:4cqw;top:5cqw;font:500 6.6cqw/1 Georgia,Iowan Old Style,Palatino Linotype,Times New Roman,serif;letter-spacing:-.02em;white-space:nowrap'>Release notes</div><div style='position:absolute;left:4cqw;width:37.49cqw;top:12.6cqw;font:italic 400 2cqw/1.35 Georgia,Iowan Old Style,Palatino Linotype,Times New Roman,serif;color:#bbf7d0'>Every release of Twilite, newest first.</div><div style='position:absolute;left:25cqw;top:19.93cqw;width:52.94cqw;height:25cqw;box-sizing:border-box;border-radius:2cqw;background:color-mix(in srgb,#fde047 6%,#0b2012);border:.28cqw solid color-mix(in srgb,#fde047 26%,#0b2012)'></div><div style='position:absolute;left:41.09cqw;top:11.33cqw;height:8.6cqw;display:flex;align-items:flex-end;gap:.35cqw'><i style='display:block;width:1.5cqw;height:7.7cqw;background:#fde047;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:1.95cqw;height:9.1cqw;background:#14532d;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:2.4cqw;height:6.3cqw;background:#22c55e;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:2.85cqw;height:8.4cqw;background:#bbf7d0;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:1.5cqw;height:5.6cqw;background:#15803d;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:1.95cqw;height:7cqw;background:#fde047;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:2.4cqw;height:9.1cqw;background:#166534;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:2.85cqw;height:6.3cqw;background:#86efac;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:1.5cqw;height:7.7cqw;background:#16a34a;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:1.95cqw;height:5.6cqw;background:#fde047;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:2.4cqw;height:8.4cqw;background:#14532d;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:2.85cqw;height:7cqw;background:#22c55e;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:1.5cqw;height:9.1cqw;background:#15803d;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i><i style='display:block;width:1.95cqw;height:6.3cqw;background:#bbf7d0;border-radius:.25cqw .25cqw 0 0;box-shadow:inset -.2cqw 0 0 rgba(0,0,0,.28)'></i></div><div style='position:absolute;left:4cqw;right:4cqw;bottom:2.6cqw;display:grid;grid-template-columns:repeat(2,1fr);gap:3cqw;border-top:.2cqw solid color-mix(in srgb,#fde047 40%,transparent);padding-top:1.3cqw'><div style='min-width:0'><div style='font:800 1.25cqw/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#fde047;margin:0 0 .8cqw'>Jump to</div><div style='display:flex;flex-direction:column;gap:.5cqw;font:600 1.6cqw/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif'><a href='tlz://twilite.zone/products/twilite/release-notes/2026/2026-11-22/root.node' style='color:#f0fdf4;text-decoration:none'>Release notes: 22 November 2026 →</a><a href='tlz://twilite.zone/products/twilite/release-notes/2026/2026-11-21/root.node' style='color:#f0fdf4;text-decoration:none'>Release notes: 21 November 2026 →</a><a href='tlz://twilite.zone/products/twilite/release-notes/2026/2026-11-13/root.node' style='color:#f0fdf4;text-decoration:none'>Release notes: 13 November 2026 →</a></div></div><div style='min-width:0'><div style='font:800 1.25cqw/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#fde047;margin:0 0 .8cqw'>Elsewhere</div><div style='display:flex;flex-direction:column;gap:.5cqw;font:600 1.6cqw/1.2 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif'><a href='tlz://twilite.zone/products/twilite/root.node' style='color:#f0fdf4;text-decoration:none'>Twilite →</a><a href='tlz://twilite.zone/root.node' style='color:#f0fdf4;text-decoration:none'>The Twilite Zone →</a></div></div></div></div></div>"
         }
       }
     },
@@ -1194,6 +1188,7 @@
           {
             "kind": "update-node",
             "targets": [
+              "releases-hub-detail",
               "releases-hub-summary",
               "releases-hub-glyph",
               "releases-hub-declaration",
@@ -1260,11 +1255,99 @@
       }
     },
     {
+      "id": "releases-hub-member-2026-11-22",
+      "type": "portal",
+      "label": "Release notes: 22 November 2026",
+      "position": {
+        "x": 40,
+        "y": -480
+      },
+      "width": 420,
+      "height": 240,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "tlz://twilite.zone/products/twilite/release-notes/2026/2026-11-22/root.node",
+        "sourceNodeId": "release-2026-11-22",
+        "target": {
+          "ref": "tlz://twilite.zone/products/twilite/release-notes/2026/2026-11-22/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open Release notes: 22 November 2026"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "releases-hub"
+        },
+        "security": "prompt"
+      }
+    },
+    {
       "id": "releases-hub-member-2026-11-21",
       "type": "portal",
       "label": "Release notes: 21 November 2026",
       "position": {
-        "x": 40,
+        "x": 500,
         "y": -480
       },
       "width": 420,
@@ -1352,7 +1435,7 @@
       "type": "portal",
       "label": "Release notes: 13 November 2026",
       "position": {
-        "x": 500,
+        "x": 960,
         "y": -480
       },
       "width": 420,
@@ -1434,65 +1517,6 @@
         },
         "security": "prompt"
       }
-    },
-    {
-      "id": "releases-hub-latest",
-      "type": "face",
-      "label": "Latest release · 21 November 2026",
-      "position": {
-        "x": -640,
-        "y": 240
-      },
-      "width": 450,
-      "height": 300,
-      "ports": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270
-        }
-      ],
-      "handles": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270,
-          "portId": "root"
-        }
-      ],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "identity": {
-          "graphId": "releases-hub",
-          "nodeId": "releases-hub-latest"
-        },
-        "view": {
-          "intent": "node",
-          "payload": "node.web.detail",
-          "scroll": "page"
-        },
-        "semanticLevel": "detail",
-        "content": {
-          "kind": "html",
-          "value": "<div style='container-type:inline-size;width:100%;height:100%;overflow:auto;background:#faf7ff;font-family:Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'><div style='box-sizing:border-box;min-height:100%;padding:4.4cqw 7cqw 5cqw'><div style='padding:1.4cqw 0;border-top:.4cqw solid #1f2937;border-bottom:.1cqw solid #1f2937;display:flex;justify-content:space-between;font:700 1.3cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.3em;text-transform:uppercase;color:#6d28d9'><span>Release notes</span><span style='color:#b45309'>21 November 2026</span></div><div style='font:700 5.4cqw/1.1 Georgia,Iowan Old Style,Palatino Linotype,serif;margin:3cqw 0 .8cqw;color:#1f2937'>Release notes: 21 November 2026</div><div style='font:400 2.2cqw/1.5 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:2cqw;max-width:62cqw'>A 14-day free trial at checkout, a first-time GitHub setup guide, feedback that reaches the owner of a graph and custom SVG glyphs, with fixes to scrolling, edges, resizing and workspace placement.</div><div style='margin-top:3cqw'><div style='font:700 1.3cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.24em;text-transform:uppercase;color:#b45309;margin-bottom:1.2cqw'>Highlights</div><div style='font:600 1.9cqw/1.5 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#1f2937;margin-top:.5cqw'><span style='color:#b45309'>◆</span> Optional free trial at checkout</div><div style='font:600 1.9cqw/1.5 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#1f2937;margin-top:.5cqw'><span style='color:#b45309'>◆</span> A first-time GitHub setup guide</div><div style='font:600 1.9cqw/1.5 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#1f2937;margin-top:.5cqw'><span style='color:#b45309'>◆</span> Feedback reaches the graph owner</div></div><div style='display:flex;justify-content:space-between;align-items:baseline;margin:4cqw 0 1.6cqw;padding-top:2cqw;border-top:.15cqw solid rgba(109,40,217,.35)'><span style='font:700 1.5cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.24em;text-transform:uppercase;color:#15803d'>New</span><span style='font:600 1.4cqw/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#64748b'>5 changes</span></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #15803d'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Optional free trial at checkout</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Checkout now offers a 14-day free trial to an account that has not previously held a subscription.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #15803d'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>A first-time GitHub setup guide</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>A new guided lesson walks someone without a GitHub account or repository through creating a private work repository, connecting it to Twilite and saving a first graph. The GitHub tutorial, How-To Guides shelf and Start with your AI entry now link into that path.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #15803d'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Feedback reaches the graph owner</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>The feedback form can now send messages to the owner of the graph being viewed. Owners can configure whether they accept feedback, and visitors can attach a screenshot by pasting or choosing an image. If the owner has opted out, the form explains that feedback cannot be sent.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #15803d'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Custom SVG glyphs for nodes</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Graph authors can define a glyph using SVG markup, in addition to an icon or text symbol. The glyph renderer uses the chosen glyph color, and the card editor and Properties panel provide ways to edit the SVG definition.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #15803d'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Hide bridged graph tiles without disconnecting them</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>A workspace toolbar switch can hide tiles opened only by Bridges while keeping those graphs loaded and their events active. Graphs you are using or that remain directly referenced stay visible.</div></div><div style='display:flex;justify-content:space-between;align-items:baseline;margin:4cqw 0 1.6cqw;padding-top:2cqw;border-top:.15cqw solid rgba(109,40,217,.35)'><span style='font:700 1.5cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.24em;text-transform:uppercase;color:#1d4ed8'>Changed</span><span style='font:600 1.4cqw/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#64748b'>4 changes</span></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #1d4ed8'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>More legible graph summaries at small scales</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Summary views use larger, clearer type and compact member links. Content nodes keep their Summary presentation instead of disappearing into icon-only glyphs at low zoom.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #1d4ed8'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>More control over node borders</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>HTML-faced nodes now respect authored border color, width, radius, and line style. Solid, dashed, dotted and double borders can be selected in the Properties panel.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #1d4ed8'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>A redesigned Twilite Zone arrival page</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>The Twilite Zone&#39;s public entry graph has been rebuilt as an arrival experience, with a prominent introduction, clearer routes into the Zone and Editor, and a logo glyph.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #1d4ed8'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Clearer workspace ports and edge controls</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>In browse mode, unused workspace border ports are hidden until hovering, holding Alt, or dragging a connection; open connection stubs use a ring marker. A bridged-graph visibility switch has moved to the workspace bar, while the graph editor toolbar now offers a separate Edges control.</div></div><div style='display:flex;justify-content:space-between;align-items:baseline;margin:4cqw 0 1.6cqw;padding-top:2cqw;border-top:.15cqw solid rgba(109,40,217,.35)'><span style='font:700 1.5cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.24em;text-transform:uppercase;color:#b45309'>Fixed</span><span style='font:600 1.4cqw/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#64748b'>5 changes</span></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Scrolling works in focused pages and portal previews</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Focused documents, portal page previews, and workspace views respond more reliably to scrolling. The Gallery and Glossary identify their detail views as scrollable pages.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Nodes remain visible beyond authored graph bounds</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Placing a node outside the initial graph window now expands the visible bounds instead of clipping the node where it cannot be selected.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Resize controls remain available on portal and node views</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Node resize handles and title-bar actions stay available as graphs load and as nodes switch between display levels. Portals keep their resize handles at smaller sizes and in icon and badge views, when resizing is allowed.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Edges stay aligned during pan and zoom</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Graph connections redraw smoothly as the view moves or zooms, without brief flashes where edges sit at the previous zoom, attach to outdated handles or run through node centers before settling.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>New workspace graphs keep clear of existing frames</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Workspace placement now accounts for the visible frame of a graph as well as its authored bounds, reducing cases where a newly opened graph overlaps another graph&#39;s extended frame.</div></div></div></div>"
-        },
-        "memo": "The Detail: the release as a page of notes, from its entries. The Method writes it, so edit the entries and not this.",
-        "link": "",
-        "_placement": {
-          "version": 1,
-          "state": "manually-shaped",
-          "source": "manual",
-          "updatedAt": 1793398054115,
-          "reason": "node-drag"
-        }
-      }
     }
   ],
   "edges": [
@@ -1522,6 +1546,43 @@
       "style": {
         "route": "curved"
       },
+      "data": {}
+    },
+    {
+      "id": "assemble-updates-detail",
+      "type": "derived-view",
+      "source": "releases-hub-derive-method",
+      "target": "releases-hub-detail",
+      "sourcePort": "result",
+      "targetPort": "root",
+      "label": "derives",
+      "style": {
+        "route": "curved"
+      },
+      "data": {}
+    },
+    {
+      "id": "releases-hub-surface",
+      "type": "surface",
+      "source": "releases-hub-declaration",
+      "target": "releases-hub-detail",
+      "sourcePort": "surfaces",
+      "targetPort": "root",
+      "label": "",
+      "style": {},
+      "data": {
+        "surfaceId": "web"
+      }
+    },
+    {
+      "id": "releases-hub-detail-summary",
+      "type": "next-face",
+      "source": "releases-hub-detail",
+      "target": "releases-hub-summary",
+      "sourcePort": "sequence-out",
+      "targetPort": "sequence-in",
+      "label": "",
+      "style": {},
       "data": {}
     },
     {
@@ -1579,6 +1640,17 @@
       }
     },
     {
+      "id": "edge-releases-hub-member-2026-11-22",
+      "type": "contains",
+      "source": "releases-hub-collection",
+      "target": "releases-hub-member-2026-11-22",
+      "sourcePort": "members",
+      "targetPort": "part-of",
+      "label": "",
+      "style": {},
+      "data": {}
+    },
+    {
       "id": "edge-releases-hub-member-2026-11-21",
       "type": "contains",
       "source": "releases-hub-collection",
@@ -1596,41 +1668,6 @@
       "target": "releases-hub-member-2026-11-13",
       "sourcePort": "members",
       "targetPort": "part-of",
-      "label": "",
-      "style": {},
-      "data": {}
-    },
-    {
-      "id": "releases-hub-surface",
-      "type": "surface",
-      "source": "releases-hub-declaration",
-      "target": "releases-hub-latest",
-      "sourcePort": "surfaces",
-      "targetPort": "root",
-      "label": "",
-      "style": {},
-      "data": {
-        "surfaceId": "web"
-      }
-    },
-    {
-      "id": "releases-hub-latest-to-archive",
-      "type": "next-face",
-      "source": "releases-hub-latest",
-      "target": "releases-hub-archive",
-      "sourcePort": "sequence-out",
-      "targetPort": "sequence-in",
-      "label": "",
-      "style": {},
-      "data": {}
-    },
-    {
-      "id": "releases-hub-archive-summary",
-      "type": "next-face",
-      "source": "releases-hub-archive",
-      "target": "releases-hub-summary",
-      "sourcePort": "sequence-out",
-      "targetPort": "sequence-in",
       "label": "",
       "style": {},
       "data": {}
@@ -1676,7 +1713,7 @@
   },
   "metadata": {
     "created": "2026-11-22T01:25:47.780Z",
-    "modified": "2026-11-22T01:45:00.311Z",
+    "modified": "2026-11-22T17:07:23.306Z",
     "author": "",
     "tags": [
       "library",
