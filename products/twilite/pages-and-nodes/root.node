@@ -2591,9 +2591,9 @@
       "visible": true,
       "showLabel": true,
       "data": {
-        "sourceRef": "github://mikemartinez1974/public/why/how-it-works/root.node",
+        "sourceRef": "tlz://twilite.zone/company/why/how-it-works/root.node",
         "target": {
-          "ref": "github://mikemartinez1974/public/why/how-it-works/root.node",
+          "ref": "tlz://twilite.zone/company/why/how-it-works/root.node",
           "mode": "navigate",
           "portId": "root",
           "label": "Open See how it works"
@@ -2687,9 +2687,9 @@
       "visible": true,
       "showLabel": true,
       "data": {
-        "sourceRef": "github://mikemartinez1974/public/blusheree/root.node",
+        "sourceRef": "tlz://twilite.zone/products/twilite/showroom/blusheree/root.node",
         "target": {
-          "ref": "github://mikemartinez1974/public/blusheree/root.node",
+          "ref": "tlz://twilite.zone/products/twilite/showroom/blusheree/root.node",
           "mode": "navigate",
           "portId": "root",
           "label": "Open Visit Blusheree"

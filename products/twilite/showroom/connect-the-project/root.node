@@ -801,9 +801,9 @@
       "visible": true,
       "showLabel": true,
       "data": {
-        "sourceRef": "github://mikemartinez1974/public/projects/twilite/root.node",
+        "sourceRef": "tlz://twilite.zone/products/twilite/project/root.node",
         "target": {
-          "ref": "github://mikemartinez1974/public/projects/twilite/root.node",
+          "ref": "tlz://twilite.zone/products/twilite/project/root.node",
           "mode": "navigate",
           "portId": "root",
           "label": "Open EXPLORE · Real Twilite project"
@@ -897,9 +897,9 @@
       "visible": true,
       "showLabel": true,
       "data": {
-        "sourceRef": "github://mikemartinez1974/public/why/brainstorm/root.node",
+        "sourceRef": "tlz://twilite.zone/company/why/brainstorm/root.node",
         "target": {
-          "ref": "github://mikemartinez1974/public/why/brainstorm/root.node",
+          "ref": "tlz://twilite.zone/company/why/brainstorm/root.node",
           "mode": "navigate",
           "portId": "root",
           "label": "Open EXPLORE · Product brainstorm"
