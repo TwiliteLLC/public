@@ -665,7 +665,7 @@
               "id": "detail",
               "kind": "view",
               "payload": "node.web.detail",
-              "viewNodeId": "releases-hub-detail"
+              "viewNodeId": "releases-hub-latest"
             },
             {
               "id": "summary",
@@ -684,6 +684,12 @@
               "kind": "content",
               "payload": "node.web.landing",
               "viewNodeId": "releases-hub-landing"
+            },
+            {
+              "id": "archive",
+              "kind": "view",
+              "payload": "node.web.archive",
+              "viewNodeId": "releases-hub-archive"
             }
           ]
         },
@@ -699,12 +705,12 @@
       }
     },
     {
-      "id": "releases-hub-detail",
+      "id": "releases-hub-archive",
       "type": "face",
-      "label": "Release notes",
+      "label": "All releases · archive",
       "position": {
         "x": -640,
-        "y": 240
+        "y": 620
       },
       "width": 600,
       "height": 400,
@@ -737,10 +743,10 @@
         },
         "view": {
           "intent": "node",
-          "payload": "node.web.detail",
+          "payload": "node.web.archive",
           "scroll": "page"
         },
-        "semanticLevel": "detail",
+        "semanticLevel": "archive",
         "content": {
           "kind": "html",
           "value": "<div style='container-type:inline-size;width:100%;height:100%;overflow:auto;background:#faf7ff;padding:4cqw;box-sizing:border-box;font-family:system-ui'><div style='font:700 1.4cqw ui-monospace,monospace;letter-spacing:.2em;color:#6d28d9'>TWILITE / RELEASE NOTES</div><h1 style='font:700 5cqw Georgia,serif;color:#1f2937;margin:2cqw 0'>Release notes</h1><p style='font:400 2cqw/1.5 Georgia,serif;color:#64748b'>Every published Twilite release, newest first.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(25cqw,1fr));gap:2cqw;margin-top:3cqw'><a href='tlz://twilite.zone/products/twilite/release-notes/2026/2026-11-21/root.node' style='display:block;padding:2.4cqw;border:1px solid #ddd6fe;border-radius:2cqw;background:#faf7ff;text-decoration:none;color:#1f2937'><div style='font:700 3cqw Georgia,serif'>21 November 2026</div><div style='font:500 1.6cqw system-ui;color:#6d28d9;margin-top:1cqw'>Open release →</div></a><a href='tlz://twilite.zone/products/twilite/release-notes/2026/2026-11-13/root.node' style='display:block;padding:2.4cqw;border:1px solid #ddd6fe;border-radius:2cqw;background:#faf7ff;text-decoration:none;color:#1f2937'><div style='font:700 3cqw Georgia,serif'>13 November 2026</div><div style='font:500 1.6cqw system-ui;color:#6d28d9;margin-top:1cqw'>Open release →</div></a></div></div>"
@@ -885,7 +891,7 @@
         },
         "content": {
           "kind": "markdown",
-          "value": "# Twilite release notes\n\nEvery published Twilite release, newest first. Open a release to see its changes.\n\nThis is the single authoritative collection of Twilite releases. Each member is a release graph, not a year collection."
+          "value": "# Twilite release notes\n\nEvery published Twilite release, newest first. Open a release to see its changes.\n\nThis is the single authoritative collection of Twilite releases. Each member is a release graph, not a year collection.\n\nThe default Detail view shows the latest published release. The Archive view lists every published release. When publishing another release, refresh the Latest view from its Detail view and regenerate the Archive."
         },
         "_placement": {
           "version": 1,
@@ -1188,7 +1194,6 @@
           {
             "kind": "update-node",
             "targets": [
-              "releases-hub-detail",
               "releases-hub-summary",
               "releases-hub-glyph",
               "releases-hub-declaration",
@@ -1429,6 +1434,65 @@
         },
         "security": "prompt"
       }
+    },
+    {
+      "id": "releases-hub-latest",
+      "type": "face",
+      "label": "Latest release · 21 November 2026",
+      "position": {
+        "x": -640,
+        "y": 240
+      },
+      "width": 450,
+      "height": 300,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "portId": "root"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "releases-hub",
+          "nodeId": "releases-hub-latest"
+        },
+        "view": {
+          "intent": "node",
+          "payload": "node.web.detail",
+          "scroll": "page"
+        },
+        "semanticLevel": "detail",
+        "content": {
+          "kind": "html",
+          "value": "<div style='container-type:inline-size;width:100%;height:100%;overflow:auto;background:#faf7ff;font-family:Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'><div style='box-sizing:border-box;min-height:100%;padding:4.4cqw 7cqw 5cqw'><div style='padding:1.4cqw 0;border-top:.4cqw solid #1f2937;border-bottom:.1cqw solid #1f2937;display:flex;justify-content:space-between;font:700 1.3cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.3em;text-transform:uppercase;color:#6d28d9'><span>Release notes</span><span style='color:#b45309'>21 November 2026</span></div><div style='font:700 5.4cqw/1.1 Georgia,Iowan Old Style,Palatino Linotype,serif;margin:3cqw 0 .8cqw;color:#1f2937'>Release notes: 21 November 2026</div><div style='font:400 2.2cqw/1.5 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:2cqw;max-width:62cqw'>A 14-day free trial at checkout, a first-time GitHub setup guide, feedback that reaches the owner of a graph and custom SVG glyphs, with fixes to scrolling, edges, resizing and workspace placement.</div><div style='margin-top:3cqw'><div style='font:700 1.3cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.24em;text-transform:uppercase;color:#b45309;margin-bottom:1.2cqw'>Highlights</div><div style='font:600 1.9cqw/1.5 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#1f2937;margin-top:.5cqw'><span style='color:#b45309'>◆</span> Optional free trial at checkout</div><div style='font:600 1.9cqw/1.5 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#1f2937;margin-top:.5cqw'><span style='color:#b45309'>◆</span> A first-time GitHub setup guide</div><div style='font:600 1.9cqw/1.5 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#1f2937;margin-top:.5cqw'><span style='color:#b45309'>◆</span> Feedback reaches the graph owner</div></div><div style='display:flex;justify-content:space-between;align-items:baseline;margin:4cqw 0 1.6cqw;padding-top:2cqw;border-top:.15cqw solid rgba(109,40,217,.35)'><span style='font:700 1.5cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.24em;text-transform:uppercase;color:#15803d'>New</span><span style='font:600 1.4cqw/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#64748b'>5 changes</span></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #15803d'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Optional free trial at checkout</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Checkout now offers a 14-day free trial to an account that has not previously held a subscription.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #15803d'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>A first-time GitHub setup guide</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>A new guided lesson walks someone without a GitHub account or repository through creating a private work repository, connecting it to Twilite and saving a first graph. The GitHub tutorial, How-To Guides shelf and Start with your AI entry now link into that path.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #15803d'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Feedback reaches the graph owner</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>The feedback form can now send messages to the owner of the graph being viewed. Owners can configure whether they accept feedback, and visitors can attach a screenshot by pasting or choosing an image. If the owner has opted out, the form explains that feedback cannot be sent.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #15803d'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Custom SVG glyphs for nodes</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Graph authors can define a glyph using SVG markup, in addition to an icon or text symbol. The glyph renderer uses the chosen glyph color, and the card editor and Properties panel provide ways to edit the SVG definition.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #15803d'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Hide bridged graph tiles without disconnecting them</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>A workspace toolbar switch can hide tiles opened only by Bridges while keeping those graphs loaded and their events active. Graphs you are using or that remain directly referenced stay visible.</div></div><div style='display:flex;justify-content:space-between;align-items:baseline;margin:4cqw 0 1.6cqw;padding-top:2cqw;border-top:.15cqw solid rgba(109,40,217,.35)'><span style='font:700 1.5cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.24em;text-transform:uppercase;color:#1d4ed8'>Changed</span><span style='font:600 1.4cqw/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#64748b'>4 changes</span></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #1d4ed8'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>More legible graph summaries at small scales</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Summary views use larger, clearer type and compact member links. Content nodes keep their Summary presentation instead of disappearing into icon-only glyphs at low zoom.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #1d4ed8'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>More control over node borders</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>HTML-faced nodes now respect authored border color, width, radius, and line style. Solid, dashed, dotted and double borders can be selected in the Properties panel.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #1d4ed8'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>A redesigned Twilite Zone arrival page</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>The Twilite Zone&#39;s public entry graph has been rebuilt as an arrival experience, with a prominent introduction, clearer routes into the Zone and Editor, and a logo glyph.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #1d4ed8'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Clearer workspace ports and edge controls</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>In browse mode, unused workspace border ports are hidden until hovering, holding Alt, or dragging a connection; open connection stubs use a ring marker. A bridged-graph visibility switch has moved to the workspace bar, while the graph editor toolbar now offers a separate Edges control.</div></div><div style='display:flex;justify-content:space-between;align-items:baseline;margin:4cqw 0 1.6cqw;padding-top:2cqw;border-top:.15cqw solid rgba(109,40,217,.35)'><span style='font:700 1.5cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.24em;text-transform:uppercase;color:#b45309'>Fixed</span><span style='font:600 1.4cqw/1 Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#64748b'>5 changes</span></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Scrolling works in focused pages and portal previews</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Focused documents, portal page previews, and workspace views respond more reliably to scrolling. The Gallery and Glossary identify their detail views as scrollable pages.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Nodes remain visible beyond authored graph bounds</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Placing a node outside the initial graph window now expands the visible bounds instead of clipping the node where it cannot be selected.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Resize controls remain available on portal and node views</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Node resize handles and title-bar actions stay available as graphs load and as nodes switch between display levels. Portals keep their resize handles at smaller sizes and in icon and badge views, when resizing is allowed.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>Edges stay aligned during pan and zoom</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Graph connections redraw smoothly as the view moves or zooms, without brief flashes where edges sit at the previous zoom, attach to outdated handles or run through node centers before settling.</div></div><div style='margin-bottom:2.4cqw;padding:2.2cqw 2.6cqw;border-radius:1.2cqw;background:#fff;border:1px solid #e9e5f5;border-left:.7cqw solid #b45309'><div style='font:700 2.2cqw/1.3 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#1f2937'>New workspace graphs keep clear of existing frames</div><div style='font:400 1.75cqw/1.55 Georgia,Iowan Old Style,Palatino Linotype,serif;color:#334155;margin-top:.6cqw'>Workspace placement now accounts for the visible frame of a graph as well as its authored bounds, reducing cases where a newly opened graph overlaps another graph&#39;s extended frame.</div></div></div></div>"
+        },
+        "memo": "The Detail: the release as a page of notes, from its entries. The Method writes it, so edit the entries and not this.",
+        "link": "",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1793398054115,
+          "reason": "node-drag"
+        }
+      }
     }
   ],
   "edges": [
@@ -1458,43 +1522,6 @@
       "style": {
         "route": "curved"
       },
-      "data": {}
-    },
-    {
-      "id": "assemble-updates-detail",
-      "type": "derived-view",
-      "source": "releases-hub-derive-method",
-      "target": "releases-hub-detail",
-      "sourcePort": "result",
-      "targetPort": "root",
-      "label": "derives",
-      "style": {
-        "route": "curved"
-      },
-      "data": {}
-    },
-    {
-      "id": "releases-hub-surface",
-      "type": "surface",
-      "source": "releases-hub-declaration",
-      "target": "releases-hub-detail",
-      "sourcePort": "surfaces",
-      "targetPort": "root",
-      "label": "",
-      "style": {},
-      "data": {
-        "surfaceId": "web"
-      }
-    },
-    {
-      "id": "releases-hub-detail-summary",
-      "type": "next-face",
-      "source": "releases-hub-detail",
-      "target": "releases-hub-summary",
-      "sourcePort": "sequence-out",
-      "targetPort": "sequence-in",
-      "label": "",
-      "style": {},
       "data": {}
     },
     {
@@ -1569,6 +1596,41 @@
       "target": "releases-hub-member-2026-11-13",
       "sourcePort": "members",
       "targetPort": "part-of",
+      "label": "",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "releases-hub-surface",
+      "type": "surface",
+      "source": "releases-hub-declaration",
+      "target": "releases-hub-latest",
+      "sourcePort": "surfaces",
+      "targetPort": "root",
+      "label": "",
+      "style": {},
+      "data": {
+        "surfaceId": "web"
+      }
+    },
+    {
+      "id": "releases-hub-latest-to-archive",
+      "type": "next-face",
+      "source": "releases-hub-latest",
+      "target": "releases-hub-archive",
+      "sourcePort": "sequence-out",
+      "targetPort": "sequence-in",
+      "label": "",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "releases-hub-archive-summary",
+      "type": "next-face",
+      "source": "releases-hub-archive",
+      "target": "releases-hub-summary",
+      "sourcePort": "sequence-out",
+      "targetPort": "sequence-in",
       "label": "",
       "style": {},
       "data": {}
