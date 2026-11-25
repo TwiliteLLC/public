@@ -8,7 +8,7 @@
       "workflow",
       "exercise"
     ],
-    "preferredViewer": "https://dev.twilite.zone"
+    "preferredViewer": "https://twilite.zone"
   },
   "nodes": [
     {
@@ -879,7 +879,7 @@
       "data": {
         "title": "01 · Start the run",
         "phase": "trigger",
-        "instruction": "Start only after the owner asks to run THIS exercise. Read the bound workflow-question and keep its answer schema, required evidence, completion criterion and unresolved response. Choose a fresh lowercase runId using [a-z0-9-] (6–48 characters). Nothing in this exercise is written anywhere: the only output is the conversation. Read the shared workflow export. Invoke the bridged read-only preflight on this graph if supported; otherwise say it could not be run and distinguish that from a structural inspection.",
+        "instruction": "Start only after the owner asks to run THIS exercise. Read the bound workflow-question and keep its answer schema, required evidence, completion criterion and unresolved response. Choose a fresh lowercase runId using [a-z0-9-] (6–48 characters). Nothing in this exercise is written anywhere: the only output is the conversation. Read the shared workflow export. Invoke the bridged read-only preflight on this graph if supported; otherwise say it could not be run and distinguish that from a structural inspection. This exercise records nothing: where the shared agent protocol says to record every terminal outcome, this exercise overrides it. Report outcomes in the conversation only.",
         "inputs": "ownerRequest\nworkflowRef",
         "outputs": "runContext",
         "authority": "read-only",
