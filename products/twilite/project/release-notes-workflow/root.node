@@ -741,7 +741,7 @@
           "nodeId": "twilite-release-notes-workflow-definition"
         },
         "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow.node-class.node",
-        "resources": "releaseTemplate = tlz://twilite.zone/library/templates/release-graph/root.node\npublicHub = tlz://twilite.zone/products/twilite/release-notes/root.node",
+        "resources": "releaseTemplate = tlz://twilite.zone/library/templates/release-graph/root.node\npublicHub = tlz://twilite.zone/products/twilite/release-notes/root.node\nreviewQueue = github://mikemartinez1974/work/bench/release-notes-review/root.node",
         "tools": "git-reader\nqueue-editor\nassemble-release-draft\npublish-release\narchive-entries\nhosted-fetch",
         "policyRef": "",
         "runRecordRef": "",
