@@ -742,7 +742,7 @@
         },
         "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow.node-class.node",
         "resources": "releaseTemplate = tlz://twilite.zone/library/templates/release-graph/root.node\npublicHub = tlz://twilite.zone/products/twilite/release-notes/root.node",
-        "tools": "git-reader\nqueue-editor\nrelease-assemble\npublish-release\narchive-entries\nhosted-fetch",
+        "tools": "git-reader\nqueue-editor\nassemble-release-draft\npublish-release\narchive-entries\nhosted-fetch",
         "policyRef": "",
         "runRecordRef": "",
         "_placement": {
@@ -1103,7 +1103,7 @@
       "data": {
         "title": "04 · Assemble a private draft",
         "phase": "action",
-        "instruction": "Make a draft release graph from the Release Graph template, holding a copy of each approved entry’s public fields. Never copy review notes, review records or source commits into it. Show the owner the page and give its content digest (SHA-256 of the public content).",
+        "instruction": "Run the draft script for the release. It takes the entries the owner approved in stage 03, copies each one’s public fields into a draft made from the Release Graph template, lets the template derive the page, checks it, and prints the draft’s digest (a SHA-256 of its content). Review notes, review records and source commits never go into it. Show the owner the page and give the digest.",
         "inputs": "approvedEntries releaseTemplate",
         "outputs": "draft digest",
         "authority": "private-draft",
@@ -1119,9 +1119,9 @@
           "nodeId": "twilite-release-notes-workflow-step-act"
         },
         "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-step.node-class.node",
-        "tool": "release-assemble",
-        "effects": "Creates or updates a private draft of the release. Nothing public.",
-        "evidence": "Entry count, ids, the digest, and that no private fields were copied",
+        "tool": "assemble-release-draft",
+        "effects": "Creates a private draft of the release. It never overwrites a draft unless told to, and changes nothing else. Nothing public.",
+        "evidence": "Entry count and ids, the entries left in the queue and why, the digest, and that no private fields were copied",
         "_placement": {
           "version": 1,
           "state": "manually-shaped",
