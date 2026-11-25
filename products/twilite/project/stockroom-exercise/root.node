@@ -1,13 +1,13 @@
 {
   "fileVersion": "1.0",
   "metadata": {
-    "created": "2026-11-25T21:12:19.501Z",
-    "modified": "2026-11-25T21:29:21.752Z",
+    "created": "2026-11-25T16:12:44.570Z",
+    "modified": "2026-11-25T21:47:50.667Z",
     "author": "",
     "tags": [
       "workflow"
     ],
-    "preferredViewer": "https://twilite.zone"
+    "preferredViewer": "https://dev.twilite.zone"
   },
   "nodes": [
     {
@@ -1561,8 +1561,8 @@
       "type": "portal",
       "label": "The Twilite project",
       "position": {
-        "x": -1500,
-        "y": -300
+        "x": 2193.4641290005707,
+        "y": -224.74196554489654
       },
       "width": 480,
       "height": 320,
@@ -1643,7 +1643,14 @@
           "nodeId": "twilite-stockroom-exercise-back-to-project"
         },
         "security": "prompt",
-        "memo": "The Twilite project page: what Twilite is, its release process, and more exercises."
+        "memo": "The Twilite project page: what Twilite is, its release process, and more exercises.",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795643265987,
+          "reason": "node-drag"
+        }
       }
     }
   ],
