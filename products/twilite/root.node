@@ -816,9 +816,9 @@
       }
     },
     {
-      "id": "twilite-product-blush",
+      "id": "twilite-product-project",
       "type": "portal",
-      "label": "Blusheree",
+      "label": "The Twilite project",
       "position": {
         "x": 450,
         "y": 3390
@@ -886,22 +886,22 @@
       "visible": true,
       "showLabel": true,
       "data": {
-        "sourceRef": "tlz://twilite.zone/products/twilite/showroom/blusheree/root.node",
+        "sourceRef": "tlz://twilite.zone/products/twilite/project/root.node",
         "target": {
-          "ref": "tlz://twilite.zone/products/twilite/showroom/blusheree/root.node",
+          "ref": "tlz://twilite.zone/products/twilite/project/root.node",
           "mode": "navigate",
           "portId": "root",
-          "label": "Open Blusheree"
+          "label": "Open The Twilite project"
         },
         "authority": "navigate",
         "intent": "external",
         "visibilityRole": "browser",
         "identity": {
           "graphId": "twilite-product",
-          "nodeId": "twilite-product-blush"
+          "nodeId": "twilite-product-project"
         },
         "security": "prompt",
-        "memo": "Open Blusheree: a separately authored boutique built as a navigable Twilite graph, with its own storefront and environment."
+        "memo": "Open the Twilite project: where Twilite is, what it is for and what comes next."
       }
     },
     {
