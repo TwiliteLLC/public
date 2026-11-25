@@ -1023,7 +1023,7 @@
           "graphId": "twilite-project-declaration"
         },
         "bridge": {
-          "ref": "github://twilite-zone/public/library/classes/nodes/project/project.node-class.node",
+          "ref": "tlz://twilite.zone/library/classes/nodes/project/project.node-class.node",
           "resourceKind": "node-class",
           "key": "project",
           "scope": "focused-graph",
@@ -1059,7 +1059,7 @@
           "graphId": "twilite-project",
           "nodeId": "twilite-project-project"
         },
-        "classRef": "github://twilite-zone/public/library/classes/nodes/project/project.node-class.node",
+        "classRef": "tlz://twilite.zone/library/classes/nodes/project/project.node-class.node",
         "status": "active",
         "standing": "Preparing the public-facing experience: showroom, linked demonstrations and a reliable first visit.",
         "lead": "Michael",
