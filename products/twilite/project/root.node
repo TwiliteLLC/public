@@ -701,10 +701,10 @@
         },
         "membrane": {
           "bounds": {
-            "x": -1165,
-            "y": -1400,
-            "width": 3800,
-            "height": 3900
+            "x": -1683,
+            "y": -1934,
+            "width": 5486,
+            "height": 3657
           },
           "clip": true
         }
@@ -755,7 +755,7 @@
         "semanticLevel": "detail",
         "content": {
           "kind": "html",
-          "value": "<div style='container-type:inline-size;width:100%;height:100%'><div style='box-sizing:border-box;width:100%;height:100%;font-family:system-ui,-apple-system,Segoe UI,sans-serif;padding:4cqw;border-radius:3cqw;background:#ffffff;border:1px solid #e2e8f0;display:flex;flex-direction:column;gap:2cqw'><div style='display:flex;flex-direction:column;gap:.9cqw'><div style='font-size:2.2cqw;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#4338ca'>Project</div><div style='font-weight:600;font-size:4.6cqw;line-height:1.2;color:#0f172a'>Twilite</div><div style='display:flex;gap:1.6cqw;align-items:center;font-size:2.4cqw;color:#64748b'><span style='padding:.4cqw 1.8cqw;border-radius:6cqw;background:#15803d1a;border:1px solid #15803d55;color:#15803d;font-weight:600'>Active</span><span>Lead: Michael</span></div><div style='font-size:2.5cqw;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#4338ca'>twilite.zone</div><div style='font-size:2.9cqw;line-height:1.4;color:#334155'>A workspace that keeps what you know: your goals, tasks and questions as one graph, in a file you own, read by you and by any AI.</div><div style='font-size:2.5cqw;line-height:1.35;color:#64748b'>Now: Getting ready for the paid beta: try the editor free for 14 days, then $20 a month.</div><a href='tlz://twilite.zone/library/starters/start-with-your-ai/root.node' style='align-self:flex-start;margin-top:.4cqw;padding:1.1cqw 2.8cqw;border-radius:6cqw;background:#4338ca;color:#ffffff;font-size:2.8cqw;font-weight:600;text-decoration:none'>Start here →</a></div><div style='flex:1;min-height:0;overflow:auto'><div style='display:grid;grid-template-columns:repeat(auto-fill,minmax(26.2cqw,1fr));gap:1.4cqw;align-content:start'><a href='github://mikemartinez1974/public/news/root.node' style='display:flex;gap:2.2cqw;align-items:flex-start;box-sizing:border-box;height:17cqw;padding:1.6cqw 2.1cqw;border:1px solid #e2e8f0;border-radius:2.4cqw;background:#f8fafc;text-decoration:none;color:inherit;min-width:0;overflow:hidden'><span style='flex:none;width:6.2cqw;height:6.2cqw;border-radius:1.6cqw;background:#6d28d922;color:#6d28d9;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:3cqw'>N</span><span style='min-width:0'><span style='display:block;font-weight:600;font-size:2.9cqw;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#0f172a'>News</span><span style='display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:2.6cqw;line-height:1.3;color:#64748b'>What is new: announcements from the studio, newest first.</span><span style='display:block;margin-top:.6cqw;font-size:2.4cqw;font-weight:600;color:#4338ca'>2 graphs</span></span></a><a href='tlz://twilite.zone/products/twilite/release-notes/root.node' style='display:flex;gap:2.2cqw;align-items:flex-start;box-sizing:border-box;height:17cqw;padding:1.6cqw 2.1cqw;border:1px solid #e2e8f0;border-radius:2.4cqw;background:#f8fafc;text-decoration:none;color:inherit;min-width:0;overflow:hidden'><span style='flex:none;width:6.2cqw;height:6.2cqw;border-radius:1.6cqw;background:#6d28d922;color:#6d28d9;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:3cqw'>R</span><span style='min-width:0'><span style='display:block;font-weight:600;font-size:2.9cqw;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#0f172a'>Release notes</span><span style='display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:2.6cqw;line-height:1.3;color:#64748b'>What changed in each release of Twilite, in plain words: what is new, what changed and what was fixed.</span><span style='display:block;margin-top:.6cqw;font-size:2.4cqw;font-weight:600;color:#4338ca'>1 graph</span></span></a></div></div></div></div>"
+          "value": "<div style='container-type:inline-size;width:100%;height:100%'><div style='box-sizing:border-box;width:100%;height:100%;font-family:system-ui,-apple-system,Segoe UI,sans-serif;padding:4cqw;border-radius:3cqw;background:#ffffff;border:1px solid #e2e8f0;display:flex;flex-direction:column;gap:2cqw'><div style='display:flex;flex-direction:column;gap:.9cqw'><div style='font-size:2.2cqw;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#4338ca'>Project</div><div style='font-weight:600;font-size:4.6cqw;line-height:1.2;color:#0f172a'>Twilite</div><div style='display:flex;gap:1.6cqw;align-items:center;font-size:2.4cqw;color:#64748b'><span style='padding:.4cqw 1.8cqw;border-radius:6cqw;background:#15803d1a;border:1px solid #15803d55;color:#15803d;font-weight:600'>Active</span><span>Lead: Michael</span></div><div style='font-size:2.5cqw;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#4338ca'>twilite.zone</div><div style='font-size:2.9cqw;line-height:1.4;color:#334155'>Twilite is a graph-native workspace for projects, documents and interactive places. People and AI can build and revise the same portable graph, then navigate to the work it connects.</div><div style='font-size:2.5cqw;line-height:1.35;color:#64748b'>Now: Preparing the public-facing experience: showroom, linked demonstrations and a reliable first visit.</div><a href='tlz://twilite.zone/library/starters/start-with-your-ai/root.node' style='align-self:flex-start;margin-top:.4cqw;padding:1.1cqw 2.8cqw;border-radius:6cqw;background:#4338ca;color:#ffffff;font-size:2.8cqw;font-weight:600;text-decoration:none'>Start here →</a></div><div style='flex:1;min-height:0;overflow:auto'><div style='display:grid;grid-template-columns:repeat(auto-fill,minmax(26.2cqw,1fr));gap:1.4cqw;align-content:start'><a href='tlz://twilite.zone/products/twilite/release-notes/root.node' style='display:flex;gap:2.2cqw;align-items:flex-start;box-sizing:border-box;height:17cqw;padding:1.6cqw 2.1cqw;border:1px solid #e2e8f0;border-radius:2.4cqw;background:#f8fafc;text-decoration:none;color:inherit;min-width:0;overflow:hidden'><span style='flex:none;width:6.2cqw;height:6.2cqw;border-radius:1.6cqw;background:#6d28d922;color:#6d28d9;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:3cqw'>R</span><span style='min-width:0'><span style='display:block;font-weight:600;font-size:2.9cqw;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#0f172a'>Release notes</span><span style='display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:2.6cqw;line-height:1.3;color:#64748b'>Every published Twilite release, newest first: what is new, what changed and what was fixed.</span><span style='display:block;margin-top:.6cqw;font-size:2.4cqw;font-weight:600;color:#4338ca'>5 graphs</span></span></a></div></div></div></div>"
         },
         "memo": "",
         "link": ""
@@ -805,7 +805,7 @@
         "semanticLevel": "summary",
         "content": {
           "kind": "html",
-          "value": "<div style='container-type:inline-size;width:100%;height:100%'><div style='box-sizing:border-box;width:100%;height:100%;font-family:system-ui,-apple-system,Segoe UI,sans-serif;padding:6cqw;border-radius:5cqw;background:#ffffff;border:.8cqw solid #4338ca;display:flex;flex-direction:column;gap:3cqw;overflow:hidden'><div style='flex:none;font:700 6cqw/1.1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:#4338ca'>Project</div><div style='flex:none;font:700 15cqw/1.1 system-ui,-apple-system,Segoe UI,sans-serif;letter-spacing:-.01em;color:#0f172a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>Twilite</div><div style='flex:none;font:700 6.5cqw/1.2 system-ui,sans-serif;color:#334155'>Active · 3 graphs</div><div style='flex:1 1 0;min-height:0;overflow:hidden;display:flex;flex-wrap:wrap;gap:2cqw;align-content:flex-start'><a href='github://mikemartinez1974/public/news/root.node' title='News' aria-label='News' style='box-sizing:border-box;max-width:100%;padding:1.2cqw 3cqw;border-radius:9cqw;background:#6d28d91a;border:.5cqw solid #6d28d966;color:#0f172a;font:700 6cqw/1.25 system-ui,-apple-system,Segoe UI,sans-serif;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>News</a><a href='tlz://twilite.zone/products/twilite/release-notes/root.node' title='Release notes' aria-label='Release notes' style='box-sizing:border-box;max-width:100%;padding:1.2cqw 3cqw;border-radius:9cqw;background:#6d28d91a;border:.5cqw solid #6d28d966;color:#0f172a;font:700 6cqw/1.25 system-ui,-apple-system,Segoe UI,sans-serif;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>Release notes</a></div></div></div>"
+          "value": "<div style='container-type:inline-size;width:100%;height:100%'><div style='box-sizing:border-box;width:100%;height:100%;font-family:system-ui,-apple-system,Segoe UI,sans-serif;padding:6cqw;border-radius:5cqw;background:#ffffff;border:.8cqw solid #4338ca;display:flex;flex-direction:column;gap:3cqw;overflow:hidden'><div style='flex:none;font:700 6cqw/1.1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:#4338ca'>Project</div><div style='flex:none;font:700 15cqw/1.1 system-ui,-apple-system,Segoe UI,sans-serif;letter-spacing:-.01em;color:#0f172a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>Twilite</div><div style='flex:none;font:700 6.5cqw/1.2 system-ui,sans-serif;color:#334155'>Active · 5 graphs</div><div style='flex:1 1 0;min-height:0;overflow:hidden;display:flex;flex-wrap:wrap;gap:2cqw;align-content:flex-start'><a href='tlz://twilite.zone/products/twilite/release-notes/root.node' title='Release notes' aria-label='Release notes' style='box-sizing:border-box;max-width:100%;padding:1.2cqw 3cqw;border-radius:9cqw;background:#6d28d91a;border:.5cqw solid #6d28d966;color:#0f172a;font:700 6cqw/1.25 system-ui,-apple-system,Segoe UI,sans-serif;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>Release notes</a></div></div></div>"
         },
         "memo": "",
         "link": ""
@@ -897,7 +897,7 @@
         },
         "content": {
           "kind": "markdown",
-          "value": "# Twilite · Project brief\n\n**Status:** Active · Preparing the first public visitor experience\n\n**Purpose:** Make durable, connected work that people and their AI can create, understand, navigate and keep. The graph is the artifact, not the chat transcript.\n\n**Working focus:** Get the product presentation, linked demonstrations, editor onboarding and feedback path ready for visitors. Keep feature expansion separate from release readiness.\n\n**Project home:** [twilite.zone](https://twilite.zone)\n\n**Where to go:**\n- **Start here:** the public AI-friendly starter graph.\n- **The product:** Twilite's product presentation.\n- **News / Release notes:** public updates and changes.\n\nThis is the **Twilite project graph**, with a Project-class node and maintained destinations. The separate CONNECT exhibition demonstrates project relationships; it is not the project's source of truth."
+          "value": "# Twilite · Project brief\n\n**Status:** Active · Preparing the first public visitor experience\n\n**Purpose:** Make durable, connected work that people and their AI can create, understand, navigate and keep. The graph is the artifact, not the chat transcript.\n\n**Working focus:** Get the product presentation, linked demonstrations, editor onboarding and feedback path ready for visitors. Keep feature expansion separate from release readiness.\n\n**Project home:** [twilite.zone](https://twilite.zone)\n\n**Where to go:**\n- **Start here:** the public AI-friendly starter graph.\n- **The product:** Twilite's product presentation.\n- **Release notes:** public updates and changes.\n\nThis is the **Twilite project graph**, with a Project-class node and maintained destinations. The separate CONNECT exhibition demonstrates project relationships; it is not the project's source of truth."
         },
         "_placement": {
           "version": 1,
@@ -1054,7 +1054,7 @@
         "startHere": "tlz://twilite.zone/library/starters/start-with-your-ai/root.node",
         "sort": "order",
         "includeFolder": false,
-        "sourcesSummary": "2 public update collections · product, starter and release-notes links",
+        "sourcesSummary": "1 portal · 1 member",
         "identity": {
           "graphId": "twilite-project",
           "nodeId": "twilite-project-project"
@@ -1217,7 +1217,7 @@
         },
         "content": {
           "kind": "html",
-          "value": "<div style=\"container-type:size;box-sizing:border-box;width:100%;height:100%;min-height:0;display:flex;flex-direction:column;padding:4cqw;background:radial-gradient(ellipse at 24% 0%,#326196,#172e50 60%,#101a2e);color:white;font-family:system-ui;overflow:hidden\"><header style=\"flex:0 0 auto;display:flex;flex-direction:column;align-items:flex-start;gap:1.7cqw;border-top:.4cqw solid #f5c542;padding-top:2cqw\"><div style=\"font:850 2.1cqw/1.2 system-ui;letter-spacing:.15em;color:#f5c542\">TWILITE / PROJECT HOME</div><div style=\"font:650 5.8cqw/1.08 Georgia,serif;letter-spacing:-.025em;color:#fff\">Build what comes next.</div><div style=\"font:500 2.4cqw/1.25 system-ui;color:#dce9fd\">A graph-native workspace for people and their AI.</div><div style=\"font:750 1.85cqw/1.25 system-ui;letter-spacing:.06em;color:#f5c542\">ACTIVE PROJECT · VISITOR EXPERIENCE IN PROGRESS</div></header><main aria-label=\"Project graph stage\" style=\"flex:1 1 auto;min-height:0;position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(109,154,198,.07),rgba(17,39,69,0) 30%,rgba(8,18,34,0) 100%)\"></main><footer style=\"flex:0 0 auto;border-top:.25cqw solid #7f9dbb;padding-top:2.5cqw;display:flex;align-items:center;gap:3cqw;flex-wrap:wrap;font:700 2.1cqw/1.35 system-ui\"><a href=\"tlz://twilite.zone/library/starters/start-with-your-ai/root.node\" style=\"color:#fff\">Start here</a><a href=\"tlz://twilite.zone/products/twilite/root.node\" style=\"color:#fff\">Product</a><a href=\"tlz://twilite.zone/products/twilite/release-notes/root.node\" style=\"color:#fff\">Release notes</a></footer></div>"
+          "value": "<div style='container-type:inline-size;width:100%;height:100%'><div style='position:relative;box-sizing:border-box;width:100%;height:100%;overflow:hidden;background-color:#1b3a6b;background-image:linear-gradient(color-mix(in srgb,#2a5aa0 26%,transparent) 0.12cqw,transparent 0.12cqw),linear-gradient(90deg,color-mix(in srgb,#2a5aa0 26%,transparent) 0.12cqw,transparent 0.12cqw),linear-gradient(color-mix(in srgb,#2a5aa0 12%,transparent) 0.08cqw,transparent 0.08cqw),linear-gradient(90deg,color-mix(in srgb,#2a5aa0 12%,transparent) 0.08cqw,transparent 0.08cqw);background-size:10cqw 10cqw,10cqw 10cqw,2cqw 2cqw,2cqw 2cqw;font-family:Inter,system-ui,Segoe UI,Helvetica Neue,Arial,sans-serif;color:#ffffff'><div style='position:absolute;left:4cqw;top:3.6cqw;font:800 1.5cqw/1.2 Inter,system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#f5c542'>Project</div><div style='position:absolute;left:4cqw;right:4cqw;top:6.4cqw;font:800 10.5cqw/.9 Archivo Black,Impact,Haettenschweiler,Arial Black,sans-serif;letter-spacing:-.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>Twilite</div><div style='position:absolute;left:4cqw;right:4cqw;top:18.05cqw;font:400 2.5cqw/1.3 Inter,system-ui,sans-serif;color:#cfe0ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>Twilite is a graph-native workspace for projects, documents and interactive places. People and AI can build and revise the same portable graph, then navigate to the work it connects.</div><div style='position:absolute;left:4cqw;top:23cqw;font:400 1.7cqw/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#f5c542'>Active · twilite.zone</div><div style='position:absolute;left:4cqw;top:27.6cqw;width:92cqw;height:30.166666666666657cqw;box-sizing:border-box;border-radius:2cqw;background:color-mix(in srgb,#f5c542 7%,#1b3a6b);border:.3cqw solid color-mix(in srgb,#f5c542 28%,#1b3a6b)'></div><div style='position:absolute;left:4cqw;right:4cqw;bottom:3.4cqw;display:flex;gap:3cqw;font:700 1.9cqw/1.2 Inter,system-ui,sans-serif;color:#f5c542;white-space:nowrap;overflow:hidden'><a href='tlz://twilite.zone/library/starters/start-with-your-ai/root.node' style='color:inherit;text-decoration:none'>Start here →</a><a href='tlz://twilite.zone/products/twilite/release-notes/root.node' style='color:inherit;text-decoration:none'>Release notes →</a></div></div></div>"
         }
       }
     },
@@ -1226,7 +1226,7 @@
       "type": "portal",
       "label": "Start here",
       "position": {
-        "x": 1440,
+        "x": 960,
         "y": 90
       },
       "width": 420,
@@ -1311,100 +1311,11 @@
       }
     },
     {
-      "id": "twilite-project-shelf-news",
-      "type": "portal",
-      "label": "News",
-      "position": {
-        "x": 0,
-        "y": 90
-      },
-      "width": 420,
-      "height": 240,
-      "ports": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "angle": 210
-        },
-        {
-          "id": "part-of",
-          "key": "part-of",
-          "label": "part-of",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270,
-          "allowedEdgeTypes": [
-            "contains"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "contains"
-            ],
-            "repeatable": false
-          }
-        }
-      ],
-      "handles": [
-        {
-          "id": "root",
-          "key": "root",
-          "portId": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "angle": 210
-        },
-        {
-          "id": "part-of",
-          "key": "part-of",
-          "label": "part-of",
-          "direction": "input",
-          "dataType": "any",
-          "angle": 270,
-          "allowedEdgeTypes": [
-            "contains"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "contains"
-            ],
-            "repeatable": false
-          },
-          "portId": "part-of"
-        }
-      ],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "sourceRef": "github://mikemartinez1974/public/news/root.node",
-        "sourceNodeId": "page-template",
-        "target": {
-          "ref": "github://mikemartinez1974/public/news/root.node",
-          "mode": "navigate",
-          "portId": "root",
-          "label": "Open News"
-        },
-        "authority": "navigate",
-        "intent": "external",
-        "visibilityRole": "browser",
-        "identity": {
-          "graphId": "twilite-project",
-          "nodeId": "twilite-project-shelf-news"
-        },
-        "security": "prompt"
-      }
-    },
-    {
       "id": "twilite-project-shelf-releases",
       "type": "portal",
       "label": "Release notes",
       "position": {
-        "x": 480,
+        "x": 0,
         "y": 90
       },
       "width": 420,
@@ -1675,7 +1586,7 @@
       "type": "portal",
       "label": "How a release is published",
       "position": {
-        "x": 960,
+        "x": 480,
         "y": 90
       },
       "width": 420,
@@ -1970,17 +1881,6 @@
       "data": {
         "classRef": "tlz://twilite.zone/library/edges/environment/root.node"
       }
-    },
-    {
-      "id": "twilite-project-contains-1",
-      "type": "contains",
-      "source": "twilite-project-project",
-      "target": "twilite-project-shelf-news",
-      "sourcePort": "members",
-      "targetPort": "part-of",
-      "label": "",
-      "style": {},
-      "data": {}
     },
     {
       "id": "twilite-project-contains-2",
