@@ -1226,7 +1226,7 @@
       "type": "portal",
       "label": "Start here",
       "position": {
-        "x": 960,
+        "x": 1440,
         "y": 90
       },
       "width": 420,
@@ -1675,8 +1675,8 @@
       "type": "portal",
       "label": "How a release is published",
       "position": {
-        "x": 480,
-        "y": 390
+        "x": 960,
+        "y": 90
       },
       "width": 420,
       "height": 240,
