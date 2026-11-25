@@ -1,0 +1,2022 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "created": "2026-11-24T23:20:42.519Z",
+    "modified": "2026-11-24T23:49:35.835Z",
+    "author": "",
+    "tags": [
+      "workflow",
+      "release-notes"
+    ],
+    "preferredViewer": "https://dev.twilite.zone"
+  },
+  "nodes": [
+    {
+      "id": "twilite-release-notes-workflow-root",
+      "type": "root",
+      "label": "Release Notes Workflow · Rehearsal",
+      "position": {
+        "x": -1735,
+        "y": -567.5
+      },
+      "width": 500,
+      "height": 355,
+      "ports": [
+        {
+          "id": "surfaces",
+          "key": "surfaces",
+          "label": "surfaces",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 195,
+          "role": "surface",
+          "allowedEdgeTypes": [
+            "surface"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "surface",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "default-handle",
+          "key": "default-handle",
+          "label": "default handle",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 275,
+          "role": "default-handle",
+          "allowedEdgeTypes": [
+            "edge"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "default-handle",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "portal",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "boundary-begin",
+          "key": "boundary-begin",
+          "label": "boundary begin",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 110,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "boundary-end",
+          "key": "boundary-end",
+          "label": "boundary end",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 70,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "port",
+          "key": "port",
+          "label": "port",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 250,
+          "role": "exposes-port",
+          "allowedEdgeTypes": [
+            "exposes-port"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "exposes-port",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "port",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ground",
+          "key": "ground",
+          "label": "ground",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "role": "ground",
+          "allowedEdgeTypes": [
+            "ground"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "ground",
+            "required": true,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "content",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 305,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          }
+        },
+        {
+          "id": "event:graph.changed",
+          "key": "event:graph.changed",
+          "label": "Graph changed",
+          "direction": "output",
+          "dataType": "event",
+          "angle": 180,
+          "role": "emits-event",
+          "allowedEdgeTypes": [
+            "invokes"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "emits-event",
+            "required": false,
+            "repeatable": true,
+            "eventKey": "graph.changed",
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "method",
+                "targetPort": "invokes"
+              }
+            ]
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "surfaces",
+          "key": "surfaces",
+          "label": "surfaces",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 195,
+          "role": "surface",
+          "allowedEdgeTypes": [
+            "surface"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "surface",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "surfaces"
+        },
+        {
+          "id": "default-handle",
+          "key": "default-handle",
+          "label": "default handle",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 275,
+          "role": "default-handle",
+          "allowedEdgeTypes": [
+            "edge"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "default-handle",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "portal",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "default-handle"
+        },
+        {
+          "id": "boundary-begin",
+          "key": "boundary-begin",
+          "label": "boundary begin",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 110,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "boundary-begin"
+        },
+        {
+          "id": "boundary-end",
+          "key": "boundary-end",
+          "label": "boundary end",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 70,
+          "role": "membrane-control",
+          "allowedEdgeTypes": [
+            "membrane"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "membrane-control",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "membrane",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "boundary-end"
+        },
+        {
+          "id": "port",
+          "key": "port",
+          "label": "port",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 250,
+          "role": "exposes-port",
+          "allowedEdgeTypes": [
+            "exposes-port"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "exposes-port",
+            "required": false,
+            "repeatable": true,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "port",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "port"
+        },
+        {
+          "id": "ground",
+          "key": "ground",
+          "label": "ground",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "role": "ground",
+          "allowedEdgeTypes": [
+            "ground"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "ground",
+            "required": true,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "content",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "ground"
+        },
+        {
+          "id": "environment",
+          "key": "environment",
+          "label": "environment",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 305,
+          "role": "environment",
+          "allowedEdgeTypes": [
+            "environment"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "environment",
+            "required": false,
+            "repeatable": false,
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "face",
+                "targetPort": "root"
+              }
+            ]
+          },
+          "portId": "environment"
+        },
+        {
+          "id": "event:graph.changed",
+          "key": "event:graph.changed",
+          "label": "Graph changed",
+          "direction": "output",
+          "dataType": "event",
+          "angle": 180,
+          "role": "emits-event",
+          "allowedEdgeTypes": [
+            "invokes"
+          ],
+          "metadata": {
+            "structural": true,
+            "relationship": true,
+            "role": "emits-event",
+            "required": false,
+            "repeatable": true,
+            "eventKey": "graph.changed",
+            "behaviors": [
+              {
+                "trigger": "drag-create",
+                "action": "create-node",
+                "nodeType": "method",
+                "targetPort": "invokes"
+              }
+            ]
+          },
+          "portId": "event:graph.changed"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-release-notes-workflow-root",
+          "nodeId": "twilite-release-notes-workflow",
+          "name": "How a release is published",
+          "version": "1.0.0",
+          "description": "The process behind every release of Twilite, as a workflow: nine stages from reviewed changes to a published release, with the owner deciding at three gates. Made from the Repeatable Workflow template.",
+          "updatedAt": "2026-11-25T01:00:30.546Z"
+        },
+        "intent": {
+          "kind": "workflow",
+          "scope": "public"
+        },
+        "root": {
+          "kind": "graph",
+          "defaultSurfaceId": "default",
+          "membrane": {
+            "bounds": {
+              "x": -40,
+              "y": -50,
+              "width": 2040,
+              "height": 2100
+            }
+          }
+        },
+        "document": {
+          "url": "tlz://twilite.zone/products/twilite/project/release-notes-workflow/root.node"
+        },
+        "events": [
+          {
+            "eventKey": "graph.changed",
+            "label": "Graph changed",
+            "payloadContract": {
+              "type": "object"
+            }
+          }
+        ],
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1795556543515,
+          "reason": "auto-layout"
+        },
+        "settings": {
+          "edgeRouting": "orthogonal",
+          "layout": {
+            "mode": "manual"
+          }
+        },
+        "membrane": {
+          "bounds": {
+            "x": -1799,
+            "y": -695.5,
+            "width": 4564.184323086406,
+            "height": 3030.4140708053437
+          },
+          "clip": true
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-detail",
+      "type": "face",
+      "label": "Workflow · Detail",
+      "position": {
+        "x": -1115,
+        "y": -567.5
+      },
+      "width": 840,
+      "height": 500,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;width:100%;height:100%;overflow:auto;background:#14212d;color:#ecf5f1;font-family:system-ui;padding:clamp(24px,5cqw,50px)\"><div style=\"color:#e9b96d;letter-spacing:.2em;font-size:12px;font-weight:700\">TWILITE · RELEASE NOTES WORKFLOW</div><h1 style=\"font-family:Georgia,serif;font-size:clamp(31px,5cqw,59px);line-height:1.1;margin:20px 0\">Release notes,<br/>from commit to public.</h1><p style=\"max-width:700px;color:#c3d5d4;font-size:19px;line-height:1.6\">A repeatable path from reviewed changes to a published release, with explicit stop conditions and the owner’s decision at each gate.</p><div style=\"display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px\"><div style=\"background:#1b3d48;border:1px solid #3c7c76;border-radius:15px;padding:18px\"><span style=\"color:#e9b96d;font-size:12px\">03</span><h2 style=\"font-size:18px;margin:8px 0\">Approved</h2><p style=\"font-size:13px;margin:0;color:#c3d5d4\">Owner picks the entries</p></div><div style=\"background:#1b3d48;border:1px solid #3c7c76;border-radius:15px;padding:18px\"><span style=\"color:#e9b96d;font-size:12px\">05</span><h2 style=\"font-size:18px;margin:8px 0\">Verified</h2><p style=\"font-size:13px;margin:0;color:#c3d5d4\">Prove it is live</p></div><div style=\"background:#1b3d48;border:1px solid #3c7c76;border-radius:15px;padding:18px\"><span style=\"color:#e9b96d;font-size:12px\">06</span><h2 style=\"font-size:18px;margin:8px 0\">Owner-gated</h2><p style=\"font-size:13px;margin:0;color:#c3d5d4\">Never auto-publish</p></div></div><p style=\"font-size:13px;color:#e9b96d;margin-top:24px\">Nine stages · Three owner decisions · Public writes are create-only</p></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1795556543515,
+          "reason": "auto-layout"
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow-root"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-summary",
+      "type": "face",
+      "label": "Workflow · Summary",
+      "position": {
+        "x": -155,
+        "y": -567.5
+      },
+      "width": 480,
+      "height": 290,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;width:100%;height:100%;background:#14212d;color:#f0f5e9;padding:24px;font-family:system-ui;border-left:7px solid #e9b96d\"><div style=\"color:#e9b96d;font-size:11px;letter-spacing:.15em\">RELEASE NOTES · WORKFLOW</div><h2 style=\"font-size:24px;margin:15px 0\">Nine stages, three owner decisions</h2><p style=\"color:#bfd4d0;line-height:1.4;font-size:14px\">From commit review to a published release. Nothing publishes without the owner.</p></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1795556543515,
+          "reason": "auto-layout"
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow-root"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-glyph",
+      "type": "glyph",
+      "label": "Workflow · Glyph",
+      "position": {
+        "x": 445,
+        "y": -567.5
+      },
+      "width": 180,
+      "height": 120,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "glyph": {
+          "kind": "icon",
+          "name": "Workflow"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1795556543515,
+          "reason": "auto-layout"
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow-root"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-environment",
+      "type": "face",
+      "label": "Workflow · Environment",
+      "position": {
+        "x": 745,
+        "y": -567.5
+      },
+      "width": 800,
+      "height": 520,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "content": {
+          "kind": "html",
+          "value": "<div style=\"box-sizing:border-box;position:relative;width:100%;height:100%;overflow:hidden;border:2px solid #2d5961;border-radius:22px;background:radial-gradient(ellipse at 42% 0%,#254d59,#0c1924 74%);color:#e9f5f0;font-family:system-ui;pointer-events:none\"><div style=\"position:absolute;left:4.7%;top:3.5%;max-width:76%;padding-left:2.2%;border-left:5px solid #e9b96d\"><div style=\"font-size:clamp(12px,1.4cqw,19px);font-weight:750;letter-spacing:.19em;color:#e9b96d\">TWILITE / SHARED WORKFLOW PROTOCOL</div><div style=\"font:600 clamp(32px,5.8cqw,76px)/1.08 Georgia,serif;letter-spacing:-.025em;margin-top:1.1cqw\">Release Notes <span style=\"color:#8fd5c9\">/</span> Workflow</div><div style=\"font-size:clamp(13px,1.65cqw,21px);line-height:1.4;color:#afcbc7;margin-top:1.5cqw\">From reviewed changes to a published release, with the owner’s approval at each gate.</div></div><div style=\"position:absolute;right:4%;top:5%;font-size:clamp(10px,1.15cqw,16px);letter-spacing:.13em;color:#82b4b4;text-align:right\">THE OPERATING PROCESS<br/>CONTRACT 1.1</div><div style=\"position:absolute;left:4%;right:4%;top:19%;border-top:1px solid rgba(142,209,190,.18)\"></div></div>"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1795556543515,
+          "reason": "auto-layout"
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow-root"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-welcome",
+      "type": "content",
+      "label": "Start here",
+      "position": {
+        "x": -1730.2786654851163,
+        "y": 373.87634061748366
+      },
+      "width": 810,
+      "height": 330,
+      "style": {
+        "background": "#153340",
+        "color": "#e8f2ed",
+        "borderColor": "#3e6970",
+        "borderWidth": 1,
+        "borderStyle": "solid",
+        "borderRadius": 18
+      },
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "content": {
+          "kind": "markdown",
+          "value": "# How a release of Twilite is published\n\nThis is the process behind every release note, drawn as a workflow: **nine stages from reviewed changes to a published release.** It is made from the Repeatable Workflow template, so each stage is a Step or a Gate, and the order is the `workflow.next` edges between them.\n\n**Who does what.** An agent can do the reading, the drafting and the checking. The owner makes three decisions: which entries are approved (stage 03), that the release is ready to publish (stage 06), and publishing the site itself. Nothing here gives an agent those decisions, and nothing starts on a timer, a commit or an approved entry.\n\n**What never happens.** A release is never published because an entry was approved. Private review notes and source commits never go into a public release. A published release is never edited or deleted: a mistake is corrected by a new release. An approval covers the release exactly as it was shown, and if the release changes, the approval is void.\n\n**Read it by following the gold edges** from stage 01 to stage 09. Gates are the gold-tinted cards, and the three owner decisions are marked on them.\n\n**Try this:** run the Preflight Method the template hands on. It returns the nine stages in order with no errors. What it returns is a plan, not executed actions.\n\n**The result:** every release that has been published is in the release notes, `tlz://twilite.zone/products/twilite/release-notes/root.node`. The template this is made from is `tlz://twilite.zone/library/templates/repeatable-workflow/root.node`."
+        },
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694718,
+          "reason": "node-drag"
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow-root"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-definition",
+      "type": "workflow",
+      "label": "Workflow · Definition",
+      "position": {
+        "x": 129.7213345148837,
+        "y": 373.87634061748366
+      },
+      "width": 490,
+      "height": 350,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "Release Notes · Workflow",
+        "purpose": "Turn reviewed changes into a published release: review commits, owner-approved entries, a private draft, live verification, owner approval, a create-only public release, and a recorded run.",
+        "trigger": "manual",
+        "inputs": "releaseId",
+        "outputs": "publishedRelease runRecord",
+        "mode": "agent-assisted",
+        "status": "live",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "Workflow"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-definition"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow.node-class.node",
+        "resources": "releaseTemplate = tlz://twilite.zone/library/templates/release-graph/root.node\npublicHub = tlz://twilite.zone/products/twilite/release-notes/root.node",
+        "tools": "git-reader\nqueue-editor\nrelease-assemble\npublish-release\narchive-entries\nhosted-fetch",
+        "policyRef": "",
+        "runRecordRef": "",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694723,
+          "reason": "node-drag"
+        },
+        "startStepId": "twilite-release-notes-workflow-step-start"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-policy",
+      "type": "workflow-info-card",
+      "label": "Domain rules",
+      "position": {
+        "x": 739.7213345148837,
+        "y": 373.87634061748366
+      },
+      "width": 710,
+      "height": 355,
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "title": "Permission boundary",
+        "eyebrow": "PERMISSION BOUNDARY",
+        "body": "• Entries move only by the owner’s hand: an approved entry may enter a private draft, and grants no right to publish.\n• Never copy review notes, review records or source commits into public release entries.\n• Publishing is two separate yeses: the owner’s “publish <releaseId>” against the digest (step 06), then the owner’s own commit, push and publish of the Twilite LLC repository.\n• A published release is never edited or deleted. A mistake is corrected by a new release.\n• Each step checks whether its work is already done, so a stopped run can be started again.",
+        "note": "Public writes are create-only and follow gate 06.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "ShieldCheck"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-policy"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-info-card.node-class.node",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694724,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-run-schema",
+      "type": "workflow-info-card",
+      "label": "Run records",
+      "position": {
+        "x": 1569.7213345148837,
+        "y": 373.87634061748366
+      },
+      "width": 710,
+      "height": 390,
+      "visible": true,
+      "showLabel": false,
+      "data": {
+        "title": "Run records",
+        "eyebrow": "EXECUTION HISTORY",
+        "body": "Each run is recorded in the review queue’s journal beside publishedReleases: run id, release id, per-step outcomes, verification evidence, gate decisions, errors, the approved digest, output references, and start and end times. A run that stops early or fails a gate is recorded too; recording does not wait for the success path.",
+        "note": "The journal is private. Nothing in it is published.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "FileText"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-run-schema"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-info-card.node-class.node",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694725,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-step-start",
+      "type": "workflow-step",
+      "label": "01 · Manual request",
+      "position": {
+        "x": -1730,
+        "y": 884
+      },
+      "width": 480,
+      "height": 365,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "previous",
+          "key": "previous",
+          "label": "previous",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        },
+        {
+          "id": "next",
+          "key": "next",
+          "label": "next",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "01 · Owner names a release",
+        "phase": "trigger",
+        "instruction": "The owner asks for a release by name or date. It never starts from a commit, a timer or an approved entry. Confirm the release id (YYYY-MM-DD, with -2 for a second release in a day) and that no public release with that id exists yet.",
+        "inputs": "releaseId",
+        "outputs": "runContext",
+        "authority": "read-only",
+        "onFailure": "Stop, record why, and tell the owner. Do not continue past a failed step.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "AccountTree"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-step-start"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-step.node-class.node",
+        "effects": "none",
+        "evidence": "The owner’s message and the release id",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694726,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-step-collect",
+      "type": "workflow-step",
+      "label": "02 · Review candidates",
+      "position": {
+        "x": -1110,
+        "y": 884
+      },
+      "width": 480,
+      "height": 365,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "previous",
+          "key": "previous",
+          "label": "previous",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        },
+        {
+          "id": "next",
+          "key": "next",
+          "label": "next",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "02 · Review new commits",
+        "phase": "input",
+        "instruction": "Read the commits made since each watched repository’s checkpoint (the app and the canon library). Turn user-visible changes into Release Entry candidates in the review queue; leave out publication machinery, internal builders, copy-only changes and maintenance. Compare against earlier public releases and archives so nothing is repeated. Keep the owner’s edits and update the checkpoints.",
+        "inputs": "queue checkpoints publishedReleases",
+        "outputs": "candidates",
+        "authority": "private-draft",
+        "onFailure": "Stop, record why, and tell the owner. Do not continue past a failed step.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "AccountTree"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-step-collect"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-step.node-class.node",
+        "tool": "queue-editor",
+        "effects": "Adds candidates and moves checkpoints in the private review queue. Nothing public. Commits are read with git-reader.",
+        "evidence": "Commit ranges read, candidates added, entries left out and why",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694727,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-step-act",
+      "type": "workflow-step",
+      "label": "03 · Assemble a private draft",
+      "position": {
+        "x": 130,
+        "y": 884
+      },
+      "width": 480,
+      "height": 365,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "previous",
+          "key": "previous",
+          "label": "previous",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        },
+        {
+          "id": "next",
+          "key": "next",
+          "label": "next",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "04 · Assemble a private draft",
+        "phase": "action",
+        "instruction": "Make a draft release graph from the Release Graph template, holding a copy of each approved entry’s public fields. Never copy review notes, review records or source commits into it. Show the owner the page and give its content digest (SHA-256 of the public content).",
+        "inputs": "approvedEntries releaseTemplate",
+        "outputs": "draft digest",
+        "authority": "private-draft",
+        "onFailure": "Stop, record why, and tell the owner. Do not continue past a failed step.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "AccountTree"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-step-act"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-step.node-class.node",
+        "tool": "release-assemble",
+        "effects": "Creates or updates a private draft of the release. Nothing public.",
+        "evidence": "Entry count, ids, the digest, and that no private fields were copied",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694727,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-step-verify",
+      "type": "workflow-gate",
+      "label": "04 · Verify each entry",
+      "position": {
+        "x": 750,
+        "y": 884
+      },
+      "width": 500,
+      "height": 375,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "previous",
+          "key": "previous",
+          "label": "previous",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        },
+        {
+          "id": "next",
+          "key": "next",
+          "label": "next",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "05 · Verify each entry is live",
+        "gateType": "validation",
+        "requirement": "Check again at publish time; an earlier verified is not trusted. For a change to the app, its commits are in what the live site runs (X-Twilite-Commit). For a change to the canon library, the changed file is fetched from the hosted library. Then one behaviour check by the owner or an agent on the live site, recorded with the entry. Entry ids are unique.",
+        "evidence": "Live commit and each entry’s commits\nFetched canon file for library changes\nBehaviour check noted for each entry",
+        "decision": "pending",
+        "authority": "read-only",
+        "onFailure": "Stop and record which entries failed. Fix, redeploy or defer them, then start again from step 04.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "VerifiedUser"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-step-verify"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-gate.node-class.node",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694728,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-step-approve",
+      "type": "workflow-gate",
+      "label": "05 · Owner approval gate",
+      "position": {
+        "x": -1730,
+        "y": 1420
+      },
+      "width": 500,
+      "height": 375,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "previous",
+          "key": "previous",
+          "label": "previous",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        },
+        {
+          "id": "next",
+          "key": "next",
+          "label": "next",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "06 · Owner approves publication",
+        "gateType": "owner-approval",
+        "requirement": "Show the owner the rendered draft, the release id, each entry’s verification line and the digest. Approval is one fresh message naming the release: publish <releaseId>. It covers that draft as shown and nothing else. If the draft changes, the digest no longer matches and the approval is void.",
+        "evidence": "The owner says publish <releaseId>\nDigest unchanged since it was shown\nNot an entry approval or an earlier message",
+        "decision": "pending",
+        "authority": "owner-approval-required",
+        "onFailure": "Stop. Never infer approval.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "VerifiedUser"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-step-approve"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-gate.node-class.node",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694729,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-step-commit",
+      "type": "workflow-step",
+      "label": "06 · Publish operation (disabled)",
+      "position": {
+        "x": -1110,
+        "y": 1420
+      },
+      "width": 480,
+      "height": 365,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "previous",
+          "key": "previous",
+          "label": "previous",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        },
+        {
+          "id": "next",
+          "key": "next",
+          "label": "next",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "07 · Create the public release",
+        "phase": "output",
+        "instruction": "With the approved digest, run the publish script: copy the draft to products/twilite/release-notes/<year>/<id>/root.node in the Twilite LLC repository (create-only; an existing release with different content stops the run), derive its views from the current template, and rebuild the hub so membership and newest-first order travel together. Committing, pushing and publishing the repository are the owner’s to say.",
+        "inputs": "approvalRecord draft digest",
+        "outputs": "publishedReleaseRef",
+        "authority": "approved-write",
+        "onFailure": "Stop. The step can be run again; it skips what is already done.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "AccountTree"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-step-commit"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-step.node-class.node",
+        "effects": "Creates one release folder and rebuilds the hub, in the local Twilite LLC repository. Does not commit, push or publish.",
+        "evidence": "Release path, hub rebuilt, release listed exactly once",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694730,
+          "reason": "node-drag"
+        },
+        "tool": "publish-release"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-step-record",
+      "type": "workflow-step",
+      "label": "07 · Record what happened",
+      "position": {
+        "x": 130,
+        "y": 1420
+      },
+      "width": 480,
+      "height": 365,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "previous",
+          "key": "previous",
+          "label": "previous",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        },
+        {
+          "id": "next",
+          "key": "next",
+          "label": "next",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "09 · Record the run",
+        "phase": "journal",
+        "instruction": "Write an append-only run record in the review queue’s journal: run id, release id, steps and gates with outcomes, verification evidence, the approved digest, output references, errors, and start and end times. Do it even when the run stopped early or a gate failed.",
+        "inputs": "runContext evidence",
+        "outputs": "runRecord",
+        "authority": "record-only",
+        "onFailure": "Tell the owner the run could not be recorded.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "AccountTree"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-step-record"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-step.node-class.node",
+        "effects": "Appends one record to the review queue journal.",
+        "evidence": "Run id, release id, outcomes, digest, and any stop reason",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795559344715,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-import-template",
+      "type": "import",
+      "label": "Shared Workflow Template · one Bridge",
+      "position": {
+        "x": -1730,
+        "y": 1960
+      },
+      "width": 415,
+      "height": 265,
+      "visible": false,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-import-template"
+        },
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1795556543515,
+          "reason": "auto-layout"
+        },
+        "bridge": {
+          "ref": "tlz://twilite.zone/library/templates/repeatable-workflow/root.node",
+          "resourceKind": "graph",
+          "scope": "focused-graph",
+          "grants": [
+            "read",
+            "create",
+            "update",
+            "execute"
+          ]
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-preflight-method",
+      "type": "method",
+      "label": "Workflow preflight · from template",
+      "position": {
+        "x": -1180,
+        "y": 1960
+      },
+      "width": 450,
+      "height": 300,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "scriptName": "Shared workflow preflight v1.1",
+        "parameters": [],
+        "source": "",
+        "bridgedMethod": {
+          "bridgeNodeId": "twilite-release-notes-workflow-import-template",
+          "key": "repeatable-workflow-preflight-method"
+        },
+        "allowMutations": false,
+        "dryRun": true,
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-preflight-method"
+        },
+        "effects": [],
+        "_placement": {
+          "version": 1,
+          "state": "auto-placed",
+          "source": "layout",
+          "updatedAt": 1795556543515,
+          "reason": "auto-layout"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-step-entries",
+      "type": "workflow-gate",
+      "label": "05 · Owner approval gate",
+      "position": {
+        "x": -490,
+        "y": 884
+      },
+      "width": 500,
+      "height": 375,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "previous",
+          "key": "previous",
+          "label": "previous",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        },
+        {
+          "id": "next",
+          "key": "next",
+          "label": "next",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "03 · Owner approves entries",
+        "gateType": "owner-approval",
+        "requirement": "The owner reads each candidate and sets its status in the queue: approved, deferred or excluded. Only approved entries go into the draft. A candidate’s wording is checked for review or deployment sentences that must not be published.",
+        "evidence": "Each entry’s status in the queue\nThe owner’s own edits kept\nNo review wording inside a summary",
+        "decision": "pending",
+        "authority": "owner-approval-required",
+        "onFailure": "Stop. Entries that are not approved stay in the queue.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "VerifiedUser"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-step-entries"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-gate.node-class.node",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694729,
+          "reason": "node-drag"
+        }
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-step-close",
+      "type": "workflow-step",
+      "label": "06 · Publish operation (disabled)",
+      "position": {
+        "x": -490,
+        "y": 1420
+      },
+      "width": 480,
+      "height": 365,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "previous",
+          "key": "previous",
+          "label": "previous",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 180,
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        },
+        {
+          "id": "next",
+          "key": "next",
+          "label": "next",
+          "direction": "output",
+          "dataType": "any",
+          "angle": 0,
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          },
+          "allowedEdgeTypes": [
+            "reference"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "workflow.next"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "title": "08 · Close out the queue and check the site",
+        "phase": "journal",
+        "instruction": "After the owner has published the repository: mark the release’s entries published with releasedIn, add the release id, time and approved digest to the queue’s publishedReleases, and move the entries into their archive graph. Then fetch the hosted release and hub and confirm the date, the entries, and that the release appears once, newest first.",
+        "inputs": "publishedReleaseRef digest",
+        "outputs": "archive hostedCheck",
+        "authority": "approved-write",
+        "onFailure": "Stop. It can be run again; it skips what is already done.",
+        "presentation": {
+          "glyph": {
+            "kind": "icon",
+            "name": "AccountTree"
+          }
+        },
+        "identity": {
+          "graphId": "twilite-release-notes-workflow",
+          "nodeId": "twilite-release-notes-workflow-step-close"
+        },
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/classes/workflow-step.node-class.node",
+        "effects": "Updates the private review queue and its archive. Reads the public site. archive-entries and hosted-fetch are used alongside publish-release.",
+        "evidence": "Entries marked published, archive written, hosted pages fetched and matching",
+        "_placement": {
+          "version": 1,
+          "state": "manually-shaped",
+          "source": "manual",
+          "updatedAt": 1795557694730,
+          "reason": "node-drag"
+        },
+        "tool": "publish-release"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "twilite-release-notes-workflow-surface",
+      "type": "surface",
+      "source": "twilite-release-notes-workflow-root",
+      "target": "twilite-release-notes-workflow-detail",
+      "sourcePort": "surfaces",
+      "targetPort": "root",
+      "label": "",
+      "style": {},
+      "data": {
+        "surfaceId": "default"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-detail-summary",
+      "type": "next-face",
+      "source": "twilite-release-notes-workflow-detail",
+      "target": "twilite-release-notes-workflow-summary",
+      "sourcePort": "sequence-out",
+      "targetPort": "sequence-in",
+      "label": "",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "twilite-release-notes-workflow-summary-glyph",
+      "type": "next-face",
+      "source": "twilite-release-notes-workflow-summary",
+      "target": "twilite-release-notes-workflow-glyph",
+      "sourcePort": "sequence-out",
+      "targetPort": "root",
+      "label": "",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "twilite-release-notes-workflow-ground",
+      "type": "ground",
+      "source": "twilite-release-notes-workflow-root",
+      "target": "twilite-release-notes-workflow-welcome",
+      "sourcePort": "ground",
+      "targetPort": "root",
+      "label": "",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "twilite-release-notes-workflow-environment",
+      "type": "environment",
+      "source": "twilite-release-notes-workflow-root",
+      "target": "twilite-release-notes-workflow-environment",
+      "sourcePort": "environment",
+      "targetPort": "root",
+      "label": "",
+      "style": {},
+      "data": {}
+    },
+    {
+      "id": "twilite-release-notes-workflow-invokes-preflight",
+      "type": "invokes",
+      "source": "twilite-release-notes-workflow-root",
+      "target": "twilite-release-notes-workflow-preflight-method",
+      "sourcePort": "event:graph.changed",
+      "targetPort": "invokes",
+      "label": "preflight",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/edges/invokes/root.node"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-precedes-start",
+      "type": "workflow.next",
+      "source": "twilite-release-notes-workflow-step-start",
+      "target": "twilite-release-notes-workflow-step-collect",
+      "sourcePort": "next",
+      "targetPort": "previous",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/edges/workflow-next.edge-class.node",
+        "edgeClassMeaning": "Next stage on the success path"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-precedes-review",
+      "type": "workflow.next",
+      "source": "twilite-release-notes-workflow-step-collect",
+      "target": "twilite-release-notes-workflow-step-entries",
+      "sourcePort": "next",
+      "targetPort": "previous",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/edges/workflow-next.edge-class.node",
+        "edgeClassMeaning": "Next stage on the success path"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-precedes-entries",
+      "type": "workflow.next",
+      "source": "twilite-release-notes-workflow-step-entries",
+      "target": "twilite-release-notes-workflow-step-act",
+      "sourcePort": "next",
+      "targetPort": "previous",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/edges/workflow-next.edge-class.node",
+        "edgeClassMeaning": "Next stage on the success path"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-precedes-draft",
+      "type": "workflow.next",
+      "source": "twilite-release-notes-workflow-step-act",
+      "target": "twilite-release-notes-workflow-step-verify",
+      "sourcePort": "next",
+      "targetPort": "previous",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/edges/workflow-next.edge-class.node",
+        "edgeClassMeaning": "Next stage on the success path"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-precedes-verify",
+      "type": "workflow.next",
+      "source": "twilite-release-notes-workflow-step-verify",
+      "target": "twilite-release-notes-workflow-step-approve",
+      "sourcePort": "next",
+      "targetPort": "previous",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/edges/workflow-next.edge-class.node",
+        "edgeClassMeaning": "Next stage on the success path"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-precedes-approve",
+      "type": "workflow.next",
+      "source": "twilite-release-notes-workflow-step-approve",
+      "target": "twilite-release-notes-workflow-step-commit",
+      "sourcePort": "next",
+      "targetPort": "previous",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/edges/workflow-next.edge-class.node",
+        "edgeClassMeaning": "Next stage on the success path"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-precedes-publish",
+      "type": "workflow.next",
+      "source": "twilite-release-notes-workflow-step-commit",
+      "target": "twilite-release-notes-workflow-step-close",
+      "sourcePort": "next",
+      "targetPort": "previous",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/edges/workflow-next.edge-class.node",
+        "edgeClassMeaning": "Next stage on the success path"
+      }
+    },
+    {
+      "id": "twilite-release-notes-workflow-precedes-close",
+      "type": "workflow.next",
+      "source": "twilite-release-notes-workflow-step-close",
+      "target": "twilite-release-notes-workflow-step-record",
+      "sourcePort": "next",
+      "targetPort": "previous",
+      "label": "next",
+      "style": {
+        "route": "orthogonal"
+      },
+      "data": {
+        "classRef": "tlz://twilite.zone/library/templates/repeatable-workflow/edges/workflow-next.edge-class.node",
+        "edgeClassMeaning": "Next stage on the success path"
+      }
+    }
+  ],
+  "settings": {
+    "theme": null,
+    "backgroundImage": null,
+    "defaultNodeColor": "#1976d2",
+    "defaultEdgeColor": "",
+    "snapToGrid": false,
+    "gridSize": 20,
+    "edgeRouting": "orthogonal",
+    "edgeAvoidNodes": true,
+    "layout": {
+      "mode": "manual",
+      "defaultLayout": "layered",
+      "direction": "DOWN",
+      "edgeLaneGapPx": 10,
+      "serpentine": {
+        "maxPerRow": 6
+      },
+      "cycleFallback": {
+        "enabled": true
+      },
+      "elk": {
+        "algorithm": "fixed",
+        "edgeRouting": "ORTHOGONAL",
+        "portConstraints": "FIXED_SIDE",
+        "nodeSpacing": 120,
+        "layeredEdgeSpacing": 80
+      }
+    }
+  }
+}

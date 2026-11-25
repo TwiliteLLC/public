@@ -1277,6 +1277,95 @@
         "security": "prompt",
         "memo": "A web page is something you build; a graph is something you say. Zoom, and pages that are building blocks."
       }
+    },
+    {
+      "id": "twilite-product-release-process",
+      "type": "portal",
+      "label": "How a release is published",
+      "position": {
+        "x": 1250,
+        "y": 3660
+      },
+      "width": 360,
+      "height": 228,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          }
+        }
+      ],
+      "handles": [
+        {
+          "id": "root",
+          "key": "root",
+          "portId": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 210
+        },
+        {
+          "id": "part-of",
+          "key": "part-of",
+          "label": "part-of",
+          "direction": "input",
+          "dataType": "any",
+          "angle": 270,
+          "allowedEdgeTypes": [
+            "contains"
+          ],
+          "metadata": {
+            "semantic": true,
+            "roles": [
+              "contains"
+            ],
+            "repeatable": false
+          },
+          "portId": "part-of"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "sourceRef": "tlz://twilite.zone/products/twilite/project/release-notes-workflow/root.node",
+        "target": {
+          "ref": "tlz://twilite.zone/products/twilite/project/release-notes-workflow/root.node",
+          "mode": "navigate",
+          "portId": "root",
+          "label": "Open How a release is published"
+        },
+        "authority": "navigate",
+        "intent": "external",
+        "visibilityRole": "browser",
+        "identity": {
+          "graphId": "twilite-product",
+          "nodeId": "twilite-product-release-process"
+        },
+        "security": "prompt",
+        "memo": "Open the workflow behind every release: nine stages, three owner decisions, made from the Repeatable Workflow template."
+      }
     }
   ],
   "edges": [

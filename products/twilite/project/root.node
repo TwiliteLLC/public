@@ -1741,10 +1741,10 @@
       "visible": true,
       "showLabel": true,
       "data": {
-        "sourceRef": "tlz://twilite.zone/products/twilite/project/release-process/root.node",
+        "sourceRef": "tlz://twilite.zone/products/twilite/project/release-notes-workflow/root.node",
         "sourceNodeId": "twilite",
         "target": {
-          "ref": "tlz://twilite.zone/products/twilite/project/release-process/root.node",
+          "ref": "tlz://twilite.zone/products/twilite/project/release-notes-workflow/root.node",
           "mode": "navigate",
           "portId": "root",
           "label": "Open How a release is published"
