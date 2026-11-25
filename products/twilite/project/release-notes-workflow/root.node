@@ -556,6 +556,12 @@
         },
         "identity": {
           "graphId": "twilite-release-notes-workflow-root"
+        },
+        "semanticLevel": "detail",
+        "view": {
+          "intent": "node",
+          "payload": "node.web.detail",
+          "scroll": "page"
         }
       }
     },
@@ -568,7 +574,7 @@
         "y": -567.5
       },
       "width": 480,
-      "height": 290,
+      "height": 285.71,
       "visible": true,
       "showLabel": true,
       "data": {
@@ -585,6 +591,11 @@
         },
         "identity": {
           "graphId": "twilite-release-notes-workflow-root"
+        },
+        "semanticLevel": "summary",
+        "view": {
+          "intent": "node",
+          "payload": "node.web.summary"
         }
       }
     },
@@ -614,6 +625,9 @@
         },
         "identity": {
           "graphId": "twilite-release-notes-workflow-root"
+        },
+        "view": {
+          "payload": "node.web.glyph"
         }
       }
     },
