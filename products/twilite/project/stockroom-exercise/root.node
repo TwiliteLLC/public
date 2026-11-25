@@ -1,12 +1,11 @@
 {
   "fileVersion": "1.0",
   "metadata": {
-    "created": "2026-11-25T17:58:13.730Z",
-    "modified": "2026-11-25T17:58:13.748Z",
+    "created": "2026-11-25T21:12:19.501Z",
+    "modified": "2026-11-25T21:29:21.752Z",
     "author": "",
     "tags": [
-      "workflow",
-      "exercise"
+      "workflow"
     ],
     "preferredViewer": "https://twilite.zone"
   },
@@ -494,7 +493,7 @@
           }
         },
         "document": {
-          "url": "tlz://twilite.zone/products/twilite/project/stockroom-exercise/root.node"
+          "url": "github://TwiliteLLC/public/products/twilite/project/stockroom-exercise/root.node"
         },
         "events": [
           {
@@ -664,6 +663,20 @@
       },
       "width": 950,
       "height": 355,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        }
+      ],
       "visible": true,
       "showLabel": false,
       "data": {
@@ -692,21 +705,7 @@
           "updatedAt": 1795560925121,
           "reason": "node-drag"
         }
-      },
-      "ports": [
-        {
-          "id": "root",
-          "key": "root",
-          "label": "root",
-          "direction": "bidirectional",
-          "dataType": "any",
-          "angle": 270,
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        }
-      ]
+      }
     },
     {
       "id": "twilite-stockroom-exercise-definition",
@@ -779,6 +778,20 @@
       },
       "width": 480,
       "height": 355,
+      "ports": [
+        {
+          "id": "root",
+          "key": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "angle": 270,
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        }
+      ],
       "visible": true,
       "showLabel": false,
       "data": {
@@ -811,8 +824,8 @@
       "type": "workflow-step",
       "label": "01 · Start the run",
       "position": {
-        "x": -923.1496062992127,
-        "y": 957.0501968503937
+        "x": -925.7981652467254,
+        "y": 954.6343858091915
       },
       "width": 395,
       "height": 320,
@@ -842,14 +855,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         },
         {
           "id": "next",
@@ -864,14 +870,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         }
       ],
       "visible": true,
@@ -902,7 +901,7 @@
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1795560925125,
+          "updatedAt": 1795642025271,
           "reason": "node-drag"
         }
       }
@@ -912,8 +911,8 @@
       "type": "workflow-step",
       "label": "02 · Read the stockroom snapshot",
       "position": {
-        "x": -473.1496062992127,
-        "y": 957.0501968503937
+        "x": -384.4316860052512,
+        "y": 959.7458780211759
       },
       "width": 395,
       "height": 320,
@@ -943,14 +942,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         },
         {
           "id": "next",
@@ -965,14 +957,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         }
       ],
       "visible": true,
@@ -1003,7 +988,7 @@
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1795560925126,
+          "updatedAt": 1795642006351,
           "reason": "node-drag"
         }
       }
@@ -1013,8 +998,8 @@
       "type": "workflow-step",
       "label": "03 · Calculate reorder draft",
       "position": {
-        "x": -23.14960629921265,
-        "y": 957.0501968503937
+        "x": 171.37319610368695,
+        "y": 959.4376735657619
       },
       "width": 395,
       "height": 320,
@@ -1044,14 +1029,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         },
         {
           "id": "next",
@@ -1066,14 +1044,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         }
       ],
       "visible": true,
@@ -1104,7 +1075,7 @@
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1795560925127,
+          "updatedAt": 1795641993163,
           "reason": "node-drag"
         }
       }
@@ -1114,8 +1085,8 @@
       "type": "workflow-gate",
       "label": "04 · Verify result",
       "position": {
-        "x": 426.8503937007873,
-        "y": 957.0501968503937
+        "x": 704.8939184762307,
+        "y": 964.2409613223323
       },
       "width": 405,
       "height": 320,
@@ -1145,14 +1116,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         },
         {
           "id": "next",
@@ -1167,14 +1131,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         }
       ],
       "visible": true,
@@ -1202,7 +1159,7 @@
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1795560925129,
+          "updatedAt": 1795641997514,
           "reason": "node-drag"
         }
       }
@@ -1212,8 +1169,8 @@
       "type": "workflow-gate",
       "label": "05 · Ask before handing it back",
       "position": {
-        "x": 886.8503937007873,
-        "y": 957.0501968503937
+        "x": 1298.9905263020373,
+        "y": 965.1407137054989
       },
       "width": 405,
       "height": 320,
@@ -1243,14 +1200,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         },
         {
           "id": "next",
@@ -1265,14 +1215,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         }
       ],
       "visible": true,
@@ -1300,7 +1243,7 @@
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1795560925130,
+          "updatedAt": 1795642013578,
           "reason": "node-drag"
         }
       }
@@ -1310,8 +1253,8 @@
       "type": "workflow-step",
       "label": "06 · Hand back the result",
       "position": {
-        "x": 1346.8503937007874,
-        "y": 957.0501968503937
+        "x": 1821.2465783023997,
+        "y": 969.3524535343169
       },
       "width": 395,
       "height": 320,
@@ -1341,14 +1284,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         },
         {
           "id": "next",
@@ -1363,14 +1299,7 @@
           },
           "allowedEdgeTypes": [
             "reference"
-          ],
-          "metadata": {
-            "semantic": true,
-            "roles": [
-              "workflow.next"
-            ],
-            "repeatable": false
-          }
+          ]
         }
       ],
       "visible": true,
@@ -1401,7 +1330,7 @@
           "version": 1,
           "state": "manually-shaped",
           "source": "manual",
-          "updatedAt": 1795560925131,
+          "updatedAt": 1795642019899,
           "reason": "node-drag"
         }
       }
@@ -1807,6 +1736,15 @@
         "nodeSpacing": 120,
         "layeredEdgeSpacing": 80
       }
+    },
+    "github": {
+      "repo": "",
+      "path": "",
+      "branch": "main",
+      "autoCreateRepo": true,
+      "repoVisibility": "private",
+      "seedOnCommit": false,
+      "enableGithubPages": false
     }
   }
 }
